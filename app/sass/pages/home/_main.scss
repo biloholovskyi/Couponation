@@ -2,6 +2,7 @@
   padding: 120px 0 104px;
   background: #08A401;
   position: relative;
+  overflow: hidden;
 
   &::after {
     content: '';
