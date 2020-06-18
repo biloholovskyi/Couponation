@@ -37,6 +37,8 @@ button {
 @import "mixins";
 @import "fonts";
 @import "var";
+@import "modules/main-slider";
+@import "modules/cart-store";
 
 /*over use blocks*/
 @import "header";
