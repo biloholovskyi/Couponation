@@ -1,0 +1,54 @@
+.card-section {
+  background-color: #F7F7F7;
+  padding: 48px 0;
+  margin-bottom: 48px;
+  .card-title {
+    display: flex;
+    justify-content: space-between;
+
+    h2 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 36px;
+      color: #222222;
+      margin-bottom: 32px;
+    }
+
+    a {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 22px;
+      display: flex;
+      align-items: center;
+      text-align: right;
+      color: #222222;
+      position: relative;
+      padding-right: 16px;
+      margin-right: 8px;
+    }
+
+    a:after {
+      content: "";
+      background-image: url(../../../media/icon/arrow-right.svg);
+      background-position: center;
+      background-size: cover;
+      width: 5px;
+      height: 9px;
+      position: absolute;
+      right: 0;
+    }
+  }
+
+  .card-wrap {
+    display: flex;
+    flex-wrap: wrap;
+
+    .card-store {
+      flex: 19%;
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+  }
+}

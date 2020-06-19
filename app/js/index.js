@@ -1,5 +1,6 @@
 import 'normalize.css';
 import { smallFormInput } from "./smallForm";
+import './accordion';
 
 $(document).ready((e) => {
   // main slider
@@ -19,6 +20,3 @@ $(document).ready((e) => {
 $(window).resize(() => {
 
 });
-
-
-
