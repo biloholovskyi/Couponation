@@ -19,4 +19,5 @@ $(document).ready((e) => {
 
 $(window).resize(() => {
 
+
 });
