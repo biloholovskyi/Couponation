@@ -1,0 +1,11 @@
+mixin card-link(name)
+  a.card-link(href='#')
+    .top
+      img.icon(src='./media/icon/card-link.svg' alt='icon')
+      .name= name
+    .bottom
+      if block
+        block
+      else
+        p 9,050 stores and
+        p 60 categories

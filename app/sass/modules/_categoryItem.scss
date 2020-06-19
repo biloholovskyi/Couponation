@@ -1,0 +1,21 @@
+.categoryItem {
+  display: flex;
+  align-items: center;
+  padding: 6px 14px 8px 10px;
+  background: #F7F7F7;
+  border-radius: 100px;
+  width: max-content;
+  cursor: pointer;
+
+  .icon {
+    font-size: 18px;
+    line-height: 20px;
+    margin-right: 4px;
+  }
+
+  .name {
+    font-size: 14px;
+    line-height: 22px;
+    color: #222222;
+  }
+}

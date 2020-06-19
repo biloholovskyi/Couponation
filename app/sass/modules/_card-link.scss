@@ -1,0 +1,36 @@
+.card-link {
+  width: 100%;
+  height: 168px;
+  background: #F7F7F7;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .top {
+    .icon {
+      display: block;
+      @include base-box(24px);
+      object-fit: contain;
+      object-position: center;
+      margin-bottom: 4px;
+    }
+
+    .name {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 22px;
+      letter-spacing: -0.01em;
+      color: #222222;
+    }
+  }
+
+  .bottom {
+    p {
+      font-size: 14px;
+      line-height: 20px;
+      color: #717171;
+    }
+  }
+}

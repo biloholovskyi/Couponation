@@ -1,0 +1,21 @@
+.top-category {
+  padding: 48px 0 72px;
+
+  &__title {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 36px;
+    color: #222222;
+    margin-bottom: 32px;
+  }
+
+  &__body {
+    display: flex;
+    flex-wrap: wrap;
+
+    .categoryItem {
+      margin-right: 8px;
+      margin-bottom: 8px;
+    }
+  }
+}
