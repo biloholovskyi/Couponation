@@ -34,6 +34,19 @@
   border: none;
   display: flex;
   flex-wrap: wrap;
+  .show-all {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: #222222;
+    padding: 8px 0 10px;
+    border: 1px solid #222222;
+    border-radius: 8px;
+    width: 175px;
+    margin: 32px auto 0 auto;
+    cursor: pointer;
+  }
 }
 .coupon-home--shop {
   flex: 49%;

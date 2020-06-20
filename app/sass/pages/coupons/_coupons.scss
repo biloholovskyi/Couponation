@@ -1,0 +1,65 @@
+.coupon-page {
+  .coupons-title {
+  
+    h1 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 54px;
+      line-height: 64px;
+      color: #222222;
+      margin: 0 0 24px;
+    }
+    .title-btn {
+      display: flex;
+      button {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        color: #222222;
+        background: #F7F7F7;
+        border-radius: 100px;
+        padding: 6px 16px;
+        margin-right: 8px;
+        border: none;
+      }
+    }
+  }
+  .small-coupon {
+    h2 {
+      margin-bottom: 8px;
+      margin-top: 48px;
+    }
+    .desc {
+      display: flex;
+      margin-bottom: 24px;
+      p {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 26px;
+        letter-spacing: -0.01em;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: #555555;
+      }
+      &  p:first-child {
+        padding-right: 8px;
+        margin-right: 8px;
+        border-right: 1px solid #aaa; 
+      }
+    }
+  }
+  .card-link {
+    margin-bottom: 48px;
+  }
+}
+
+.coupon-slide {
+  .main-slider__title {
+    
+      max-width: 525px;
+    
+  }
+}
