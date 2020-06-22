@@ -1,0 +1,97 @@
+extends ../layout/main
+
+block variables
+  - const pageTitle = 'Healthcare'
+  - const mainSliderTitle = 'Most popular beauty stores'
+
+  include ../mixins/breadcrumb
+  include ../mixins/smallCoupon
+  include ../mixins/cardStore
+  include ../mixins/card-link
+  include ../mixins/categoryItem
+
+block content
+  .beauty-page
+    .container
+      .row
+        .col-12
+          .breadcrumb
+            +breadcrumb('Main page','/')
+            +breadcrumb('/ Categories','#')
+            +breadcrumb('/ Healthcare','#')
+      .row
+        .col-12
+          .coupons-title.beauty-title
+            h1 Healthcare
+            .top-category__body
+              +categoryItem('⌚', 'accessories') 
+              +categoryItem('🌸', 'beauty')
+              +categoryItem('👗', 'fashion')
+              +categoryItem('👚', 'clothing')
+              +categoryItem('🎁', 'gifts')
+              +categoryItem('🍔', 'food')
+              +categoryItem('💄', 'cosmetics')
+              +categoryItem('💉', 'supplements')
+              +categoryItem('💉', 'hair care')
+              +categoryItem('🍿', 'snacks')
+              +categoryItem('🚲', 'transport')
+              +categoryItem('🍿', 'chocolate')
+              +categoryItem('🍫', 'chocolate')
+              +categoryItem('📷', 'photography')
+              +categoryItem('👖', 'leggings')
+              +categoryItem('📦', 'delivery')
+              +categoryItem('👩‍', 'hair')
+              +categoryItem('🥊', 'activewear')
+  .card-section.category-page
+    .container    
+      .row
+        .col-12
+          .card-title
+            h2 Most popular stores of this category
+          .card-wrap
+            +card-store("./media/icon/logos/1.png", "Kohl's", "21 active coupons", "12,637,890 times used")
+            +card-store("./media/icon/logos/2.png", "Travelocity", "21 active coupons", "12,637,890 times used")
+            +card-store("./media/icon/logos/3.png", "RedBubble", "4 active coupons", "12,637,890 times used")
+            +card-store("./media/icon/logos/4.png", "Best Buy", "50 active coupons", "12,637,890 times used")
+            +card-store("./media/icon/logos/5.png", "SHEIN", "3 active coupons", "12,637,890 times used")
+            +card-store("./media/icon/logos/2.png", "Travelocity", "21 active coupons", "12,637,890 times used") 
+            +card-store("./media/icon/logos/2.png", "Travelocity", "21 active coupons", "12,637,890 times used")
+            +card-store("./media/icon/logos/3.png", "RedBubble", "4 active coupons", "12,637,890 times used")
+            +card-store("./media/icon/logos/4.png", "Best Buy", "50 active coupons", "12,637,890 times used")
+            +card-store("./media/icon/logos/5.png", "SHEIN", "3 active coupons", "12,637,890 times used")
+      .row
+        .col-12
+          .small-form
+            .small-form__text
+              .title Get top offers and save money
+              .desc Offers only valid coupons while you shop online
+            form.small-form__form
+              .placeholder Enter your Email here
+              input(type='email')
+              input(type='submit' value='')
+      .row
+        .col-12
+          .card-wrap
+            +card-store("./media/icon/logos/1.png", "Kohl's", "21 active coupons", "12,637,890 times used")
+            +card-store("./media/icon/logos/2.png", "Travelocity", "21 active coupons", "12,637,890 times used")
+            +card-store("./media/icon/logos/3.png", "RedBubble", "4 active coupons", "12,637,890 times used")
+            +card-store("./media/icon/logos/4.png", "Best Buy", "50 active coupons", "12,637,890 times used")
+            +card-store("./media/icon/logos/5.png", "SHEIN", "3 active coupons", "12,637,890 times used")
+            +card-store("./media/icon/logos/2.png", "Travelocity", "21 active coupons", "12,637,890 times used") 
+            +card-store("./media/icon/logos/2.png", "Travelocity", "21 active coupons", "12,637,890 times used")
+            +card-store("./media/icon/logos/3.png", "RedBubble", "4 active coupons", "12,637,890 times used")
+            +card-store("./media/icon/logos/4.png", "Best Buy", "50 active coupons", "12,637,890 times used")
+            +card-store("./media/icon/logos/5.png", "SHEIN", "3 active coupons", "12,637,890 times used") 
+            .number-coupon
+                .num-item 1
+                .num-item 2
+                .num-item 3
+                .num-dots
+                .num-item 8
+      .row
+        .col-6
+          +card-link('Stores of the day')
+        .col-6
+          +card-link('Stores of the day')                          
+  .coupon-tag
+    include ../modules/home/top-category      

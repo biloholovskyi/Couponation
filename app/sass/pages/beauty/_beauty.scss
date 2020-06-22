@@ -13,50 +13,7 @@
       margin-bottom: 48px;
     }
   }
-  .small-coupon {
-    .coupons-shop__body {
-      .number-coupon {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        margin-top: 48px;
-        .num-item {
-          font-style: normal;
-          font-weight: normal;
-          font-size: 18px;
-          line-height: 22px;
-          display: flex;
-          align-items: center;
-          text-align: center;
-          letter-spacing: -0.01em;
-          color: #222222;
-          border: 1px solid #EBEBEB;
-          margin-right: 8px;
-          width: 40px;
-          height: 40px;
-          border-radius: 50%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          cursor: pointer;
-        }
-        .num-item:hover {
-          background: rgba(255, 112, 62, 0.1);
-          border: 1px solid rgba(255, 112, 62, 0.2);
-          color: #FF703E;
-        }
-        .num-dots {
-          background-image: url(../../../media/icon/dots.svg);
-          background-position: center;
-          background-size: cover;
-          width: 24px;
-          height: 24px;
-          margin-right: 8px;
-        }
-      }
-    }
-  }
+ 
 }
 
 .beauty-slide {
@@ -70,5 +27,45 @@
     & .row:last-child {
       margin-top: 32px;
     }
+  }
+}
+.number-coupon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 48px;
+  .num-item {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.01em;
+    color: #222222;
+    border: 1px solid #EBEBEB;
+    margin-right: 8px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .num-item:hover {
+    background: rgba(255, 112, 62, 0.1);
+    border: 1px solid rgba(255, 112, 62, 0.2);
+    color: #FF703E;
+  }
+  .num-dots {
+    background-image: url(../../../media/icon/dots.svg);
+    background-position: center;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
   }
 }
