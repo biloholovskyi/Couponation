@@ -14,7 +14,9 @@ block content
     .container
       .row
         .col-12
-          +breadcrumb('Main page','/','/ Coupons','#')
+          .breadcrumb
+            +breadcrumb('Main page','/')
+            +breadcrumb('/ Coupons','./coupons.html') 
       .row
         .col-12
           .coupons-title
@@ -104,3 +106,5 @@ block content
           +card-link('Stores of the day')
         .col-4
           +card-link('New stores')
+  .coupon-tag
+    include ../modules/home/top-category      

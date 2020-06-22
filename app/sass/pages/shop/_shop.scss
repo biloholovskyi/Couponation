@@ -255,7 +255,7 @@
 .breadcrumb {
   display: flex;
   margin: 24px 0;
-  & a:first-child {
+  a{
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
