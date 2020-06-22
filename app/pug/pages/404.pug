@@ -1,0 +1,20 @@
+extends ../layout/main
+
+block variables
+  - const pageTitle = '404'
+  - const mainSliderTitle = 'Favorite stores'
+
+block content
+
+  .error-page
+    .home-main
+      .container
+        .row
+          .col-8.offset-2
+            h1.home-main__title 404
+            .home-main__desc Page you're looking for does not exist or was deleted. But we have a lot of more interesting pages!
+            form.home-main__form
+              input(type='submit' value='')
+              input(type='text' placeholder='Find brands or store and save some money')
+            .home-main__example For example: #[a.example__link(href='#') Adidas], #[a.example__link(href='#') iHerb], #[a.example__link(href='#') Nike], #[a.example__link(href='#') Samsung], #[a.example__link(href='#') Xiaomi]
+    include ../modules/home/top-category
