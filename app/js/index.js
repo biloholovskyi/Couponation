@@ -28,5 +28,4 @@ $('.close-map').on('click', function(){
 
 $(window).resize(() => {
 
-
 });
