@@ -1,0 +1,217 @@
+.contact-page {
+  padding-bottom: 80px;
+
+  .contact_title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 54px;
+    line-height: 64px;
+    color: #222222;
+    margin: 0 0 32px;
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+   
+    .map-block {
+      display: flex;
+      align-items: center;
+      margin-bottom: 24px; 
+
+      .icon {
+        width: 40px;
+        height: 40px;
+        margin-right: 16px;
+        cursor: pointer;
+        position: relative; 
+
+        & img:first-child {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+
+        & img:last-child {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 18px;
+          height: 18px;
+        }
+      }
+
+      .address {
+        h3 {
+          font-style: normal;
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 22px;
+          color: #222222;
+        }
+
+        p {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 20px;
+          color: #717171;
+         
+        }
+      }
+    }
+
+    .contact-desc {
+      p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        color: #222222;
+        max-width: 510px;
+      }
+    }
+  }
+
+  #contact-form {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 20px;
+      color: #222222;
+      margin-bottom: 8px;
+    }
+
+    input,
+    textarea {
+      background: #FFFFFF;
+      border: 1px solid #EBEBEB;
+      border-radius: 8px;
+      height: 48px;
+      margin-bottom: 24px;
+      padding-left: 16px;
+    }
+
+    textarea {
+      height: 144px;
+      padding-top: 13px;
+      resize: none;
+      width: 100% !important;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 22px;
+      color: #AAAAAA;
+    }
+
+    & input:last-child {
+      background: #FF703E;
+      border-radius: 8px;
+      cursor: pointer;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 24px;
+      color: #FFFFFF;
+    }
+  }
+}
+
+#map {
+  height: 100%;
+}
+
+
+
+.maps {
+  width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background: rgba(0, 0, 0, 0.3);
+    display: none;
+    justify-content: center;
+    align-items: center; 
+    z-index: 1;
+  .contacts-map {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      max-height: 740px;
+      max-width: 1100px;
+      box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.16);
+      .close-map {
+        background-color: #fff;
+        border-radius: 50%;
+        border: 1px solid #EBEBEB;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        right: 50px;
+        top: 20px;
+        z-index: 9999999;
+        top: 10px;
+        cursor: pointer;
+        &:after {
+          content:  "";
+          background-image: url(../../../media/icon/close-map.svg);
+          background-position: center;
+          background-size: cover;
+          width: 24px;
+          height: 24px;
+          position: absolute;
+        }
+      }
+      .contact-page__map {
+          position: absolute;
+          z-index: 1111111;
+          height: 100%;
+          width: 100%;
+          top: 0px;
+          right: 0px;
+          transition: all 0.4s ease 0s;   
+          .ymaps-2-1-76-map-bg {
+            border-radius: 16px!important;
+          }
+      }
+  }
+}  
+.maps.active {
+  display: flex;
+}
+.ymaps-2-1-76-inner-panes {
+  border-radius: 16px!important;
+}
+
+.ymaps-2-1-76-zoom__scale {
+  display: none!important;
+}
+.ymaps-2-1-76-zoom {
+  height: auto!important; 
+}
+// .ymaps-2-1-76-zoom__plus,
+// .ymaps-2-1-76-zoom__minus {
+//   width: 40px!important;
+//   border-radius: none!important; 
+//   height: 42px!important;
+// }
+// .ymaps-2-1-76-float-button {
+//   border-radius: none!important; 
+// }

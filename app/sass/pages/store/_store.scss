@@ -1,0 +1,55 @@
+@import './alphabet';
+@import './chome-block';
+.store-page {
+  .coupons-title {
+    .title-btn {
+      margin-bottom: 24px;
+    }
+  }
+}
+.store-section {
+  background-color: #fff;
+  padding-top: 0;
+  padding-bottom: 0;
+  .card-title {
+    display: flex;
+    flex-direction: column;
+    padding-top: 32px;
+    h2 {
+      margin-bottom: 8px;
+    }
+    .desc {
+      display: flex;
+      margin-bottom: 30px;
+      p {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 26px;
+        letter-spacing: -0.01em;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: #555555;
+      }
+      &  p:first-child {
+        padding-right: 8px;
+        margin-right: 8px;
+        border-right: 1px solid #aaa; 
+      }
+    }
+  }
+  .card-wrap {
+    .show-all {
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 22px;
+      text-align: center;
+      color: #222222;
+      padding: 8px 0 10px;
+      border: 1px solid #222222;
+      border-radius: 8px;
+      width: 175px;
+      margin: 32px auto 0 auto;
+      cursor: pointer;
+    }
+  }
+}

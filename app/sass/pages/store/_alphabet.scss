@@ -1,0 +1,40 @@
+.alphabet {
+  padding: 20px;
+  background: #F7F7F7;
+  border-radius: 12px;
+
+  .alphabet-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+    color: #222222;
+    margin-bottom: 16px;
+  }
+  .alphabet-block {
+    display: flex;
+    .alphabet-item {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 22px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      text-transform: uppercase;
+      color: #222222;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      transition: .4s;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+    & .alphabet-item:hover {
+      background: #222222;
+      border-radius: 50%;
+      color: #fff;
+    }
+  }
+}
