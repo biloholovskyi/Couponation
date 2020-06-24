@@ -14,7 +14,9 @@ block content
     .container
       .row
         .col-12
-          +breadcrumb('Stores','#','/ Best Buy','#')
+          .breadcrumb
+            +breadcrumb('Stores','./store.html')
+            +breadcrumb('/ Best Buy','#')
       .row
         .col-12
           .shop-caption
