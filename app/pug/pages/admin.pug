@@ -1,0 +1,40 @@
+extends ../layout/admin
+
+block variables
+  - const pageTitle = 'Admin panel'
+
+block content
+
+  .admin__panel
+    include ../modules/admin/admin_bar
+    .admin__content
+      .admin__caption 
+        h1 All coupons
+        button Add new coupon
+      .admin__select--block
+        .admin__rate
+          p Succes rate
+          p Any
+        .admin__date 
+          p Date added
+          p May 12, 2020 - Jun 19,2020
+        .admin__search
+          input(type="text" placeholder="Search by shop or coupon")
+          img(src="../media/icon/search.svg", alt="icon")
+      .sort__block
+        p 12,480 coupons found
+        p Sort by: #[span Expiration date]
+      .coupon_section
+        include ../modules/admin/coupon_admin
+        include ../modules/admin/coupon_admin    
+        include ../modules/admin/coupon_admin    
+        include ../modules/admin/coupon_admin    
+        include ../modules/admin/coupon_admin
+        .number-coupon
+          .num-item 1
+          .num-item 2
+          .num-item 3
+          .num-dots
+          .num-item 8
+
+  include ../modules/admin/admin_modal                    

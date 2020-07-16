@@ -1,5 +1,5 @@
 import 'normalize.css';
-import { smallFormInput } from "./smallForm";
+import { smallFormInput,adminFormInput } from "./smallForm";
 import './accordion';
 
 $(document).ready((e) => {
@@ -15,6 +15,8 @@ $(document).ready((e) => {
   });
 
   $('.small-form__form input').on('input', (e) => smallFormInput(e));
+  $('.small-form__form .double .input-item input').on('input', (e) => adminFormInput(e));
+  
 
 // map modal
 $('.contact-page .contact-info .map-block .icon').on('click', function(){
