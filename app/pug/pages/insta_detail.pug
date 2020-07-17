@@ -1,0 +1,68 @@
+extends ../layout/admin
+
+block variables
+  - const pageTitle = 'Admin panel'
+
+block content
+
+  .admin__panel.coupon-details.insta-detail
+    include ../modules/admin/admin_bar
+    .admin__content
+      a.back_btn(href="/admin.html") All sources
+      .admin__caption 
+          h1 @SHELLEYNYAK
+          button Block source
+      .adm-tab__head
+        .tabs
+          .tab.active#tab-main MAIN INFO
+          .tab#tab-active Active coupons
+          .tab#tab-expired Expired coupons
+          .tab#tab-declined Declined posts
+      .adm-tab__body.info.show#body-main
+        .stats__blocks
+          .stats__block
+            .stats__title Instagram info
+            .stats__item
+              p Followers
+              p 5000
+            .stats__item
+              p Subscribes
+              p 125
+            .stats__item
+              p Crawl list
+              p Not regular
+            .stats__item
+              p Subscribes
+              p 125
+            .stats__item
+              p Last check result
+              p 1 coupon  
+          .stats__block
+            .stats__title Posts saved
+            .stats__item
+              p Today
+              p 1276 
+            .stats__item
+              p This week
+              p 319 
+            .stats__item
+              p This month
+              p 739 
+            .stats__item
+              p 6 months
+              p 319 
+            .stats__item
+              p All time
+              p 73   
+      .adm-tab__body.info#body-active
+        include ../modules/admin/insta_coupon
+        include ../modules/admin/insta_coupon
+        include ../modules/admin/insta_coupon
+        .number-coupon
+          .num-item 1
+          .num-item 2
+          .num-item 3
+          .num-dots
+          .num-item 8
+      .adm-tab__body.info#body-expired
+      .adm-tab__body.info#body-declined   

@@ -1,0 +1,127 @@
+.shop__modal--overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 20;
+  transition: .5s;
+  .shop__modal {
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 8px;
+    min-width: 608px;
+    position: relative;
+    h3 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 36px;
+      color: #222222;
+      margin-bottom: 24px;  
+    }
+    .admin__search {
+      flex: 2;
+      border: 1px solid #EBEBEB;
+      border-radius: 8px;
+      min-height: 56px;
+      position: relative;
+      input {
+        width: 100%;
+        height: 100%;
+        border: none;
+        padding: 16px 16px 16px 60px; 
+        font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 24px;
+
+        &::placeholder {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 24px;
+          color: rgba(34, 34, 34, 0.6);
+        }
+      }
+      img {
+        position: absolute;
+        left: 18px;
+        top: 50%;
+        transform: translateY(-50%); 
+        width: 24px;
+        height: 24px;
+      }
+    }
+    .shop__modal--content {
+      overflow: auto;
+      max-height: 525px;
+      .shop__modal--item {
+        padding: 20px 0;
+        border-bottom: 1px solid #EBEBEB;
+        .shop__title {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          img {
+            width: 64px;
+            height: 64px;
+            border: 0.5px solid rgba(0, 0, 0, 0.1);
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center;
+          }
+          .title__item {
+            h4 {
+              font-style: normal;
+              font-weight: normal;
+              font-size: 18px;
+              line-height: 24px;
+              letter-spacing: -0.01em;
+              color: #222222;
+            }
+            a {
+              font-style: normal;
+              font-weight: normal;
+              font-size: 16px;
+              line-height: 22px;
+              letter-spacing: -0.01em;
+              color: #24B4FF;
+            } 
+          }
+          .select__shop {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 24px;
+            color: #222222;
+            padding: 5px 18px;
+            border: 1px solid #EBEBEB;
+            border-radius: 8px;
+            background-color: transparent;
+          }
+        }
+      }
+    }
+
+    & .shop__modal--content::-webkit-scrollbar {
+      display: none;  
+    }
+  }
+}
+
+.adm__modal--close {
+  background-image: url(../media/icon/close-map.svg);
+  background-position: center;
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  cursor: pointer;
+}

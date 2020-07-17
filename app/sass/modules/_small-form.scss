@@ -77,7 +77,8 @@
       transition: all .3s;
     }
 
-    input[type='email'] {
+    input[type='email'],
+    textarea {
       position: relative;
       z-index: 2;
       background-color: transparent;
@@ -112,7 +113,7 @@
             border: 1px solid #FF703E!important;
             .placeholder {
               color: #FF703E!important;
-              top: 5px;
+              top: 5px!important;
               transform: translateY(0);
               font-weight: 500!important;
               font-size: 12px!important;

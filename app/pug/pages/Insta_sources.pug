@@ -1,0 +1,33 @@
+extends ../layout/admin
+
+block variables
+  - const pageTitle = 'Instagram sources'
+
+block content
+
+  .admin__panel.adm__shop--page.Instagram__page
+    include ../modules/admin/admin_bar 
+    .admin__content
+      .admin__caption 
+        h1 Instagram sources
+        .adm_nav
+          .admin__search
+            input(type="text" placeholder="Search by instagram name")
+            img(src="../media/icon/search.svg", alt="icon")
+          button Add new source
+      .admin__select--block
+        .adm__select
+          .admin__item 
+            p Categories
+            p Any
+          .admin__item 
+            p Status
+            p Any  
+        .adm_check
+          button.ClearFilter Clear filters
+      .sort__block
+        p 12,480 coupons found
+        p Sort by: #[span Expiration date]
+      .insta-content
+        include ../modules/admin/insta_item
+        include ../modules/admin/insta_item    

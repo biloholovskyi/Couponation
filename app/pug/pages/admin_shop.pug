@@ -1,0 +1,58 @@
+extends ../layout/admin
+
+block variables
+  - const pageTitle = 'Admin panel'
+
+block content
+
+  .admin__panel.adm__shop--page
+    include ../modules/admin/admin_bar 
+    .admin__content
+      .admin__caption 
+        h1 Shops
+        .adm_nav
+          .admin__search
+            input(type="text" placeholder="Search by shop name")
+            img(src="../media/icon/search.svg", alt="icon")
+          button Add new shop
+      .admin__select--block
+        .adm__select
+          .admin__item
+            p Affiliate network
+            p Any
+          .admin__item 
+            p Categories
+            p Any
+          .admin__item
+            p Trafic range
+            p 0 - 1M
+          .admin__item 
+            p Status
+            p Any  
+          .admin__item
+            p Succes rate
+            p Any
+          .admin__item 
+            p Coupons count
+            p Coupons count
+        .adm_check
+          .checkbox
+            input(type="checkbox" name="affiliate")#affiliate
+            label(for="affiliate") 1+ affiliate link  
+            input(type="checkbox" name="affiliate")#Noaffiliate
+            label(for="Noaffiliate") No affiliate link 
+          button.ClearFilter Clear filters
+      .sort__block
+        p 12,480 coupons found
+        p Sort by: #[span Expiration date]
+      .shop__content
+        include ../modules/admin/coupon_shop
+        include ../modules/admin/coupon_shop               
+        include ../modules/admin/coupon_shop
+        .number-coupon
+          .num-item 1
+          .num-item 2
+          .num-item 3
+          .num-dots
+          .num-item 8
+  include ../modules/admin/change_shop_modal              

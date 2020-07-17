@@ -1,0 +1,96 @@
+extends ../layout/admin
+
+block variables
+  - const pageTitle = 'Admin panel'
+
+block content
+
+  .admin__panel.coupon-details
+    include ../modules/admin/admin_bar
+    .admin__content
+      a.back_btn(href="/admin.html") All coupons
+      .admin__caption 
+          h1 SAVE6DOLLARS
+          button Block source
+      .adm-tab__head
+        .tabs
+          .tab.active#tab-main MAIN INFO
+          .tab#tab-shop SHOP
+      .adm-tab__body.info.show#body-main
+        .stats__blocks
+          .stats__block
+            .stats__title General stats
+            .stats__item
+              p Moderated by
+              p Josh Barnett
+            .stats__item
+              p Moderation date
+              p May 20, 2020 – 14:08
+            .stats__item
+              p Source
+              p @shellynyak
+          .stats__block
+            .stats__title Vote stats
+            .stats__item
+              p Upvoted
+              p 1276 votes – 80%
+            .stats__item
+              p Downvoted
+              p 319 votes – 20%
+            .stats__item
+              p Clicks without votes
+              p 739
+        .adm__links
+          .adm__link
+            h3 Original post link
+            a(href="#") http://instagram.com/user/39696259/post_56y72sdf0923.html
+          .adm__link
+            h3 Original post text
+            p Do you love face oils? My skin is very picky when it comes to face oil. Most of the time either the oil just floats on my skin and sticks wherever except my face or I end up with an irritated skin. But #juicychemistry 100% Organic Camellia Seed Oil is surely the magic in a bottle. You can use my code - SHELL15 for additional discount on Juicychemistry Website.  
+        .coupon__form
+          .coupon__modal
+            h3 Edit coupon data
+            form.small-form__form.admin-form
+              .double
+                .input-item
+                  .placeholder Coupon
+                  input(type='email')
+                .input-item
+                  .placeholder Expiration date 
+                  input(type='email')
+              .double
+                .input-item
+                  .placeholder Instagram account
+                  input(type='email')
+                .input-item
+                  .placeholder Website URL
+                  input(type='email')
+              .double.full-inp
+                .input-item
+                  .placeholder Coupon’s short description
+                  input(type='email')
+              .count
+                .count-item 0
+                div /
+                .count-item 55    
+              .double.full-inp.textarea
+                .input-item
+                  .placeholder Coupon’s full description
+                  textarea
+              .count
+                .count-item 0
+                div /
+                .count-item 255      
+              input(type="submit" value="Save changes").admin_submit   
+      .adm-tab__body.shop#body-shop
+        .adm__links
+          .adm__link
+            h3 Affilated shop
+            include ../modules/admin/coupon_shop
+
+  include ../modules/admin/change_shop_modal          
+         
+
+
+
+  

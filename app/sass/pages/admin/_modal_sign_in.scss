@@ -1,0 +1,106 @@
+.sign__in--overylay {
+  background: #6082B6;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  .sign__in-modal {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-width: 608px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    padding: 25px;
+    h3 {
+      margin-bottom: 32px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 36px;
+      color: #222222;
+      text-align: center;
+    }
+    .double {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      .input-item {
+        position: relative;
+         border: 1px solid #ebebeb;
+          border-radius: 8px;
+          padding: 16px 18px 16px 16px;
+          margin-bottom: 32px;
+          
+          input {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 22px;
+            color: #222222;
+            border: none;
+           }
+           .placeholder {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 22px;
+            color: rgba(34, 34, 34, 0.6);
+           }
+      }
+       .input-item:last-child {
+        margin-bottom: 16px;
+      }
+
+      p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        text-decoration-line: underline;
+        color: #717171;
+        margin-bottom: 40px;
+        cursor: pointer;
+      }
+      .sign_in_adm {
+        width: 100%;
+        background: #FF703E;
+        border-radius: 8px;
+        padding: 14px 0;
+        height: max-content;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 24px;
+        color: #FFFFFF;
+      }
+    }
+  }
+
+  &::before {
+    content:  "";
+    width: 752.01px;
+    height: 752.01px;
+    background: linear-gradient(179.06deg, rgba(255, 255, 255, 0.05) 0.81%, rgba(255, 255, 255, 0) 34.42%);
+    position: absolute;
+    transform: rotate(60deg);
+    left: -445px;
+    top: 543px;
+    border-radius: 50%;
+  }
+  &::after { 
+    content:  "";
+    width: 973.57px;
+    height: 973.57px;
+    background: linear-gradient(179.06deg, rgba(255, 255, 255, 0.05) 0.81%, rgba(255, 255, 255, 0) 34.42%);
+    position: absolute;
+    transform: rotate(-135deg);
+    right: -219px;
+    top: -424px;
+    border-radius: 50%;
+  }
+}
