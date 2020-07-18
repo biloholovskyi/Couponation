@@ -96,3 +96,12 @@
       }
     }
 }
+
+.current {
+  background: rgba(255, 112, 62, 0.1);
+  border-radius: 1000px;
+  color: #FF703E!important;
+  svg path {
+    fill: #FF703E!important;
+  }
+}

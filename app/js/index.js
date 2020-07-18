@@ -74,6 +74,10 @@ $('.adm-tab__head .tabs .tab').on('click', (e) => {
 
 });
 
+
+
+
+
 $(document).on('click', function(e){
   let modal = $('.admin__modal, .shop__modal');
   let Btn = $('.addNewCoupon, .change_shop');
@@ -91,6 +95,10 @@ $(document).on('click', function(e){
     }
   }
 });
+
+
+
+
 
 $(window).resize(() => {
 
