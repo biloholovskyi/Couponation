@@ -1,7 +1,7 @@
 import 'normalize.css';
 import { smallFormInput} from "./smallForm";
 import './accordion';
-import { switchTab } from "./tabs";
+import { switchTab, switchTabGrf } from "./tabs";
 
 $(document).ready((e) => {
   // main slider
@@ -22,13 +22,13 @@ $(document).ready((e) => {
 $('.contact-page .contact-info .map-block .icon').on('click', function(){
   $('.maps').toggleClass('active');
 });
-$('.close-map').on('click', function(){
+$('.close-map').on('click', function(){ 
   $('.maps').toggleClass('active');
 });
 
 // admin modal
 $('.addNewCoupon').on('click', function(){
-  $('.admin__modal--overlay').css({'display': 'flex'});
+  $('.admin__modal--overlay').css({'display': 'flex'}); 
   $('body').css({
     'overflow': 'hidden',
     'position': 'relative',
@@ -62,7 +62,7 @@ $('.block').on('click', function(){
   $(this).parent('.coupon__btn--section').find('.unblock').show(); 
 });
 
-$('.unblock').on('click', function(){
+$('.unblock').on('click', function(){ 
   $(this).hide();
   $(this).parent('.coupon__btn--section').find('.block').show();
 });
@@ -70,6 +70,10 @@ $('.unblock').on('click', function(){
 
 $('.adm-tab__head .tabs .tab').on('click', (e) => {
   switchTab(e)
+});
+
+$('.grf-tab__head .tabs .tab').on('click', (e) => {
+  switchTabGrf(e) 
 });
 
 });

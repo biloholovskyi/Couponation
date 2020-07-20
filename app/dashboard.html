@@ -61,7 +61,7 @@
               <div class="moder_stats">
                 <div class="coupons">2 moderated coupons</div>
                 <div>|</div>
-                <div class="stores">0 moderated stores</div>
+                <div class="stores">0 moderated stores </div>
               </div>
             </div>
           </div>
@@ -69,6 +69,23 @@
         <div class="general__block">
           <div class="general__statistic">
             <h3>General statistics</h3>
+            <p>coupons</p>
+            <div class="grf-tab__head">
+              <div class="tabs">
+                <div class="tab active" id="tab-today2">TODAY </div>
+                <div class="tab" id="tab-week2">WEEK</div>
+                <div class="tab" id="tab-month2">MONTH</div>
+              </div>
+            </div>
+            <div class="grf-tab__body graphic show" id="body-today2">
+              <canvas id="myChart"></canvas>
+            </div>
+            <div class="grf-tab__body graphic" id="body-week2">
+              <p>123</p>
+            </div>
+            <div class="grf-tab__body graphic" id="body-month2">
+              <p>456 </p>
+            </div>
           </div>
           <div class="general__clicks">
             <h3>TOP10 affilated clicks</h3>
@@ -135,9 +152,12 @@
       </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script src="https:cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
     <script src="buildjs/owl.carousel.js"></script>
     <script src="buildjs/index.js"></script>
-    <script>// active link menu
+    <script>
+      // active link menu
 $(document).ready(function(){
 
   $(function () {
@@ -151,6 +171,91 @@ $(document).ready(function(){
     });
   
 });
+
+      
+let ctx = document.getElementById('myChart').getContext('2d');
+
+    ctx.height = 540; 
+let gradientStroke = ctx.createLinearGradient(0, 130, 0, 490);
+    gradientStroke.addColorStop(0, "rgba(255, 112, 62, 0.2)");
+    gradientStroke.addColorStop(1, "rgba(255, 112, 62, 0)");
+
+    // background: linear-gradient(180deg, rgba(255, 112, 62, 0.2) 0%, rgba(255, 112, 62, 0) 100%);
+
+let chart = new Chart(ctx, {
+
+    type: 'line',
+
+    data: {
+        labels: ['09:00', '10:00', '11:00','12:00', '13:00', '14:00'],
+        datasets: [{
+           label: 'Time',
+            backgroundColor: gradientStroke,
+            data: [11, 37, 35, 39, 41, 23],
+            borderColor: '#FF703E',
+            borderWidth: 3,
+            
+        
+        }],
+        
+        
+    },
+
+    // Configuration options go here
+    options: {
+      responsive: true,
+      legend: {
+        display: false
+    },
+
+      
+      maintainAspectRatio: false,
+      scaleStartValue: 0,
+      scaleStepWidth: 50,
+      
+        scales: {
+          
+          yAxes: [{
+            display: true,
+            gridLines: {
+              drawBorder: false,
+              color: 'rgba(0,0,0,0)',
+              zeroLineColor: 'rgba(0,0,0,0)'
+            },
+            ticks: {
+              autoSkip: false,
+              maxRotation: 0,
+              minRotation: 0,
+              fontSize: 1,
+              padding: 0,
+              fontColor: 'rgba(51, 51, 51, 0)'
+            }
+          }],
+
+          xAxes: [{
+            display: true,
+            ticks: {
+              beginAtZero: true,
+              stepSize: 2.5,
+              suggestedMax: 10,
+              fontColor: 'rgba(57, 55, 56, 0.75)',
+              fontSize: 14,
+              padding: 15,
+              maxTicksLimit: 6
+            },
+            gridLines: {
+              drawBorder: false,
+              color: 'rgba(235, 235, 235, 0.4)',
+              tickMarkLength: 0,
+              zeroLineColor: 'rgba(0,0,0,0.1)',
+              offsetGridLine: true
+            }
+          }]
+          
+      }
+    }
+});
+
 
 
     </script>

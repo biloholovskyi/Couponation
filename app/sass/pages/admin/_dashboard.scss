@@ -114,6 +114,68 @@
         border-radius: 12px;
         padding: 16px;
         margin-right: 25px;
+        // height: 100%;
+        // position: relative;
+        max-height: 664px;
+        h3 {
+          font-style: normal;
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 26px;
+          color: #222222;
+          margin-bottom: 0px;
+        }
+        p {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 22px;
+          letter-spacing: 0.04em;
+          text-transform: uppercase;
+          color: #717171;
+        }
+        .grf-tab__head {
+          margin-bottom: 0px;
+          
+          .tabs {
+            display: flex;
+            border-bottom: 1px solid #EBEBEB;
+            justify-content: flex-end;
+            margin-bottom: 7px;
+            .tab {
+              font-style: normal;
+              font-weight: 500;
+              font-size: 14px;
+              line-height: 22px;
+              letter-spacing: 0.04em;
+              text-transform: uppercase;
+              color: #717171;
+              cursor: pointer;
+              padding: 0 30px;
+              &.active {
+                color: #FF703E;
+                border-bottom: 2px solid #FF703E;
+                padding-bottom: 15px;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+              }
+            }
+    
+          }
+        }
+        .graphic {
+          height: 100%;
+          max-height: 550px;
+          position: relative;
+          margin-top: -8px;
+        }
+        .grf-tab__body {
+          display: none;
+    
+          &.show {
+            display: block;
+          }
+        }
       }
       .general__clicks {
         flex: 1;
@@ -129,6 +191,7 @@
           color: #222222;
           margin-bottom: 18px;
         }
+        
         .adm-tab__head {
           margin-bottom: 0px;
     

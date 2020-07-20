@@ -35,10 +35,23 @@ block content
             .moder_stats
               .coupons 2 moderated coupons
               div |
-              .stores 0 moderated stores
+              .stores 0 moderated stores 
       .general__block
         .general__statistic
           h3 General statistics
+          p coupons
+          .grf-tab__head
+            .tabs
+              .tab.active#tab-today2 TODAY 
+              .tab#tab-week2 WEEK
+              .tab#tab-month2 MONTH
+          .grf-tab__body.graphic.show#body-today2
+              canvas#myChart
+          .grf-tab__body.graphic#body-week2
+            p 123
+          .grf-tab__body.graphic#body-month2
+            p 456 
+         
         .general__clicks
           h3 TOP10 affilated clicks
           .adm-tab__head
