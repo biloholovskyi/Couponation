@@ -1,0 +1,55 @@
+extends ../layout/main-map
+
+block variables
+  - const pageTitle = 'Submit a coupon'
+
+
+    include ../mixins/breadcrumb
+
+block content
+
+  .contact-page
+    .container
+      .row
+        .col-12
+          .breadcrumb
+            +breadcrumb('Main page','/')
+            +breadcrumb('/ Submit a coupon','#')
+      .row
+        .col-12
+          h1.contact_title Submit a coupon
+      .row
+        .col-6
+          .contact-info
+            .contact-desc
+              p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.  
+              p Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+        .col-6
+          form.small-form__form.submit-form
+            .double
+              .input-item
+                .placeholder Your name
+                input(type='text')
+            .double
+              .input-item
+                .placeholder Your email
+                input(type='email')
+            .double
+              .input-item
+                .placeholder Website
+                input(type='text')
+            .double
+              .input-item
+                .placeholder Coupon code
+                input(type='text')        
+            .double.full-inp.textarea
+              .input-item
+                .placeholder Description
+                textarea     
+            input(type="submit" value="Submit").coupon_submit   
+  section.maps    
+    .contacts-map
+      .close-map
+      script(src="https://api-maps.yandex.ru/2.1/?apikey=<ваш API-ключ>&lang=ru_RU" type="text/javascript")
+      .contact-page__map#map
+

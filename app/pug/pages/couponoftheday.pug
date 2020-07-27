@@ -1,0 +1,78 @@
+extends ../layout/main
+
+block variables
+  - const pageTitle = 'Couponation'
+  - const mainSliderTitle = 'Coupons, discount codes and cashback at our favorite stores'
+
+  include ../mixins/breadcrumb
+  include ../mixins/smallCoupon
+  include ../mixins/cardStore
+  include ../mixins/card-link
+  include ../mixins/bigCoupon
+
+block content
+  .coupon-page
+    .container
+      .row
+        .col-12
+          .breadcrumb
+            +breadcrumb('Main page','/')
+            +breadcrumb('/ Coupons','./coupons.html') 
+            +breadcrumb('/ Coupons of the day','./couponsoftheday.html') 
+      .row
+        .col-12
+          .coupons-title
+            h1 Coupons - #[span Coupons of the day]
+            .title-btn
+              button.current Coupons of the day
+              button New coupons
+              button Trusted coupons
+      .row
+        .col-12
+          .small-coupon
+            p(style="margin-top: 32px;") Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis.  
+            .coupons-shop__body.coupones__body
+              +coupons-shop('Free shipping', 'Free Standard Shipping With Doorstep Drop-Off on Orders $35 and Up','14,271 total uses','2,632 uses today','80% success rate')
+              +coupons-shop(' 35% OFF', 'Save Up to 35% on Select Solids State Drives','14,271 total uses','2,632 uses today','80% success rate')
+              +coupons-shop('35% OFF', 'Save $35-$700 On Select Surface Devices and Free Contactless Curbside Pickup','14,271 total uses','2,632 uses today','80% success rate')
+              +coupons-shop('$500 Off', 'Free Standard Shipping With Doorstep Drop-Off on Orders $35 and Up','14,271 total uses','2,632 uses today','80% success rate')
+              +coupons-shop('$170 Off', 'Up to $170 Off Beats Headphones Plus Available for In-Store Pick Up by Christmas','14,271 total uses','2,632 uses today','80% success rate')
+              +coupons-shop('Free shipping', 'Free Standard Shipping With Doorstep Drop-Off on Orders $35 and Up','14,271 total uses','2,632 uses today','80% success rate')
+              +coupons-shop(' 35% OFF', 'Save Up to 35% on Select Solids State Drives','14,271 total uses','2,632 uses today','80% success rate')
+              +coupons-shop('35% OFF', 'Save $35-$700 On Select Surface Devices and Free Contactless Curbside Pickup','14,271 total uses','2,632 uses today','80% success rate')
+  .coupon-page
+    .container
+      .row
+        .col-12
+          .small-form(style="margin-bottom: 32px;")
+            .small-form__text
+              .title Get top offers and save money
+              .desc Offers only valid coupons while you shop online
+            form.small-form__form
+              .placeholder Enter your Email here
+              input(type='email')
+              input(type='submit' value='')
+      .row
+        .col-12
+          .small-coupon
+            +coupons-shop('Free shipping', 'Free Standard Shipping With Doorstep Drop-Off on Orders $35 and Up','14,271 total uses','2,632 uses today','80% success rate')
+            +coupons-shop(' 35% OFF', 'Save Up to 35% on Select Solids State Drives','14,271 total uses','2,632 uses today','80% success rate')
+            +coupons-shop('35% OFF', 'Save $35-$700 On Select Surface Devices and Free Contactless Curbside Pickup','14,271 total uses','2,632 uses today','80% success rate')
+            +coupons-shop('$500 Off', 'Free Standard Shipping With Doorstep Drop-Off on Orders $35 and Up','14,271 total uses','2,632 uses today','80% success rate')
+            +coupons-shop('$170 Off', 'Up to $170 Off Beats Headphones Plus Available for In-Store Pick Up by Christmas','14,271 total uses','2,632 uses today','80% success rate')
+            +coupons-shop('Free shipping', 'Free Standard Shipping With Doorstep Drop-Off on Orders $35 and Up','14,271 total uses','2,632 uses today','80% success rate')
+            +coupons-shop(' 35% OFF', 'Save Up to 35% on Select Solids State Drives','14,271 total uses','2,632 uses today','80% success rate')
+            +coupons-shop('35% OFF', 'Save $35-$700 On Select Surface Devices and Free Contactless Curbside Pickup','14,271 total uses','2,632 uses today','80% success rate')
+            .number-coupon(style="margin-top: 32px;")
+                  .num-item 1
+                  .num-item 2
+                  .num-item 3
+                  .num-dots
+                  .num-item 8
+      .row
+        .col-6
+          +card-link('Stores of the day')
+        .col-6
+          +card-link('Stores of the day')
+  .coupon-tag
+    include ../modules/home/top-category      

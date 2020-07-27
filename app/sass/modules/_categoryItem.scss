@@ -6,7 +6,7 @@
   border-radius: 100px;
   width: max-content;
   cursor: pointer;
-
+  border: 1px solid #F7F7F7;
   .icon {
     font-size: 18px;
     line-height: 20px;
@@ -17,5 +17,14 @@
     font-size: 14px;
     line-height: 22px;
     color: #222222;
+  }
+}
+
+.categoryItem.active {
+  background: rgba(255,112,62,.1)!important;
+  border: 1px solid rgba(255, 112, 62, 0.2);
+
+  .name {
+    color: #ff703e!important;
   }
 }

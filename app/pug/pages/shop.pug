@@ -18,7 +18,7 @@ block content
             +breadcrumb('Stores','./store.html')
             +breadcrumb('/ Best Buy','#')
       .row
-        .col-12
+        .col-9
           .shop-caption
             .shop-logo
               img(src="../media/icon/logos/shop-logo.svg", alt="logo")
@@ -26,12 +26,16 @@ block content
               h1 Best Buy
               a(href="https://www.bestbuy.com").link https://www.bestbuy.com
                 img(src="../media/icon/link.svg", alt="icon")
-              .category-btn--block
-                +CategoryBtn('../media/icon/category/flowers.svg','beauty')
-                +CategoryBtn('../media/icon/category/hair.svg','hair')
-                +CategoryBtn('../media/icon/category/heart.svg','health')
-                +CategoryBtn('../media/icon/category/skin.svg','skin care')
-                +CategoryBtn('../media/icon/category/cosmetic.svg','cosmetics')
+        .col-3
+          .shop-page
+            .shop-caption 
+              .shop-title 
+                .category-btn--block
+                  +CategoryBtn('../media/icon/category/flowers.svg','beauty')
+                  +CategoryBtn('../media/icon/category/hair.svg','hair')
+                  +CategoryBtn('../media/icon/category/heart.svg','health')
+                  +CategoryBtn('../media/icon/category/skin.svg','skin care')
+                  +CategoryBtn('../media/icon/category/cosmetic.svg','cosmetics')       
       .row
         .col-9
           .bigCoupon-wrap
@@ -42,6 +46,7 @@ block content
             +coupons-shop('$500 Off', 'Free Standard Shipping With Doorstep Drop-Off on Orders $35 and Up','14,271 total uses','2,632 uses today','80% success rate')
             +coupons-shop('$170 Off', 'Free Standard Shipping With Doorstep Drop-Off on Orders $35 and Up','14,271 total uses','2,632 uses today','80% success rate')
             +coupons-shop('$170 Off', 'Up to $170 Off Beats Headphones Plus Available for In-Store Pick Up by Christmas','14,271 total uses','2,632 uses today','80% success rate')
+            .show-all Show more coupons
           h2 FAQ
           include ../modules/shop/shop-acc  
         .col-3

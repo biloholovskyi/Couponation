@@ -10,7 +10,7 @@
       color: #222222;
     }
     .top-category__body {
-      margin-bottom: 48px;
+      margin-bottom: 56px;
     }
   }
  
@@ -44,12 +44,12 @@
     align-items: center;
     text-align: center;
     letter-spacing: -0.01em;
-    color: #222222;
-    border: 1px solid #EBEBEB;
+    color: rgba(34, 34, 34, 0.6);
+    border: 1px solid rgba(34, 34, 34, 0.1);
     margin-right: 8px;
     width: 40px;
     height: 40px;
-    border-radius: 50%;
+    border-radius: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,9 +57,8 @@
     transition: .4s;
   }
   .num-item:hover {
-    background: rgba(255, 112, 62, 0.1);
-    border: 1px solid rgba(255, 112, 62, 0.2);
-    color: #FF703E;
+    color: #222;
+    border-color: #222;
   }
   .num-dots {
     background-image: url(../../../media/icon/dots.svg);
@@ -69,4 +68,10 @@
     height: 24px;
     margin-right: 8px;
   }
+}
+
+.beauty-card {
+  background-color: #fff;
+  padding: 48px 0 0;
+    margin-bottom: 56px;
 }

@@ -11,95 +11,68 @@
   </head>
   <body>
     <header class="header"><a class="header__logo" href="/">Couponation</a>
-      <div class="header__nav"><a class="header__link" href="./coupons.html">Coupons</a><a class="header__link" href="#">Categories</a><a class="header__link" href="./store.html">Stores</a>
-        <div class="header__button">Submit a coupon</div>
+      <div class="header__nav">
+        <button class="header__link header__drop--btn" href="#">Coupons
+          <div class="header__modal--wrap"><a class="header__modal--item" href="/couponoftheday.html">
+              <h3>Coupons of the day</h3>
+              <p>These discounds were added within 24h</p></a><a class="header__modal--item" href="#">
+              <h3>New coupons</h3>
+              <p>Just added to the site, hurry up!</p></a><a class="header__modal--item" href="#">
+              <h3>Trusted coupons</h3>
+              <p>Coupons marked as "100% working"    </p></a></div>
+        </button><a class="header__link" href="#">Categories</a><a class="header__link" href="./store.html">Stores</a>
+        <div class="header__button" onclick="location.href='/submitCoupon.html';">Submit a coupon</div>
       </div>
     </header>
     <div class="beauty-page">
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <div class="breadcrumb"><a href="/">Main page</a><a href="#">/ Categories</a><a href="#">/ Healthcare</a><a href="#">/ Beauty</a>
+            <div class="breadcrumb"><a href="/">Main page</a><a href="#">/ Categories</a><a href="/Healthcare.html">/ Healthcare</a>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-12">
             <div class="coupons-title beauty-title">
-              <h1>Beauty</h1>
-              <div class="top-category__body">
-                <div class="categoryItem">
+              <h1>Healthcare - <span>Beauty</span></h1>
+              <div class="top-category__body"><a class="categoryItem">
                   <div class="icon">⌚</div>
-                  <div class="name">accessories</div>
-                </div>
-                <div class="categoryItem">
+                  <div class="name">accessories</div></a><a class="categoryItem" href="/beauty.html">
                   <div class="icon">🌸</div>
-                  <div class="name">beauty</div>
-                </div>
-                <div class="categoryItem">
+                  <div class="name">beauty</div></a><a class="categoryItem">
                   <div class="icon">👗</div>
-                  <div class="name">fashion</div>
-                </div>
-                <div class="categoryItem">
+                  <div class="name">fashion</div></a><a class="categoryItem">
                   <div class="icon">👚</div>
-                  <div class="name">clothing</div>
-                </div>
-                <div class="categoryItem">
+                  <div class="name">clothing</div></a><a class="categoryItem">
                   <div class="icon">🎁</div>
-                  <div class="name">gifts</div>
-                </div>
-                <div class="categoryItem">
+                  <div class="name">gifts</div></a><a class="categoryItem">
                   <div class="icon">🍔</div>
-                  <div class="name">food</div>
-                </div>
-                <div class="categoryItem">
+                  <div class="name">food</div></a><a class="categoryItem">
                   <div class="icon">💄</div>
-                  <div class="name">cosmetics</div>
-                </div>
-                <div class="categoryItem">
+                  <div class="name">cosmetics</div></a><a class="categoryItem">
                   <div class="icon">💉</div>
-                  <div class="name">supplements</div>
-                </div>
-                <div class="categoryItem">
+                  <div class="name">supplements</div></a><a class="categoryItem">
                   <div class="icon">💉</div>
-                  <div class="name">hair care</div>
-                </div>
-                <div class="categoryItem">
+                  <div class="name">hair care</div></a><a class="categoryItem">
                   <div class="icon">🍿</div>
-                  <div class="name">snacks</div>
-                </div>
-                <div class="categoryItem">
+                  <div class="name">snacks</div></a><a class="categoryItem">
                   <div class="icon">🚲</div>
-                  <div class="name">transport</div>
-                </div>
-                <div class="categoryItem">
+                  <div class="name">transport</div></a><a class="categoryItem">
                   <div class="icon">🍿</div>
-                  <div class="name">chocolate</div>
-                </div>
-                <div class="categoryItem">
+                  <div class="name">chocolate</div></a><a class="categoryItem">
                   <div class="icon">🍫</div>
-                  <div class="name">chocolate</div>
-                </div>
-                <div class="categoryItem">
+                  <div class="name">chocolate</div></a><a class="categoryItem">
                   <div class="icon">📷</div>
-                  <div class="name">photography</div>
-                </div>
-                <div class="categoryItem">
+                  <div class="name">photography</div></a><a class="categoryItem">
                   <div class="icon">👖</div>
-                  <div class="name">leggings</div>
-                </div>
-                <div class="categoryItem">
+                  <div class="name">leggings</div></a><a class="categoryItem">
                   <div class="icon">📦</div>
-                  <div class="name">delivery</div>
-                </div>
-                <div class="categoryItem">
+                  <div class="name">delivery</div></a><a class="categoryItem">
                   <div class="icon">👩‍</div>
-                  <div class="name">hair</div>
-                </div>
-                <div class="categoryItem">
+                  <div class="name">hair</div></a><a class="categoryItem">
                   <div class="icon">🥊</div>
-                  <div class="name">activewear</div>
-                </div>
+                  <div class="name">activewear</div></a>
               </div>
             </div>
           </div>
@@ -108,144 +81,180 @@
           <div class="col-12">
             <div class="small-coupon">
               <h2>Our best Beauty coupons and discount codes</h2>
-              <div class="coupons-shop__body">
-                <div class="coupon-home coupon-home--shop">
-                  <div class="top">
-                    <div class="name">Buy More, Save More: 15% Off $60, 25% Off $100 and 30% Off $200 Order</div>
-                    <div class="button">Get code</div>
+              <div class="coupons-shop__body coupones__body">
+                <div class="coupon-shop">
+                  <div class="left-side">
+                    <h3>Free shipping</h3>
                   </div>
-                  <div class="bottom">
-                    <div class="name">Vistaprint</div>
-                    <div class="rate">
-                      <div class="result">80% success rate</div>
-                      <div class="icon like">👍</div>
-                      <div class="icon dislike">👎</div>
+                  <div class="right-side">
+                    <div class="top">
+                      <div class="name">Free Standard Shipping With Doorstep Drop-Off on Orders $35 and Up</div>
+                      <div class="button">Get code</div>
+                    </div>
+                    <div class="bottom">
+                      <div class="uses">
+                        <div class="nameUses">14,271 total uses</div>
+                        <div class="nameUses">2,632 uses today</div>
+                      </div>
+                      <div class="rate">
+                        <div class="result">80% success rate</div>
+                        <div class="icon like">👍</div>
+                        <div class="icon dislike">👎</div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="coupon-home coupon-home--shop">
-                  <div class="top">
-                    <div class="name">20% Off Sitewide</div>
-                    <div class="button">Get code</div>
+                <div class="coupon-shop">
+                  <div class="left-side">
+                    <h3> 35% OFF</h3>
                   </div>
-                  <div class="bottom">
-                    <div class="name">EyeBuyDirect</div>
-                    <div class="rate">
-                      <div class="result">80% success rate</div>
-                      <div class="icon like">👍</div>
-                      <div class="icon dislike">👎</div>
+                  <div class="right-side">
+                    <div class="top">
+                      <div class="name">Save Up to 35% on Select Solids State Drives</div>
+                      <div class="button">Get code</div>
+                    </div>
+                    <div class="bottom">
+                      <div class="uses">
+                        <div class="nameUses">14,271 total uses</div>
+                        <div class="nameUses">2,632 uses today</div>
+                      </div>
+                      <div class="rate">
+                        <div class="result">80% success rate</div>
+                        <div class="icon like">👍</div>
+                        <div class="icon dislike">👎</div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="coupon-home coupon-home--shop">
-                  <div class="top">
-                    <div class="name">$2.95 Flat Rate Standard Shipping on Your Orders</div>
-                    <div class="button">Get code</div>
+                <div class="coupon-shop">
+                  <div class="left-side">
+                    <h3>35% OFF</h3>
                   </div>
-                  <div class="bottom">
-                    <div class="name">Alex and Ani</div>
-                    <div class="rate">
-                      <div class="result">80% success rate</div>
-                      <div class="icon like">👍</div>
-                      <div class="icon dislike">👎</div>
+                  <div class="right-side">
+                    <div class="top">
+                      <div class="name">Save $35-$700 On Select Surface Devices and Free Contactless Curbside Pickup</div>
+                      <div class="button">Get code</div>
+                    </div>
+                    <div class="bottom">
+                      <div class="uses">
+                        <div class="nameUses">14,271 total uses</div>
+                        <div class="nameUses">2,632 uses today</div>
+                      </div>
+                      <div class="rate">
+                        <div class="result">80% success rate</div>
+                        <div class="icon like">👍</div>
+                        <div class="icon dislike">👎</div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="coupon-home coupon-home--shop">
-                  <div class="top">
-                    <div class="name">25% Off Orders</div>
-                    <div class="button">Get code</div>
+                <div class="coupon-shop">
+                  <div class="left-side">
+                    <h3>$500 Off</h3>
                   </div>
-                  <div class="bottom">
-                    <div class="name">Shutterfly</div>
-                    <div class="rate">
-                      <div class="result">80% success rate</div>
-                      <div class="icon like">👍</div>
-                      <div class="icon dislike">👎</div>
+                  <div class="right-side">
+                    <div class="top">
+                      <div class="name">Free Standard Shipping With Doorstep Drop-Off on Orders $35 and Up</div>
+                      <div class="button">Get code</div>
+                    </div>
+                    <div class="bottom">
+                      <div class="uses">
+                        <div class="nameUses">14,271 total uses</div>
+                        <div class="nameUses">2,632 uses today</div>
+                      </div>
+                      <div class="rate">
+                        <div class="result">80% success rate</div>
+                        <div class="icon like">👍</div>
+                        <div class="icon dislike">👎</div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="coupon-home coupon-home--shop">
-                  <div class="top">
-                    <div class="name">Get 25% Off Orders of $50+ When You Sign Up for Emails</div>
-                    <div class="button">Get code</div>
+                <div class="coupon-shop">
+                  <div class="left-side">
+                    <h3>$170 Off</h3>
                   </div>
-                  <div class="bottom">
-                    <div class="name">Lovehoney</div>
-                    <div class="rate">
-                      <div class="result">80% success rate</div>
-                      <div class="icon like">👍</div>
-                      <div class="icon dislike">👎</div>
+                  <div class="right-side">
+                    <div class="top">
+                      <div class="name">Up to $170 Off Beats Headphones Plus Available for In-Store Pick Up by Christmas</div>
+                      <div class="button">Get code</div>
+                    </div>
+                    <div class="bottom">
+                      <div class="uses">
+                        <div class="nameUses">14,271 total uses</div>
+                        <div class="nameUses">2,632 uses today</div>
+                      </div>
+                      <div class="rate">
+                        <div class="result">80% success rate</div>
+                        <div class="icon like">👍</div>
+                        <div class="icon dislike">👎</div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="coupon-home coupon-home--shop">
-                  <div class="top">
-                    <div class="name">Get 25% Off Orders of $50+ When You Sign Up for Emails</div>
-                    <div class="button">Get code</div>
+                <div class="coupon-shop">
+                  <div class="left-side">
+                    <h3>Free shipping</h3>
                   </div>
-                  <div class="bottom">
-                    <div class="name">Lovehoney</div>
-                    <div class="rate">
-                      <div class="result">80% success rate</div>
-                      <div class="icon like">👍</div>
-                      <div class="icon dislike">👎</div>
+                  <div class="right-side">
+                    <div class="top">
+                      <div class="name">Free Standard Shipping With Doorstep Drop-Off on Orders $35 and Up</div>
+                      <div class="button">Get code</div>
+                    </div>
+                    <div class="bottom">
+                      <div class="uses">
+                        <div class="nameUses">14,271 total uses</div>
+                        <div class="nameUses">2,632 uses today</div>
+                      </div>
+                      <div class="rate">
+                        <div class="result">80% success rate</div>
+                        <div class="icon like">👍</div>
+                        <div class="icon dislike">👎</div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="coupon-home coupon-home--shop">
-                  <div class="top">
-                    <div class="name">$2.95 Flat Rate Standard Shipping on Your Orders</div>
-                    <div class="button">Get code</div>
+                <div class="coupon-shop">
+                  <div class="left-side">
+                    <h3> 35% OFF</h3>
                   </div>
-                  <div class="bottom">
-                    <div class="name">Alex and Ani</div>
-                    <div class="rate">
-                      <div class="result">80% success rate</div>
-                      <div class="icon like">👍</div>
-                      <div class="icon dislike">👎</div>
+                  <div class="right-side">
+                    <div class="top">
+                      <div class="name">Save Up to 35% on Select Solids State Drives</div>
+                      <div class="button">Get code</div>
+                    </div>
+                    <div class="bottom">
+                      <div class="uses">
+                        <div class="nameUses">14,271 total uses</div>
+                        <div class="nameUses">2,632 uses today</div>
+                      </div>
+                      <div class="rate">
+                        <div class="result">80% success rate</div>
+                        <div class="icon like">👍</div>
+                        <div class="icon dislike">👎</div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="coupon-home coupon-home--shop">
-                  <div class="top">
-                    <div class="name">25% Off Orders</div>
-                    <div class="button">Get code</div>
+                <div class="coupon-shop">
+                  <div class="left-side">
+                    <h3>35% OFF</h3>
                   </div>
-                  <div class="bottom">
-                    <div class="name">Shutterfly</div>
-                    <div class="rate">
-                      <div class="result">80% success rate</div>
-                      <div class="icon like">👍</div>
-                      <div class="icon dislike">👎</div>
+                  <div class="right-side">
+                    <div class="top">
+                      <div class="name">Save $35-$700 On Select Surface Devices and Free Contactless Curbside Pickup</div>
+                      <div class="button">Get code</div>
                     </div>
-                  </div>
-                </div>
-                <div class="coupon-home coupon-home--shop">
-                  <div class="top">
-                    <div class="name">Get 25% Off Orders of $50+ When You Sign Up for Emails</div>
-                    <div class="button">Get code</div>
-                  </div>
-                  <div class="bottom">
-                    <div class="name">Lovehoney</div>
-                    <div class="rate">
-                      <div class="result">80% success rate</div>
-                      <div class="icon like">👍</div>
-                      <div class="icon dislike">👎</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="coupon-home coupon-home--shop">
-                  <div class="top">
-                    <div class="name">Get 25% Off Orders of $50+ When You Sign Up for Emails</div>
-                    <div class="button">Get code</div>
-                  </div>
-                  <div class="bottom">
-                    <div class="name">Lovehoney</div>
-                    <div class="rate">
-                      <div class="result">80% success rate</div>
-                      <div class="icon like">👍</div>
-                      <div class="icon dislike">👎</div>
+                    <div class="bottom">
+                      <div class="uses">
+                        <div class="nameUses">14,271 total uses</div>
+                        <div class="nameUses">2,632 uses today</div>
+                      </div>
+                      <div class="rate">
+                        <div class="result">80% success rate</div>
+                        <div class="icon like">👍</div>
+                        <div class="icon dislike">👎</div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -255,7 +264,7 @@
         </div>
       </div>
     </div>
-    <div class="main-slider beauty-slide">
+    <div class="main-slider beauty-slide"> 
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -302,88 +311,180 @@
           <div class="col-12">
             <div class="small-coupon">
               <h2>More Beauty coupons and discount codes</h2>
-              <div class="coupons-shop__body">
-                <div class="coupon-home coupon-home--shop">
-                  <div class="top">
-                    <div class="name">Buy More, Save More: 15% Off $60, 25% Off $100 and 30% Off $200 Order</div>
-                    <div class="button">Get code</div>
+              <div class="coupons-shop__body coupones__body">
+                <div class="coupon-shop">
+                  <div class="left-side">
+                    <h3>Free shipping</h3>
                   </div>
-                  <div class="bottom">
-                    <div class="name">Vistaprint</div>
-                    <div class="rate">
-                      <div class="result">80% success rate</div>
-                      <div class="icon like">👍</div>
-                      <div class="icon dislike">👎</div>
+                  <div class="right-side">
+                    <div class="top">
+                      <div class="name">Free Standard Shipping With Doorstep Drop-Off on Orders $35 and Up</div>
+                      <div class="button">Get code</div>
+                    </div>
+                    <div class="bottom">
+                      <div class="uses">
+                        <div class="nameUses">14,271 total uses</div>
+                        <div class="nameUses">2,632 uses today</div>
+                      </div>
+                      <div class="rate">
+                        <div class="result">80% success rate</div>
+                        <div class="icon like">👍</div>
+                        <div class="icon dislike">👎</div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="coupon-home coupon-home--shop">
-                  <div class="top">
-                    <div class="name">20% Off Sitewide</div>
-                    <div class="button">Get code</div>
+                <div class="coupon-shop">
+                  <div class="left-side">
+                    <h3> 35% OFF</h3>
                   </div>
-                  <div class="bottom">
-                    <div class="name">EyeBuyDirect</div>
-                    <div class="rate">
-                      <div class="result">80% success rate</div>
-                      <div class="icon like">👍</div>
-                      <div class="icon dislike">👎</div>
+                  <div class="right-side">
+                    <div class="top">
+                      <div class="name">Save Up to 35% on Select Solids State Drives</div>
+                      <div class="button">Get code</div>
+                    </div>
+                    <div class="bottom">
+                      <div class="uses">
+                        <div class="nameUses">14,271 total uses</div>
+                        <div class="nameUses">2,632 uses today</div>
+                      </div>
+                      <div class="rate">
+                        <div class="result">80% success rate</div>
+                        <div class="icon like">👍</div>
+                        <div class="icon dislike">👎</div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="coupon-home coupon-home--shop">
-                  <div class="top">
-                    <div class="name">$2.95 Flat Rate Standard Shipping on Your Orders</div>
-                    <div class="button">Get code</div>
+                <div class="coupon-shop">
+                  <div class="left-side">
+                    <h3>35% OFF</h3>
                   </div>
-                  <div class="bottom">
-                    <div class="name">Alex and Ani</div>
-                    <div class="rate">
-                      <div class="result">80% success rate</div>
-                      <div class="icon like">👍</div>
-                      <div class="icon dislike">👎</div>
+                  <div class="right-side">
+                    <div class="top">
+                      <div class="name">Save $35-$700 On Select Surface Devices and Free Contactless Curbside Pickup</div>
+                      <div class="button">Get code</div>
+                    </div>
+                    <div class="bottom">
+                      <div class="uses">
+                        <div class="nameUses">14,271 total uses</div>
+                        <div class="nameUses">2,632 uses today</div>
+                      </div>
+                      <div class="rate">
+                        <div class="result">80% success rate</div>
+                        <div class="icon like">👍</div>
+                        <div class="icon dislike">👎</div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="coupon-home coupon-home--shop">
-                  <div class="top">
-                    <div class="name">25% Off Orders</div>
-                    <div class="button">Get code</div>
+                <div class="coupon-shop">
+                  <div class="left-side">
+                    <h3>$500 Off</h3>
                   </div>
-                  <div class="bottom">
-                    <div class="name">Shutterfly</div>
-                    <div class="rate">
-                      <div class="result">80% success rate</div>
-                      <div class="icon like">👍</div>
-                      <div class="icon dislike">👎</div>
+                  <div class="right-side">
+                    <div class="top">
+                      <div class="name">Free Standard Shipping With Doorstep Drop-Off on Orders $35 and Up</div>
+                      <div class="button">Get code</div>
+                    </div>
+                    <div class="bottom">
+                      <div class="uses">
+                        <div class="nameUses">14,271 total uses</div>
+                        <div class="nameUses">2,632 uses today</div>
+                      </div>
+                      <div class="rate">
+                        <div class="result">80% success rate</div>
+                        <div class="icon like">👍</div>
+                        <div class="icon dislike">👎</div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="coupon-home coupon-home--shop">
-                  <div class="top">
-                    <div class="name">Get 25% Off Orders of $50+ When You Sign Up for Emails</div>
-                    <div class="button">Get code</div>
+                <div class="coupon-shop">
+                  <div class="left-side">
+                    <h3>$170 Off</h3>
                   </div>
-                  <div class="bottom">
-                    <div class="name">Lovehoney</div>
-                    <div class="rate">
-                      <div class="result">80% success rate</div>
-                      <div class="icon like">👍</div>
-                      <div class="icon dislike">👎</div>
+                  <div class="right-side">
+                    <div class="top">
+                      <div class="name">Up to $170 Off Beats Headphones Plus Available for In-Store Pick Up by Christmas</div>
+                      <div class="button">Get code</div>
+                    </div>
+                    <div class="bottom">
+                      <div class="uses">
+                        <div class="nameUses">14,271 total uses</div>
+                        <div class="nameUses">2,632 uses today</div>
+                      </div>
+                      <div class="rate">
+                        <div class="result">80% success rate</div>
+                        <div class="icon like">👍</div>
+                        <div class="icon dislike">👎</div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="coupon-home coupon-home--shop">
-                  <div class="top">
-                    <div class="name">Get 25% Off Orders of $50+ When You Sign Up for Emails</div>
-                    <div class="button">Get code</div>
+                <div class="coupon-shop">
+                  <div class="left-side">
+                    <h3>Free shipping</h3>
                   </div>
-                  <div class="bottom">
-                    <div class="name">Lovehoney</div>
-                    <div class="rate">
-                      <div class="result">80% success rate</div>
-                      <div class="icon like">👍</div>
-                      <div class="icon dislike">👎</div>
+                  <div class="right-side">
+                    <div class="top">
+                      <div class="name">Free Standard Shipping With Doorstep Drop-Off on Orders $35 and Up</div>
+                      <div class="button">Get code</div>
+                    </div>
+                    <div class="bottom">
+                      <div class="uses">
+                        <div class="nameUses">14,271 total uses</div>
+                        <div class="nameUses">2,632 uses today</div>
+                      </div>
+                      <div class="rate">
+                        <div class="result">80% success rate</div>
+                        <div class="icon like">👍</div>
+                        <div class="icon dislike">👎</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="coupon-shop">
+                  <div class="left-side">
+                    <h3> 35% OFF</h3>
+                  </div>
+                  <div class="right-side">
+                    <div class="top">
+                      <div class="name">Save Up to 35% on Select Solids State Drives</div>
+                      <div class="button">Get code</div>
+                    </div>
+                    <div class="bottom">
+                      <div class="uses">
+                        <div class="nameUses">14,271 total uses</div>
+                        <div class="nameUses">2,632 uses today</div>
+                      </div>
+                      <div class="rate">
+                        <div class="result">80% success rate</div>
+                        <div class="icon like">👍</div>
+                        <div class="icon dislike">👎</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="coupon-shop">
+                  <div class="left-side">
+                    <h3>35% OFF</h3>
+                  </div>
+                  <div class="right-side">
+                    <div class="top">
+                      <div class="name">Save $35-$700 On Select Surface Devices and Free Contactless Curbside Pickup</div>
+                      <div class="button">Get code</div>
+                    </div>
+                    <div class="bottom">
+                      <div class="uses">
+                        <div class="nameUses">14,271 total uses</div>
+                        <div class="nameUses">2,632 uses today</div>
+                      </div>
+                      <div class="rate">
+                        <div class="result">80% success rate</div>
+                        <div class="icon like">👍</div>
+                        <div class="icon dislike">👎</div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -400,7 +501,7 @@
         </div>
       </div>
     </div>
-    <div class="card-section">
+    <div class="card-section beauty-card">
       <div class="container">   
         <div class="row">
           <div class="col-12">
@@ -534,6 +635,26 @@
         </div>
       </div>
     </div>
+    <div class="container">
+      <div class="row" style="margin-bottom: 56px"> 
+        <div class="col-6"><a class="card-link" href="#">
+            <div class="top"><img class="icon" src="./media/icon/card-link.svg" alt="icon"/>
+              <div class="name">Stores of the day</div>
+            </div>
+            <div class="bottom">
+              <p>9,050 stores and</p>
+              <p>60 categories</p>
+            </div></a>
+        </div>
+        <div class="col-6"><a class="card-link" href="#">
+            <div class="top"><img class="icon" src="./media/icon/card-link.svg" alt="icon"/>
+              <div class="name">Stores of the day</div>
+            </div>
+            <div class="bottom">  
+            </div></a>
+        </div>
+      </div>
+    </div>
     <div class="coupon-tag">
       <div class="top-category">
         <div class="container">
@@ -544,119 +665,63 @@
           </div>
           <div class="row">
             <div class="col-9">
-              <div class="top-category__body">
-                      <div class="categoryItem">
+              <div class="top-category__body"><a class="categoryItem">
                         <div class="icon">⌚</div>
-                        <div class="name">accessories</div>
-                      </div>
-                      <div class="categoryItem">
+                        <div class="name">accessories</div></a><a class="categoryItem">
                         <div class="icon">🌸</div>
-                        <div class="name">beauty</div>
-                      </div>
-                      <div class="categoryItem">
+                        <div class="name">beauty</div></a><a class="categoryItem">
                         <div class="icon">👗</div>
-                        <div class="name">fashion</div>
-                      </div>
-                      <div class="categoryItem">
+                        <div class="name">fashion</div></a><a class="categoryItem">
                         <div class="icon">👚</div>
-                        <div class="name">clothing</div>
-                      </div>
-                      <div class="categoryItem">
+                        <div class="name">clothing</div></a><a class="categoryItem">
                         <div class="icon">🎁</div>
-                        <div class="name">gifts</div>
-                      </div>
-                      <div class="categoryItem">
+                        <div class="name">gifts</div></a><a class="categoryItem">
                         <div class="icon">🍔</div>
-                        <div class="name">food</div>
-                      </div>
-                      <div class="categoryItem">
+                        <div class="name">food</div></a><a class="categoryItem">
                         <div class="icon">💄</div>
-                        <div class="name">cosmetics</div>
-                      </div>
-                      <div class="categoryItem">
+                        <div class="name">cosmetics</div></a><a class="categoryItem">
                         <div class="icon">💉</div>
-                        <div class="name">supplements</div>
-                      </div>
-                      <div class="categoryItem">
+                        <div class="name">supplements</div></a><a class="categoryItem">
                         <div class="icon">💉</div>
-                        <div class="name">hair care</div>
-                      </div>
-                      <div class="categoryItem">
+                        <div class="name">hair care</div></a><a class="categoryItem">
                         <div class="icon">🍿</div>
-                        <div class="name">snacks</div>
-                      </div>
-                      <div class="categoryItem">
+                        <div class="name">snacks</div></a><a class="categoryItem">
                         <div class="icon">🚲</div>
-                        <div class="name">transport</div>
-                      </div>
-                      <div class="categoryItem">
+                        <div class="name">transport</div></a><a class="categoryItem">
                         <div class="icon">🍿</div>
-                        <div class="name">chocolate</div>
-                      </div>
-                      <div class="categoryItem">
+                        <div class="name">chocolate</div></a><a class="categoryItem">
                         <div class="icon">🍫</div>
-                        <div class="name">chocolate</div>
-                      </div>
-                      <div class="categoryItem">
+                        <div class="name">chocolate</div></a><a class="categoryItem">
                         <div class="icon">📷</div>
-                        <div class="name">photography</div>
-                      </div>
-                      <div class="categoryItem">
+                        <div class="name">photography</div></a><a class="categoryItem">
                         <div class="icon">👖</div>
-                        <div class="name">leggings</div>
-                      </div>
-                      <div class="categoryItem">
+                        <div class="name">leggings</div></a><a class="categoryItem">
                         <div class="icon">📦</div>
-                        <div class="name">delivery</div>
-                      </div>
-                      <div class="categoryItem">
+                        <div class="name">delivery</div></a><a class="categoryItem">
                         <div class="icon">👩‍</div>
-                        <div class="name">hair</div>
-                      </div>
-                      <div class="categoryItem">
+                        <div class="name">hair</div></a><a class="categoryItem">
                         <div class="icon">🥊</div>
-                        <div class="name">activewear</div>
-                      </div>
-                      <div class="categoryItem">
+                        <div class="name">activewear</div></a><a class="categoryItem">
                         <div class="icon">💪</div>
-                        <div class="name">gym gear</div>
-                      </div>
-                      <div class="categoryItem">
+                        <div class="name">gym gear</div></a><a class="categoryItem">
                         <div class="icon">🎮</div>
-                        <div class="name">gaming</div>
-                      </div>
-                      <div class="categoryItem">
+                        <div class="name">gaming</div></a><a class="categoryItem">
                         <div class="icon">👘</div>
-                        <div class="name">homewares</div>
-                      </div>
-                      <div class="categoryItem">
+                        <div class="name">homewares</div></a><a class="categoryItem">
                         <div class="icon">💨</div>
-                        <div class="name">vaping</div>
-                      </div>
-                      <div class="categoryItem">
+                        <div class="name">vaping</div></a><a class="categoryItem">
                         <div class="icon">❤</div>
-                        <div class="name">health</div>
-                      </div>
-                      <div class="categoryItem">
+                        <div class="name">health</div></a><a class="categoryItem">
                         <div class="icon">🍶</div>
-                        <div class="name">skin care</div>
-                      </div>
-                      <div class="categoryItem">
+                        <div class="name">skin care</div></a><a class="categoryItem">
                         <div class="icon">🍏</div>
-                        <div class="name">vegan</div>
-                      </div>
-                      <div class="categoryItem">
+                        <div class="name">vegan</div></a><a class="categoryItem">
                         <div class="icon">🎨</div>
-                        <div class="name">art</div>
-                      </div>
-                      <div class="categoryItem">
+                        <div class="name">art</div></a><a class="categoryItem">
                         <div class="icon">☘</div>
-                        <div class="name">organic</div>
-                      </div>
-                      <div class="categoryItem">
+                        <div class="name">organic</div></a><a class="categoryItem">
                         <div class="icon">👶</div>
-                        <div class="name">baby</div>
-                      </div>
+                        <div class="name">baby</div></a>
               </div>
             </div>
             <div class="col-3"><a class="card-link" href="#">

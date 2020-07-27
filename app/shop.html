@@ -11,8 +11,17 @@
   </head>
   <body>
     <header class="header"><a class="header__logo" href="/">Couponation</a>
-      <div class="header__nav"><a class="header__link" href="./coupons.html">Coupons</a><a class="header__link" href="#">Categories</a><a class="header__link" href="./store.html">Stores</a>
-        <div class="header__button">Submit a coupon</div>
+      <div class="header__nav">
+        <button class="header__link header__drop--btn" href="#">Coupons
+          <div class="header__modal--wrap"><a class="header__modal--item" href="/couponoftheday.html">
+              <h3>Coupons of the day</h3>
+              <p>These discounds were added within 24h</p></a><a class="header__modal--item" href="#">
+              <h3>New coupons</h3>
+              <p>Just added to the site, hurry up!</p></a><a class="header__modal--item" href="#">
+              <h3>Trusted coupons</h3>
+              <p>Coupons marked as "100% working"    </p></a></div>
+        </button><a class="header__link" href="#">Categories</a><a class="header__link" href="./store.html">Stores</a>
+        <div class="header__button" onclick="location.href='/submitCoupon.html';">Submit a coupon</div>
       </div>
     </header>
     <div class="shop-page">
@@ -24,17 +33,25 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-12">
+          <div class="col-9">
             <div class="shop-caption">
               <div class="shop-logo"><img src="../media/icon/logos/shop-logo.svg" alt="logo"></div>
               <div class="shop-title">
                 <h1>Best Buy</h1><a class="link" href="https://www.bestbuy.com">https://www.bestbuy.com<img src="../media/icon/link.svg" alt="icon"></a>
-                <div class="category-btn--block">
-                  <button class="category-btn">beauty<img src="../media/icon/category/flowers.svg" alt="image"/></button>
-                  <button class="category-btn">hair<img src="../media/icon/category/hair.svg" alt="image"/></button>
-                  <button class="category-btn">health<img src="../media/icon/category/heart.svg" alt="image"/></button>
-                  <button class="category-btn">skin care<img src="../media/icon/category/skin.svg" alt="image"/></button>
-                  <button class="category-btn">cosmetics<img src="../media/icon/category/cosmetic.svg" alt="image"/></button>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="shop-page">
+              <div class="shop-caption"> 
+                <div class="shop-title"> 
+                  <div class="category-btn--block">
+                    <button class="category-btn">beauty<img src="../media/icon/category/flowers.svg" alt="image"/></button>
+                    <button class="category-btn">hair<img src="../media/icon/category/hair.svg" alt="image"/></button>
+                    <button class="category-btn">health<img src="../media/icon/category/heart.svg" alt="image"/></button>
+                    <button class="category-btn">skin care<img src="../media/icon/category/skin.svg" alt="image"/></button>
+                    <button class="category-btn">cosmetics<img src="../media/icon/category/cosmetic.svg" alt="image"/></button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -197,6 +214,7 @@
                   </div>
                 </div>
               </div>
+              <div class="show-all">Show more coupons</div>
             </div>
             <h2>FAQ</h2>
             <div class="shop-acc">
@@ -250,8 +268,11 @@
           </div>
           <div class="col-3">
             <div class="aside">
-              <h3>About the shop</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam interdum non ligula vitae aliquam. Donec ut ullamcorper quam. Donec felis ante, acc...<a href="#">Read more</a></p>
+              <h3>About Best Buy</h3>
+              <p>Harry & David is known for their delicious, extra sweet Royal Riviera pears. The company creates fruit and gift baskets featuring these handpicked fresh pears or other fruits, such as peaches, depending on the season. Inside the gift baskets, you’ll also enjoy gourmet products such as chocolates, cheeses, crackers, wine, and nuts.</p>
+            </div>
+            <div class="aside">
+              <h3>Best Buy in numbers</h3>
               <div class="aside-block">
                 <div class="aside-item">
                   <p>Coupons available</p>
@@ -280,7 +301,7 @@
               </div>
             </div>
             <div class="aside-top-store">
-              <h3>Similar top stores</h3>
+              <h3>Top stores like Best Buy</h3>
               <div class="stores-wrap">
                 <div class="store-item">
                   <div class="store-icon"><img src="../../media/icon/logos/1.png" alt="image"></div>

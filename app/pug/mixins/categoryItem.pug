@@ -1,4 +1,4 @@
-mixin categoryItem(icon, name)
-  .categoryItem
+mixin categoryItem(icon, name, link)
+  a(href=link).categoryItem
     .icon= icon
-    .name= name
+    .name= name 

@@ -9,6 +9,7 @@ block variables
   include ../mixins/cardStore
   include ../mixins/card-link
   include ../mixins/categoryItem
+  include ../mixins/bigCoupon 
 
 block content
   .beauty-page
@@ -18,16 +19,15 @@ block content
           .breadcrumb
             +breadcrumb('Main page','/')
             +breadcrumb('/ Categories','#')
-            +breadcrumb('/ Healthcare','#')
-            +breadcrumb('/ Beauty','#')  
+            +breadcrumb('/ Healthcare','/Healthcare.html') 
          
       .row
         .col-12
           .coupons-title.beauty-title
-            h1 Beauty
+            h1 Healthcare - #[span Beauty]
             .top-category__body
               +categoryItem('⌚', 'accessories') 
-              +categoryItem('🌸', 'beauty')
+              +categoryItem('🌸', 'beauty', '/beauty.html')
               +categoryItem('👗', 'fashion')
               +categoryItem('👚', 'clothing')
               +categoryItem('🎁', 'gifts')
@@ -48,18 +48,16 @@ block content
         .col-12
           .small-coupon
             h2 Our best Beauty coupons and discount codes
-            .coupons-shop__body
-              +coupon-home("Buy More, Save More: 15% Off $60, 25% Off $100 and 30% Off $200 Order", "Vistaprint", "80% success rate")
-              +coupon-home("20% Off Sitewide", "EyeBuyDirect", "80% success rate")
-              +coupon-home("$2.95 Flat Rate Standard Shipping on Your Orders", "Alex and Ani", "80% success rate")
-              +coupon-home("25% Off Orders", "Shutterfly", "80% success rate")
-              +coupon-home("Get 25% Off Orders of $50+ When You Sign Up for Emails", "Lovehoney", "80% success rate") 
-              +coupon-home("Get 25% Off Orders of $50+ When You Sign Up for Emails", "Lovehoney", "80% success rate")
-              +coupon-home("$2.95 Flat Rate Standard Shipping on Your Orders", "Alex and Ani", "80% success rate")
-              +coupon-home("25% Off Orders", "Shutterfly", "80% success rate")
-              +coupon-home("Get 25% Off Orders of $50+ When You Sign Up for Emails", "Lovehoney", "80% success rate") 
-              +coupon-home("Get 25% Off Orders of $50+ When You Sign Up for Emails", "Lovehoney", "80% success rate") 
-  .main-slider.beauty-slide
+            .coupons-shop__body.coupones__body
+              +coupons-shop('Free shipping', 'Free Standard Shipping With Doorstep Drop-Off on Orders $35 and Up','14,271 total uses','2,632 uses today','80% success rate')
+              +coupons-shop(' 35% OFF', 'Save Up to 35% on Select Solids State Drives','14,271 total uses','2,632 uses today','80% success rate')
+              +coupons-shop('35% OFF', 'Save $35-$700 On Select Surface Devices and Free Contactless Curbside Pickup','14,271 total uses','2,632 uses today','80% success rate')
+              +coupons-shop('$500 Off', 'Free Standard Shipping With Doorstep Drop-Off on Orders $35 and Up','14,271 total uses','2,632 uses today','80% success rate')
+              +coupons-shop('$170 Off', 'Up to $170 Off Beats Headphones Plus Available for In-Store Pick Up by Christmas','14,271 total uses','2,632 uses today','80% success rate')
+              +coupons-shop('Free shipping', 'Free Standard Shipping With Doorstep Drop-Off on Orders $35 and Up','14,271 total uses','2,632 uses today','80% success rate')
+              +coupons-shop(' 35% OFF', 'Save Up to 35% on Select Solids State Drives','14,271 total uses','2,632 uses today','80% success rate')
+              +coupons-shop('35% OFF', 'Save $35-$700 On Select Surface Devices and Free Contactless Curbside Pickup','14,271 total uses','2,632 uses today','80% success rate')
+  .main-slider.beauty-slide 
     .container
       .row
         .col-12
@@ -77,20 +75,22 @@ block content
         .col-12
           .small-coupon
             h2 More Beauty coupons and discount codes
-            .coupons-shop__body
-              +coupon-home("Buy More, Save More: 15% Off $60, 25% Off $100 and 30% Off $200 Order", "Vistaprint", "80% success rate")
-              +coupon-home("20% Off Sitewide", "EyeBuyDirect", "80% success rate")
-              +coupon-home("$2.95 Flat Rate Standard Shipping on Your Orders", "Alex and Ani", "80% success rate")
-              +coupon-home("25% Off Orders", "Shutterfly", "80% success rate")
-              +coupon-home("Get 25% Off Orders of $50+ When You Sign Up for Emails", "Lovehoney", "80% success rate") 
-              +coupon-home("Get 25% Off Orders of $50+ When You Sign Up for Emails", "Lovehoney", "80% success rate")
+            .coupons-shop__body.coupones__body
+              +coupons-shop('Free shipping', 'Free Standard Shipping With Doorstep Drop-Off on Orders $35 and Up','14,271 total uses','2,632 uses today','80% success rate')
+              +coupons-shop(' 35% OFF', 'Save Up to 35% on Select Solids State Drives','14,271 total uses','2,632 uses today','80% success rate')
+              +coupons-shop('35% OFF', 'Save $35-$700 On Select Surface Devices and Free Contactless Curbside Pickup','14,271 total uses','2,632 uses today','80% success rate')
+              +coupons-shop('$500 Off', 'Free Standard Shipping With Doorstep Drop-Off on Orders $35 and Up','14,271 total uses','2,632 uses today','80% success rate')
+              +coupons-shop('$170 Off', 'Up to $170 Off Beats Headphones Plus Available for In-Store Pick Up by Christmas','14,271 total uses','2,632 uses today','80% success rate')
+              +coupons-shop('Free shipping', 'Free Standard Shipping With Doorstep Drop-Off on Orders $35 and Up','14,271 total uses','2,632 uses today','80% success rate')
+              +coupons-shop(' 35% OFF', 'Save Up to 35% on Select Solids State Drives','14,271 total uses','2,632 uses today','80% success rate')
+              +coupons-shop('35% OFF', 'Save $35-$700 On Select Surface Devices and Free Contactless Curbside Pickup','14,271 total uses','2,632 uses today','80% success rate')
               .number-coupon
                 .num-item 1
                 .num-item 2
                 .num-item 3
                 .num-dots
                 .num-item 8
-  .card-section
+  .card-section.beauty-card
     .container    
       .row
         .col-12
@@ -130,5 +130,11 @@ block content
             +card-store("./media/icon/logos/3.png", "RedBubble", "4 active coupons", "12,637,890 times used")
             +card-store("./media/icon/logos/4.png", "Best Buy", "50 active coupons", "12,637,890 times used")
             +card-store("./media/icon/logos/5.png", "SHEIN", "3 active coupons", "12,637,890 times used")              
+  .container
+    .row(style="margin-bottom: 56px")  
+      .col-6
+        +card-link('Stores of the day')
+      .col-6
+        +card-link('Stores of the day')   
   .coupon-tag
     include ../modules/home/top-category      

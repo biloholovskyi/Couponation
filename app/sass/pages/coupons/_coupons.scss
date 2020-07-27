@@ -28,6 +28,7 @@
     }
   }
   .small-coupon {
+    margin-bottom: 56px;
     h2 {
       margin-bottom: 8px;
       margin-top: 48px;
@@ -43,13 +44,23 @@
         letter-spacing: -0.01em;
         font-feature-settings: 'pnum' on, 'lnum' on;
         color: #555555;
+        margin-bottom: 0;
       }
       &  p:first-child {
         padding-right: 8px;
         margin-right: 8px;
         border-right: 1px solid #aaa; 
       }
+    } p {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 22px;
+      color: #222222;
+      margin-bottom: 32px;
+      max-width: 730px;
     }
+    
   }
   .card-link {
     margin-bottom: 48px;
@@ -64,3 +75,6 @@
   }
 }
 
+.coupones__body {
+  flex-direction: column!important;
+}

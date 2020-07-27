@@ -18,14 +18,14 @@ block content
           .breadcrumb
             +breadcrumb('Main page','/')
             +breadcrumb('/ Categories','#')
-            +breadcrumb('/ Healthcare','#')
+            +breadcrumb('/ Healthcare','/Healthcare.html')
       .row
         .col-12
           .coupons-title.beauty-title
             h1 Healthcare
             .top-category__body
               +categoryItem('⌚', 'accessories') 
-              +categoryItem('🌸', 'beauty')
+              +categoryItem('🌸', 'beauty','/beauty.html')
               +categoryItem('👗', 'fashion')
               +categoryItem('👚', 'clothing')
               +categoryItem('🎁', 'gifts')

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <title>Contacts</title>
+    <title>Submit a coupon</title>
   </head>
   <body>
     <header class="header"><a class="header__logo" href="/">Couponation</a>
@@ -28,40 +28,57 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <div class="breadcrumb"><a href="/">Main page</a><a href="#">/ Contacts</a>
+            <div class="breadcrumb"><a href="/">Main page</a><a href="#">/ Submit a coupon</a>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-12">
-            <h1 class="contact_title">Contacts</h1>
+            <h1 class="contact_title">Submit a coupon</h1>
           </div>
         </div>
         <div class="row">
           <div class="col-6">
             <div class="contact-info">
-              <div class="map-block">
-                <div class="icon"><img src="../media/icon/map-icon.svg" alt="image"><img src="../media/icon/pin.svg" alt="image"></div>
-                <div class="address">
-                  <h3>We're located at United States</h3>
-                  <p>340 s lemon ave #1262</p>
-                  <p>Walnut, CA 91789</p>
-                </div>
-              </div>
               <div class="contact-desc">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.  </p>
+                <p>Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
               </div>
             </div>
           </div>
           <div class="col-6">
-            <form id="contact-form">
-              <label for="name">Your name</label>
-              <input type="text" name="name" placeholder="John Doe" id="name">
-              <label for="email">Emai</label>
-              <input type="email" name="name" placeholder="yourname@mailservice.com" id="email">
-              <label for="sms">Your message</label>
-              <textarea name="sms" placeholder="Enter your message here" id="sms"></textarea>
-              <input type="submit" value="Submit">
+            <form class="small-form__form submit-form">
+              <div class="double">
+                <div class="input-item">
+                  <div class="placeholder">Your name</div>
+                  <input type="text">
+                </div>
+              </div>
+              <div class="double">
+                <div class="input-item">
+                  <div class="placeholder">Your email</div>
+                  <input type="email">
+                </div>
+              </div>
+              <div class="double">
+                <div class="input-item">
+                  <div class="placeholder">Website</div>
+                  <input type="text">
+                </div>
+              </div>
+              <div class="double">
+                <div class="input-item">
+                  <div class="placeholder">Coupon code</div>
+                  <input type="text">
+                </div>
+              </div>
+              <div class="double full-inp textarea">
+                <div class="input-item">
+                  <div class="placeholder">Description</div>
+                  <textarea>    </textarea>
+                </div>
+              </div>
+              <input class="coupon_submit" type="submit" value="Submit">
             </form>
           </div>
         </div>

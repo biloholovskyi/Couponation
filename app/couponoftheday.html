@@ -28,16 +28,16 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <div class="breadcrumb"><a href="/">Main page</a><a href="./coupons.html">/ Coupons</a>
+            <div class="breadcrumb"><a href="/">Main page</a><a href="./coupons.html">/ Coupons</a><a href="./couponsoftheday.html">/ Coupons of the day</a>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-12">
             <div class="coupons-title">
-              <h1>Coupons</h1>
+              <h1>Coupons - <span>Coupons of the day</span></h1>
               <div class="title-btn">
-                <button onCLick="location.href='/couponoftheday.html';">Coupons of the day</button>
+                <button class="current">Coupons of the day</button>
                 <button>New coupons</button>
                 <button>Trusted coupons</button>
               </div>
@@ -47,12 +47,7 @@
         <div class="row">
           <div class="col-12">
             <div class="small-coupon">
-              <h2>Coupons of the day</h2>
-              <div class="desc">
-                <p>12,738 coupons</p>
-                <p>3,397,262 activations</p>
-              </div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis.  </p>
+              <p style="margin-top: 32px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis.  </p>
               <div class="coupons-shop__body coupones__body">
                 <div class="coupon-shop">
                   <div class="left-side">
@@ -164,48 +159,72 @@
                     </div>
                   </div>
                 </div>
-                <div class="show-all" onCLick="location.href='/couponoftheday.html';">All coupons of the day</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="main-slider coupon-slide">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="main-slider__title">Coupons, discount codes and cashback at our favorite stores</div>
-            <div class="main-slider__body owl-carousel owl-theme">
-              <div class="card-store"><img src="./media/icon/logos/1.png" alt="logo"/>
-                <div class="name">Kohl's</div>
-                <div class="text">21 active coupons</div>
-                <div class="text">12,637,890 times used</div>
-              </div>
-              <div class="card-store"><img src="./media/icon/logos/2.png" alt="logo"/>
-                <div class="name">Travelocity</div>
-                <div class="text">21 active coupons</div>
-                <div class="text">12,637,890 times used</div>
-              </div>
-              <div class="card-store"><img src="./media/icon/logos/3.png" alt="logo"/>
-                <div class="name">RedBubble</div>
-                <div class="text">4 active coupons</div>
-                <div class="text">12,637,890 times used</div>
-              </div>
-              <div class="card-store"><img src="./media/icon/logos/4.png" alt="logo"/>
-                <div class="name">Best Buy</div>
-                <div class="text">50 active coupons</div>
-                <div class="text">12,637,890 times used</div>
-              </div>
-              <div class="card-store"><img src="./media/icon/logos/5.png" alt="logo"/>
-                <div class="name">SHEIN</div>
-                <div class="text">3 active coupons</div>
-                <div class="text">12,637,890 times used</div>
-              </div>
-              <div class="card-store"><img src="./media/icon/logos/2.png" alt="logo"/>
-                <div class="name">Travelocity</div>
-                <div class="text">21 active coupons</div>
-                <div class="text">12,637,890 times used</div>
+                <div class="coupon-shop">
+                  <div class="left-side">
+                    <h3>Free shipping</h3>
+                  </div>
+                  <div class="right-side">
+                    <div class="top">
+                      <div class="name">Free Standard Shipping With Doorstep Drop-Off on Orders $35 and Up</div>
+                      <div class="button">Get code</div>
+                    </div>
+                    <div class="bottom">
+                      <div class="uses">
+                        <div class="nameUses">14,271 total uses</div>
+                        <div class="nameUses">2,632 uses today</div>
+                      </div>
+                      <div class="rate">
+                        <div class="result">80% success rate</div>
+                        <div class="icon like">👍</div>
+                        <div class="icon dislike">👎</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="coupon-shop">
+                  <div class="left-side">
+                    <h3> 35% OFF</h3>
+                  </div>
+                  <div class="right-side">
+                    <div class="top">
+                      <div class="name">Save Up to 35% on Select Solids State Drives</div>
+                      <div class="button">Get code</div>
+                    </div>
+                    <div class="bottom">
+                      <div class="uses">
+                        <div class="nameUses">14,271 total uses</div>
+                        <div class="nameUses">2,632 uses today</div>
+                      </div>
+                      <div class="rate">
+                        <div class="result">80% success rate</div>
+                        <div class="icon like">👍</div>
+                        <div class="icon dislike">👎</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="coupon-shop">
+                  <div class="left-side">
+                    <h3>35% OFF</h3>
+                  </div>
+                  <div class="right-side">
+                    <div class="top">
+                      <div class="name">Save $35-$700 On Select Surface Devices and Free Contactless Curbside Pickup</div>
+                      <div class="button">Get code</div>
+                    </div>
+                    <div class="bottom">
+                      <div class="uses">
+                        <div class="nameUses">14,271 total uses</div>
+                        <div class="nameUses">2,632 uses today</div>
+                      </div>
+                      <div class="rate">
+                        <div class="result">80% success rate</div>
+                        <div class="icon like">👍</div>
+                        <div class="icon dislike">👎</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -213,137 +232,10 @@
       </div>
     </div>
     <div class="coupon-page">
-      <div class="container"> 
-        <div class="row">
-          <div class="col-12">
-            <div class="small-coupon">
-              <h2>New coupons</h2>
-              <div class="desc">
-                <p>12,738 coupons</p>
-                <p>3,397,262 activations</p>
-              </div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis.    </p>
-              <div class="coupons-shop__body coupones__body">
-                <div class="coupon-shop">
-                  <div class="left-side">
-                    <h3>Free shipping</h3>
-                  </div>
-                  <div class="right-side">
-                    <div class="top">
-                      <div class="name">Free Standard Shipping With Doorstep Drop-Off on Orders $35 and Up</div>
-                      <div class="button">Get code</div>
-                    </div>
-                    <div class="bottom">
-                      <div class="uses">
-                        <div class="nameUses">14,271 total uses</div>
-                        <div class="nameUses">2,632 uses today</div>
-                      </div>
-                      <div class="rate">
-                        <div class="result">80% success rate</div>
-                        <div class="icon like">👍</div>
-                        <div class="icon dislike">👎</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="coupon-shop">
-                  <div class="left-side">
-                    <h3> 35% OFF</h3>
-                  </div>
-                  <div class="right-side">
-                    <div class="top">
-                      <div class="name">Save Up to 35% on Select Solids State Drives</div>
-                      <div class="button">Get code</div>
-                    </div>
-                    <div class="bottom">
-                      <div class="uses">
-                        <div class="nameUses">14,271 total uses</div>
-                        <div class="nameUses">2,632 uses today</div>
-                      </div>
-                      <div class="rate">
-                        <div class="result">80% success rate</div>
-                        <div class="icon like">👍</div>
-                        <div class="icon dislike">👎</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="coupon-shop">
-                  <div class="left-side">
-                    <h3>35% OFF</h3>
-                  </div>
-                  <div class="right-side">
-                    <div class="top">
-                      <div class="name">Save $35-$700 On Select Surface Devices and Free Contactless Curbside Pickup</div>
-                      <div class="button">Get code</div>
-                    </div>
-                    <div class="bottom">
-                      <div class="uses">
-                        <div class="nameUses">14,271 total uses</div>
-                        <div class="nameUses">2,632 uses today</div>
-                      </div>
-                      <div class="rate">
-                        <div class="result">80% success rate</div>
-                        <div class="icon like">👍</div>
-                        <div class="icon dislike">👎</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="coupon-shop">
-                  <div class="left-side">
-                    <h3>$500 Off</h3>
-                  </div>
-                  <div class="right-side">
-                    <div class="top">
-                      <div class="name">Free Standard Shipping With Doorstep Drop-Off on Orders $35 and Up</div>
-                      <div class="button">Get code</div>
-                    </div>
-                    <div class="bottom">
-                      <div class="uses">
-                        <div class="nameUses">14,271 total uses</div>
-                        <div class="nameUses">2,632 uses today</div>
-                      </div>
-                      <div class="rate">
-                        <div class="result">80% success rate</div>
-                        <div class="icon like">👍</div>
-                        <div class="icon dislike">👎</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="coupon-shop">
-                  <div class="left-side">
-                    <h3>$170 Off</h3>
-                  </div>
-                  <div class="right-side">
-                    <div class="top">
-                      <div class="name">Up to $170 Off Beats Headphones Plus Available for In-Store Pick Up by Christmas</div>
-                      <div class="button">Get code</div>
-                    </div>
-                    <div class="bottom">
-                      <div class="uses">
-                        <div class="nameUses">14,271 total uses</div>
-                        <div class="nameUses">2,632 uses today</div>
-                      </div>
-                      <div class="rate">
-                        <div class="result">80% success rate</div>
-                        <div class="icon like">👍</div>
-                        <div class="icon dislike">👎</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="show-all">All new coupons</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <div class="small-form">
+            <div class="small-form" style="margin-bottom: 32px;">
               <div class="small-form__text">
                 <div class="title">Get top offers and save money</div>
                 <div class="desc">Offers only valid coupons while you shop online</div>
@@ -359,130 +251,194 @@
         <div class="row">
           <div class="col-12">
             <div class="small-coupon">
-              <h2>Trusted coupons</h2>
-              <div class="desc">
-                <p>12,738 coupons</p>
-                <p>3,397,262 activations</p>
+              <div class="coupon-shop">
+                <div class="left-side">
+                  <h3>Free shipping</h3>
+                </div>
+                <div class="right-side">
+                  <div class="top">
+                    <div class="name">Free Standard Shipping With Doorstep Drop-Off on Orders $35 and Up</div>
+                    <div class="button">Get code</div>
+                  </div>
+                  <div class="bottom">
+                    <div class="uses">
+                      <div class="nameUses">14,271 total uses</div>
+                      <div class="nameUses">2,632 uses today</div>
+                    </div>
+                    <div class="rate">
+                      <div class="result">80% success rate</div>
+                      <div class="icon like">👍</div>
+                      <div class="icon dislike">👎</div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis.  </p>
-              <div class="coupons-shop__body coupones__body">
-                <div class="coupon-shop">
-                  <div class="left-side">
-                    <h3>Free shipping</h3>
+              <div class="coupon-shop">
+                <div class="left-side">
+                  <h3> 35% OFF</h3>
+                </div>
+                <div class="right-side">
+                  <div class="top">
+                    <div class="name">Save Up to 35% on Select Solids State Drives</div>
+                    <div class="button">Get code</div>
                   </div>
-                  <div class="right-side">
-                    <div class="top">
-                      <div class="name">Free Standard Shipping With Doorstep Drop-Off on Orders $35 and Up</div>
-                      <div class="button">Get code</div>
+                  <div class="bottom">
+                    <div class="uses">
+                      <div class="nameUses">14,271 total uses</div>
+                      <div class="nameUses">2,632 uses today</div>
                     </div>
-                    <div class="bottom">
-                      <div class="uses">
-                        <div class="nameUses">14,271 total uses</div>
-                        <div class="nameUses">2,632 uses today</div>
-                      </div>
-                      <div class="rate">
-                        <div class="result">80% success rate</div>
-                        <div class="icon like">👍</div>
-                        <div class="icon dislike">👎</div>
-                      </div>
+                    <div class="rate">
+                      <div class="result">80% success rate</div>
+                      <div class="icon like">👍</div>
+                      <div class="icon dislike">👎</div>
                     </div>
                   </div>
                 </div>
-                <div class="coupon-shop">
-                  <div class="left-side">
-                    <h3> 35% OFF</h3>
+              </div>
+              <div class="coupon-shop">
+                <div class="left-side">
+                  <h3>35% OFF</h3>
+                </div>
+                <div class="right-side">
+                  <div class="top">
+                    <div class="name">Save $35-$700 On Select Surface Devices and Free Contactless Curbside Pickup</div>
+                    <div class="button">Get code</div>
                   </div>
-                  <div class="right-side">
-                    <div class="top">
-                      <div class="name">Save Up to 35% on Select Solids State Drives</div>
-                      <div class="button">Get code</div>
+                  <div class="bottom">
+                    <div class="uses">
+                      <div class="nameUses">14,271 total uses</div>
+                      <div class="nameUses">2,632 uses today</div>
                     </div>
-                    <div class="bottom">
-                      <div class="uses">
-                        <div class="nameUses">14,271 total uses</div>
-                        <div class="nameUses">2,632 uses today</div>
-                      </div>
-                      <div class="rate">
-                        <div class="result">80% success rate</div>
-                        <div class="icon like">👍</div>
-                        <div class="icon dislike">👎</div>
-                      </div>
+                    <div class="rate">
+                      <div class="result">80% success rate</div>
+                      <div class="icon like">👍</div>
+                      <div class="icon dislike">👎</div>
                     </div>
                   </div>
                 </div>
-                <div class="coupon-shop">
-                  <div class="left-side">
-                    <h3>35% OFF</h3>
+              </div>
+              <div class="coupon-shop">
+                <div class="left-side">
+                  <h3>$500 Off</h3>
+                </div>
+                <div class="right-side">
+                  <div class="top">
+                    <div class="name">Free Standard Shipping With Doorstep Drop-Off on Orders $35 and Up</div>
+                    <div class="button">Get code</div>
                   </div>
-                  <div class="right-side">
-                    <div class="top">
-                      <div class="name">Save $35-$700 On Select Surface Devices and Free Contactless Curbside Pickup</div>
-                      <div class="button">Get code</div>
+                  <div class="bottom">
+                    <div class="uses">
+                      <div class="nameUses">14,271 total uses</div>
+                      <div class="nameUses">2,632 uses today</div>
                     </div>
-                    <div class="bottom">
-                      <div class="uses">
-                        <div class="nameUses">14,271 total uses</div>
-                        <div class="nameUses">2,632 uses today</div>
-                      </div>
-                      <div class="rate">
-                        <div class="result">80% success rate</div>
-                        <div class="icon like">👍</div>
-                        <div class="icon dislike">👎</div>
-                      </div>
+                    <div class="rate">
+                      <div class="result">80% success rate</div>
+                      <div class="icon like">👍</div>
+                      <div class="icon dislike">👎</div>
                     </div>
                   </div>
                 </div>
-                <div class="coupon-shop">
-                  <div class="left-side">
-                    <h3>$500 Off</h3>
+              </div>
+              <div class="coupon-shop">
+                <div class="left-side">
+                  <h3>$170 Off</h3>
+                </div>
+                <div class="right-side">
+                  <div class="top">
+                    <div class="name">Up to $170 Off Beats Headphones Plus Available for In-Store Pick Up by Christmas</div>
+                    <div class="button">Get code</div>
                   </div>
-                  <div class="right-side">
-                    <div class="top">
-                      <div class="name">Free Standard Shipping With Doorstep Drop-Off on Orders $35 and Up</div>
-                      <div class="button">Get code</div>
+                  <div class="bottom">
+                    <div class="uses">
+                      <div class="nameUses">14,271 total uses</div>
+                      <div class="nameUses">2,632 uses today</div>
                     </div>
-                    <div class="bottom">
-                      <div class="uses">
-                        <div class="nameUses">14,271 total uses</div>
-                        <div class="nameUses">2,632 uses today</div>
-                      </div>
-                      <div class="rate">
-                        <div class="result">80% success rate</div>
-                        <div class="icon like">👍</div>
-                        <div class="icon dislike">👎</div>
-                      </div>
+                    <div class="rate">
+                      <div class="result">80% success rate</div>
+                      <div class="icon like">👍</div>
+                      <div class="icon dislike">👎</div>
                     </div>
                   </div>
                 </div>
-                <div class="coupon-shop">
-                  <div class="left-side">
-                    <h3>$170 Off</h3>
+              </div>
+              <div class="coupon-shop">
+                <div class="left-side">
+                  <h3>Free shipping</h3>
+                </div>
+                <div class="right-side">
+                  <div class="top">
+                    <div class="name">Free Standard Shipping With Doorstep Drop-Off on Orders $35 and Up</div>
+                    <div class="button">Get code</div>
                   </div>
-                  <div class="right-side">
-                    <div class="top">
-                      <div class="name">Up to $170 Off Beats Headphones Plus Available for In-Store Pick Up by Christmas</div>
-                      <div class="button">Get code</div>
+                  <div class="bottom">
+                    <div class="uses">
+                      <div class="nameUses">14,271 total uses</div>
+                      <div class="nameUses">2,632 uses today</div>
                     </div>
-                    <div class="bottom">
-                      <div class="uses">
-                        <div class="nameUses">14,271 total uses</div>
-                        <div class="nameUses">2,632 uses today</div>
-                      </div>
-                      <div class="rate">
-                        <div class="result">80% success rate</div>
-                        <div class="icon like">👍</div>
-                        <div class="icon dislike">👎</div>
-                      </div>
+                    <div class="rate">
+                      <div class="result">80% success rate</div>
+                      <div class="icon like">👍</div>
+                      <div class="icon dislike">👎</div>
                     </div>
                   </div>
                 </div>
-                <div class="show-all">All trusted coupons</div>
+              </div>
+              <div class="coupon-shop">
+                <div class="left-side">
+                  <h3> 35% OFF</h3>
+                </div>
+                <div class="right-side">
+                  <div class="top">
+                    <div class="name">Save Up to 35% on Select Solids State Drives</div>
+                    <div class="button">Get code</div>
+                  </div>
+                  <div class="bottom">
+                    <div class="uses">
+                      <div class="nameUses">14,271 total uses</div>
+                      <div class="nameUses">2,632 uses today</div>
+                    </div>
+                    <div class="rate">
+                      <div class="result">80% success rate</div>
+                      <div class="icon like">👍</div>
+                      <div class="icon dislike">👎</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="coupon-shop">
+                <div class="left-side">
+                  <h3>35% OFF</h3>
+                </div>
+                <div class="right-side">
+                  <div class="top">
+                    <div class="name">Save $35-$700 On Select Surface Devices and Free Contactless Curbside Pickup</div>
+                    <div class="button">Get code</div>
+                  </div>
+                  <div class="bottom">
+                    <div class="uses">
+                      <div class="nameUses">14,271 total uses</div>
+                      <div class="nameUses">2,632 uses today</div>
+                    </div>
+                    <div class="rate">
+                      <div class="result">80% success rate</div>
+                      <div class="icon like">👍</div>
+                      <div class="icon dislike">👎</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="number-coupon" style="margin-top: 32px;">
+                <div class="num-item">1</div>
+                <div class="num-item">2</div>
+                <div class="num-item">3</div>
+                <div class="num-dots"></div>
+                <div class="num-item">8</div>
               </div>
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-4"><a class="card-link" href="#">
+          <div class="col-6"><a class="card-link" href="#">
               <div class="top"><img class="icon" src="./media/icon/card-link.svg" alt="icon"/>
                 <div class="name">Stores of the day</div>
               </div>
@@ -491,18 +447,9 @@
                 <p>60 categories</p>
               </div></a>
           </div>
-          <div class="col-4"><a class="card-link" href="#">
+          <div class="col-6"><a class="card-link" href="#">
               <div class="top"><img class="icon" src="./media/icon/card-link.svg" alt="icon"/>
                 <div class="name">Stores of the day</div>
-              </div>
-              <div class="bottom">
-                <p>9,050 stores and</p>
-                <p>60 categories</p>
-              </div></a>
-          </div>
-          <div class="col-4"><a class="card-link" href="#">
-              <div class="top"><img class="icon" src="./media/icon/card-link.svg" alt="icon"/>
-                <div class="name">New stores</div>
               </div>
               <div class="bottom">
                 <p>9,050 stores and</p>

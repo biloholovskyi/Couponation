@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-
+  border-bottom: 1px solid #ebebeb;
   &__logo {
     font-weight: bold;
     font-size: 30px;
@@ -23,6 +23,9 @@
       font-size: 16px;
       line-height: 24px;
       color: #222222;
+      background-color: transparent;
+      border: none;
+      position: relative;
     }
 
     .header__button {

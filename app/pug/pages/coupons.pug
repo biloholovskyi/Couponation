@@ -8,6 +8,7 @@ block variables
   include ../mixins/smallCoupon
   include ../mixins/cardStore
   include ../mixins/card-link
+  include ../mixins/bigCoupon
 
 block content
   .coupon-page
@@ -22,7 +23,7 @@ block content
           .coupons-title
             h1 Coupons
             .title-btn
-              button Coupons of the day
+              button(onCLick="location.href='/couponoftheday.html';") Coupons of the day
               button New coupons
               button Trusted coupons
       .row
@@ -32,18 +33,14 @@ block content
             .desc
               p 12,738 coupons
               p 3,397,262 activations
-            .coupons-shop__body
-              +coupon-home("Buy More, Save More: 15% Off $60, 25% Off $100 and 30% Off $200 Order", "Vistaprint", "80% success rate")
-              +coupon-home("20% Off Sitewide", "EyeBuyDirect", "80% success rate")
-              +coupon-home("$2.95 Flat Rate Standard Shipping on Your Orders", "Alex and Ani", "80% success rate")
-              +coupon-home("25% Off Orders", "Shutterfly", "80% success rate")
-              +coupon-home("Get 25% Off Orders of $50+ When You Sign Up for Emails", "Lovehoney", "80% success rate") 
-              +coupon-home("Get 25% Off Orders of $50+ When You Sign Up for Emails", "Lovehoney", "80% success rate")
-              +coupon-home("$2.95 Flat Rate Standard Shipping on Your Orders", "Alex and Ani", "80% success rate")
-              +coupon-home("25% Off Orders", "Shutterfly", "80% success rate")
-              +coupon-home("Get 25% Off Orders of $50+ When You Sign Up for Emails", "Lovehoney", "80% success rate") 
-              +coupon-home("Get 25% Off Orders of $50+ When You Sign Up for Emails", "Lovehoney", "80% success rate")
-              .show-all All new coupons  
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis.  
+            .coupons-shop__body.coupones__body
+              +coupons-shop('Free shipping', 'Free Standard Shipping With Doorstep Drop-Off on Orders $35 and Up','14,271 total uses','2,632 uses today','80% success rate')
+              +coupons-shop(' 35% OFF', 'Save Up to 35% on Select Solids State Drives','14,271 total uses','2,632 uses today','80% success rate')
+              +coupons-shop('35% OFF', 'Save $35-$700 On Select Surface Devices and Free Contactless Curbside Pickup','14,271 total uses','2,632 uses today','80% success rate')
+              +coupons-shop('$500 Off', 'Free Standard Shipping With Doorstep Drop-Off on Orders $35 and Up','14,271 total uses','2,632 uses today','80% success rate')
+              +coupons-shop('$170 Off', 'Up to $170 Off Beats Headphones Plus Available for In-Store Pick Up by Christmas','14,271 total uses','2,632 uses today','80% success rate')
+              .show-all(onCLick="location.href='/couponoftheday.html';") All coupons of the day
   .main-slider.coupon-slide
     .container
       .row
@@ -65,13 +62,13 @@ block content
             .desc
               p 12,738 coupons
               p 3,397,262 activations
-            .coupons-shop__body
-              +coupon-home("Buy More, Save More: 15% Off $60, 25% Off $100 and 30% Off $200 Order", "Vistaprint", "80% success rate")
-              +coupon-home("20% Off Sitewide", "EyeBuyDirect", "80% success rate")
-              +coupon-home("$2.95 Flat Rate Standard Shipping on Your Orders", "Alex and Ani", "80% success rate")
-              +coupon-home("25% Off Orders", "Shutterfly", "80% success rate")
-              +coupon-home("Get 25% Off Orders of $50+ When You Sign Up for Emails", "Lovehoney", "80% success rate") 
-              +coupon-home("Get 25% Off Orders of $50+ When You Sign Up for Emails", "Lovehoney", "80% success rate")
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis.    
+            .coupons-shop__body.coupones__body
+              +coupons-shop('Free shipping', 'Free Standard Shipping With Doorstep Drop-Off on Orders $35 and Up','14,271 total uses','2,632 uses today','80% success rate')
+              +coupons-shop(' 35% OFF', 'Save Up to 35% on Select Solids State Drives','14,271 total uses','2,632 uses today','80% success rate')
+              +coupons-shop('35% OFF', 'Save $35-$700 On Select Surface Devices and Free Contactless Curbside Pickup','14,271 total uses','2,632 uses today','80% success rate')
+              +coupons-shop('$500 Off', 'Free Standard Shipping With Doorstep Drop-Off on Orders $35 and Up','14,271 total uses','2,632 uses today','80% success rate')
+              +coupons-shop('$170 Off', 'Up to $170 Off Beats Headphones Plus Available for In-Store Pick Up by Christmas','14,271 total uses','2,632 uses today','80% success rate')
               .show-all All new coupons
     .container
       .row
@@ -91,14 +88,14 @@ block content
             .desc
               p 12,738 coupons
               p 3,397,262 activations
-            .coupons-shop__body
-              +coupon-home("Buy More, Save More: 15% Off $60, 25% Off $100 and 30% Off $200 Order", "Vistaprint", "80% success rate")
-              +coupon-home("20% Off Sitewide", "EyeBuyDirect", "80% success rate")
-              +coupon-home("$2.95 Flat Rate Standard Shipping on Your Orders", "Alex and Ani", "80% success rate")
-              +coupon-home("25% Off Orders", "Shutterfly", "80% success rate")
-              +coupon-home("Get 25% Off Orders of $50+ When You Sign Up for Emails", "Lovehoney", "80% success rate") 
-              +coupon-home("Get 25% Off Orders of $50+ When You Sign Up for Emails", "Lovehoney", "80% success rate")
-              .show-all All new coupons
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis.  
+            .coupons-shop__body.coupones__body
+              +coupons-shop('Free shipping', 'Free Standard Shipping With Doorstep Drop-Off on Orders $35 and Up','14,271 total uses','2,632 uses today','80% success rate')
+              +coupons-shop(' 35% OFF', 'Save Up to 35% on Select Solids State Drives','14,271 total uses','2,632 uses today','80% success rate')
+              +coupons-shop('35% OFF', 'Save $35-$700 On Select Surface Devices and Free Contactless Curbside Pickup','14,271 total uses','2,632 uses today','80% success rate')
+              +coupons-shop('$500 Off', 'Free Standard Shipping With Doorstep Drop-Off on Orders $35 and Up','14,271 total uses','2,632 uses today','80% success rate')
+              +coupons-shop('$170 Off', 'Up to $170 Off Beats Headphones Plus Available for In-Store Pick Up by Christmas','14,271 total uses','2,632 uses today','80% success rate')
+              .show-all All trusted coupons
       .row
         .col-4
           +card-link('Stores of the day')

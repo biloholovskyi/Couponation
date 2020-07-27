@@ -1,7 +1,8 @@
 header.header
   a.header__logo(href='/') Couponation
   .header__nav
-    a.header__link(href='./coupons.html') Coupons
+    button.header__link.header__drop--btn(href='#') Coupons
+      include home/header__modal
     a.header__link(href='#') Categories
     a.header__link(href='./store.html') Stores
-    .header__button Submit a coupon
+    .header__button(onclick="location.href='/submitCoupon.html';") Submit a coupon

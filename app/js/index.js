@@ -4,6 +4,7 @@ import './accordion';
 import { switchTab, switchTabGrf } from "./tabs";
 
 $(document).ready((e) => {
+
   // main slider
   $('.main-slider__body').owlCarousel({ 
     loop: false,
@@ -76,10 +77,38 @@ $('.grf-tab__head .tabs .tab').on('click', (e) => {
   switchTabGrf(e) 
 });
 
+
+// open droplist in header
+
+$('.header__drop--btn').on('click', function(){
+  $('.header__modal--wrap').toggleClass('active');
+});
+
+// add active class 0n healtcare pages
+
+
+$(function () {
+  let location = window.location.href;
+  $('.top-category__body .categoryItem').each(function () { 
+      let link = $(this).attr('href');
+        if (location.indexOf(link) !== -1){
+          $(this).addClass('active');
+          }
+      });
+  });
+
+
 });
 
 
-
+$(document).mouseup(function(e){
+  let div = $('.header__drop--btn, .header__modal--wrap');
+  if(!div.is(e.target)
+  && div.has(e.target).length === 0) {
+    div.removeClass('active'); 
+    $('.header__modal--wrap').removeClass('active');
+  }
+});
 
 
 $(document).on('click', function(e){
