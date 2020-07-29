@@ -39,4 +39,11 @@
       border-radius: 8px;
     }
   }
+  .burger {
+    width: 24px;
+    height: 24px;
+    object-position: center;
+    object-fit: cover;
+    display: none;
+  }
 }

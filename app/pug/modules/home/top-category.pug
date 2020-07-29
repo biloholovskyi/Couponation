@@ -5,9 +5,9 @@ include ../../mixins/card-link
   .container
     .row
       .col-12
-        .top-category__title Top categories
+        .top-category__title Top categories and subcategories
     .row
-      .col-9
+      .col-12.col-lg-9.col-md-8.col-sm-12
         .top-category__body
           +categoryItem('⌚', 'accessories')
           +categoryItem('🌸', 'beauty')
@@ -37,5 +37,5 @@ include ../../mixins/card-link
           +categoryItem('🎨', 'art')
           +categoryItem('☘', 'organic')
           +categoryItem('👶', 'baby')
-      .col-3
+      .col-12.col-lg-3.col-md-4.col-sm-12
         +card-link("Check full catalog")

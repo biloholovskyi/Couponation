@@ -13,7 +13,22 @@ $(document).ready((e) => {
     dots: false,
     autoplay: false,
     margin: 10,
-    items: 5 
+    items: 5,
+    responsive: {
+      0: {
+        items: 2
+      },
+      575: {
+        items: 3
+      },
+      767: {
+        items: 4
+      },
+      991: {
+        items: 5
+      }
+    }
+
   });
 
   $('.small-form__form input,.small-form__form textarea').on('input', (e) => smallFormInput(e));

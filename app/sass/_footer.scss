@@ -76,6 +76,8 @@
     border-radius: 8px;
     margin-bottom: 11px;
     cursor: pointer;
+    transition: .4s;
+    
 
     &:last-child {
       margin-bottom: 0;
@@ -86,5 +88,13 @@
       background: #FF703E;
       border: none;
     }
+  }
+  .mobile-block {
+    display: none;
+    text-align: center;
+  }
+  .footer__contact:hover {
+    background: #222222;
+      color: #fff;
   }
 }
