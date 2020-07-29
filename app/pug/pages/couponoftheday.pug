@@ -18,7 +18,7 @@ block content
           .breadcrumb
             +breadcrumb('Main page','/')
             +breadcrumb('/ Coupons','./coupons.html') 
-            +breadcrumb('/ Coupons of the day','./couponsoftheday.html') 
+            +breadcrumb('/ Coupons of the day','./couponoftheday.html') 
       .row
         .col-12
           .coupons-title
@@ -64,7 +64,7 @@ block content
             +coupons-shop(' 35% OFF', 'Save Up to 35% on Select Solids State Drives','14,271 total uses','2,632 uses today','80% success rate')
             +coupons-shop('35% OFF', 'Save $35-$700 On Select Surface Devices and Free Contactless Curbside Pickup','14,271 total uses','2,632 uses today','80% success rate')
             .number-coupon(style="margin-top: 32px;")
-                  .num-item 1
+                  .num-item.active 1
                   .num-item 2
                   .num-item 3
                   .num-dots

@@ -2,6 +2,7 @@ import 'normalize.css';
 import { smallFormInput} from "./smallForm";
 import './accordion';
 import { switchTab, switchTabGrf } from "./tabs";
+import './stickyHeader';
 
 $(document).ready((e) => {
 
@@ -52,6 +53,27 @@ $('.addNewCoupon').on('click', function(){
   });
 });
 
+
+// GET code modal
+$('.getCode').on('click', function(){
+  $('.getCode__modal--overlay').css({'display': 'flex'}); 
+  $('body').css({
+    'overflow': 'hidden',
+    'position': 'relative',
+    'height': '100vh'
+  });
+});
+
+$('.getCode__modal--close').on('click', function(){
+  $('.getCode__modal--overlay').css({'display': 'none'});
+  $('body').css({
+    'overflow': 'visible',
+    'position': 'relative',
+    'height': '100%'
+  });
+});
+
+// change shop modal on admin page
 $('.change_shop').on('click', function(){
   $('.shop__modal--overlay').css({'display': 'flex'});
   $('body').css({
@@ -60,6 +82,8 @@ $('.change_shop').on('click', function(){
     'height': '100vh'
   });
 });
+
+
 
 //admin modal close
 $('.adm__modal--close').on('click', function(){
@@ -127,14 +151,15 @@ $(document).mouseup(function(e){
 
 
 $(document).on('click', function(e){
-  let modal = $('.admin__modal, .shop__modal');
-  let Btn = $('.addNewCoupon, .change_shop');
+  let modal = $('.admin__modal, .shop__modal, .getCode__modal');
+  let Btn = $('.addNewCoupon, .change_shop, .getCode');
 
 
   if(!Btn.is(e.target) && Btn.has(e.target).length === 0) {
     if(!modal.is(e.target) && modal.has(e.target).length === 0){
       $('.admin__modal--overlay').css({'display': 'none'});
       $('.shop__modal--overlay').css({'display': 'none'});
+      $('.getCode__modal--overlay').css({'display': 'none'});
       $('body').css({
         'overflow': 'visible',
         'position': 'relative',
