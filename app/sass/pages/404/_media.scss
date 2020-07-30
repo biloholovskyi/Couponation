@@ -1,0 +1,20 @@
+@media screen and (max-width: 575px) {
+  .error-page {
+    padding-top: 20px;
+    .home-main {
+      .home-main__title {
+        font-size: 80px;
+        line-height: 100px;
+        margin-bottom: 16px;
+      }
+      .home-main__desc {
+        font-size: 22px;
+        line-height: 28px;
+        margin-bottom: 24px;
+      }
+    }
+     .top-category {
+      padding-bottom: 32px;
+  }
+  }
+}

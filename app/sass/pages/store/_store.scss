@@ -39,23 +39,37 @@
     }
   }
   .card-wrap {
-    .show-all {
-      font-weight: normal;
-      font-size: 14px;
-      line-height: 22px;
-      text-align: center;
-      color: #222222;
-      padding: 8px 0 10px;
-      border: 1px solid #222222;
-      border-radius: 8px;
-      width: 175px;
-      margin: 32px auto 0 auto;
-      cursor: pointer;
-      transition: .4s;
-      &:hover {
-        background: #222222;
-        color: #fff;
-      }
+    justify-content: space-between; 
+    .card-store {
+      width: 100%;
+      max-width: calc(100% / 5 - 10px);
+      margin-bottom: 10px;
+      flex: none;
+      margin-right: 0;
+    }
+    
+  }
+  .show-all {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: #222222;
+    padding: 8px 0 10px;
+    border: 1px solid #222222;
+    border-radius: 8px;
+    width: 175px;
+    margin: 32px auto 0 auto;
+    cursor: pointer;
+    transition: .4s;
+    &:hover {
+      background: #222222;
+      color: #fff;
     }
   }
 }
+.alphabet-single-wrap  {
+  display: none;
+}
+
+@import 'media';

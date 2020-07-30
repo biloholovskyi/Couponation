@@ -21,7 +21,7 @@
               <p>Just added to the site, hurry up!</p></a><a class="header__modal--item" href="#">
               <h3>Trusted coupons</h3>
               <p>Coupons marked as "100% working"    </p></a></div>
-        </button><a class="header__link" href="#">Categories</a><a class="header__link" href="./store.html">Stores</a>
+        </button><a class="header__link" href="/categories.html">Categories</a><a class="header__link" href="./store.html">Stores </a>
         <div class="header__button" onclick="location.href='/submitCoupon.html';">Submit a coupon</div>
       </div>
     </header>
@@ -29,20 +29,20 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <div class="breadcrumb"><a href="./store.html">Stores</a><a href="#">/ Best Buy</a>
+            <div class="breadcrumb"><a href="./store.html">Stores</a><a href="/shop.html">/ Best Buy</a>
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-9">
-            <div class="shop-caption">
+          <div class="col-12 col-lg-9 col-sm-12">
+            <div class="shop-caption"> 
               <div class="shop-logo"><img src="../media/icon/logos/shop-logo.svg" alt="logo"></div>
-              <div class="shop-title">
+              <div class="shop-title"> 
                 <h1>Best Buy</h1><a class="link" href="https://www.bestbuy.com">https://www.bestbuy.com<img src="../media/icon/link.svg" alt="icon"></a>
               </div>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-12 col-lg-3 col-sm-12">
             <div class="shop-page">
               <div class="shop-caption"> 
                 <div class="shop-title"> 
@@ -52,6 +52,7 @@
                     <button class="category-btn">health<img src="../media/icon/category/heart.svg" alt="image"/></button>
                     <button class="category-btn">skin care<img src="../media/icon/category/skin.svg" alt="image"/></button>
                     <button class="category-btn">cosmetics<img src="../media/icon/category/cosmetic.svg" alt="image"/></button>
+                    <div class="categories-btn">+3   </div>
                   </div>
                 </div>
               </div>
@@ -59,8 +60,14 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-9">
+          <div class="col-12">
+            <div class="mobile__nav"><a class="shopLinks anhors active" href="#Coupones">Coupons</a><a class="shopLinks anhors" href="#About">About</a><a class="shopLinks anhors" href="#FAQ">FAQ                 </a></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-lg-9 col-md-12">
             <div class="bigCoupon-wrap">
+              <div class="mobile__title" id="Coupones">Coupons</div>
               <div class="coupon-shop">
                 <div class="left-side">
                   <h3>Free shipping</h3>
@@ -217,7 +224,43 @@
               </div>
               <div class="show-all">Show more coupons</div>
             </div>
-            <h2>FAQ</h2>
+            <div class="mobile-block--shop">
+              <h2 id="About">About</h2>
+              <div class="aside">
+                <h3>About Best Buy</h3>
+                <p>Harry & David is known for their delicious, extra sweet Royal Riviera pears. The company creates fruit and gift baskets featuring these handpicked fresh pears or other fruits, such as peaches, depending on the season. Inside the gift baskets, you’ll also enjoy gourmet products such as chocolates, cheeses, crackers, wine, and nuts.</p>
+              </div>
+              <div class="aside">
+                <h3>Best Buy in numbers</h3>
+                <div class="aside-block">
+                  <div class="aside-item">
+                    <p>Coupons available</p>
+                    <div class="number">47</div>
+                  </div>
+                  <div class="aside-item">
+                    <p>New deals</p>
+                    <div class="number">4</div>
+                  </div>
+                  <div class="aside-item">
+                    <p>Coupons available</p>
+                    <div class="number">30% of</div>
+                  </div>
+                  <div class="aside-item">
+                    <p>Coupons available</p>
+                    <div class="number">$10,99</div>
+                  </div>
+                  <div class="aside-item">
+                    <p>Last updated</p>
+                    <div class="number">May 14, 2020</div>
+                  </div>
+                  <div class="aside-item">
+                    <p>Update period</p>
+                    <div class="number">7 days</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h2 id="FAQ">FAQ</h2>
             <div class="shop-acc">
               <ul>
                 <li class="dropdown Drop">
@@ -267,12 +310,12 @@
               </ul>
             </div>
           </div>
-          <div class="col-3">
-            <div class="aside">
+          <div class="col-12 col-lg-3 col-md-12">
+            <div class="aside desktop-aside">
               <h3>About Best Buy</h3>
               <p>Harry & David is known for their delicious, extra sweet Royal Riviera pears. The company creates fruit and gift baskets featuring these handpicked fresh pears or other fruits, such as peaches, depending on the season. Inside the gift baskets, you’ll also enjoy gourmet products such as chocolates, cheeses, crackers, wine, and nuts.</p>
             </div>
-            <div class="aside">
+            <div class="aside desktop-aside">
               <h3>Best Buy in numbers</h3>
               <div class="aside-block">
                 <div class="aside-item">
@@ -301,7 +344,7 @@
                 </div>
               </div>
             </div>
-            <div class="aside-top-store">
+            <div class="aside-top-store desktop-aside">
               <h3>Top stores like Best Buy</h3>
               <div class="stores-wrap">
                 <div class="store-item">
@@ -335,7 +378,7 @@
               </div>
               <button>Show more </button>
             </div>
-            <div class="aside-category">
+            <div class="aside-category desktop-aside">
               <h3>Similar categories</h3>
               <div class="stores-wrap">
                 <div class="store-item">
@@ -379,7 +422,48 @@
         </div>
       </div>
     </div>
-    <div class="card-section">
+    <div class="main-slider coupon-slide mobile-slider">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="main-slider__title">Find coupons at stores like Best Buy</div>
+            <div class="main-slider__body owl-carousel owl-theme" id="coupon-slider">
+              <div class="card-store"><img src="./media/icon/logos/1.png" alt="logo"/>
+                <div class="name">Kohl's</div>
+                <div class="text">21 active coupons</div>
+                <div class="text">12,637,890 times used</div>
+              </div>
+              <div class="card-store"><img src="./media/icon/logos/2.png" alt="logo"/>
+                <div class="name">Travelocity</div>
+                <div class="text">21 active coupons</div>
+                <div class="text">12,637,890 times used</div>
+              </div>
+              <div class="card-store"><img src="./media/icon/logos/3.png" alt="logo"/>
+                <div class="name">RedBubble</div>
+                <div class="text">4 active coupons</div>
+                <div class="text">12,637,890 times used</div>
+              </div>
+              <div class="card-store"><img src="./media/icon/logos/4.png" alt="logo"/>
+                <div class="name">Best Buy</div>
+                <div class="text">50 active coupons</div>
+                <div class="text">12,637,890 times used</div>
+              </div>
+              <div class="card-store"><img src="./media/icon/logos/5.png" alt="logo"/>
+                <div class="name">SHEIN</div>
+                <div class="text">3 active coupons</div>
+                <div class="text">12,637,890 times used</div>
+              </div>
+              <div class="card-store"><img src="./media/icon/logos/2.png" alt="logo"/>
+                <div class="name">Travelocity</div>
+                <div class="text">21 active coupons</div>
+                <div class="text">12,637,890 times used</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-section shop-card-section">
       <div class="container">   
         <div class="row">
           <div class="col-12">
@@ -451,7 +535,7 @@
               <div class="coupon-home coupon-home--shop">
                 <div class="top">
                   <div class="name">Buy More, Save More: 15% Off $60, 25% Off $100 and 30% Off $200 Order</div>
-                  <div class="button">Get code</div>
+                  <div class="button getCode"> Get code</div>
                 </div>
                 <div class="bottom">
                   <div class="name">Vistaprint</div>
@@ -465,7 +549,7 @@
               <div class="coupon-home coupon-home--shop">
                 <div class="top">
                   <div class="name">20% Off Sitewide</div>
-                  <div class="button">Get code</div>
+                  <div class="button getCode"> Get code</div>
                 </div>
                 <div class="bottom">
                   <div class="name">EyeBuyDirect</div>
@@ -479,7 +563,7 @@
               <div class="coupon-home coupon-home--shop">
                 <div class="top">
                   <div class="name">$2.95 Flat Rate Standard Shipping on Your Orders</div>
-                  <div class="button">Get code</div>
+                  <div class="button getCode"> Get code</div>
                 </div>
                 <div class="bottom">
                   <div class="name">Alex and Ani</div>
@@ -493,7 +577,7 @@
               <div class="coupon-home coupon-home--shop">
                 <div class="top">
                   <div class="name">25% Off Orders</div>
-                  <div class="button">Get code</div>
+                  <div class="button getCode"> Get code</div>
                 </div>
                 <div class="bottom">
                   <div class="name">Shutterfly</div>
@@ -507,7 +591,7 @@
               <div class="coupon-home coupon-home--shop">
                 <div class="top">
                   <div class="name">Get 25% Off Orders of $50+ When You Sign Up for Emails</div>
-                  <div class="button">Get code</div>
+                  <div class="button getCode"> Get code</div>
                 </div>
                 <div class="bottom">
                   <div class="name">Lovehoney</div>
@@ -521,7 +605,7 @@
               <div class="coupon-home coupon-home--shop">
                 <div class="top">
                   <div class="name">Get 25% Off Orders of $50+ When You Sign Up for Emails</div>
-                  <div class="button">Get code</div>
+                  <div class="button getCode"> Get code</div>
                 </div>
                 <div class="bottom">
                   <div class="name">Lovehoney</div>
@@ -529,6 +613,85 @@
                     <div class="result">80% success rate</div>
                     <div class="icon like">👍</div>
                     <div class="icon dislike">👎</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mobile-block--shop" style="border-bottom: none; padding-bottom: 0">
+            <h3 class="mobile-titles">Top stores like Best Buy</h3>
+            <div class="aside-top-store">
+              <h3>Top stores like Best Buy</h3>
+              <div class="stores-wrap">
+                <div class="store-item">
+                  <div class="store-icon"><img src="../../media/icon/logos/1.png" alt="image"></div>
+                  <div class="store-info">
+                    <p>Kohl's</p>
+                    <p>21 active coupons</p>
+                  </div>
+                </div>
+                <div class="store-item">
+                  <div class="store-icon"><img src="../../media/icon/logos/2.png" alt="image"></div>
+                  <div class="store-info">
+                    <p>Travelocity</p>
+                    <p>19 active coupons</p>
+                  </div>
+                </div>
+                <div class="store-item">
+                  <div class="store-icon"><img src="../../media/icon/logos/3.png" alt="image"></div>
+                  <div class="store-info">
+                    <p>RedBubble</p>
+                    <p>21 active coupons</p>
+                  </div>
+                </div>
+                <div class="store-item">
+                  <div class="store-icon"><img src="../../media/icon/logos/2.png" alt="image"></div>
+                  <div class="store-info">
+                    <p>Kohl's</p>
+                    <p>21 active coupons</p>
+                  </div>
+                </div>
+              </div>
+              <button>Show more </button>
+            </div>
+            <div class="line"></div>
+            <h3 class="mobile-titles">Similar categories</h3>
+            <div class="aside-category">
+              <h3>Similar categories</h3>
+              <div class="stores-wrap">
+                <div class="store-item">
+                  <div class="store-icon"><img src="../../media/icon/category/cosmetic.svg" alt="image"></div>
+                  <div class="store-info">
+                    <p>Accessories</p>
+                    <p>21 active coupons</p>
+                  </div>
+                </div>
+                <div class="store-item">
+                  <div class="store-icon"><img src="../../media/icon/category/flowers.svg" alt="image"></div>
+                  <div class="store-info">
+                    <p>Beauty</p>
+                    <p>19 active coupons</p>
+                  </div>
+                </div>
+                <div class="store-item">
+                  <div class="store-icon"><img src="../../media/icon/category/hair.svg" alt="image"></div>
+                  <div class="store-info">
+                    <p>RedBubble</p>
+                    <p>21 active coupons</p>
+                  </div>
+                </div>
+                <div class="store-item">
+                  <div class="store-icon"><img src="../../media/icon/category/skin.svg" alt="image"></div>
+                  <div class="store-info">
+                    <p>Clothing</p>
+                    <p>21 active coupons</p>
+                  </div>
+                </div>
+                <div class="store-item">
+                  <div class="store-icon"><img src="../../media/icon/category/heart.svg" alt="image"></div>
+                  <div class="store-info">
+                    <p>Makeup</p>
+                    <p>21 active coupons    </p>
                   </div>
                 </div>
               </div>

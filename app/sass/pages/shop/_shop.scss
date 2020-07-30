@@ -67,6 +67,9 @@
         .category-btn {
           margin-bottom: 8px;
         }
+        .categories-btn{
+          display: none;
+        }
       }
     }
   }
@@ -307,3 +310,26 @@
   }
  
 }
+
+.mobile-block--shop {
+  display: none;
+}
+.mobile-slider {
+  display: none;
+}
+.mobile__nav {
+  display: none;
+}
+.mobile__title {
+  display: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #222222;
+  margin-bottom: 24px;
+}
+.mobile-titles {
+  display: none;
+}
+@import 'media';

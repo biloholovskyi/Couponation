@@ -10,13 +10,16 @@
   background: rgba(0, 0, 0, 0.4);
   z-index: 20;
   transition: .5s;
+  padding: 0 10px;
+
   .getCode__modal {
     padding: 34px 0px 40px 0px;
     background: #FFFFFF;
     border-radius: 8px;
     text-align: center;
-    min-width: 608px; 
+    min-width: 608px;
     position: relative;
+
     .getCode__modal--close {
       background-image: url(../media/icon/close-map.svg);
       background-position: center;
@@ -28,14 +31,17 @@
       right: 40px;
       cursor: pointer;
     }
+
     .top {
       padding-left: 40px;
       padding-right: 40px;
     }
+
     .bottom {
       padding-left: 40px;
       padding-right: 40px;
     }
+
     h3 {
       font-style: normal;
       font-weight: bold;
@@ -44,17 +50,19 @@
       color: #222222;
       margin-bottom: 32px;
     }
+
     .field {
       width: 100%;
       background: #F7F7F7;
       border: 1px solid #EBEBEB;
       border-radius: 8px;
-      display: flex; 
+      display: flex;
       justify-content: space-between;
       padding: 4px;
       min-height: 64px;
-      align-items: center;   
+      align-items: center;
       margin-bottom: 20px;
+
       .field_inp {
         font-style: normal;
         font-weight: 500;
@@ -62,9 +70,10 @@
         line-height: 32px;
         letter-spacing: 0.08em;
         text-transform: uppercase;
-        color: rgba(34, 34, 34, 0.6); 
+        color: rgba(34, 34, 34, 0.6);
         padding-left: 20px;
       }
+
       .field_btn {
         background: #FF703E;
         border-radius: 4px;
@@ -76,10 +85,11 @@
         color: #FFFFFF;
         min-width: 256px;
         padding: 16px 0;
-        justify-content: center; 
+        justify-content: center;
         cursor: pointer;
       }
     }
+
     p {
       font-style: normal;
       font-weight: normal;
@@ -87,6 +97,7 @@
       line-height: 20px;
       color: #717171;
       margin-bottom: 32px;
+
       a {
         font-style: normal;
         font-weight: normal;
@@ -96,12 +107,14 @@
         text-decoration: underline;
       }
     }
+
     .line {
       width: 100%;
       height: 1px;
       background-color: #EBEBEB;
       margin-bottom: 32px;
     }
+
     h4 {
       font-style: normal;
       font-weight: bold;
@@ -110,6 +123,7 @@
       color: #222222;
       margin-bottom: 24px;
     }
+
     .subscribe {
       display: flex;
       flex-direction: row-reverse;
@@ -125,12 +139,81 @@
       color: #222222;
       background-color: #fff;
       padding: 9px 16px 9px 12px;
+
       img {
         width: 18px;
         height: 18px;
         object-position: center;
         object-fit: cover;
         margin-right: 8px;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .getCode__modal--overlay {
+    .getCode__modal {
+      min-width: 400px;
+      padding: 20px 0;
+      .field {
+        flex-direction: column;
+
+        .field_inp {
+          padding: 20px 0;
+        }
+
+        .field_btn {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .getCode__modal--overlay {
+    .getCode__modal {
+      .line {
+        margin: 10px;
+      }
+
+      p {
+        margin-bottom: 10px;
+      }
+
+      h3 {
+        font-size: 20px;
+        line-height: 20px;
+        color: #222;
+        margin-bottom: 24px;
+      }
+
+      .getCode__modal--close {
+        top: 10px;
+        right: 10px;
+      }
+
+      .top {
+        padding: 0;
+      }
+
+      min-width: 300px;
+      padding: 20px;
+
+      .field {
+        .field_btn {
+          min-width: unset;
+        }
+      }
+
+      .bottom {
+        h4 {
+          font-size: 15px;
+          line-height: 21px;
+          margin-bottom: 15px;
+        }
       }
     }
   }

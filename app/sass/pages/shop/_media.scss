@@ -1,0 +1,286 @@
+@media screen and (max-width: 1199px) {
+  .shop-page {
+    .shop-caption {
+      .shop-title {
+        .category-btn--block {
+          min-width: unset;
+        }
+      }
+    }
+  }
+
+  .aside,
+  .aside-top-store,
+  .aside-category {
+    width: 230px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .desktop-aside {
+    display: none;
+  }
+
+  .mobile-block--shop {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    h2 {
+      margin-bottom: 20px;
+      flex: 100%;
+    }
+
+    .aside,
+    .aside-category,
+    .aside-top-store {
+      width: 40%;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .shop-page {
+    .shop-caption {
+      padding: 0;
+      margin-bottom: 20px;
+
+      .shop-logo {
+        width: 100px;
+        height: 100px;
+
+        img {
+          width: 80px;
+          height: 80px;
+          padding: 15px;
+        }
+      }
+
+      .shop-title {
+        h1 {
+          font-size: 40px;
+          line-height: 55px;
+        }
+      }
+    }
+  }
+
+  .shop-card-section {
+    display: none;
+  }
+
+  .mobile-slider {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .mobile-block--shop {
+
+    .aside,
+    .aside-category,
+    .aside-top-store {
+      width: 48%;
+    }
+  }
+  .line {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .shop-page {
+    .shop-caption {
+      margin: 16px 0 0;
+
+      .shop-logo {
+        width: 56px;
+        height: 56px;
+        padding: 6px;
+        margin-right: 16px;
+
+        img {
+          width: 42px;
+          height: 42px;
+          padding: 0;
+        }
+      }
+
+      .shop-title {
+        .category-btn--block {
+          .categories-btn {
+            display: block;
+          }
+        }
+        h1 {
+          font-size: 24px;
+          line-height: 30px;
+        }
+
+        .link {
+          font-size: 14px;
+          line-height: 20px;
+
+          img {
+            width: 18px;
+            height: 18px;
+          }
+        }
+      }
+    }
+  }
+
+  .mobile__nav {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #f7f7f7;
+    a {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 22px;
+      text-transform: uppercase;
+      color: #222;
+      padding: 20px 14px;
+
+      &.active {
+        color: #FF703E;
+        border-bottom: 2px solid #FF703E;
+      }
+    }
+  }
+
+  .mobile__title {
+    display: block;
+  }
+
+  .bigCoupon-wrap .show-all {
+    width: 100%;
+  }
+
+  .mobile-block--shop {
+    flex-direction: column;
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+    border-bottom: 1px solid #F7F7F7;
+
+    .aside,
+    .aside-top-store,
+    .aside-category
+     {
+      width: 100%;
+    }
+
+  }
+  .aside-top-store,
+  .aside-category {
+    h3 {
+      display: none;
+    }
+  }
+  .mobile-titles {
+    display: block;
+  }
+  .shop-page h2 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .shop-acc ul {
+    .dropdown [data-toggle=dropdown] {
+      font-size: 16px;
+      line-height: 22px;
+      text-align: left;
+      align-items: flex-start;
+
+      .plus,
+      .minus {
+        padding: 0;
+      }
+
+      .minus {
+        background-color: transparent;
+      }
+    }
+
+    .dropdown>.dropdown-menu {
+      li .acc-item {
+        p {
+          font-size: 14px;
+          line-height: 22px;
+        }
+      }
+    }
+  }
+
+  .small-coupon {
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+    border-bottom: 1px solid #F7F7F7;
+    h2 {
+      font-size: 24px;
+      line-height: 30px;
+      margin-bottom: 24px;
+    }
+  }
+
+  .coupons-shop__body {
+    .coupon-home--shop {
+      margin-right: 0;
+      margin-bottom: 10px;
+      position: relative;
+      min-height: 222px;
+      padding: 16px;
+      flex: 100%;
+
+      .top {
+        .button {
+          width: 100%;
+          position: absolute;
+          bottom: 16px;
+          margin-top: 21px;
+          max-width: 256px;
+          bottom: 10px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+
+      .bottom {
+        display: flex;
+        flex-direction: column;
+
+        .name {
+          width: 100%;
+        }
+
+        .rate {
+          justify-content: flex-end;
+          width: 100%;
+
+          .result {
+            margin-right: auto;
+          }
+        }
+      }
+    }
+  }
+  .line {
+    width: 100%;
+    height: 1px;
+    background-color: #F7F7F7;
+    margin: 32px 0;
+  }
+  .mobile-titles {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: #222222;
+    margin-bottom: 24px;
+  }
+  .line {
+    display: block;
+  }
+}

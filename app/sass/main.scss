@@ -49,6 +49,7 @@ button {
 @import "modules/card-link";
 @import "modules/getCodeModal";
 @import "modules/subscribe_modal";
+@import 'modules/card-category';
 
 /*over use blocks*/
 @import "header";
@@ -82,3 +83,5 @@ button {
 @import "pages/admin/dashboard";
 /* PAGES  SUBMIT A COUPON */
 @import "pages/submitCoupon/submitCoupon";
+/* PAGES  CATEGORIES */
+@import "pages/categories/categories";

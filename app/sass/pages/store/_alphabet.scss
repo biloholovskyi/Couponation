@@ -32,9 +32,14 @@
       cursor: pointer;
     }
     & .alphabet-item:hover {
-      background: #222222;
+      background: #ECECEC;
       border-radius: 50%;
+    }
+
+    & .alphabet-item.desctop-active { 
+      background: #222222;
       color: #fff;
+      min-width: 40px; 
     }
   }
 }

@@ -3,8 +3,19 @@ import { smallFormInput} from "./smallForm";
 import './accordion';
 import { switchTab, switchTabGrf } from "./tabs";
 import './stickyHeader';
+import './anhors';
+import {switchLink} from './activeLink';
+
 
 $(document).ready((e) => {
+
+ 
+  $('.mobile__nav .shopLinks').on('click', (e) => switchLink(e));
+  // show categories on categories page
+  $('.categories-btn').on('click', function(){
+    $(this).hide();
+    $(this).parents('.categories-items').children('.hidden-category ').css('display', 'flex');
+  });
 
   $('#coupon-slider').owlCarousel({ 
     loop: false,

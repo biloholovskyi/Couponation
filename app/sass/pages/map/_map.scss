@@ -195,6 +195,8 @@
 }  
 .maps.active {
   display: flex;
+  z-index: 30;
+  padding: 0 20px;
 }
 .ymaps-2-1-76-inner-panes {
   border-radius: 16px!important;
@@ -215,3 +217,5 @@
 // .ymaps-2-1-76-float-button {
 //   border-radius: none!important; 
 // }
+
+@import 'media';

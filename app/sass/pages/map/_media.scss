@@ -1,0 +1,31 @@
+@media screen and (max-width: 991px) {
+  .contact-info {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .contact-page {
+    padding-bottom: 32px;
+    .contact_title {
+      font-size: 32px;
+      line-height: 40px;
+      margin-bottom: 24px;
+    }
+
+    .contact-desc p {
+      font-size: 14px;
+      line-height: 22px;
+      margin-bottom: 24px;
+    }
+  }
+  .contact-info {
+    margin-bottom: 0px;
+  }
+  .maps.active {
+    padding: 5px;
+  }
+  .maps .contacts-map .close-map {
+    right: 10px;
+  }
+}

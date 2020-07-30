@@ -8,6 +8,7 @@ include ../mixins/breadcrumb
 
 block variables
   - const pageTitle = 'Shop'
+  - const mainSliderTitle = 'Find coupons at stores like Best Buy'
 
 block content
   .shop-page
@@ -16,17 +17,17 @@ block content
         .col-12
           .breadcrumb
             +breadcrumb('Stores','./store.html')
-            +breadcrumb('/ Best Buy','#')
+            +breadcrumb('/ Best Buy','/shop.html')
       .row
-        .col-9
-          .shop-caption
+        .col-12.col-lg-9.col-sm-12
+          .shop-caption 
             .shop-logo
               img(src="../media/icon/logos/shop-logo.svg", alt="logo")
-            .shop-title
+            .shop-title 
               h1 Best Buy
               a(href="https://www.bestbuy.com").link https://www.bestbuy.com
                 img(src="../media/icon/link.svg", alt="icon")
-        .col-3
+        .col-12.col-lg-3.col-sm-12
           .shop-page
             .shop-caption 
               .shop-title 
@@ -35,10 +36,19 @@ block content
                   +CategoryBtn('../media/icon/category/hair.svg','hair')
                   +CategoryBtn('../media/icon/category/heart.svg','health')
                   +CategoryBtn('../media/icon/category/skin.svg','skin care')
-                  +CategoryBtn('../media/icon/category/cosmetic.svg','cosmetics')       
+                  +CategoryBtn('../media/icon/category/cosmetic.svg','cosmetics')
+                  .categories-btn +3   
       .row
-        .col-9
+        .col-12
+          .mobile__nav
+            a(href="#Coupones").shopLinks.anhors.active Coupons
+            a(href="#About").shopLinks.anhors About
+            a(href="#FAQ").shopLinks.anhors FAQ                 
+      .row
+        .col-12.col-lg-9.col-md-12
+
           .bigCoupon-wrap
+            .mobile__title#Coupones Coupons
             +coupons-shop('Free shipping', 'Free Standard Shipping With Doorstep Drop-Off on Orders $35 and Up','14,271 total uses','2,632 uses today','80% success rate')
             +coupons-shop(' 35% OFF', 'Save Up to 35% on Select Solids State Drives','14,271 total uses','2,632 uses today','80% success rate')
             +coupons-shop('35% OFF', 'Save $35-$700 On Select Surface Devices and Free Contactless Curbside Pickup','14,271 total uses','2,632 uses today','80% success rate')
@@ -47,11 +57,51 @@ block content
             +coupons-shop('$170 Off', 'Free Standard Shipping With Doorstep Drop-Off on Orders $35 and Up','14,271 total uses','2,632 uses today','80% success rate')
             +coupons-shop('$170 Off', 'Up to $170 Off Beats Headphones Plus Available for In-Store Pick Up by Christmas','14,271 total uses','2,632 uses today','80% success rate')
             .show-all Show more coupons
-          h2 FAQ
-          include ../modules/shop/shop-acc  
-        .col-3
-          include ../modules/shop/aside
-  .card-section
+          .mobile-block--shop
+            h2#About About
+            .aside
+              h3 About Best Buy
+              p Harry & David is known for their delicious, extra sweet Royal Riviera pears. The company creates fruit and gift baskets featuring these handpicked fresh pears or other fruits, such as peaches, depending on the season. Inside the gift baskets, you’ll also enjoy gourmet products such as chocolates, cheeses, crackers, wine, and nuts.
+            .aside
+              h3 Best Buy in numbers
+              .aside-block
+                .aside-item
+                  p Coupons available
+                  .number 47
+                .aside-item
+                  p New deals
+                  .number 4
+                .aside-item
+                  p Coupons available
+                  .number 30% of
+                .aside-item
+                  p Coupons available
+                  .number $10,99
+                .aside-item
+                  p Last updated
+                  .number May 14, 2020
+                .aside-item
+                  p Update period
+                  .number 7 days
+  
+          h2#FAQ FAQ
+          include ../modules/shop/shop-acc
+        .col-12.col-lg-3.col-md-12
+          include ../modules/shop/aside     
+  .main-slider.coupon-slide.mobile-slider
+    .container
+      .row
+        .col-12
+          .main-slider__title=mainSliderTitle
+          .main-slider__body.owl-carousel.owl-theme#coupon-slider
+            +card-store("./media/icon/logos/1.png", "Kohl's", "21 active coupons", "12,637,890 times used")
+            +card-store("./media/icon/logos/2.png", "Travelocity", "21 active coupons", "12,637,890 times used")
+            +card-store("./media/icon/logos/3.png", "RedBubble", "4 active coupons", "12,637,890 times used")
+            +card-store("./media/icon/logos/4.png", "Best Buy", "50 active coupons", "12,637,890 times used")
+            +card-store("./media/icon/logos/5.png", "SHEIN", "3 active coupons", "12,637,890 times used")
+            +card-store("./media/icon/logos/2.png", "Travelocity", "21 active coupons", "12,637,890 times used")          
+        
+  .card-section.shop-card-section
     .container    
       .row
         .col-12
@@ -81,5 +131,71 @@ block content
             +coupon-home("$2.95 Flat Rate Standard Shipping on Your Orders", "Alex and Ani", "80% success rate")
             +coupon-home("25% Off Orders", "Shutterfly", "80% success rate")
             +coupon-home("Get 25% Off Orders of $50+ When You Sign Up for Emails", "Lovehoney", "80% success rate") 
-            +coupon-home("Get 25% Off Orders of $50+ When You Sign Up for Emails", "Lovehoney", "80% success rate")       
+            +coupon-home("Get 25% Off Orders of $50+ When You Sign Up for Emails", "Lovehoney", "80% success rate")
+        .mobile-block--shop(style="border-bottom: none; padding-bottom: 0")
+          h3.mobile-titles Top stores like Best Buy
+          .aside-top-store
+            h3 Top stores like Best Buy
+            .stores-wrap
+              .store-item
+                .store-icon
+                  img(src="../../media/icon/logos/1.png", alt="image")
+                .store-info
+                  p Kohl's
+                  p 21 active coupons
+              .store-item
+                .store-icon
+                  img(src="../../media/icon/logos/2.png", alt="image")
+                .store-info
+                  p Travelocity
+                  p 19 active coupons
+              .store-item
+                .store-icon
+                  img(src="../../media/icon/logos/3.png", alt="image")
+                .store-info
+                  p RedBubble
+                  p 21 active coupons
+              .store-item
+                .store-icon
+                  img(src="../../media/icon/logos/2.png", alt="image")
+                .store-info
+                  p Kohl's
+                  p 21 active coupons
+            button Show more 
+          .line
+          h3.mobile-titles Similar categories
+          .aside-category
+            h3 Similar categories
+            .stores-wrap
+              .store-item
+                .store-icon
+                  img(src="../../media/icon/category/cosmetic.svg", alt="image")
+                .store-info
+                  p Accessories
+                  p 21 active coupons
+              .store-item
+                .store-icon
+                  img(src="../../media/icon/category/flowers.svg", alt="image")
+                .store-info
+                  p Beauty
+                  p 19 active coupons
+              .store-item
+                .store-icon
+                  img(src="../../media/icon/category/hair.svg", alt="image")
+                .store-info
+                  p RedBubble
+                  p 21 active coupons
+              .store-item
+                .store-icon
+                  img(src="../../media/icon/category/skin.svg", alt="image")
+                .store-info
+                  p Clothing
+                  p 21 active coupons
+              .store-item
+                .store-icon
+                  img(src="../../media/icon/category/heart.svg", alt="image")
+                .store-info
+                  p Makeup
+                  p 21 active coupons    
+
 

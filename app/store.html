@@ -21,7 +21,7 @@
               <p>Just added to the site, hurry up!</p></a><a class="header__modal--item" href="#">
               <h3>Trusted coupons</h3>
               <p>Coupons marked as "100% working"    </p></a></div>
-        </button><a class="header__link" href="#">Categories</a><a class="header__link" href="./store.html">Stores</a>
+        </button><a class="header__link" href="/categories.html">Categories</a><a class="header__link" href="./store.html">Stores </a>
         <div class="header__button" onclick="location.href='/submitCoupon.html';">Submit a coupon</div>
       </div>
     </header>
@@ -45,7 +45,7 @@
             </div>
           </div>
           <div class="col-12">
-            <div class="alphabet">
+            <div class="alphabet desctop-abc">
               <div class="alphabet-title">Find store by name</div>
               <div class="alphabet-block"><a class="alphabet-item" href="./single-store.html">A</a><a class="alphabet-item" href="./single-store.html">B</a><a class="alphabet-item" href="./single-store.html">C</a><a class="alphabet-item" href="./single-store.html">D</a><a class="alphabet-item" href="./single-store.html">E</a><a class="alphabet-item" href="./single-store.html">F</a><a class="alphabet-item" href="./single-store.html">G</a><a class="alphabet-item" href="./single-store.html">H</a><a class="alphabet-item" href="./single-store.html">I</a><a class="alphabet-item" href="./single-store.html">J</a><a class="alphabet-item" href="./single-store.html">K</a><a class="alphabet-item" href="./single-store.html">L</a><a class="alphabet-item" href="./single-store.html">M</a><a class="alphabet-item" href="./single-store.html">N</a><a class="alphabet-item" href="./single-store.html">O</a><a class="alphabet-item" href="./single-store.html">P</a><a class="alphabet-item" href="./single-store.html">Q</a><a class="alphabet-item" href="./single-store.html">R</a><a class="alphabet-item" href="./single-store.html">S</a><a class="alphabet-item" href="./single-store.html">T</a><a class="alphabet-item" href="./single-store.html">U</a><a class="alphabet-item" href="./single-store.html">V</a><a class="alphabet-item" href="./single-store.html">W</a><a class="alphabet-item" href="./single-store.html">X</a><a class="alphabet-item" href="./single-store.html">Y</a><a class="alphabet-item" href="./single-store.html">Z</a><a class="alphabet-item" href="./single-store.html">#</a></div>
             </div>
@@ -115,23 +115,23 @@
                 <div class="text">3 active coupons</div>
                 <div class="text">12,637,890 times used</div>
               </div>
-              <div class="show-all">All stores of the day</div>
             </div>
           </div>
+          <div class="show-all">All stores of the day</div>
         </div>
       </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="extansion-block">
-            <div class="small-form__text">
-              <div class="title">Couponation Chrome extension</div>
-              <div class="desc">No more coupons searches – we've got a solution</div>
-            </div>
-            <div class="extension__bottom"><a class="extension__link" href="#">Add to Chrome</a>
-              <div class="extension__rate"><img class="starts" alt="stars" src="./media/icon/stars.svg">
-                <div class="text">Over 5,000 5-star ratings in Chrome store</div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 chrome-col">
+            <div class="extansion-block">
+              <div class="small-form__text">
+                <div class="title">Couponation Chrome extension</div>
+                <div class="desc">No more coupons searches – we've got a solution</div>
+              </div>
+              <div class="extension__bottom"><a class="extension__link" href="#">Add to Chrome</a>
+                <div class="extension__rate"><img class="starts" alt="stars" src="./media/icon/stars.svg">
+                  <div class="text">Over 5,000 5-star ratings in Chrome store</div>
+                </div>
               </div>
             </div>
           </div>
@@ -200,12 +200,12 @@
                 <div class="text">3 active coupons</div>
                 <div class="text">12,637,890 times used</div>
               </div>
-              <div class="show-all">All stores of the day</div>
             </div>
           </div>
+          <div class="show-all">All stores of the day</div>
         </div>
         <div class="row">
-          <div class="col-12">
+          <div class="col-12 small-form-col">
             <div class="small-form">
               <div class="small-form__text">
                 <div class="title">Get top offers and save money</div>
@@ -281,12 +281,19 @@
                 <div class="text">3 active coupons</div>
                 <div class="text">12,637,890 times used</div>
               </div>
-              <div class="show-all">All new stores</div>
             </div>
           </div>
+          <div class="show-all">All new stores</div>
         </div>
         <div class="row">
-          <div class="col-4"><a class="card-link" href="#">
+          <div class="col-12 col-lg-4 col-md-4 col-sm-6"><a class="card-link" href="#">
+              <div class="top"><img class="icon" src="./media/icon/card-link.svg" alt="icon"/>
+                <div class="name">Stores of the day</div>
+              </div>
+              <div class="bottom"> 
+              </div></a>
+          </div>
+          <div class="col-12 col-lg-4 col-md-4 col-sm-6"><a class="card-link" href="#">
               <div class="top"><img class="icon" src="./media/icon/card-link.svg" alt="icon"/>
                 <div class="name">Stores of the day</div>
               </div>
@@ -295,16 +302,7 @@
                 <p>60 categories</p>
               </div></a>
           </div>
-          <div class="col-4"><a class="card-link" href="#">
-              <div class="top"><img class="icon" src="./media/icon/card-link.svg" alt="icon"/>
-                <div class="name">Stores of the day</div>
-              </div>
-              <div class="bottom">
-                <p>9,050 stores and</p>
-                <p>60 categories</p>
-              </div></a>
-          </div>
-          <div class="col-4"><a class="card-link" href="#">
+          <div class="col-12 col-lg-4 col-md-4 col-sm-6"><a class="card-link" href="#">
               <div class="top"><img class="icon" src="./media/icon/card-link.svg" alt="icon"/>
                 <div class="name">New stores</div>
               </div>

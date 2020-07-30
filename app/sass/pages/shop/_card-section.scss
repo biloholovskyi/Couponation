@@ -46,9 +46,10 @@
     flex-wrap: wrap;
 
     .card-store {
-      flex: 19%;
+      max-width: calc(100% / 5 - 10px);
       margin-right: 10px;
       margin-bottom: 10px;
+      width: 100%;
     }
   }
 }

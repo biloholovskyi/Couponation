@@ -6,5 +6,4 @@ $(document).ready(function(){
     $(this).children('button').find('.minus').toggleClass('active');
   });
 
-
 });
