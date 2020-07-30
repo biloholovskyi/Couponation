@@ -6,6 +6,32 @@ import './stickyHeader';
 
 $(document).ready((e) => {
 
+  $('#coupon-slider').owlCarousel({ 
+    loop: false,
+    nav: true,
+    navText: '',
+    dots: false,
+    autoplay: false,
+    margin: 10,
+    items: 5,
+    responsive: {
+      0: {
+        items: 2,
+        dots: true 
+      },
+      575: {
+        items: 3
+      },
+      767: {
+        items: 4
+      },
+      991: {
+        items: 5
+      }
+    }
+
+  });
+
   // main slider
   $('.main-slider__body').owlCarousel({ 
     loop: false,
@@ -31,6 +57,8 @@ $(document).ready((e) => {
     }
 
   });
+
+ 
 
   $('.small-form__form input,.small-form__form textarea').on('input', (e) => smallFormInput(e));
   
@@ -123,9 +151,9 @@ $('.header__drop--btn').on('click', function(){
   $('.header__modal--wrap').toggleClass('active');
 });
 
+
+
 // add active class 0n healtcare pages
-
-
 $(function () {
   let location = window.location.href;
   $('.top-category__body .categoryItem').each(function () { 
@@ -136,6 +164,19 @@ $(function () {
       });
   });
 
+
+// subscribe modal
+
+  $('.subscribe').on('click', function(){
+      $('.subscribe__modal').css('display', 'flex');
+      $('.getCode__modal--overlay').css('display', 'none');
+      $('body').css({
+        'overflow': 'visible',
+        'position': 'relative',
+        'height': '100%'
+      });
+    setTimeout(() => { $('.subscribe__modal').css('display', 'none'); }, 3000);
+  });
 
 });
 

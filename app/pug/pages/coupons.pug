@@ -46,7 +46,7 @@ block content
       .row
         .col-12
           .main-slider__title=mainSliderTitle
-          .main-slider__body.owl-carousel.owl-theme
+          .main-slider__body.owl-carousel.owl-theme#coupon-slider
             +card-store("./media/icon/logos/1.png", "Kohl's", "21 active coupons", "12,637,890 times used")
             +card-store("./media/icon/logos/2.png", "Travelocity", "21 active coupons", "12,637,890 times used")
             +card-store("./media/icon/logos/3.png", "RedBubble", "4 active coupons", "12,637,890 times used")
@@ -54,7 +54,7 @@ block content
             +card-store("./media/icon/logos/5.png", "SHEIN", "3 active coupons", "12,637,890 times used")
             +card-store("./media/icon/logos/2.png", "Travelocity", "21 active coupons", "12,637,890 times used") 
   .coupon-page
-    .container  
+    .container.second-section  
       .row
         .col-12
           .small-coupon
@@ -71,7 +71,7 @@ block content
               +coupons-shop('$170 Off', 'Up to $170 Off Beats Headphones Plus Available for In-Store Pick Up by Christmas','14,271 total uses','2,632 uses today','80% success rate')
               .show-all All new coupons
     .container
-      .row
+      .row.form-section
         .col-12
           .small-form
             .small-form__text
@@ -97,11 +97,11 @@ block content
               +coupons-shop('$170 Off', 'Up to $170 Off Beats Headphones Plus Available for In-Store Pick Up by Christmas','14,271 total uses','2,632 uses today','80% success rate')
               .show-all All trusted coupons
       .row
-        .col-4
+        .col-12.col-lg-4.col-md-4.col-sm-6
           +card-link('Stores of the day')
-        .col-4
+        .col-12.col-lg-4.col-md-4.col-sm-6
           +card-link('Stores of the day')
-        .col-4
+        .col-12.col-lg-4.col-md-4.col-sm-6
           +card-link('New stores')
   .coupon-tag
     include ../modules/home/top-category      

@@ -174,7 +174,8 @@
     min-width: 450px;
   }
   .card-link {
-    margin-top: 28px;
+    
+    margin: 20px 0!important; 
   }
 }
 
@@ -386,5 +387,18 @@
   }
   .top-category {
     padding: 32px 0;
+  }
+
+  .coupons-home {
+    .show-all {
+     width: 100%;
+    }
+  }
+  .card-link {
+    margin: 0!important; 
+    margin-bottom: 8px!important;
+  }
+  .top-category__body { 
+    margin-bottom: 28px;
   }
 }
