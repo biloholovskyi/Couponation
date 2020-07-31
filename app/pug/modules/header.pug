@@ -1,10 +1,17 @@
 header.header
   .burger
-    img(src="../media/icon/burger.svg", alt="icon")
+    img(src="../media/icon/burger.svg", alt="icon").burder-btn 
+    img(src="../media/icon/close-menu.svg", alt="icon").close-menu
   a.header__logo(href='/') Couponation
   .header__nav
-    button.header__link.header__drop--btn(href='#') Coupons
+    button(onclick="location.href='/coupons.html';").header__link.header__drop--btn Coupons
       include home/header__modal
     a.header__link(href='/categories.html') Categories
-    a.header__link(href='./store.html') Stores 
+    a.header__link(href='/store.html') Stores 
     .header__button(onclick="location.href='/submitCoupon.html';") Submit a coupon
+.mobile-menu
+  .menu-inside
+    a(href="/coupons.html") Coupons
+    a(href="/categories.html") Categories
+    a(href="/store.html") Store
+    button(onclick="location.href='/submitCoupon.html';") Submit a coupon

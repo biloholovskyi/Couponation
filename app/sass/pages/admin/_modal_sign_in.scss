@@ -1,10 +1,10 @@
 .sign__in--overylay {
-  background: #6082B6;
+  background: #343A3F;
   width: 100%;
   height: 100%;
   position: fixed;
   top: 0;
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
   z-index: 10;
@@ -16,6 +16,7 @@
     background: #FFFFFF;
     border-radius: 8px;
     padding: 25px;
+    z-index: 11;
     h3 {
       margin-bottom: 32px;
       font-style: normal;
@@ -24,6 +25,16 @@
       line-height: 36px;
       color: #222222;
       text-align: center;
+    }
+    p {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 22px;
+      letter-spacing: -0.01em;
+      color: #222222;
+      text-align: center;
+      margin-bottom: 16px;
     }
     .double {
       width: 100%;
@@ -65,6 +76,7 @@
         color: #717171;
         margin-bottom: 40px;
         cursor: pointer;
+        text-align: left;
       }
       .sign_in_adm {
         width: 100%;
@@ -78,6 +90,19 @@
         line-height: 24px;
         color: #FFFFFF;
       }
+      .cancel {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 24px;
+        color: #222222;
+        background-color: transparent;
+        border: none;
+        margin: 24px auto 0px; 
+      }
+    }
+    .admin-form {
+      width: 100%;
     }
   }
 
@@ -102,5 +127,42 @@
     right: -219px;
     top: -424px;
     border-radius: 50%;
+  }
+}
+
+@media screen and (max-width: 991px) { 
+  .sign__in--overylay {
+    .sign__in-modal {
+      padding: 20px;
+      h3 {
+        margin-bottom: 20px;
+       } 
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sign__in--overylay {
+    .sign__in-modal {
+      padding: 15px;
+      min-width: fit-content; 
+      .admin-form { 
+          width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .sign__in--overylay {
+    .sign__in-modal {
+      padding: 10px;
+      min-width: fit-content; 
+      p {
+        font-size: 14px;
+        line-height: 20px; 
+        max-width: 280px; 
+      }
+    }
   }
 }

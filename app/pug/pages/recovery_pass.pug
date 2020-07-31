@@ -1,0 +1,17 @@
+extends ../layout/admin
+
+block variables
+  - const pageTitle = 'Admin panel'
+
+block content
+  .sign__in--overylay
+    .admin__modal.sign__in-modal
+      h3(style="margin-bottom: 16px") Password recovery
+      p Enter your email here and we will send a new password
+      form.small-form__form.admin-form
+        .double
+          .input-item
+            .placeholder Email
+            input(type='email') 
+          input(type="submit" value="Send new password").sign_in_adm
+          a(href="/admin_sign_in.html").cancel Cancel

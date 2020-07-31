@@ -36,10 +36,15 @@
       border-radius: 50%;
     }
 
-    & .alphabet-item.desctop-active { 
+    & .alphabet-item.active { 
       background: #222222;
       color: #fff;
       min-width: 40px; 
     }
   }
+}
+
+
+.abc-mobile {
+  display: none;
 }
