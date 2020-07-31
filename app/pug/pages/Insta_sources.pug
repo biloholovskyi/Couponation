@@ -1,33 +1,59 @@
 extends ../layout/admin
+include ../modules/admin-bill/mixins/adm_select
+include ../modules/admin-bill/mixins/api_item
 
 block variables
-  - const pageTitle = 'Instagram sources'
+  - const pageTitle = 'API'
 
 block content
-
-  .admin__panel.adm__shop--page.Instagram__page
-    include ../modules/admin/admin_bar 
-    .admin__content
-      .admin__caption 
-        h1 Instagram sources
-        .adm_nav
-          .admin__search
-            input(type="text" placeholder="Search by instagram name")
-            img(src="../media/icon/search.svg", alt="icon")
-          button Add new source
-      .admin__select--block
-        .adm__select
-          .admin__item 
-            p Categories
-            p Any
-          .admin__item 
-            p Status
-            p Any  
-        .adm_check
-          button.ClearFilter Clear filters
-      .sort__block
-        p 12,480 coupons found
-        p Sort by: #[span Expiration date]
-      .insta-content
-        include ../modules/admin/insta_item
-        include ../modules/admin/insta_item    
+  .api-sources
+    .admin__panel.adm__shop--page
+      include ../modules/admin/admin_bar
+      .admin__content.admin__content--bill
+        .admin__caption
+          h1 Instagram sources
+          .adm_nav
+            .admin__search.admin__search--api
+              input(type="text" placeholder="Search by instagram name")
+              img(src="../media/icon/search.svg", alt="icon")
+            button Add new source
+        .adm-select-wrapp_bill
+          .left
+            +adm-select-item_bill('All statuses')
+            +adm-select-item_bill('Total posts')
+            +adm-select-item_bill('Posts approved')
+            +adm-select-item_bill('Tags found at')
+            +adm-select-item_bill('Crawl list')
+            +adm-select-item_bill('Last update')
+          .right Clear filters
+        .api-sources__table
+          table.api-table
+            thead.api-table__head
+              tr
+                th.sort Name
+                th Status
+                th Total coupons
+                th Approved
+                th Tags found at
+                th Crawl list
+                th Last update
+                th
+            tbody.api-table__body
+              +api_item_inst('@shelleynyak', true, '273', '136', '#nails', 'Primary', 'May 20, 2020 – 23:59 EST')
+              +api_item_inst('@shelleynyak', true, '273', '136', '#nails', 'Primary', 'May 20, 2020 – 23:59 EST')
+              +api_item_inst('@shelleynyak', false, '273', '136', '#nails', 'Primary', 'May 20, 2020 – 23:59 EST')
+              +api_item_inst('@shelleynyak', true, '273', '136', '#nails', 'Primary', 'May 20, 2020 – 23:59 EST')
+              +api_item_inst('@shelleynyak', true, '273', '136', '#nails', 'Primary', 'May 20, 2020 – 23:59 EST')
+              +api_item_inst('@shelleynyak', true, '273', '136', '#nails', 'Primary', 'May 20, 2020 – 23:59 EST')
+              +api_item_inst('@shelleynyak', true, '273', '136', '#nails', 'Primary', 'May 20, 2020 – 23:59 EST')
+              +api_item_inst('@shelleynyak', true, '273', '136', '#nails', 'Primary', 'May 20, 2020 – 23:59 EST')
+              +api_item_inst('@shelleynyak', false, '273', '136', '#nails', 'Primary', 'May 20, 2020 – 23:59 EST')
+              +api_item_inst('@shelleynyak', true, '273', '136', '#nails', 'Primary', 'May 20, 2020 – 23:59 EST')
+              +api_item_inst('@shelleynyak', true, '273', '136', '#nails', 'Primary', 'May 20, 2020 – 23:59 EST')
+              +api_item_inst('@shelleynyak', true, '273', '136', '#nails', 'Primary', 'May 20, 2020 – 23:59 EST')
+        .number-coupon
+          .num-item.active 1
+          .num-item 2
+          .num-item 3
+          .num-dots
+          .num-item 8

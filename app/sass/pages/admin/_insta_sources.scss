@@ -101,8 +101,22 @@
           background: #ff703e;
           border: none;
         }
+
+        .insta-detail__block-btn {
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 24px;
+          color: #FF3042;
+          padding: 16px 24px;
+          background: #FFFFFF;
+          border: 1px solid #EBEBEB;
+          box-sizing: border-box;
+          border-radius: 8px;
+        }
       }
       .adm-tab__head {
+        margin-bottom: 0;
+
         .tabs .tab{
           margin-right: 32px;
         }

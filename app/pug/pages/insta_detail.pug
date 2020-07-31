@@ -1,4 +1,5 @@
 extends ../layout/admin
+include ../modules/admin-bill/mixins/api_item
 
 block variables
   - const pageTitle = 'Admin panel'
@@ -11,58 +12,52 @@ block content
       a.back_btn(href="/insta_sources.html") All sources
       .admin__caption 
           h1 @SHELLEYNYAK
-          button Block source
+          button.insta-detail__block-btn Block source
       .adm-tab__head
         .tabs
-          .tab.active#tab-main MAIN INFO
-          .tab#tab-active Active coupons
+          .tab.active#tab-active Active coupons
           .tab#tab-expired Expired coupons
           .tab#tab-declined Declined posts
-      .adm-tab__body.info.show#body-main
-        .stats__blocks
-          .stats__block
-            .stats__title Instagram info
-            .stats__item
-              p Followers
-              p 5000
-            .stats__item
-              p Subscribes
-              p 125
-            .stats__item
-              p Crawl list
-              p Not regular
-            .stats__item
-              p Subscribes
-              p 125
-            .stats__item
-              p Last check result
-              p 1 coupon  
-          .stats__block
-            .stats__title Posts saved
-            .stats__item
-              p Today
-              p 1276 
-            .stats__item
-              p This week
-              p 319 
-            .stats__item
-              p This month
-              p 739 
-            .stats__item
-              p 6 months
-              p 319 
-            .stats__item
-              p All time
-              p 73   
-      .adm-tab__body.info#body-active
-        include ../modules/admin/insta_coupon
-        include ../modules/admin/insta_coupon
-        include ../modules/admin/insta_coupon
-        .number-coupon
-          .num-item.active 1
-          .num-item 2
-          .num-item 3
-          .num-dots
-          .num-item 8
+      .adm-tab__body.info.show#body-active
+        .api-sources__table
+          table.api-table
+            thead.api-table__head
+              tr
+                th Coupon
+                th Shop
+                th Recieved
+                th Expire date
+                th Moderator
+                th
+            tbody.api-table__body
+              +api_item_single('SAVE6DOLLARS', 'Enjoy $6,40 off $25,99 purchase with promocode', 'Alkaline Vegan Shop', 'Today, 11:54 EST', 'May 20, 2020 – 23:59 EST', 'Josh Barnett')
+              +api_item_single('SAVE6DOLLARS', 'Enjoy $6,40 off $25,99 purchase with promocode', 'Alkaline Vegan Shop', 'Today, 11:54 EST', 'May 20, 2020 – 23:59 EST', 'Josh Barnett')
+              +api_item_single('SAVE6DOLLARS', 'Enjoy $6,40 off $25,99 purchase with promocode', 'Alkaline Vegan Shop', 'Today, 11:54 EST', 'May 20, 2020 – 23:59 EST', 'Josh Barnett')
       .adm-tab__body.info#body-expired
-      .adm-tab__body.info#body-declined   
+        .api-sources__table
+          table.api-table
+            thead.api-table__head
+              tr
+                th Coupon
+                th Shop
+                th Recieved
+                th Expire date
+                th Moderator
+                th
+            tbody.api-table__body
+              +api_item_single('SAVE6DOLLARS', 'Enjoy $8,40 off $25,99 purchase with promocode', 'Alkaline Vegan Shop', 'Today, 11:54 EST', 'May 20, 2020 – 23:59 EST', 'Josh Barnett')
+              +api_item_single('SAVE6DOLLARS', 'Enjoy $7,40 off $25,99 purchase with promocode', 'Alkaline Vegan Shop', 'Today, 11:54 EST', 'May 20, 2020 – 23:59 EST', 'Josh Barnett')
+              +api_item_single('SAVE6DOLLARS', 'Enjoy $8,40 off $25,99 purchase with promocode', 'Alkaline Vegan Shop', 'Today, 11:54 EST', 'May 20, 2020 – 23:59 EST', 'Josh Barnett')
+      .adm-tab__body.info#body-declined
+        .api-sources__table
+          table.api-table
+            thead.api-table__head
+              tr
+                th Post
+                th Recieved
+                th Declined
+                th Moderator
+                th
+            tbody.api-table__body
+              +api_item_post('Do you love face oils? My skin is very picky when it comes to face oil. Most of the time either the oil just floats on my skin and sticks wherever except my face or I end up with an irritated skin. But #juicychemistry 100% Organic Camellia Seed Oil is surely the magic in a bottle. You can use my code - SHELL15 for additional discount on Juicychemistry Website.', 'Apr 1, 2020 – 23:59 EST', 'Apr 2, 2020 – 11:52 EST', 'Josh Barnett')
+              +api_item_post('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', 'Apr 1, 2020 – 23:59 EST', 'Apr 2, 2020 – 11:52 EST', 'Josh Barnett')

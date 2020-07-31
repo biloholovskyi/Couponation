@@ -26,184 +26,179 @@
             Shops<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M20.16 7.8C20.07 7.34 19.66 7 19.18 7H4.82C4.34 7 3.93 7.34 3.84 7.8L3 12V13C3 13.55 3.45 14 4 14V19C4 19.55 4.45 20 5 20H13C13.55 20 14 19.55 14 19V14H18V19C18 19.55 18.45 20 19 20C19.55 20 20 19.55 20 19V14C20.55 14 21 13.55 21 13V12L20.16 7.8ZM12 18H6V14H12V18ZM5 6H19C19.55 6 20 5.55 20 5C20 4.45 19.55 4 19 4H5C4.45 4 4 4.45 4 5C4 5.55 4.45 6 5 6Z" fill="#717171"/>
 </svg></a></div>
-        <div class="admin__link--bar2"><a href="/insta_sources.html">Instagram sources  </a><a href="#">API sources</a><a href="#">Catalogue</a><a href="#">Users</a><a href="#">Settings</a><a href="#">Sign out</a></div>
+        <div class="admin__link--bar2"><a href="/insta_sources.html">Instagram sources  </a><a href="/api.html">API sources</a><a href="#">Catalogue</a><a href="#">Users</a><a href="#">Settings</a><a href="#">Sign out</a></div>
       </div>
       <div class="admin__content"><a class="back_btn" href="/insta_sources.html">All sources</a>
         <div class="admin__caption"> 
           <h1>@SHELLEYNYAK</h1>
-          <button>Block source</button>
+          <button class="insta-detail__block-btn">Block source</button>
         </div>
         <div class="adm-tab__head">
           <div class="tabs">
-            <div class="tab active" id="tab-main">MAIN INFO</div>
-            <div class="tab" id="tab-active">Active coupons</div>
+            <div class="tab active" id="tab-active">Active coupons</div>
             <div class="tab" id="tab-expired">Expired coupons</div>
             <div class="tab" id="tab-declined">Declined posts</div>
           </div>
         </div>
-        <div class="adm-tab__body info show" id="body-main">
-          <div class="stats__blocks">
-            <div class="stats__block">
-              <div class="stats__title">Instagram info</div>
-              <div class="stats__item">
-                <p>Followers</p>
-                <p>5000</p>
-              </div>
-              <div class="stats__item">
-                <p>Subscribes</p>
-                <p>125</p>
-              </div>
-              <div class="stats__item">
-                <p>Crawl list</p>
-                <p>Not regular</p>
-              </div>
-              <div class="stats__item">
-                <p>Subscribes</p>
-                <p>125</p>
-              </div>
-              <div class="stats__item">
-                <p>Last check result</p>
-                <p>1 coupon  </p>
-              </div>
-            </div>
-            <div class="stats__block">
-              <div class="stats__title">Posts saved</div>
-              <div class="stats__item">
-                <p>Today</p>
-                <p>1276 </p>
-              </div>
-              <div class="stats__item">
-                <p>This week</p>
-                <p>319 </p>
-              </div>
-              <div class="stats__item">
-                <p>This month</p>
-                <p>739 </p>
-              </div>
-              <div class="stats__item">
-                <p>6 months</p>
-                <p>319 </p>
-              </div>
-              <div class="stats__item">
-                <p>All time</p>
-                <p>73   </p>
-              </div>
-            </div>
+        <div class="adm-tab__body info show" id="body-active">
+          <div class="api-sources__table">
+            <table class="api-table">
+              <thead class="api-table__head">
+                <tr>
+                  <th>Coupon</th>
+                  <th>Shop</th>
+                  <th>Recieved</th>
+                  <th>Expire date</th>
+                  <th>Moderator</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody class="api-table__body">
+                <tr>
+                  <td class="coupon">
+                    <div class="name">SAVE6DOLLARS</div>
+                    <p>Enjoy $6,40 off $25,99 purchase with promocode</p>
+                  </td>
+                  <td class="shop">Alkaline Vegan Shop</td>
+                  <td class="recived">Today, 11:54 EST</td>
+                  <td class="date">May 20, 2020 – 23:59 EST</td>
+                  <td class="moderator">Josh Barnett</td>
+                  <td class="buttons buttons--padding">
+                    <button>Details</button>
+                    <button class="block">Unpublish</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="coupon">
+                    <div class="name">SAVE6DOLLARS</div>
+                    <p>Enjoy $6,40 off $25,99 purchase with promocode</p>
+                  </td>
+                  <td class="shop">Alkaline Vegan Shop</td>
+                  <td class="recived">Today, 11:54 EST</td>
+                  <td class="date">May 20, 2020 – 23:59 EST</td>
+                  <td class="moderator">Josh Barnett</td>
+                  <td class="buttons buttons--padding">
+                    <button>Details</button>
+                    <button class="block">Unpublish</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="coupon">
+                    <div class="name">SAVE6DOLLARS</div>
+                    <p>Enjoy $6,40 off $25,99 purchase with promocode</p>
+                  </td>
+                  <td class="shop">Alkaline Vegan Shop</td>
+                  <td class="recived">Today, 11:54 EST</td>
+                  <td class="date">May 20, 2020 – 23:59 EST</td>
+                  <td class="moderator">Josh Barnett</td>
+                  <td class="buttons buttons--padding">
+                    <button>Details</button>
+                    <button class="block">Unpublish</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
-        <div class="adm-tab__body info" id="body-active">
-          <div class="coupon_admin insta_coupon">
-            <div class="coupon__content">
-              <div class="shop__title">
-                <h4 class="name">Kohl’s</h4>
-                <p class="desc">Free Standard Shipping With Doorstep Drop-Off on Orders $35 and Up</p><a href="#">http://merchantshop.com/deals?deal=24</a>
-              </div>
-              <div class="coupon__btn--section">
-                <button>Details</button>
-                <button>Unpublish</button>
-              </div>
-            </div>
-            <div class="coupon__info">
-              <div class="coupon__info--item">
-                <p>Recieved</p>
-                <p>Today, 11:54 EST</p>
-              </div>
-              <div class="coupon__info--item">
-                <p>Coupons</p>
-                <p>32</p>
-              </div>
-              <div class="coupon__info--item">
-                <p>Category</p>
-                <p>Health & Care</p>
-              </div>
-              <div class="coupon__info--item">
-                <p>Subcategory</p>
-                <p>Skin and hair</p>
-              </div>
-              <div class="coupon__info--item">
-                <p>Network</p>
-                <p>Happy Coupons Network </p>
-              </div>
-            </div>
-          </div>
-          <div class="coupon_admin insta_coupon">
-            <div class="coupon__content">
-              <div class="shop__title">
-                <h4 class="name">Kohl’s</h4>
-                <p class="desc">Free Standard Shipping With Doorstep Drop-Off on Orders $35 and Up</p><a href="#">http://merchantshop.com/deals?deal=24</a>
-              </div>
-              <div class="coupon__btn--section">
-                <button>Details</button>
-                <button>Unpublish</button>
-              </div>
-            </div>
-            <div class="coupon__info">
-              <div class="coupon__info--item">
-                <p>Recieved</p>
-                <p>Today, 11:54 EST</p>
-              </div>
-              <div class="coupon__info--item">
-                <p>Coupons</p>
-                <p>32</p>
-              </div>
-              <div class="coupon__info--item">
-                <p>Category</p>
-                <p>Health & Care</p>
-              </div>
-              <div class="coupon__info--item">
-                <p>Subcategory</p>
-                <p>Skin and hair</p>
-              </div>
-              <div class="coupon__info--item">
-                <p>Network</p>
-                <p>Happy Coupons Network </p>
-              </div>
-            </div>
-          </div>
-          <div class="coupon_admin insta_coupon">
-            <div class="coupon__content">
-              <div class="shop__title">
-                <h4 class="name">Kohl’s</h4>
-                <p class="desc">Free Standard Shipping With Doorstep Drop-Off on Orders $35 and Up</p><a href="#">http://merchantshop.com/deals?deal=24</a>
-              </div>
-              <div class="coupon__btn--section">
-                <button>Details</button>
-                <button>Unpublish</button>
-              </div>
-            </div>
-            <div class="coupon__info">
-              <div class="coupon__info--item">
-                <p>Recieved</p>
-                <p>Today, 11:54 EST</p>
-              </div>
-              <div class="coupon__info--item">
-                <p>Coupons</p>
-                <p>32</p>
-              </div>
-              <div class="coupon__info--item">
-                <p>Category</p>
-                <p>Health & Care</p>
-              </div>
-              <div class="coupon__info--item">
-                <p>Subcategory</p>
-                <p>Skin and hair</p>
-              </div>
-              <div class="coupon__info--item">
-                <p>Network</p>
-                <p>Happy Coupons Network </p>
-              </div>
-            </div>
-          </div>
-          <div class="number-coupon">
-            <div class="num-item active">1</div>
-            <div class="num-item">2</div>
-            <div class="num-item">3</div>
-            <div class="num-dots"></div>
-            <div class="num-item">8</div>
+        <div class="adm-tab__body info" id="body-expired">
+          <div class="api-sources__table">
+            <table class="api-table">
+              <thead class="api-table__head">
+                <tr>
+                  <th>Coupon</th>
+                  <th>Shop</th>
+                  <th>Recieved</th>
+                  <th>Expire date</th>
+                  <th>Moderator</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody class="api-table__body">
+                <tr>
+                  <td class="coupon">
+                    <div class="name">SAVE6DOLLARS</div>
+                    <p>Enjoy $8,40 off $25,99 purchase with promocode</p>
+                  </td>
+                  <td class="shop">Alkaline Vegan Shop</td>
+                  <td class="recived">Today, 11:54 EST</td>
+                  <td class="date">May 20, 2020 – 23:59 EST</td>
+                  <td class="moderator">Josh Barnett</td>
+                  <td class="buttons buttons--padding">
+                    <button>Details</button>
+                    <button class="block">Unpublish</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="coupon">
+                    <div class="name">SAVE6DOLLARS</div>
+                    <p>Enjoy $7,40 off $25,99 purchase with promocode</p>
+                  </td>
+                  <td class="shop">Alkaline Vegan Shop</td>
+                  <td class="recived">Today, 11:54 EST</td>
+                  <td class="date">May 20, 2020 – 23:59 EST</td>
+                  <td class="moderator">Josh Barnett</td>
+                  <td class="buttons buttons--padding">
+                    <button>Details</button>
+                    <button class="block">Unpublish</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="coupon">
+                    <div class="name">SAVE6DOLLARS</div>
+                    <p>Enjoy $8,40 off $25,99 purchase with promocode</p>
+                  </td>
+                  <td class="shop">Alkaline Vegan Shop</td>
+                  <td class="recived">Today, 11:54 EST</td>
+                  <td class="date">May 20, 2020 – 23:59 EST</td>
+                  <td class="moderator">Josh Barnett</td>
+                  <td class="buttons buttons--padding">
+                    <button>Details</button>
+                    <button class="block">Unpublish</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
-        <div class="adm-tab__body info" id="body-expired"></div>
-        <div class="adm-tab__body info" id="body-declined">  </div>
+        <div class="adm-tab__body info" id="body-declined">
+          <div class="api-sources__table">
+            <table class="api-table">
+              <thead class="api-table__head">
+                <tr>
+                  <th>Post</th>
+                  <th>Recieved</th>
+                  <th>Declined</th>
+                  <th>Moderator</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody class="api-table__body">
+                <tr>
+                  <td class="post">
+                    <p>Do you love face oils? My skin is very picky when it comes to face oil. Most of the time either the oil just floats on my skin and sticks wherever except my face or I end up with an irritated skin. But #juicychemistry 100% Organic Camellia Seed Oil is surely the magic in a bottle. You can use my code - SHELL15 for additional discount on Juicychemistry Website.</p>
+                  </td>
+                  <td class="recived">Apr 1, 2020 – 23:59 EST</td>
+                  <td class="declined">Apr 2, 2020 – 11:52 EST</td>
+                  <td class="moderator">Josh Barnett</td>
+                  <td class="buttons">
+                    <button>Details</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="post">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                  </td>
+                  <td class="recived">Apr 1, 2020 – 23:59 EST</td>
+                  <td class="declined">Apr 2, 2020 – 11:52 EST</td>
+                  <td class="moderator">Josh Barnett</td>
+                  <td class="buttons">
+                    <button>Details</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
