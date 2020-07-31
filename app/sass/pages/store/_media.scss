@@ -47,7 +47,7 @@
     position: sticky;
     top: 80px;
     border-top: 1px solid #F7F7F7;
-    box-shadow: 0 6px 16px rgba(0,0,0,.08);
+    border-bottom: 1px solid #ebebeb;
     z-index: 19;
     .alphabet {
       padding: 0 16px;
@@ -66,6 +66,9 @@
         }
       }
     }
+  }
+  .alphabet-single-wrap.active {
+    box-shadow: 0 6px 16px rgba(0,0,0,.08);
   }
   .single-header {
     padding: 23px 30px;

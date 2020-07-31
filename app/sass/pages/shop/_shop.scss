@@ -61,7 +61,7 @@
       }
 
       .category-btn--block {
-        min-width: 300px;
+        width: 300px;
         display: flex;
         flex-wrap: wrap;
         .category-btn {
@@ -332,4 +332,14 @@
 .mobile-titles {
   display: none;
 }
+.col-left {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.col-right {
+  padding-left: 30px;
+}
+
+
 @import 'media';

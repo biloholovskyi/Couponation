@@ -38,6 +38,14 @@
       width: 40%;
     }
   }
+  .col-left {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.col-right {
+  padding-left: 15px;
+}
 }
 
 @media screen and (max-width: 767px) {
