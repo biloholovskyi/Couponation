@@ -9,22 +9,40 @@ block content
     include ../modules/admin/admin_bar
     .admin__content
       .admin__caption 
-        h1 All coupons
-        button.addNewCoupon Add new coupon
-      .admin__select--block
-        .admin__rate
-          p Succes rate
-          p Any
-        .admin__date 
-          p Date added
-          p May 12, 2020 - Jun 19,2020
+        h1 Coupons
         .admin__search
-          input(type="text" placeholder="Search by shop or coupon")
+          input(type="text" placeholder="Search by shop or coupon") 
           img(src="../media/icon/search.svg", alt="icon")
+        button.addNewCoupon Add new coupon
+        
+      .admin__select--block
+        .adm__select
+          .admin__item
+            p All statuses
+          .admin__item 
+            p All sources
+          .admin__item
+            p All moderators
+          .admin__item 
+            p Clicks, 30 days
+          .admin__item
+            p Succes rate
+          .admin__item 
+            p Date added
+        button.clear Clear filters    
+        
       .sort__block
-        p 12,480 coupons found
-        p Sort by: #[span Expiration date]
+        p Name
+        p Shop
+        p Recieved
+        p Expire date
+          img(src="../media/icon/adm_arrow.svg", alt="")
+        p(style="opacity: 0")
       .coupon_section
+        include ../modules/admin/coupon_admin
+        include ../modules/admin/coupon_admin    
+        include ../modules/admin/coupon_admin    
+        include ../modules/admin/coupon_admin    
         include ../modules/admin/coupon_admin
         include ../modules/admin/coupon_admin    
         include ../modules/admin/coupon_admin    

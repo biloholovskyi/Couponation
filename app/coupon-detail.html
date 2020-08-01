@@ -33,13 +33,7 @@
           <h1>SAVE6DOLLARS</h1>
           <button>Block source</button>
         </div>
-        <div class="adm-tab__head">
-          <div class="tabs">
-            <div class="tab active" id="tab-main">MAIN INFO</div>
-            <div class="tab" id="tab-shop">SHOP</div>
-          </div>
-        </div>
-        <div class="adm-tab__body info show" id="body-main">
+        <div class="adm-tab__body info">
           <div class="stats__blocks">
             <div class="stats__block">
               <div class="stats__title">General stats</div>
@@ -53,7 +47,7 @@
               </div>
               <div class="stats__item">
                 <p>Source</p>
-                <p>@shellynyak</p>
+                <p style="color:  #24B4FF">@shellynyak</p>
               </div>
             </div>
             <div class="stats__block">
@@ -80,6 +74,18 @@
               <h3>Original post text</h3>
               <p>Do you love face oils? My skin is very picky when it comes to face oil. Most of the time either the oil just floats on my skin and sticks wherever except my face or I end up with an irritated skin. But #juicychemistry 100% Organic Camellia Seed Oil is surely the magic in a bottle. You can use my code - SHELL15 for additional discount on Juicychemistry Website.  </p>
             </div>
+            <div class="adm__link">
+              <h3>Shop</h3>
+              <div class="coupon_admin shop_adm">
+                <div class="coupon__content">
+                  <div class="shop__title"><img src="./media/icon/logos/1.png" alt="">
+                    <div class="title__item">
+                      <h4>Kohl’s</h4><a href="#">http://merchantshop.com/deals?deal=24</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="coupon__form">
             <div class="coupon__modal">
@@ -93,6 +99,17 @@
                   <div class="input-item">
                     <div class="placeholder">Expiration date </div>
                     <input type="email">
+                  </div>
+                </div>
+                <div class="coupon_admin shop_adm shop__form">
+                  <div class="coupon__content">
+                    <div class="shop__title"><img src="./media/icon/logos/1.png" alt="">
+                      <div class="title__item">
+                        <h3>Shop</h3>
+                        <h4>Kohl’s</h4>
+                      </div>
+                    </div>
+                    <button class="change_shop">Change shop     </button>
                   </div>
                 </div>
                 <div class="double">
@@ -132,48 +149,7 @@
             </div>
           </div>
         </div>
-        <div class="adm-tab__body shop" id="body-shop">
-          <div class="adm__links">
-            <div class="adm__link">
-              <h3>Affilated shop</h3>
-              <div class="coupon_admin shop_adm">
-                <div class="coupon__content">
-                  <div class="shop__title"><img src="./media/icon/logos/1.png" alt="">
-                    <div class="title__item">
-                      <h4>Kohl’s</h4><a href="#">http://merchantshop.com/deals?deal=24</a>
-                    </div>
-                  </div>
-                  <div class="coupon__btn--section">
-                    <button>Details</button>
-                    <button class="change_shop">Change shop</button>
-                  </div>
-                </div>
-                <div class="coupon__info">
-                  <div class="coupon__info--item">
-                    <p>Recieved</p>
-                    <p>Today, 11:54 EST</p>
-                  </div>
-                  <div class="coupon__info--item">
-                    <p>Coupons</p>
-                    <p>32</p>
-                  </div>
-                  <div class="coupon__info--item">
-                    <p>Category</p>
-                    <p>Health & Care</p>
-                  </div>
-                  <div class="coupon__info--item">
-                    <p>Subcategory</p>
-                    <p>Skin and hair</p>
-                  </div>
-                  <div class="coupon__info--item">
-                    <p>Network</p>
-                    <p>Happy Coupons Network </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div class="adm-tab__body"></div>
       </div>
     </div>
     <div class="shop__modal--overlay">
@@ -233,6 +209,13 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="subscribe__modal shop_succefully">
+      <div class="sub__icon"></div>
+      <div class="sub__info">
+        <h3>Shop was succefully changed</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>

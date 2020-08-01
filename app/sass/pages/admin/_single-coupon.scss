@@ -74,7 +74,9 @@
     .info {
       .stats__blocks {
         display: flex;
-        margin-bottom: 24px;
+        margin-bottom: 36px;
+        border-bottom: 1px solid #EBEBEB;
+        padding-bottom: 36px;
         .stats__block {
           flex: 1;
           border: 1px solid #EBEBEB;
@@ -131,13 +133,7 @@
       }
     }
 
-    .adm-tab__body {
-      display: none;
-
-      &.show {
-        display: block;
-      }
-    }
+     
 
     .adm__links {
       display: flex;
@@ -174,6 +170,9 @@
           line-height: 24px;
           color: #222222;
         }
+      }
+      .shop_adm {
+        border-bottom: none;
       }
     }
 
@@ -302,6 +301,48 @@
       .adm__links {
         border-bottom: none;
       }
+    }
+  }
+}
+
+.shop__form {
+  width: 100%;
+  border-bottom: none;
+  .coupon__content{
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 0;
+    padding-bottom: 32px;
+    .shop__title {
+      .title__item{
+        h3 {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 22px;
+          color: #717171;
+          margin-bottom: 2px;
+        }
+        .h4 {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 24px;
+          color: #222222; 
+        }
+      }
+     
+    }
+    button {
+      font-style: normal;  
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 24px;
+      color: #222222;
+      background-color: transparent;
+      border: 1px solid #EBEBEB;
+      padding: 6px 12px;
+      border-radius: 8px;
     }
   }
 }

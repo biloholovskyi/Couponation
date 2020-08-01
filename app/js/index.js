@@ -122,7 +122,7 @@ $('.change_shop').on('click', function(){
   });
 });
 
-
+ 
 
 //admin modal close
 $('.adm__modal--close').on('click', function(){
