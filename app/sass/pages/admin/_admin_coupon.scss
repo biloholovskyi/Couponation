@@ -52,6 +52,10 @@
       min-width: 200px;
       max-width: 200px;
       padding: 0 5px;
+
+      p,h2 {
+        word-break: break-all;
+      }
       & P:first-child {
         font-style: normal;
         font-weight: normal;

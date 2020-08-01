@@ -26,14 +26,14 @@
             Shops<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M20.16 7.8C20.07 7.34 19.66 7 19.18 7H4.82C4.34 7 3.93 7.34 3.84 7.8L3 12V13C3 13.55 3.45 14 4 14V19C4 19.55 4.45 20 5 20H13C13.55 20 14 19.55 14 19V14H18V19C18 19.55 18.45 20 19 20C19.55 20 20 19.55 20 19V14C20.55 14 21 13.55 21 13V12L20.16 7.8ZM12 18H6V14H12V18ZM5 6H19C19.55 6 20 5.55 20 5C20 4.45 19.55 4 19 4H5C4.45 4 4 4.45 4 5C4 5.55 4.45 6 5 6Z" fill="#717171"/>
 </svg></a></div>
-        <div class="admin__link--bar2"><a href="/insta_sources.html">Instagram sources  </a><a href="#">API sources</a><a href="#">Catalogue</a><a href="#">Users</a><a href="#">Settings</a><a href="#">Sign out</a></div>
+        <div class="admin__link--bar2"><a href="/insta_sources.html">Instagram sources  </a><a href="#">API sources</a><a href="#">Catalogue</a><a href="#">Users</a><a href="/setting.html">Settings</a><a href="#">Sign out</a></div>
       </div>
       <div class="admin__content"><a class="back_btn" href="/admin.html">All coupons</a>
         <div class="admin__caption"> 
           <h1>SAVE6DOLLARS</h1>
           <button>Block source</button>
         </div>
-        <div class="adm-tab__body info">
+        <div class="info">
           <div class="stats__blocks">
             <div class="stats__block">
               <div class="stats__title">General stats</div>
@@ -76,21 +76,21 @@
             </div>
             <div class="adm__link">
               <h3>Shop</h3>
-              <div class="coupon_admin shop_adm">
+              <div class="single-coupon-shop">
                 <div class="coupon__content">
-                  <div class="shop__title"><img src="./media/icon/logos/1.png" alt="">
-                    <div class="title__item">
-                      <h4>Kohl’s</h4><a href="#">http://merchantshop.com/deals?deal=24</a>
+                  <div class="coupon__information"><img src="./media/icon/logos/1.png" alt="image">
+                    <div class="titles">
+                      <h2 class="coupon--title">Kohl’s</h2><a href="#">http://merchantshop.com/deals?deal=24</a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="coupon__form">
+          <div class="coupon__form single__coupon-form">
             <div class="coupon__modal">
               <h3>Edit coupon data</h3>
-              <form class="small-form__form admin-form">
+              <form class="small-form__form admin-form"> 
                 <div class="double">
                   <div class="input-item">
                     <div class="placeholder">Coupon</div>
@@ -109,7 +109,7 @@
                         <h4>Kohl’s</h4>
                       </div>
                     </div>
-                    <button class="change_shop">Change shop     </button>
+                    <button class="change_shop" type="button">Change shop     </button>
                   </div>
                 </div>
                 <div class="double">
@@ -125,22 +125,22 @@
                 <div class="double full-inp">
                   <div class="input-item">
                     <div class="placeholder">Coupon’s short description</div>
-                    <input type="email">
+                    <input maxlength="55" id="text-counter" type="email">
                   </div>
                 </div>
                 <div class="count">
-                  <div class="count-item">0</div>
+                  <div class="count-item" id="counter">0</div>
                   <div>/</div>
                   <div class="count-item">55    </div>
                 </div>
-                <div class="double full-inp textarea">
+                <div class="double full-inp textarea"> 
                   <div class="input-item">
                     <div class="placeholder">Coupon’s full description</div>
-                    <textarea></textarea>
+                    <textarea id="text-count" maxlength="255"></textarea>
                   </div>
                 </div>
                 <div class="count">
-                  <div class="count-item">0</div>
+                  <div class="count-item" id="count">0</div>
                   <div>/</div>
                   <div class="count-item">255      </div>
                 </div>
@@ -149,7 +149,6 @@
             </div>
           </div>
         </div>
-        <div class="adm-tab__body"></div>
       </div>
     </div>
     <div class="shop__modal--overlay">

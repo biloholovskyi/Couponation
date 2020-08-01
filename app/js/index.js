@@ -5,10 +5,11 @@ import { switchTab, switchTabGrf } from "./tabs";
 import './stickyHeader';
 import './anhors';
 import {switchLink} from './activeLink';
-
+import './countInput';
 
 $(document).ready((e) => {
 
+ 
  
   $('.mobile__nav .shopLinks').on('click', (e) => switchLink(e));
   // show categories on categories page
@@ -128,6 +129,12 @@ $('.change_shop').on('click', function(){
 $('.adm__modal--close').on('click', function(){
   $('.admin__modal--overlay').css({'display': 'none'});
   $('.shop__modal--overlay').css({'display': 'none'});
+  $('input').val('');
+  $('textarea').val('');
+  $('.admin-form .double .input-item').removeClass('input');
+  $('textarea').removeClass('input');
+  $('#count').html('0');
+  $('#counter').html('0');
   $('body').css({
     'overflow': 'visible',
     'position': 'relative',

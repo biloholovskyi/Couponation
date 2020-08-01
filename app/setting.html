@@ -10,7 +10,7 @@
     <title>Admin panel</title>
   </head>
   <body>
-    <div class="admin__panel dashboard">
+    <div class="admin__panel setting">
       <div class="admin__bar">
         <div class="admin__title">
           <h2>Couponation</h2>
@@ -30,124 +30,45 @@
       </div>
       <div class="admin__content">
         <div class="admin__caption"> 
-          <h1>Dashboard</h1>
-        </div>
-        <div class="stats__coupons">
-          <div class="stats__item">
-            <p class="new_coupon">1289</p>
-            <p>New coupons</p>
-          </div>
-          <div class="stats__item">
-            <p class="new_shop">289</p>
-            <p>New shops</p>
-          </div>
-        </div>
-        <div class="moderator__blocks">
-          <div class="moderator_item moder_of_week"><img src="../media/icon/smile.svg" alt="icon">
-            <div class="moder_info">
-              <div class="title">Moderator of the week</div>
-              <div class="name">Roger Johnston</div>
-              <div class="moder_stats">
-                <div class="coupons">237 moderated coupons</div>
-                <div>|</div>
-                <div class="stores">237 moderated stores</div>
+          <h1>Settings</h1>
+          <h2>Personal data</h2>
+          <form class="small-form__form shop__form">
+            <div class="double">
+              <div class="input-item">
+                <div class="placeholder">First name</div>
+                <input type="text">
               </div>
+              <div class="input-item">
+                <div class="placeholder">Last name </div>
+                <input type="text">
+              </div>
+              <div class="input-item" style="margin-bottom: 16px">
+                <div class="placeholder">Email</div>
+                <input type="email">
+              </div>
+              <p>Be careful and provide us your actual email <br>We use it for password recovery  </p>
+              <button class="saveChange">Save Changes </button>
             </div>
-          </div>
-          <div class="moderator_item lowest_moderator"><img src="../media/icon/sadsmile.svg" alt="icon">
-            <div class="moder_info">
-              <div class="title">Moderator of the week</div>
-              <div class="name">Roger Johnston</div>
-              <div class="moder_stats">
-                <div class="coupons">2 moderated coupons</div>
-                <div>|</div>
-                <div class="stores">0 moderated stores </div>
+            <div class="lines"></div>
+          </form>
+          <h2>Security settings</h2>
+          <form class="small-form__form shop__form">
+            <div class="double">
+              <div class="input-item">
+                <div class="placeholder">First name</div>
+                <input type="text">
               </div>
+              <div class="input-item">
+                <div class="placeholder">Last name </div>
+                <input type="text">
+              </div>
+              <div class="input-item">
+                <div class="placeholder">Email</div>
+                <input type="email">
+              </div>
+              <button class="savePass">Change password             </button>
             </div>
-          </div>
-        </div>
-        <div class="general__block">
-          <div class="general__statistic">
-            <h3>General statistics</h3>
-            <p>coupons</p>
-            <div class="grf-tab__head">
-              <div class="tabs">
-                <div class="tab active" id="tab-today2">TODAY </div>
-                <div class="tab" id="tab-week2">WEEK</div>
-                <div class="tab" id="tab-month2">MONTH</div>
-              </div>
-            </div>
-            <div class="grf-tab__body graphic show" id="body-today2">
-              <canvas id="myChart"></canvas>
-            </div>
-            <div class="grf-tab__body graphic" id="body-week2">
-              <p>123</p>
-            </div>
-            <div class="grf-tab__body graphic" id="body-month2">
-              <p>456 </p>
-            </div>
-          </div>
-          <div class="general__clicks">
-            <h3>TOP10 affilated clicks</h3>
-            <div class="adm-tab__head">
-              <div class="tabs">
-                <div class="tab active" id="tab-today">TODAY</div>
-                <div class="tab" id="tab-week">WEEK</div>
-                <div class="tab" id="tab-month">MONTH</div>
-              </div>
-            </div>
-            <div class="adm-tab__body dashboard show" id="body-today">
-              <div class="clicks__items"><img src="../media/icon/logos/1.png" alt="icon">
-                <div class="title">Kohl's 
-                  <div class="clicks">579</div>
-                </div>
-              </div>
-              <div class="clicks__items"><img src="../media/icon/logos/1.png" alt="icon">
-                <div class="title">Kohl's 
-                  <div class="clicks">579</div>
-                </div>
-              </div>
-              <div class="clicks__items"><img src="../media/icon/logos/1.png" alt="icon">
-                <div class="title">Kohl's 
-                  <div class="clicks">579        </div>
-                </div>
-              </div>
-            </div>
-            <div class="adm-tab__body dashboard" id="body-week">
-              <div class="clicks__items"><img src="../media/icon/logos/2.png" alt="icon">
-                <div class="title">Travelocity 
-                  <div class="clicks">579</div>
-                </div>
-              </div>
-              <div class="clicks__items"><img src="../media/icon/logos/2.png" alt="icon">
-                <div class="title">Travelocity 
-                  <div class="clicks">579</div>
-                </div>
-              </div>
-              <div class="clicks__items"><img src="../media/icon/logos/2.png" alt="icon">
-                <div class="title">Travelocity 
-                  <div class="clicks">579  </div>
-                </div>
-              </div>
-            </div>
-            <div class="adm-tab__body dashboard" id="body-month">
-              <div class="clicks__items"><img src="../media/icon/logos/3.png" alt="icon">
-                <div class="title">RedBubble 
-                  <div class="clicks">579</div>
-                </div>
-              </div>
-              <div class="clicks__items"><img src="../media/icon/logos/3.png" alt="icon">
-                <div class="title">RedBubble 
-                  <div class="clicks">579</div>
-                </div>
-              </div>
-              <div class="clicks__items"><img src="../media/icon/logos/3.png" alt="icon">
-                <div class="title">RedBubble 
-                  <div class="clicks">579 </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          </form>
         </div>
       </div>
     </div>

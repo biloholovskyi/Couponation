@@ -10,7 +10,7 @@
     <title>Admin panel</title>
   </head>
   <body>
-    <div class="admin__panel dashboard">
+    <div class="admin__panel coupon-details insta-detail shop_detail">
       <div class="admin__bar">
         <div class="admin__title">
           <h2>Couponation</h2>
@@ -28,127 +28,79 @@
 </svg></a></div>
         <div class="admin__link--bar2"><a href="/insta_sources.html">Instagram sources  </a><a href="#">API sources</a><a href="#">Catalogue</a><a href="#">Users</a><a href="/setting.html">Settings</a><a href="#">Sign out</a></div>
       </div>
-      <div class="admin__content">
+      <div class="admin__content"><a class="back_btn" href="/admin_shop.html">All shops </a>
         <div class="admin__caption"> 
-          <h1>Dashboard</h1>
+          <h1>Best Buy</h1>
         </div>
-        <div class="stats__coupons">
-          <div class="stats__item">
-            <p class="new_coupon">1289</p>
-            <p>New coupons</p>
-          </div>
-          <div class="stats__item">
-            <p class="new_shop">289</p>
-            <p>New shops</p>
+        <div class="adm-tab__head">
+          <div class="tabs">
+            <div class="tab active" id="tab-main">MAIN INFO</div>
+            <div class="tab" id="tab-active">Coupons</div>
+            <div class="tab" id="tab-stat">Statistics</div>
           </div>
         </div>
-        <div class="moderator__blocks">
-          <div class="moderator_item moder_of_week"><img src="../media/icon/smile.svg" alt="icon">
-            <div class="moder_info">
-              <div class="title">Moderator of the week</div>
-              <div class="name">Roger Johnston</div>
-              <div class="moder_stats">
-                <div class="coupons">237 moderated coupons</div>
-                <div>|</div>
-                <div class="stores">237 moderated stores</div>
-              </div>
+        <div class="adm-tab__body show" id="body-main">
+          <div class="shop__info--content">
+            <div class="shop__name"><img src="./media/icon/logos/1.png" alt="icon">
+              <button>Upload new</button>
+              <button>Delete</button>
             </div>
-          </div>
-          <div class="moderator_item lowest_moderator"><img src="../media/icon/sadsmile.svg" alt="icon">
-            <div class="moder_info">
-              <div class="title">Moderator of the week</div>
-              <div class="name">Roger Johnston</div>
-              <div class="moder_stats">
-                <div class="coupons">2 moderated coupons</div>
-                <div>|</div>
-                <div class="stores">0 moderated stores </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="general__block">
-          <div class="general__statistic">
-            <h3>General statistics</h3>
-            <p>coupons</p>
-            <div class="grf-tab__head">
-              <div class="tabs">
-                <div class="tab active" id="tab-today2">TODAY </div>
-                <div class="tab" id="tab-week2">WEEK</div>
-                <div class="tab" id="tab-month2">MONTH</div>
-              </div>
-            </div>
-            <div class="grf-tab__body graphic show" id="body-today2">
-              <canvas id="myChart"></canvas>
-            </div>
-            <div class="grf-tab__body graphic" id="body-week2">
-              <p>123</p>
-            </div>
-            <div class="grf-tab__body graphic" id="body-month2">
-              <p>456 </p>
-            </div>
-          </div>
-          <div class="general__clicks">
-            <h3>TOP10 affilated clicks</h3>
-            <div class="adm-tab__head">
-              <div class="tabs">
-                <div class="tab active" id="tab-today">TODAY</div>
-                <div class="tab" id="tab-week">WEEK</div>
-                <div class="tab" id="tab-month">MONTH</div>
-              </div>
-            </div>
-            <div class="adm-tab__body dashboard show" id="body-today">
-              <div class="clicks__items"><img src="../media/icon/logos/1.png" alt="icon">
-                <div class="title">Kohl's 
-                  <div class="clicks">579</div>
+            <form class="small-form__form shop__form">
+              <div class="double">
+                <div class="input-item">
+                  <div class="placeholder">Name</div>
+                  <input type="text">
+                </div>
+                <div class="input-item">
+                  <div class="placeholder">Website </div>
+                  <input type="text">
+                </div>
+                <div class="input-item">
+                  <div class="placeholder">Instagram</div>
+                  <input type="text">
                 </div>
               </div>
-              <div class="clicks__items"><img src="../media/icon/logos/1.png" alt="icon">
-                <div class="title">Kohl's 
-                  <div class="clicks">579</div>
+              <div class="double full-inp textarea">
+                <div class="input-item">
+                  <div class="placeholder">Description</div>
+                  <textarea maxlength="55" id="text-count"> </textarea>
+                </div>
+                <div class="count">
+                  <div class="count-item" id="count">0 </div>
+                  <div>/</div>
+                  <div class="count-item">55</div>
                 </div>
               </div>
-              <div class="clicks__items"><img src="../media/icon/logos/1.png" alt="icon">
-                <div class="title">Kohl's 
-                  <div class="clicks">579        </div>
-                </div>
-              </div>
+            </form>
+            <div class="lines"></div>
+            <div class="admin__search">
+              <input type="text" placeholder="Search by shop or coupon"><img src="../media/icon/search.svg" alt="icon">
             </div>
-            <div class="adm-tab__body dashboard" id="body-week">
-              <div class="clicks__items"><img src="../media/icon/logos/2.png" alt="icon">
-                <div class="title">Travelocity 
-                  <div class="clicks">579</div>
-                </div>
-              </div>
-              <div class="clicks__items"><img src="../media/icon/logos/2.png" alt="icon">
-                <div class="title">Travelocity 
-                  <div class="clicks">579</div>
-                </div>
-              </div>
-              <div class="clicks__items"><img src="../media/icon/logos/2.png" alt="icon">
-                <div class="title">Travelocity 
-                  <div class="clicks">579  </div>
-                </div>
-              </div>
+            <div class="category">
+              <button class="category-btn">beauty<img src="../media/icon/category/flowers.svg" alt="image"/></button>
+              <button class="category-btn">hair<img src="../media/icon/category/hair.svg" alt="image"/></button>
+              <button class="category-btn">health<img src="../media/icon/category/heart.svg" alt="image"/></button>
+              <button class="category-btn">skin care<img src="../media/icon/category/skin.svg" alt="image"/></button>
+              <button class="category-btn">cosmetics<img src="../media/icon/category/cosmetic.svg" alt="image"/></button>
+              <button class="category-btn">beauty<img src="../media/icon/category/flowers.svg" alt="image"/></button>
+              <button class="category-btn">hair<img src="../media/icon/category/hair.svg" alt="image"/></button>
+              <button class="category-btn">health<img src="../media/icon/category/heart.svg" alt="image"/></button>
             </div>
-            <div class="adm-tab__body dashboard" id="body-month">
-              <div class="clicks__items"><img src="../media/icon/logos/3.png" alt="icon">
-                <div class="title">RedBubble 
-                  <div class="clicks">579</div>
-                </div>
-              </div>
-              <div class="clicks__items"><img src="../media/icon/logos/3.png" alt="icon">
-                <div class="title">RedBubble 
-                  <div class="clicks">579</div>
-                </div>
-              </div>
-              <div class="clicks__items"><img src="../media/icon/logos/3.png" alt="icon">
-                <div class="title">RedBubble 
-                  <div class="clicks">579 </div>
-                </div>
-              </div>
+            <div class="lines"></div>
+            <h3>Select default partnership network for this shop</h3>
+            <div class="radio__block">
+              <label class="radio">
+                <input type="radio" name="r" value="1" checked><span>Affiliate</span>
+              </label>
+              <label class="radio">
+                <input type="radio" name="r" value="2"><span>Custom</span>
+              </label>
             </div>
+            <button class="saveChange">Save Changes            </button>
           </div>
         </div>
+        <div class="adm-tab__body" id="body-active"></div>
+        <div class="adm-tab__body" id="body-stat"></div>
       </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>

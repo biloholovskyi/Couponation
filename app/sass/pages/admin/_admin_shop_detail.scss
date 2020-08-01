@@ -1,0 +1,319 @@
+.shop_detail{
+  .admin__content {
+    .shop__info--content {
+      width: 100%;
+      .shop__name {
+        display: flex;
+        align-items: center;
+        margin-bottom: 27px;
+        img {
+          width: 80px;
+          height: 80px;
+          margin-right: 12px;
+          border: 0.5px solid #EBEBEB;
+          border-radius: 50%;
+          object-fit: contain;
+          object-position: center;
+        }
+        button {
+          font-style: normal;
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 24px;
+          color: #222222;
+          background-color: transparent;
+          padding: 6px 16px;
+          border: 1px solid #EBEBEB;
+          border-radius: 8px;
+          margin-right: 12px;
+        }
+        & button:last-child {
+          color: #FF3042;
+          margin-right: 0;
+        }
+      }
+      .admin__search {
+        flex: 50%;
+        border: 1px solid #EBEBEB;
+        border-radius: 8px;
+        min-height: 56px;
+        position: relative;
+        max-width: 579px;
+       
+        input {
+          width: 100%;
+          height: 100%;
+          border: none;
+          padding: 16px 16px 16px 60px;
+          font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            border-radius: 8px;
+          &::placeholder {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            color: rgba(34, 34, 34, 0.6);
+          }
+        }
+        img {
+          position: absolute;
+          left: 18px;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 24px;
+          height: 24px;
+        }
+      }
+      .category {
+        display: flex;
+        margin: 24px 0 24px;
+      }
+      h3 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 36px;
+        color: #222222;
+        margin-bottom: 16px;
+      }
+      .saveChange {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 24px;
+        color: #FFFFFF;
+        background: #FF703E;
+        border-radius: 8px;
+        padding: 16px 24px; 
+        margin-top: 36px;
+        border: none;
+      }
+    }
+  }
+}
+
+
+.shop__form {
+  padding: 0;
+  width: 100%;
+  min-width: unset;
+  display: flex;
+  flex-direction: row;
+
+  .double {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    flex-direction: column;
+    width: 50%;
+    margin-right: 24px;
+    .input-item {
+      position: relative;
+      border: 1px solid #ebebeb;
+      border-radius: 8px;
+      padding: 16px 18px 16px 16px;
+      margin-bottom: 32px;
+      min-width: 252px;
+
+      input {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+        color: #222222;
+        border: none;
+      }
+      
+      .placeholder {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+        color: rgba(34, 34, 34, 0.6);
+      }
+
+      textarea {
+        border: none;
+        resize: none;
+      }
+
+      &.input {
+        padding: 20px 18px 9px 16px!important;
+        border: 1px solid #EBEBEB!important;
+        .placeholder {
+          color: #717171!important;  
+          top: 5px!important;
+          transform: translateY(0);
+          font-weight: 500!important;
+          font-size: 12px!important;
+          line-height: 16px!important;
+        }
+      }
+    }
+
+    & .input-item:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .full-inp {
+    width: 50%;
+    margin-right: 0;
+
+    .input-item {
+      width: 100%;
+    }
+  }
+
+  .textarea {
+    height: 232px;
+
+    .input-item {
+      height: 232px;
+      .placeholder {
+        top: 27px;
+      }
+    }
+
+    textarea {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .count {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-bottom: 12px;
+    transform: translateY(-20px);
+    .count-item,
+    div {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 18px;
+      color: #717171;
+    }
+  }
+}
+
+
+.adm-tab__body { 
+  width: 100%;
+    padding-top: 15px;
+    display: none;
+    &.show {
+      display: flex;
+    }
+}
+
+.lines {
+  background-color: #EBEBEB;
+  width: 100%;
+  height: 1px;
+  margin: 12px 0 36px;
+}
+
+
+// radio block
+
+.radio {
+  margin: 15px 0;
+  display: block;
+  $radioSize: 24px;
+  $inputBorder: #D0D7DD;
+  $inputActive: #FF703E;
+  cursor: pointer;
+
+  input {
+    display: none;
+
+    & + span {
+      line-height: $radioSize;
+      height: $radioSize;
+      padding-left: $radioSize;
+      display: block;
+      position: relative;
+      margin-left: 2px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #565b62;
+
+      &:not(:empty) {
+        padding-left: $radioSize + 13;
+      }
+
+      &:before,
+      &:after {
+        content: '';
+        width: $radioSize;
+        height: $radioSize;
+        display: block;
+        border-radius: 50%;
+        left: 0;
+        top: 0;
+        position: absolute;
+      
+      
+      }
+
+      &:before {
+        background: transparent;
+        transition: background .2s ease, transform .4s cubic-bezier(.175, .885, .32, 2);
+        border: 2px solid #EBEBEB;
+      }
+
+      &:after {
+        background: #F8F8F8;
+        transform: scale(.88);
+        transition: transform .6s cubic-bezier(.175, .885, .32, 1.4);
+      }
+      &:hover:before {
+        background: #B2B8BF;
+       
+      }
+    }
+
+    &:checked + span {
+      &:before {
+        transform: scale(1.04);
+        background: #fff;
+        border: 2px solid #FF703E; 
+      }
+
+      &:after {
+        transform: scale(.5);
+        transition: transform .3s ease;
+        background-color: #FF703E;
+      }
+      
+    }
+  }
+
+  &:hover {
+    input {
+      & + span {
+        &:before {
+          transform: scale(.92);
+        }
+
+        &:after {
+          transform: scale(.74);
+        }
+      }
+
+      &:checked + span {
+        &:after {
+          transform: scale(.4);
+        }
+      }
+    }
+  }
+  
+}
