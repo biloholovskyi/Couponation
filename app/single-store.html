@@ -10,10 +10,11 @@
     <title>Store</title>
   </head>
   <body>
-    <header class="header single-header">
-      <div class="burger"><img src="../media/icon/burger.svg" alt="icon"></div><a class="header__logo" href="/">Couponation</a>
+    <div class="fake-header"></div>
+    <header class="header">
+      <div class="burger"><img class="burder-btn" src="../media/icon/burger.svg" alt="icon"><img class="close-menu" src="../media/icon/close-menu.svg" alt="icon"></div><a class="header__logo" href="/">Couponation</a>
       <div class="header__nav">
-        <button class="header__link header__drop--btn" href="#">Coupons
+        <button class="header__link header__drop--btn" onclick="location.href='/coupons.html';">Coupons
           <div class="header__modal--wrap"><a class="header__modal--item" href="/couponoftheday.html">
               <h3>Coupons of the day</h3>
               <p>These discounds were added within 24h</p></a><a class="header__modal--item" href="#">
@@ -21,21 +22,20 @@
               <p>Just added to the site, hurry up!</p></a><a class="header__modal--item" href="#">
               <h3>Trusted coupons</h3>
               <p>Coupons marked as "100% working"    </p></a></div>
-        </button><a class="header__link" href="/categories.html">Categories</a><a class="header__link" href="./store.html">Stores </a>
+        </button><a class="header__link" href="/categories.html">Categories</a><a class="header__link" href="/store.html">Stores </a>
         <div class="header__button" onclick="location.href='/submitCoupon.html';">Submit a coupon</div>
       </div>
     </header>
-    <div class="alphabet-single-wrap"> 
-      <div class="alphabet">
-        <div class="alphabet-title">Find store by name</div>
-        <div class="alphabet-block"><a class="alphabet-item active" href="./single-store.html">A</a><a class="alphabet-item" href="./single-store.html">B</a><a class="alphabet-item" href="./single-store.html">C</a><a class="alphabet-item" href="./single-store.html">D</a><a class="alphabet-item" href="./single-store.html">E</a><a class="alphabet-item" href="./single-store.html">F</a><a class="alphabet-item" href="./single-store.html">G</a><a class="alphabet-item" href="./single-store.html">H</a><a class="alphabet-item" href="./single-store.html">I</a><a class="alphabet-item" href="./single-store.html">J</a><a class="alphabet-item" href="./single-store.html">K</a><a class="alphabet-item" href="./single-store.html">L</a><a class="alphabet-item" href="./single-store.html">M</a><a class="alphabet-item" href="./single-store.html">N</a><a class="alphabet-item" href="./single-store.html">O</a><a class="alphabet-item" href="./single-store.html">P</a><a class="alphabet-item" href="./single-store.html">Q</a><a class="alphabet-item" href="./single-store.html">R</a><a class="alphabet-item" href="./single-store.html">S</a><a class="alphabet-item" href="./single-store.html">T</a><a class="alphabet-item" href="./single-store.html">U</a><a class="alphabet-item" href="./single-store.html">V</a><a class="alphabet-item" href="./single-store.html">W</a><a class="alphabet-item" href="./single-store.html">X</a><a class="alphabet-item" href="./single-store.html">Y</a><a class="alphabet-item" href="./single-store.html">Z</a><a class="alphabet-item" href="./single-store.html">#</a></div>
+    <div class="mobile-menu">
+      <div class="menu-inside"><a href="/coupons.html">Coupons</a><a href="/categories.html">Categories</a><a href="/store.html">Store</a>
+        <button onclick="location.href='/submitCoupon.html';">Submit a coupon</button>
       </div>
     </div>
     <div class="coupon-page store-page">
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <div class="breadcrumb"><a href="/">Main page</a><a href="./store.html">/ Stores</a>
+            <div class="breadcrumb"><a href="/">Main page</a><a href="./store.html">/ Stores</a><a href="./single-store.html">/ A</a>
             </div>
           </div>
         </div>
@@ -51,9 +51,13 @@
             </div>
           </div>
           <div class="col-12">
-            <div class="alphabet desctop-abc">
+            <div class="alphabet abc-desktop">
               <div class="alphabet-title">Find store by name</div>
-              <div class="alphabet-block"><a class="alphabet-item" href="./single-store.html">A</a><a class="alphabet-item" href="./single-store.html">B</a><a class="alphabet-item" href="./single-store.html">C</a><a class="alphabet-item" href="./single-store.html">D</a><a class="alphabet-item" href="./single-store.html">E</a><a class="alphabet-item" href="./single-store.html">F</a><a class="alphabet-item" href="./single-store.html">G</a><a class="alphabet-item" href="./single-store.html">H</a><a class="alphabet-item" href="./single-store.html">I</a><a class="alphabet-item" href="./single-store.html">J</a><a class="alphabet-item" href="./single-store.html">K</a><a class="alphabet-item" href="./single-store.html">L</a><a class="alphabet-item" href="./single-store.html">M</a><a class="alphabet-item" href="./single-store.html">N</a><a class="alphabet-item" href="./single-store.html">O</a><a class="alphabet-item" href="./single-store.html">P</a><a class="alphabet-item" href="./single-store.html">Q</a><a class="alphabet-item" href="./single-store.html">R</a><a class="alphabet-item" href="./single-store.html">S</a><a class="alphabet-item" href="./single-store.html">T</a><a class="alphabet-item" href="./single-store.html">U</a><a class="alphabet-item" href="./single-store.html">V</a><a class="alphabet-item" href="./single-store.html">W</a><a class="alphabet-item" href="./single-store.html">X</a><a class="alphabet-item" href="./single-store.html">Y</a><a class="alphabet-item" href="./single-store.html">Z</a><a class="alphabet-item" href="./single-store.html">#</a></div>
+              <div class="alphabet-block"><a class="alphabet-item active" href="./single-store.html">A</a><a class="alphabet-item" href="./single-store.html">B</a><a class="alphabet-item" href="./single-store.html">C</a><a class="alphabet-item" href="./single-store.html">D</a><a class="alphabet-item" href="./single-store.html">E</a><a class="alphabet-item" href="./single-store.html">F</a><a class="alphabet-item" href="./single-store.html">G</a><a class="alphabet-item" href="./single-store.html">H</a><a class="alphabet-item" href="./single-store.html">I</a><a class="alphabet-item" href="./single-store.html">J</a><a class="alphabet-item" href="./single-store.html">K</a><a class="alphabet-item" href="./single-store.html">L</a><a class="alphabet-item" href="./single-store.html">M</a><a class="alphabet-item" href="./single-store.html">N</a><a class="alphabet-item" href="./single-store.html">O</a><a class="alphabet-item" href="./single-store.html">P</a><a class="alphabet-item" href="./single-store.html">Q</a><a class="alphabet-item" href="./single-store.html">R</a><a class="alphabet-item" href="./single-store.html">S</a><a class="alphabet-item" href="./single-store.html">T</a><a class="alphabet-item" href="./single-store.html">U</a><a class="alphabet-item" href="./single-store.html">V</a><a class="alphabet-item" href="./single-store.html">W</a><a class="alphabet-item" href="./single-store.html">X</a><a class="alphabet-item" href="./single-store.html">Y</a><a class="alphabet-item" href="./single-store.html">Z</a><a class="alphabet-item" href="./single-store.html">#</a></div>
+            </div>
+            <div class="alphabet abc-mobile" id="abc">
+              <div class="alphabet-title">Find store by name</div>
+              <div class="alphabet-block"><a class="alphabet-item active" href="./single-store.html">A</a><a class="alphabet-item" href="./single-store.html">B</a><a class="alphabet-item" href="./single-store.html">C</a><a class="alphabet-item" href="./single-store.html">D</a><a class="alphabet-item" href="./single-store.html">E</a><a class="alphabet-item" href="./single-store.html">F</a><a class="alphabet-item" href="./single-store.html">G</a><a class="alphabet-item" href="./single-store.html">H</a><a class="alphabet-item" href="./single-store.html">I</a><a class="alphabet-item" href="./single-store.html">J</a><a class="alphabet-item" href="./single-store.html">K</a><a class="alphabet-item" href="./single-store.html">L</a><a class="alphabet-item" href="./single-store.html">M</a><a class="alphabet-item" href="./single-store.html">N</a><a class="alphabet-item" href="./single-store.html">O</a><a class="alphabet-item" href="./single-store.html">P</a><a class="alphabet-item" href="./single-store.html">Q</a><a class="alphabet-item" href="./single-store.html">R</a><a class="alphabet-item" href="./single-store.html">S</a><a class="alphabet-item" href="./single-store.html">T</a><a class="alphabet-item" href="./single-store.html">U</a><a class="alphabet-item" href="./single-store.html">V</a><a class="alphabet-item" href="./single-store.html">W</a><a class="alphabet-item" href="./single-store.html">X</a><a class="alphabet-item" href="./single-store.html">Y</a><a class="alphabet-item" href="./single-store.html">Z</a><a class="alphabet-item" href="./single-store.html">#</a></div>
             </div>
           </div>
         </div>
@@ -383,54 +387,6 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="buildjs/owl.carousel.js"></script>
-    <script src="buildjs/index.js"></script>
-    <script>
-       $(document).ready(function () {
-
-    
-  // let windowWidth = $(window).width();
-  // let containerWidth = $('.m-container').width();
-  // let wrapper = $('.contact-page__wrapper').width();
-  // let mapWidth = windowWidth - ((windowWidth - containerWidth) / 2 + wrapper);
-
-
-});
-ymaps.ready(init);
-function init(){
-var myMap = new ymaps.Map("map", {
-center: [34.035934, -117.856225],
-zoom: 15
-});
-
-myMap.behaviors.disable(['drag', 'scrollZoom', 'dblClickZoom','zoomControl']);
-
-myMap.controls
-.remove('trafficControl')
-.remove('fullscreenControl')
-.remove('rulerControl')
-.remove('typeSelector')
-.remove('searchControl')
-// .remove('zoomControl')
-.remove('geolocationControl'); 
-
-var myPin = new ymaps.Placemark([34.035934, -117.856225],  
-{
-  balloonContentHeader: '',
-  balloonContentBody: '',
-  balloonContentFooter: '',
-  hintContent: ''
-},
-{
-  iconLayout: 'default#image',
-  
-  iconImageHref: './media/icon/pin2.png',
-  iconImageSize: [28, 40],
-  iconImageOffset: [0, 0]
-});
-
-myMap.geoObjects.add(myPin);
-
-}
-    </script>
+    <script src="buildjs/index.js">     </script>
   </body>
 </html>

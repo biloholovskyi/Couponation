@@ -20,17 +20,17 @@
       .double.full-inp
         .input-item
           .placeholder Coupon’s short description
-          input(type='email')
+          input(maxlength="55" type='email')#text-counter
       .count
-        .count-item 0
+        .count-item#counter 0
         div /
         .count-item 55    
       .double.full-inp.textarea
         .input-item
           .placeholder Coupon’s full description
-          textarea
+          textarea(maxlength="255")#text-count
       .count
-        .count-item 0
+        .count-item#count 0
         div /
         .count-item 255      
       input(type="submit" value="Create a coupon").admin_submit        

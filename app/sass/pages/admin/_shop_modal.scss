@@ -15,7 +15,9 @@
     background-color: #fff;
     border-radius: 8px;
     min-width: 608px;
+    min-height: 720px;
     position: relative;
+    padding-bottom:  0;
     h3 {
       font-style: normal;
       font-weight: bold;
@@ -39,7 +41,7 @@
           font-weight: normal;
           font-size: 16px;
           line-height: 24px;
-
+          border-radius: 8px;
         &::placeholder {
           font-style: normal;
           font-weight: normal;
@@ -60,8 +62,9 @@
     .shop__modal--content {
       overflow: auto;
       max-height: 525px;
+      max-height: 550px;
       .shop__modal--item {
-        padding: 20px 0;
+        padding: 24px 0;
         border-bottom: 1px solid #EBEBEB;
         .shop__title {
           display: flex;

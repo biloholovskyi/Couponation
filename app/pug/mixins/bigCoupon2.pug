@@ -1,0 +1,17 @@
+mixin coupons-shop2(text,shop,text2, name,name2, rate)
+  .coupon-shop
+    .left-side
+      h3= text
+      h4.storeName= shop
+    .right-side
+      .top
+        .name= text2
+        .button.getCode Get code
+      .bottom
+        .uses
+          .nameUses= name
+          .nameUses= name2
+        .rate
+          .result= rate
+          .icon.like 👍
+          .icon.dislike 👎

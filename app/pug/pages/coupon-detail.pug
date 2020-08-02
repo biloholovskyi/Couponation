@@ -12,11 +12,7 @@ block content
       .admin__caption 
           h1 SAVE6DOLLARS
           button Block source
-      .adm-tab__head
-        .tabs
-          .tab.active#tab-main MAIN INFO
-          .tab#tab-shop SHOP
-      .adm-tab__body.info.show#body-main
+      .info
         .stats__blocks
           .stats__block
             .stats__title General stats
@@ -28,7 +24,7 @@ block content
               p May 20, 2020 – 14:08
             .stats__item
               p Source
-              p @shellynyak
+              p(style="color:  #24B4FF") @shellynyak
           .stats__block
             .stats__title Vote stats
             .stats__item
@@ -47,10 +43,13 @@ block content
           .adm__link
             h3 Original post text
             p Do you love face oils? My skin is very picky when it comes to face oil. Most of the time either the oil just floats on my skin and sticks wherever except my face or I end up with an irritated skin. But #juicychemistry 100% Organic Camellia Seed Oil is surely the magic in a bottle. You can use my code - SHELL15 for additional discount on Juicychemistry Website.  
-        .coupon__form
+          .adm__link
+            h3 Shop
+            include ../modules/admin/coupon-shop-single   
+        .coupon__form.single__coupon-form
           .coupon__modal
             h3 Edit coupon data
-            form.small-form__form.admin-form
+            form.small-form__form.admin-form 
               .double
                 .input-item
                   .placeholder Coupon
@@ -58,6 +57,15 @@ block content
                 .input-item
                   .placeholder Expiration date 
                   input(type='email')
+              .coupon_admin.shop_adm.shop__form
+                .coupon__content
+                  .shop__title
+                    img(src="./media/icon/logos/1.png", alt="") 
+                    .title__item
+                      h3 Shop
+                      h4 Kohl’s
+                  button(type="button").change_shop Change shop     
+                       
               .double
                 .input-item
                   .placeholder Instagram account
@@ -68,27 +76,25 @@ block content
               .double.full-inp
                 .input-item
                   .placeholder Coupon’s short description
-                  input(type='email')
+                  input(maxlength="55" type='email')#text-counter
               .count
-                .count-item 0
+                .count-item#counter 0
                 div /
                 .count-item 55    
-              .double.full-inp.textarea
+              .double.full-inp.textarea 
                 .input-item
                   .placeholder Coupon’s full description
-                  textarea
+                  textarea#text-count(maxlength="255")
               .count
-                .count-item 0
+                .count-item#count 0
                 div /
                 .count-item 255      
               input(type="submit" value="Save changes").admin_submit   
-      .adm-tab__body.shop#body-shop
-        .adm__links
-          .adm__link
-            h3 Affilated shop
-            include ../modules/admin/coupon_shop
+      
+        
 
-  include ../modules/admin/change_shop_modal          
+  include ../modules/admin/change_shop_modal
+  include ../modules/admin/shop_succefully          
          
 
 

@@ -6,8 +6,9 @@ import './stickyHeader';
 import './anhors';
 import {switchLink} from './activeLink';
 import Catalogue from "./catalogue";
-
+import './countInput';
 const catalogue = new Catalogue();
+
 
 $(document).ready((e) => {
   document.querySelectorAll('.api-sources__table .api-table__body tr td.name--width').forEach(item => {
@@ -18,6 +19,7 @@ $(document).ready((e) => {
   document.querySelectorAll('textarea').forEach(area => {
     area.value = '';
   })
+ 
  
   $('.mobile__nav .shopLinks').on('click', (e) => switchLink(e));
   // show categories on categories page
@@ -131,12 +133,18 @@ $('.change_shop').on('click', function(){
   });
 });
 
-
+ 
 
 //admin modal close
 $('.adm__modal--close').on('click', function(){
   $('.admin__modal--overlay').css({'display': 'none'});
   $('.shop__modal--overlay').css({'display': 'none'});
+  $('input').val('');
+  $('textarea').val('');
+  $('.admin-form .double .input-item').removeClass('input');
+  $('textarea').removeClass('input');
+  $('#count').html('0');
+  $('#counter').html('0');
   $('body').css({
     'overflow': 'visible',
     'position': 'relative',
@@ -165,10 +173,30 @@ $('.grf-tab__head .tabs .tab').on('click', (e) => {
 });
 
 
-// open droplist in header
+// open responsive menu in header
 
-$('.header__drop--btn').on('click', function(){
-  $('.header__modal--wrap').toggleClass('active');
+$('.burder-btn').on('click', function(){
+  $(this).toggleClass('active');
+  $(this).parents('.header').children('.header__logo').toggleClass('active');
+  $('.close-menu').toggleClass('active');
+  $('.mobile-menu').toggleClass('active');
+  $('.header').css('border-bottom', 'none');
+  $('.stikyAbc').css('z-index', '18');
+
+  if( $('.mobile-menu').hasClass('active')) {
+    $('.header').css('box-shadow', 'none');
+  }
+});
+
+
+$('.close-menu').on('click', function(){
+  $(this).toggleClass('active');
+  $(this).parents('.header').children('.header__logo').toggleClass('active');
+  $('.burder-btn').toggleClass('active');
+  $('.mobile-menu').toggleClass('active'); 
+  $('.header').css('box-shadow', '0 6px 16px rgba(0,0,0,.12)');
+  $('.header').css('border-bottom', '1px solid #ebebeb');
+  $('.stikyAbc').css('z-index', '20');
 });
 
 
@@ -201,14 +229,14 @@ $(function () {
 });
 
 
-$(document).mouseup(function(e){
-  let div = $('.header__drop--btn, .header__modal--wrap');
-  if(!div.is(e.target)
-  && div.has(e.target).length === 0) {
-    div.removeClass('active'); 
-    $('.header__modal--wrap').removeClass('active');
-  }
-});
+// $(document).mouseup(function(e){
+//   let div = $('.header__drop--btn, .header__modal--wrap');
+//   if(!div.is(e.target)
+//   && div.has(e.target).length === 0) {
+//     div.removeClass('active'); 
+//     $('.header__modal--wrap').removeClass('active');
+//   }
+// });
 
 
 $(document).on('click', function(e){

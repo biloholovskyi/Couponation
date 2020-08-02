@@ -1,0 +1,73 @@
+extends ../layout/admin
+
+block variables
+  - const pageTitle = 'Admin panel'
+
+  include ../mixins/category_btn
+
+block content
+
+  .admin__panel.coupon-details.insta-detail.shop_detail
+    include ../modules/admin/admin_bar
+    .admin__content
+      a.back_btn(href="/admin_shop.html") All shops 
+      .admin__caption 
+        h1 Best Buy
+      .adm-tab__head
+        //.tabs
+        //  .tab.active#tab-main MAIN INFO
+        //  //.tab#tab-active Coupons
+        //  //.tab#tab-stat Statistics
+      .adm-tab__body.show#body-main
+        .shop__info--content
+          .shop__name
+            img(src="./media/icon/logos/1.png", alt="icon")
+            button Upload new
+            button Delete
+          form.small-form__form.shop__form
+            .double
+              .input-item
+                .placeholder Name
+                input(type='text')
+              .input-item
+                .placeholder Website 
+                input(type='text') 
+              .input-item
+                .placeholder Instagram
+                input(type='text')    
+            .double.full-inp.textarea
+              .input-item
+                .placeholder Description
+                textarea(maxlength="55")#text-count 
+              .count
+                .count-item#count 0 
+                div /
+                .count-item 55
+          .lines
+          .admin__search
+            input(type="text" placeholder="Search by shop or coupon") 
+            img(src="../media/icon/search.svg", alt="icon")
+          .category
+            +CategoryBtn('../media/icon/category/flowers.svg','beauty')
+            +CategoryBtn('../media/icon/category/hair.svg','hair')
+            +CategoryBtn('../media/icon/category/heart.svg','health')
+            +CategoryBtn('../media/icon/category/skin.svg','skin care')
+            +CategoryBtn('../media/icon/category/cosmetic.svg','cosmetics')
+            +CategoryBtn('../media/icon/category/flowers.svg','beauty')
+            +CategoryBtn('../media/icon/category/hair.svg','hair')
+            +CategoryBtn('../media/icon/category/heart.svg','health')
+          .lines
+          h3 Select default partnership network for this shop
+          .radio__block
+            label.radio
+              input(type="radio" name="r" value="1" checked)
+              span Affiliate
+            label.radio
+              input(type="radio" name="r" value="2")
+              span Custom
+          button.saveChange Save Changes            
+
+
+
+      .adm-tab__body#body-active
+      .adm-tab__body#body-stat

@@ -1,0 +1,42 @@
+extends ../layout/admin
+
+block variables
+  - const pageTitle = 'Admin panel'
+
+block content
+
+  .admin__panel.setting
+    include ../modules/admin/admin_bar
+    .admin__content
+      .admin__caption 
+        h1 Settings
+        h2 Personal data
+        form.small-form__form.shop__form
+          .double
+            .input-item
+              .placeholder First name
+              input(type='text')
+            .input-item
+              .placeholder Last name 
+              input(type='text') 
+            .input-item(style="margin-bottom: 16px")
+              .placeholder Email
+              input(type='email')
+            p Be careful and provide us your actual email #[br]We use it for password recovery  
+            button.saveChange Save Changes 
+          .lines
+        h2 Security settings
+        form.small-form__form.shop__form
+          .double
+            .input-item
+              .placeholder First name
+              input(type='text')
+            .input-item
+              .placeholder Last name 
+              input(type='text') 
+            .input-item
+              .placeholder Email
+              input(type='email') 
+            button.savePass Change password             
+
+

@@ -149,6 +149,7 @@
     margin-right: 20px;
     border-right: 1px solid #F7F7F7;
     padding: 20px 20px 25px 20px;
+    flex-direction: column;
     h3 {
       font-style: normal;
       font-weight: bold;
@@ -161,6 +162,7 @@
       text-transform: uppercase;
       color: #222222;
     }
+    
   }
 
   .right-side {
@@ -267,6 +269,15 @@
     border-radius: 12px;
     cursor: pointer;
   }
+}
+
+.storeName {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: #222222;
+  margin-top: 4px;
 }
 
 // end BIG COUPON whit offers

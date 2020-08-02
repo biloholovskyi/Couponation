@@ -1,4 +1,4 @@
-extends ../layout/main-store
+extends ../layout/main
 
 block variables
   - const pageTitle = 'Store'
@@ -16,7 +16,8 @@ block content
         .col-12
           .breadcrumb
             +breadcrumb('Main page','/')
-            +breadcrumb('/ Stores','./store.html') 
+            +breadcrumb('/ Stores','./store.html')
+            +breadcrumb('/ A','./single-store.html')  
       .row
         .col-12
           .coupons-title
@@ -26,7 +27,8 @@ block content
               button Stores of the day
               button New stores
         .col-12
-          include ../modules/store/abc-mobile
+          include ../modules/store/abc-single
+          include ../modules/store/abc-mobile-single
   .card-section.store-section(style="margin-bottom: 0")
     .container                
       .row

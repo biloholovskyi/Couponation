@@ -1,0 +1,43 @@
+.setting {
+  .admin__content {
+    .admin__caption  {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      h1 {
+        margin-bottom: 32px;
+      }
+      h2 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 36px;
+        color: #222222;
+        margin-bottom: 24px;
+      }
+      .shop__form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .double {
+          .input-item {
+            min-width: 528px;
+            margin-bottom: 24px;
+          }
+          p {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            color: #717171;
+            margin-bottom: 32px;
+          }
+        }
+        .lines {
+          max-width: 528px;
+        }
+      }
+    }
+  }
+}
