@@ -7,13 +7,24 @@ import './anhors';
 import {switchLink} from './activeLink';
 import Catalogue from "./catalogue";
 import './countInput';
+import AdminDrop from "./admin/dropDown";
+
 const catalogue = new Catalogue();
+const adminDrop = new AdminDrop();
 
 
 $(document).ready((e) => {
   document.querySelectorAll('.api-sources__table .api-table__body tr td.name--width').forEach(item => {
     item.addEventListener('click', (e) => catalogue.show(e));
   });
+
+  if(document.querySelector('.dashboard .admin__content .general__block .general__statistic p')) {
+    document.querySelector('.dashboard .admin__content .general__block .general__statistic p').addEventListener('click', adminDrop.toggle);
+  }
+
+  document.querySelectorAll('.type-select-js').forEach(select => {
+    select.addEventListener('click', (e) => adminDrop.filterToggle(e))
+  })
 
   // fix text area value
   document.querySelectorAll('textarea').forEach(area => {

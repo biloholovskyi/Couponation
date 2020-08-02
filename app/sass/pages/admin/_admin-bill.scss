@@ -14,60 +14,6 @@
           }
         }
       }
-
-      // select
-      .adm-select-wrapp_bill {
-        margin-bottom: 24px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        .left {
-          display: flex;
-          align-items: center;
-        }
-
-        .right {
-          cursor: pointer;
-          font-weight: bold;
-          font-size: 14px;
-          line-height: 24px;
-          color: #FF3042;
-        }
-
-        .adm-select-item_bill {
-          padding: 5px 8px 7px 12px;
-          border: 1px solid #EBEBEB;
-          box-sizing: border-box;
-          border-radius: 4px;
-          width: max-content;
-          display: flex;
-          align-items: center;
-          cursor: pointer;
-          margin-right: 8px;
-
-          &:last-child {
-            margin-right: 0;
-          }
-
-          &::after {
-            content: '';
-            display: block;
-            @include base-box(18px);
-            @include base-background(contain);
-            background-image: url(../media/icon/select-arrow.svg);
-            margin-left: 8px;
-          }
-
-          .name {
-            font-weight: normal;
-            font-size: 14px;
-            line-height: 22px;
-            font-feature-settings: 'pnum' on, 'lnum' on;
-            color: #717171;
-          }
-        }
-      }
     }
   }
 }
@@ -439,6 +385,156 @@
           opacity: 0;
           display: none;
         }
+      }
+    }
+  }
+}
+
+// select
+.adm-select-wrapp_bill {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  .left {
+    display: flex;
+    align-items: center;
+  }
+
+  .right {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FF3042;
+  }
+
+  .adm-select-item_bill {
+    padding: 5px 8px 7px 12px;
+    border: 1px solid #EBEBEB;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: all .3s;
+    position: relative;
+
+    .hover-block {
+      position: absolute;
+      background: #FFFFFF;
+      border: 1px solid #F7F7F7;
+      box-sizing: border-box;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+      top: calc(100% + 12px);
+      left: 50%;
+      transform: translateX(-50%);
+      display: block;
+      z-index: 10;
+      width: 180px;
+      min-height: 144px;
+      border-radius: 12px;
+      opacity: 0;
+      visibility: hidden;
+      transition: all .3s;
+
+      &.type-from {
+        width: 192px;
+        padding: 16px;
+
+        .line-input {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 12px;
+
+          .text {
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 22px;
+            color: #000000;
+            margin-right: 10px;
+          }
+
+          input {
+            width: 117px;
+            background: #FFFFFF;
+            border: 1px solid #EBEBEB;
+            box-sizing: border-box;
+            border-radius: 8px;
+            font-size: 14px;
+            line-height: 22px;
+            color: #AAAAAA;
+            padding: 6px 12px;
+          }
+        }
+
+        button {
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 24px;
+          text-align: center;
+          color: #FFFFFF;
+          width: 100%;
+          border: none;
+          background: #FF703E;
+          border-radius: 8px;
+          height: 32px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+
+      .line {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 48px;
+        color: #222222;
+        padding: 0 16px;
+        display: block;
+        width: 100%;
+        cursor: pointer;
+        transition: all .3s;
+
+        &:hover {
+          background: #F7F7F7;
+        }
+      }
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      @include base-box(18px);
+      @include base-background(contain);
+      background-image: url(../media/icon/select-arrow.svg);
+      margin-left: 8px;
+      transition: all .3s;
+    }
+
+    .name {
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 22px;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+      color: #717171;
+    }
+
+    &.show {
+      background: #F7F7F7;
+
+      .hover-block {
+        opacity: 1;
+        visibility: visible;
       }
     }
   }

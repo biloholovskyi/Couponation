@@ -1,3 +1,20 @@
-mixin adm-select-item_bill(name)
-  .adm-select-item_bill
-    .name= name
+mixin adm-select-item_bill(name, status)
+  if status
+    .adm-select-item_bill.type-from.type-select-js
+      .name= name
+      .hover-block.type-from
+        .line-input
+          .text From
+          input(type='number' placeholder='0')
+        .line-input
+          .text To
+          input(type='number' placeholder='10000')
+        button Confirm
+
+  else
+    .adm-select-item_bill.type-list.type-select-js
+      .name= name
+      .hover-block
+        .line list 1
+        .line list 2
+        .line list 3

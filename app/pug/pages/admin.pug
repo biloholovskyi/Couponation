@@ -1,4 +1,5 @@
 extends ../layout/admin
+include ../modules/admin-bill/mixins/adm_select
 
 block variables
   - const pageTitle = 'Admin panel'
@@ -16,20 +17,15 @@ block content
         button.addNewCoupon Add new coupon
         
       .admin__select--block
-        .adm__select
-          .admin__item
-            p All statuses
-          .admin__item 
-            p All sources
-          .admin__item
-            p All moderators
-          .admin__item 
-            p Clicks, 30 days
-          .admin__item
-            p Succes rate
-          .admin__item 
-            p Date added
-        button.clear Clear filters    
+        .adm-select-wrapp_bill
+          .left
+            +adm-select-item_bill('All statuses')
+            +adm-select-item_bill('All sources')
+            +adm-select-item_bill('All moderators')
+            +adm-select-item_bill('Clicks, 30 days')
+            +adm-select-item_bill('Success rate')
+            +adm-select-item_bill('Date added', true)
+          .right Clear filters
         
       .sort__block
         p Name
