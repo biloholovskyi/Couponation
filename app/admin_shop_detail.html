@@ -26,7 +26,7 @@
             Shops<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M20.16 7.8C20.07 7.34 19.66 7 19.18 7H4.82C4.34 7 3.93 7.34 3.84 7.8L3 12V13C3 13.55 3.45 14 4 14V19C4 19.55 4.45 20 5 20H13C13.55 20 14 19.55 14 19V14H18V19C18 19.55 18.45 20 19 20C19.55 20 20 19.55 20 19V14C20.55 14 21 13.55 21 13V12L20.16 7.8ZM12 18H6V14H12V18ZM5 6H19C19.55 6 20 5.55 20 5C20 4.45 19.55 4 19 4H5C4.45 4 4 4.45 4 5C4 5.55 4.45 6 5 6Z" fill="#717171"/>
 </svg></a></div>
-        <div class="admin__link--bar2"><a href="/insta_sources.html">Instagram sources  </a><a href="#">API sources</a><a href="#">Catalogue</a><a href="#">Users</a><a href="/setting.html">Settings</a><a href="#">Sign out</a></div>
+        <div class="admin__link--bar2"><a href="/insta_sources.html">Instagram sources  </a><a href="/api.html">API sources</a><a href="/catalogue.html">Catalogue</a><a href="#">Users</a><a href="/setting.html">Settings</a><a href="#">Sign out</a></div>
       </div>
       <div class="admin__content"><a class="back_btn" href="/admin_shop.html">All shops </a>
         <div class="admin__caption"> 
@@ -131,88 +131,243 @@ $(document).ready(function(){
 
 
 
-      
-let ctx = document.getElementById('myChart').getContext('2d');
+      let ctx = document.getElementById('myChart').getContext('2d');
+let ctxWeek = document.getElementById('myChartWeek').getContext('2d');
+let ctxMonth = document.getElementById('myChartMonth').getContext('2d');
 
-    ctx.height = 540; 
+ctx.height = 540;
+ctxWeek.height = 540;
+ctxMonth.height = 540;
 let gradientStroke = ctx.createLinearGradient(0, 130, 0, 490);
-    gradientStroke.addColorStop(0, "rgba(255, 112, 62, 0.2)");
-    gradientStroke.addColorStop(1, "rgba(255, 112, 62, 0)");
+gradientStroke.addColorStop(0, "rgba(255, 112, 62, 0.2)");
+gradientStroke.addColorStop(1, "rgba(255, 112, 62, 0)");
 
-    // background: linear-gradient(180deg, rgba(255, 112, 62, 0.2) 0%, rgba(255, 112, 62, 0) 100%);
+let gradientStrokeWeek = ctxWeek.createLinearGradient(0, 130, 0, 490);
+gradientStrokeWeek.addColorStop(0, "rgba(255, 112, 62, 0.2)");
+gradientStrokeWeek.addColorStop(1, "rgba(255, 112, 62, 0)");
+
+let gradientStrokeMonth = ctxMonth.createLinearGradient(0, 130, 0, 490);
+gradientStrokeMonth.addColorStop(0, "rgba(255, 112, 62, 0.2)");
+gradientStrokeMonth.addColorStop(1, "rgba(255, 112, 62, 0)");
 
 let chart = new Chart(ctx, {
 
-    type: 'line',
+  type: 'line',
 
-    data: {
-        labels: ['09:00', '10:00', '11:00','12:00', '13:00', '14:00'],
-        datasets: [{
-           label: 'Time',
-            backgroundColor: gradientStroke,
-            data: [11, 37, 35, 39, 41, 23],
-            borderColor: '#FF703E',
-            borderWidth: 3,
-            
-        
-        }],
-        
-        
+  data: {
+    labels: ['09:00', '10:00', '11:00', '12:00', '13:00', '14:00'],
+    datasets: [{
+      label: 'Time',
+      backgroundColor: gradientStroke,
+      data: [11, 37, 35, 39, 41, 23],
+      borderColor: '#FF703E',
+      borderWidth: 3,
+
+
+    }],
+
+
+  },
+
+  // Configuration options go here
+  options: {
+    responsive: true,
+    legend: {
+      display: false
     },
 
-    // Configuration options go here
-    options: {
-      responsive: true,
-      legend: {
-        display: false
-    },
 
-      
-      maintainAspectRatio: false,
-      scaleStartValue: 0,
-      scaleStepWidth: 50,
-      
-        scales: {
-          
-          yAxes: [{
-            display: true,
-            gridLines: {
-              drawBorder: false,
-              color: 'rgba(0,0,0,0)',
-              zeroLineColor: 'rgba(0,0,0,0)'
-            },
-            ticks: {
-              autoSkip: false,
-              maxRotation: 0,
-              minRotation: 0,
-              fontSize: 1,
-              padding: 0,
-              fontColor: 'rgba(51, 51, 51, 0)'
-            }
-          }],
+    maintainAspectRatio: false,
+    scaleStartValue: 0,
+    scaleStepWidth: 50,
 
-          xAxes: [{
-            display: true,
-            ticks: {
-              beginAtZero: true,
-              stepSize: 2.5,
-              suggestedMax: 10,
-              fontColor: 'rgba(57, 55, 56, 0.75)',
-              fontSize: 14,
-              padding: 15,
-              maxTicksLimit: 6
-            },
-            gridLines: {
-              drawBorder: false,
-              color: 'rgba(235, 235, 235, 0.4)',
-              tickMarkLength: 0,
-              zeroLineColor: 'rgba(0,0,0,0.1)',
-              offsetGridLine: true
-            }
-          }]
-          
-      }
+    scales: {
+
+      yAxes: [{
+        display: true,
+        gridLines: {
+          drawBorder: false,
+          color: 'rgba(0,0,0,0)',
+          zeroLineColor: 'rgba(0,0,0,0)'
+        },
+        ticks: {
+          autoSkip: false,
+          maxRotation: 0,
+          minRotation: 0,
+          fontSize: 1,
+          padding: 0,
+          fontColor: 'rgba(51, 51, 51, 0)'
+        }
+      }],
+
+      xAxes: [{
+        display: true,
+        ticks: {
+          beginAtZero: true,
+          stepSize: 2.5,
+          suggestedMax: 10,
+          fontColor: 'rgba(57, 55, 56, 0.75)',
+          fontSize: 14,
+          padding: 15,
+          maxTicksLimit: 6
+        },
+        gridLines: {
+          drawBorder: false,
+          color: 'rgba(235, 235, 235, 0.4)',
+          tickMarkLength: 0,
+          zeroLineColor: 'rgba(0,0,0,0.1)',
+          offsetGridLine: true
+        }
+      }]
+
     }
+  }
+});
+
+let chartWeek = new Chart(ctxWeek, {
+
+  type: 'line',
+
+  data: {
+    labels: ['1', '2', '3', '4', '5', '6'],
+    datasets: [{
+      label: 'Time',
+      backgroundColor: gradientStroke,
+      data: [58, 37, 45, 39, 41, 50],
+      borderColor: '#FF703E',
+      borderWidth: 3,
+    }],
+
+
+  },
+
+  // Configuration options go here
+  options: {
+    responsive: true,
+    legend: {
+      display: false
+    },
+
+
+    maintainAspectRatio: false,
+    scaleStartValue: 0,
+    scaleStepWidth: 50,
+
+    scales: {
+
+      yAxes: [{
+        display: true,
+        gridLines: {
+          drawBorder: false,
+          color: 'rgba(0,0,0,0)',
+          zeroLineColor: 'rgba(0,0,0,0)'
+        },
+        ticks: {
+          autoSkip: false,
+          maxRotation: 0,
+          minRotation: 0,
+          fontSize: 1,
+          padding: 0,
+          fontColor: 'rgba(51, 51, 51, 0)'
+        }
+      }],
+
+      xAxes: [{
+        display: true,
+        ticks: {
+          beginAtZero: true,
+          stepSize: 2.5,
+          suggestedMax: 10,
+          fontColor: 'rgba(57, 55, 56, 0.75)',
+          fontSize: 14,
+          padding: 15,
+          maxTicksLimit: 6
+        },
+        gridLines: {
+          drawBorder: false,
+          color: 'rgba(235, 235, 235, 0.4)',
+          tickMarkLength: 0,
+          zeroLineColor: 'rgba(0,0,0,0.1)',
+          offsetGridLine: true
+        }
+      }]
+
+    }
+  }
+});
+
+let chartMonth = new Chart(ctxMonth, {
+
+  type: 'line',
+
+  data: {
+    labels: ['April', 'May', 'June', 'July', 'August', 'September'],
+    datasets: [{
+      label: 'Time',
+      backgroundColor: gradientStroke,
+      data: [10, 9, 8, 12, 15, 18],
+      borderColor: '#FF703E',
+      borderWidth: 3,
+
+
+    }],
+
+
+  },
+
+  // Configuration options go here
+  options: {
+    responsive: true,
+    legend: {
+      display: false
+    },
+
+
+    maintainAspectRatio: false,
+    scaleStartValue: 0,
+    scaleStepWidth: 50,
+
+    scales: {
+
+      yAxes: [{
+        display: true,
+        gridLines: {
+          drawBorder: false,
+          color: 'rgba(0,0,0,0)',
+          zeroLineColor: 'rgba(0,0,0,0)'
+        },
+        ticks: {
+          autoSkip: false,
+          maxRotation: 0,
+          minRotation: 0,
+          fontSize: 1,
+          padding: 0,
+          fontColor: 'rgba(51, 51, 51, 0)'
+        }
+      }],
+
+      xAxes: [{
+        display: true,
+        ticks: {
+          beginAtZero: true,
+          stepSize: 2.5,
+          suggestedMax: 10,
+          fontColor: 'rgba(57, 55, 56, 0.75)',
+          fontSize: 14,
+          padding: 15,
+          maxTicksLimit: 6
+        },
+        gridLines: {
+          drawBorder: false,
+          color: 'rgba(235, 235, 235, 0.4)',
+          tickMarkLength: 0,
+          zeroLineColor: 'rgba(0,0,0,0.1)',
+          offsetGridLine: true
+        }
+      }]
+
+    }
+  }
 });
 
 
