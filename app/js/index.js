@@ -5,10 +5,14 @@ import { switchTab, switchTabGrf } from "./tabs";
 import './stickyHeader';
 import './anhors';
 import {switchLink} from './activeLink';
+import Catalogue from "./catalogue";
 
+const catalogue = new Catalogue();
 
 $(document).ready((e) => {
-
+  document.querySelectorAll('.api-sources__table .api-table__body tr td.name--width').forEach(item => {
+    item.addEventListener('click', (e) => catalogue.show(e));
+  })
  
   $('.mobile__nav .shopLinks').on('click', (e) => switchLink(e));
   // show categories on categories page

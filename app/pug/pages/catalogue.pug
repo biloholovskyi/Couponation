@@ -1,0 +1,49 @@
+extends ../layout/admin
+include ../modules/admin-bill/mixins/adm_select
+include ../modules/admin-bill/mixins/api_item
+
+block variables
+  - const pageTitle = 'API'
+
+block content
+  .api-sources
+    .admin__panel.adm__shop--page
+      include ../modules/admin/admin_bar
+      .admin__content.admin__content--bill
+        .admin__caption
+          h1 Catalogue
+          .adm_nav
+            .admin__search.admin__search--api
+              input(type="text" placeholder="Search by category name")
+              img(src="../media/icon/search.svg", alt="icon")
+            button Add new category
+        .adm-select-wrapp_bill
+          .left
+            +adm-select-item_bill('# of shops')
+        .api-sources__table
+          table.api-table
+            thead.api-table__head
+              tr
+                th.sort Name
+                th Coupons
+                th Shops
+                th
+            tbody.api-table__body
+             include ../modules/admin-bill/catalogue_item
+             include ../modules/admin-bill/catalogue_item
+             include ../modules/admin-bill/catalogue_item
+             include ../modules/admin-bill/catalogue_item
+             include ../modules/admin-bill/catalogue_item
+             include ../modules/admin-bill/catalogue_item
+             include ../modules/admin-bill/catalogue_item
+             include ../modules/admin-bill/catalogue_item
+             include ../modules/admin-bill/catalogue_item
+             include ../modules/admin-bill/catalogue_item
+             include ../modules/admin-bill/catalogue_item
+             include ../modules/admin-bill/catalogue_item
+        .number-coupon
+          .num-item.active 1
+          .num-item 2
+          .num-item 3
+          .num-dots
+          .num-item 8
