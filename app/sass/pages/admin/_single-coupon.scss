@@ -56,6 +56,7 @@
           text-transform: uppercase;
           color: #717171;
           cursor: pointer;
+
           &.active {
             color: #FF703E;
             border-bottom: 2px solid #FF703E;
@@ -72,11 +73,16 @@
     }
 
     .info {
+      &.info-small {
+        max-width: 60%;
+      }
+
       .stats__blocks {
         display: flex;
         margin-bottom: 36px;
         border-bottom: 1px solid #EBEBEB;
         padding-bottom: 36px;
+
         .stats__block {
           flex: 1;
           border: 1px solid #EBEBEB;
@@ -133,7 +139,6 @@
       }
     }
 
-     
 
     .adm__links {
       display: flex;
@@ -171,16 +176,19 @@
           color: #222222;
         }
       }
+
       .shop_adm {
         border-bottom: none;
+
         .coupon__content {
-          padding: 12px 0 0; 
+          padding: 12px 0 0;
         }
       }
     }
 
     .coupon__form {
       max-width: 528px;
+
       .coupon__modal {
         padding: 0px;
         background-color: #fff;
@@ -300,6 +308,7 @@
         }
       }
     }
+
     .shop {
       .adm__links {
         border-bottom: none;
@@ -313,13 +322,15 @@
   border-bottom: none;
   position: relative;
   z-index: 9;
-  .coupon__content{
+
+  .coupon__content {
     width: 100%;
     justify-content: space-between;
     padding-top: 0;
     padding-bottom: 32px;
+
     .shop__title {
-      .title__item{
+      .title__item {
         h3 {
           font-style: normal;
           font-weight: normal;
@@ -328,18 +339,20 @@
           color: #717171;
           margin-bottom: 2px;
         }
+
         .h4 {
           font-style: normal;
           font-weight: normal;
           font-size: 18px;
           line-height: 24px;
-          color: #222222; 
+          color: #222222;
         }
       }
-     
+
     }
+
     button {
-      font-style: normal;  
+      font-style: normal;
       font-weight: bold;
       font-size: 14px;
       line-height: 24px;
@@ -359,15 +372,16 @@
     .double {
       .input-item {
         &.input {
-          padding: 20px 18px 9px 16px!important;
-          border: 1px solid #EBEBEB!important;
+          padding: 20px 18px 9px 16px !important;
+          border: 1px solid #EBEBEB !important;
+
           .placeholder {
-            color: #717171!important;  
-            top: 5px!important;
+            color: #717171 !important;
+            top: 5px !important;
             transform: translateY(0);
-            font-weight: 500!important;
-            font-size: 12px!important;
-            line-height: 16px!important;
+            font-weight: 500 !important;
+            font-size: 12px !important;
+            line-height: 16px !important;
           }
         }
       }
@@ -376,20 +390,21 @@
 }
 
 
-
 .single-coupon-shop {
   .coupon__content {
-    .coupon__information{
+    .coupon__information {
       display: flex;
+
       img {
         width: 64px;
         height: 64px;
-        border: .5px solid rgba(0,0,0,.1);
+        border: .5px solid rgba(0, 0, 0, .1);
         border-radius: 50%;
         margin-right: 16px;
         object-fit: cover;
         object-position: center;
       }
+
       .titles {
         h2 {
           font-style: normal;
@@ -398,6 +413,7 @@
           line-height: 24px;
           color: #222222;
         }
+
         a {
           font-style: normal;
           font-weight: normal;

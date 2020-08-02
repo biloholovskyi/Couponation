@@ -26,6 +26,16 @@
         line-height: 64px;
         color: #222222;
         margin: 0;
+
+        &.h1-emoji {
+          display: flex;
+          align-items: center;
+
+          .emoji {
+            display: block;
+            margin-right: 24px;
+          }
+        }
       }
       button {
         font-style: normal;
