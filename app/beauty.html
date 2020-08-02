@@ -12,9 +12,9 @@
   <body>
     <div class="fake-header"></div>
     <header class="header">
-      <div class="burger"><img src="../media/icon/burger.svg" alt="icon"></div><a class="header__logo" href="/">Couponation</a>
+      <div class="burger"><img class="burder-btn" src="../media/icon/burger.svg" alt="icon"><img class="close-menu" src="../media/icon/close-menu.svg" alt="icon"></div><a class="header__logo" href="/">Couponation</a>
       <div class="header__nav">
-        <button class="header__link header__drop--btn" href="#">Coupons
+        <button class="header__link header__drop--btn" onclick="location.href='/coupons.html';">Coupons
           <div class="header__modal--wrap"><a class="header__modal--item" href="/couponoftheday.html">
               <h3>Coupons of the day</h3>
               <p>These discounds were added within 24h</p></a><a class="header__modal--item" href="#">
@@ -22,10 +22,15 @@
               <p>Just added to the site, hurry up!</p></a><a class="header__modal--item" href="#">
               <h3>Trusted coupons</h3>
               <p>Coupons marked as "100% working"    </p></a></div>
-        </button><a class="header__link" href="/categories.html">Categories</a><a class="header__link" href="./store.html">Stores </a>
+        </button><a class="header__link" href="/categories.html">Categories</a><a class="header__link" href="/store.html">Stores </a>
         <div class="header__button" onclick="location.href='/submitCoupon.html';">Submit a coupon</div>
       </div>
     </header>
+    <div class="mobile-menu">
+      <div class="menu-inside"><a href="/coupons.html">Coupons</a><a href="/categories.html">Categories</a><a href="/store.html">Store</a>
+        <button onclick="location.href='/submitCoupon.html';">Submit a coupon</button>
+      </div>
+    </div>
     <div class="beauty-page">
       <div class="container">
         <div class="row">
@@ -87,6 +92,7 @@
                 <div class="coupon-shop">
                   <div class="left-side">
                     <h3>Free shipping</h3>
+                    <h4 class="storeName">Travelocity</h4>
                   </div>
                   <div class="right-side">
                     <div class="top">
@@ -109,6 +115,7 @@
                 <div class="coupon-shop">
                   <div class="left-side">
                     <h3> 35% OFF</h3>
+                    <h4 class="storeName">Travelocity</h4>
                   </div>
                   <div class="right-side">
                     <div class="top">
@@ -131,6 +138,7 @@
                 <div class="coupon-shop">
                   <div class="left-side">
                     <h3>35% OFF</h3>
+                    <h4 class="storeName">Travelocity</h4>
                   </div>
                   <div class="right-side">
                     <div class="top">
@@ -153,6 +161,7 @@
                 <div class="coupon-shop">
                   <div class="left-side">
                     <h3>$500 Off</h3>
+                    <h4 class="storeName">Travelocity</h4>
                   </div>
                   <div class="right-side">
                     <div class="top">
@@ -175,6 +184,7 @@
                 <div class="coupon-shop">
                   <div class="left-side">
                     <h3>$170 Off</h3>
+                    <h4 class="storeName">Travelocity</h4>
                   </div>
                   <div class="right-side">
                     <div class="top">
@@ -196,7 +206,31 @@
                 </div>
                 <div class="coupon-shop">
                   <div class="left-side">
-                    <h3>Free shipping</h3>
+                    <h3>35% OFF</h3>
+                    <h4 class="storeName">Travelocity</h4>
+                  </div>
+                  <div class="right-side">
+                    <div class="top">
+                      <div class="name">Save $35-$700 On Select Surface Devices and Free Contactless Curbside Pickup</div>
+                      <div class="button getCode">Get code</div>
+                    </div>
+                    <div class="bottom">
+                      <div class="uses">
+                        <div class="nameUses">14,271 total uses</div>
+                        <div class="nameUses">2,632 uses today</div>
+                      </div>
+                      <div class="rate">
+                        <div class="result">80% success rate</div>
+                        <div class="icon like">👍</div>
+                        <div class="icon dislike">👎</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="coupon-shop">
+                  <div class="left-side">
+                    <h3>$500 Off</h3>
+                    <h4 class="storeName">Travelocity</h4>
                   </div>
                   <div class="right-side">
                     <div class="top">
@@ -218,33 +252,12 @@
                 </div>
                 <div class="coupon-shop">
                   <div class="left-side">
-                    <h3> 35% OFF</h3>
+                    <h3>$170 Off</h3>
+                    <h4 class="storeName">Travelocity</h4>
                   </div>
                   <div class="right-side">
                     <div class="top">
-                      <div class="name">Save Up to 35% on Select Solids State Drives</div>
-                      <div class="button getCode">Get code</div>
-                    </div>
-                    <div class="bottom">
-                      <div class="uses">
-                        <div class="nameUses">14,271 total uses</div>
-                        <div class="nameUses">2,632 uses today</div>
-                      </div>
-                      <div class="rate">
-                        <div class="result">80% success rate</div>
-                        <div class="icon like">👍</div>
-                        <div class="icon dislike">👎</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="coupon-shop">
-                  <div class="left-side">
-                    <h3>35% OFF</h3>
-                  </div>
-                  <div class="right-side">
-                    <div class="top">
-                      <div class="name">Save $35-$700 On Select Surface Devices and Free Contactless Curbside Pickup</div>
+                      <div class="name">Up to $170 Off Beats Headphones Plus Available for In-Store Pick Up by Christmas</div>
                       <div class="button getCode">Get code</div>
                     </div>
                     <div class="bottom">
@@ -317,6 +330,7 @@
                 <div class="coupon-shop">
                   <div class="left-side">
                     <h3>Free shipping</h3>
+                    <h4 class="storeName">Travelocity</h4>
                   </div>
                   <div class="right-side">
                     <div class="top">
@@ -339,6 +353,7 @@
                 <div class="coupon-shop">
                   <div class="left-side">
                     <h3> 35% OFF</h3>
+                    <h4 class="storeName">Travelocity</h4>
                   </div>
                   <div class="right-side">
                     <div class="top">
@@ -361,6 +376,7 @@
                 <div class="coupon-shop">
                   <div class="left-side">
                     <h3>35% OFF</h3>
+                    <h4 class="storeName">Travelocity</h4>
                   </div>
                   <div class="right-side">
                     <div class="top">
@@ -383,6 +399,7 @@
                 <div class="coupon-shop">
                   <div class="left-side">
                     <h3>$500 Off</h3>
+                    <h4 class="storeName">Travelocity</h4>
                   </div>
                   <div class="right-side">
                     <div class="top">
@@ -405,6 +422,7 @@
                 <div class="coupon-shop">
                   <div class="left-side">
                     <h3>$170 Off</h3>
+                    <h4 class="storeName">Travelocity</h4>
                   </div>
                   <div class="right-side">
                     <div class="top">
@@ -426,7 +444,31 @@
                 </div>
                 <div class="coupon-shop">
                   <div class="left-side">
-                    <h3>Free shipping</h3>
+                    <h3>35% OFF</h3>
+                    <h4 class="storeName">Travelocity</h4>
+                  </div>
+                  <div class="right-side">
+                    <div class="top">
+                      <div class="name">Save $35-$700 On Select Surface Devices and Free Contactless Curbside Pickup</div>
+                      <div class="button getCode">Get code</div>
+                    </div>
+                    <div class="bottom">
+                      <div class="uses">
+                        <div class="nameUses">14,271 total uses</div>
+                        <div class="nameUses">2,632 uses today</div>
+                      </div>
+                      <div class="rate">
+                        <div class="result">80% success rate</div>
+                        <div class="icon like">👍</div>
+                        <div class="icon dislike">👎</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="coupon-shop">
+                  <div class="left-side">
+                    <h3>$500 Off</h3>
+                    <h4 class="storeName">Travelocity</h4>
                   </div>
                   <div class="right-side">
                     <div class="top">
@@ -448,33 +490,12 @@
                 </div>
                 <div class="coupon-shop">
                   <div class="left-side">
-                    <h3> 35% OFF</h3>
+                    <h3>$170 Off</h3>
+                    <h4 class="storeName">Travelocity</h4>
                   </div>
                   <div class="right-side">
                     <div class="top">
-                      <div class="name">Save Up to 35% on Select Solids State Drives</div>
-                      <div class="button getCode">Get code</div>
-                    </div>
-                    <div class="bottom">
-                      <div class="uses">
-                        <div class="nameUses">14,271 total uses</div>
-                        <div class="nameUses">2,632 uses today</div>
-                      </div>
-                      <div class="rate">
-                        <div class="result">80% success rate</div>
-                        <div class="icon like">👍</div>
-                        <div class="icon dislike">👎</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="coupon-shop">
-                  <div class="left-side">
-                    <h3>35% OFF</h3>
-                  </div>
-                  <div class="right-side">
-                    <div class="top">
-                      <div class="name">Save $35-$700 On Select Surface Devices and Free Contactless Curbside Pickup</div>
+                      <div class="name">Up to $170 Off Beats Headphones Plus Available for In-Store Pick Up by Christmas</div>
                       <div class="button getCode">Get code</div>
                     </div>
                     <div class="bottom">

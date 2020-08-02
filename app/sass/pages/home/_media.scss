@@ -177,6 +177,9 @@
     
     margin: 20px 0!important; 
   }
+  body {
+    padding-top: 71px!important;
+  }
 }
 
 @media screen and (max-width: 575px){ 
@@ -400,5 +403,8 @@
   }
   .top-category__body { 
     margin-bottom: 28px;
+  }
+  body {
+    padding-top: 63px!important;
   }
 }

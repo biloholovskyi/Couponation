@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-4-grid@3.4.0/css/grid.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Admin panel</title>
+  </head>
+  <body>
+    <div class="admin__panel coupon-details insta-detail shop_detail">
+      <div class="admin__bar">
+        <div class="admin__title">
+          <h2>Couponation</h2>
+          <p>Admin panel</p>
+        </div>
+        <div class="admin__link--bar"><a href="/dashboard.html">
+            Dashboard<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 13H10C10.55 13 11 12.55 11 12V4C11 3.45 10.55 3 10 3H4C3.45 3 3 3.45 3 4V12C3 12.55 3.45 13 4 13ZM4 21H10C10.55 21 11 20.55 11 20V16C11 15.45 10.55 15 10 15H4C3.45 15 3 15.45 3 16V20C3 20.55 3.45 21 4 21ZM14 21H20C20.55 21 21 20.55 21 20V12C21 11.45 20.55 11 20 11H14C13.45 11 13 11.45 13 12V20C13 20.55 13.45 21 14 21ZM13 4V8C13 8.55 13.45 9 14 9H20C20.55 9 21 8.55 21 8V4C21 3.45 20.55 3 20 3H14C13.45 3 13 3.45 13 4Z" fill="#717171"/>
+</svg></a><a href="/admin.html">
+            Coupons<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22 8.54V6C22 4.9 21.1 4 20 4H4C2.9 4 2.01 4.89 2.01 6V8.54C2.01 9.23 2.34 9.91 2.95 10.23C3.58 10.58 4 11.24 4 12C4 12.76 3.57 13.43 2.94 13.76C2.34 14.09 2 14.77 2 15.46V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V15.46C22 14.77 21.66 14.09 21.06 13.76C20.43 13.42 20 12.76 20 12C20 11.24 20.43 10.58 21.06 10.24C21.66 9.91 22 9.23 22 8.54ZM13 17.5H11V15.5H13V17.5ZM13 13H11V11H13V13ZM13 8.5H11V6.5H13V8.5Z" fill="#717171"/>
+</svg></a><a href="/admin_shop.html">
+            Shops<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.16 7.8C20.07 7.34 19.66 7 19.18 7H4.82C4.34 7 3.93 7.34 3.84 7.8L3 12V13C3 13.55 3.45 14 4 14V19C4 19.55 4.45 20 5 20H13C13.55 20 14 19.55 14 19V14H18V19C18 19.55 18.45 20 19 20C19.55 20 20 19.55 20 19V14C20.55 14 21 13.55 21 13V12L20.16 7.8ZM12 18H6V14H12V18ZM5 6H19C19.55 6 20 5.55 20 5C20 4.45 19.55 4 19 4H5C4.45 4 4 4.45 4 5C4 5.55 4.45 6 5 6Z" fill="#717171"/>
+</svg></a></div>
+        <div class="admin__link--bar2"><a href="/insta_sources.html">Instagram sources  </a><a href="#">API sources</a><a href="#">Catalogue</a><a href="#">Users</a><a href="/setting.html">Settings</a><a href="#">Sign out</a></div>
+      </div>
+      <div class="admin__content"><a class="back_btn" href="/admin_shop.html">All shops </a>
+        <div class="admin__caption"> 
+          <h1>Best Buy</h1>
+        </div>
+        <div class="adm-tab__head">
+          <div class="tabs">
+            <div class="tab active" id="tab-main">MAIN INFO</div>
+            <div class="tab" id="tab-active">Coupons</div>
+            <div class="tab" id="tab-stat">Statistics</div>
+          </div>
+        </div>
+        <div class="adm-tab__body show" id="body-main">
+          <div class="shop__info--content">
+            <div class="shop__name"><img src="./media/icon/logos/1.png" alt="icon">
+              <button>Upload new</button>
+              <button>Delete</button>
+            </div>
+            <form class="small-form__form shop__form">
+              <div class="double">
+                <div class="input-item">
+                  <div class="placeholder">Name</div>
+                  <input type="text">
+                </div>
+                <div class="input-item">
+                  <div class="placeholder">Website </div>
+                  <input type="text">
+                </div>
+                <div class="input-item">
+                  <div class="placeholder">Instagram</div>
+                  <input type="text">
+                </div>
+              </div>
+              <div class="double full-inp textarea">
+                <div class="input-item">
+                  <div class="placeholder">Description</div>
+                  <textarea maxlength="55" id="text-count"> </textarea>
+                </div>
+                <div class="count">
+                  <div class="count-item" id="count">0 </div>
+                  <div>/</div>
+                  <div class="count-item">55</div>
+                </div>
+              </div>
+            </form>
+            <div class="lines"></div>
+            <div class="admin__search">
+              <input type="text" placeholder="Search by shop or coupon"><img src="../media/icon/search.svg" alt="icon">
+            </div>
+            <div class="category">
+              <button class="category-btn">beauty<img src="../media/icon/category/flowers.svg" alt="image"/></button>
+              <button class="category-btn">hair<img src="../media/icon/category/hair.svg" alt="image"/></button>
+              <button class="category-btn">health<img src="../media/icon/category/heart.svg" alt="image"/></button>
+              <button class="category-btn">skin care<img src="../media/icon/category/skin.svg" alt="image"/></button>
+              <button class="category-btn">cosmetics<img src="../media/icon/category/cosmetic.svg" alt="image"/></button>
+              <button class="category-btn">beauty<img src="../media/icon/category/flowers.svg" alt="image"/></button>
+              <button class="category-btn">hair<img src="../media/icon/category/hair.svg" alt="image"/></button>
+              <button class="category-btn">health<img src="../media/icon/category/heart.svg" alt="image"/></button>
+            </div>
+            <div class="lines"></div>
+            <h3>Select default partnership network for this shop</h3>
+            <div class="radio__block">
+              <label class="radio">
+                <input type="radio" name="r" value="1" checked><span>Affiliate</span>
+              </label>
+              <label class="radio">
+                <input type="radio" name="r" value="2"><span>Custom</span>
+              </label>
+            </div>
+            <button class="saveChange">Save Changes            </button>
+          </div>
+        </div>
+        <div class="adm-tab__body" id="body-active"></div>
+        <div class="adm-tab__body" id="body-stat"></div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script src="https:cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="buildjs/owl.carousel.js"></script>
+    <script src="buildjs/index.js"></script>
+    <script>
+      // active link menu
+$(document).ready(function(){
+
+  $(function () {
+    let location = window.location.href;
+    $('.admin__link--bar a,.admin__link--bar2 a').each(function () {
+        let link = $(this).attr('href');
+          if (location.indexOf(link) !== -1){
+            $(this).addClass('current');
+            }
+        });
+    });
+
+   
+     
+
+});
+
+
+
+
+
+      
+let ctx = document.getElementById('myChart').getContext('2d');
+
+    ctx.height = 540; 
+let gradientStroke = ctx.createLinearGradient(0, 130, 0, 490);
+    gradientStroke.addColorStop(0, "rgba(255, 112, 62, 0.2)");
+    gradientStroke.addColorStop(1, "rgba(255, 112, 62, 0)");
+
+    // background: linear-gradient(180deg, rgba(255, 112, 62, 0.2) 0%, rgba(255, 112, 62, 0) 100%);
+
+let chart = new Chart(ctx, {
+
+    type: 'line',
+
+    data: {
+        labels: ['09:00', '10:00', '11:00','12:00', '13:00', '14:00'],
+        datasets: [{
+           label: 'Time',
+            backgroundColor: gradientStroke,
+            data: [11, 37, 35, 39, 41, 23],
+            borderColor: '#FF703E',
+            borderWidth: 3,
+            
+        
+        }],
+        
+        
+    },
+
+    // Configuration options go here
+    options: {
+      responsive: true,
+      legend: {
+        display: false
+    },
+
+      
+      maintainAspectRatio: false,
+      scaleStartValue: 0,
+      scaleStepWidth: 50,
+      
+        scales: {
+          
+          yAxes: [{
+            display: true,
+            gridLines: {
+              drawBorder: false,
+              color: 'rgba(0,0,0,0)',
+              zeroLineColor: 'rgba(0,0,0,0)'
+            },
+            ticks: {
+              autoSkip: false,
+              maxRotation: 0,
+              minRotation: 0,
+              fontSize: 1,
+              padding: 0,
+              fontColor: 'rgba(51, 51, 51, 0)'
+            }
+          }],
+
+          xAxes: [{
+            display: true,
+            ticks: {
+              beginAtZero: true,
+              stepSize: 2.5,
+              suggestedMax: 10,
+              fontColor: 'rgba(57, 55, 56, 0.75)',
+              fontSize: 14,
+              padding: 15,
+              maxTicksLimit: 6
+            },
+            gridLines: {
+              drawBorder: false,
+              color: 'rgba(235, 235, 235, 0.4)',
+              tickMarkLength: 0,
+              zeroLineColor: 'rgba(0,0,0,0.1)',
+              offsetGridLine: true
+            }
+          }]
+          
+      }
+    }
+});
+
+
+
+    </script>
+  </body>
+</html>

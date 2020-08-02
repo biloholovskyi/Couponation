@@ -18,36 +18,41 @@ block content
       .admin__select--block
         .adm__select
           .admin__item
-            p Affiliate network
-            p Any
+            p All statuses
           .admin__item 
-            p Categories
-            p Any
+            p All categories
           .admin__item
-            p Trafic range
-            p 0 - 1M
+            p All moderators
           .admin__item 
-            p Status
-            p Any  
+            p Any coupon count
           .admin__item
-            p Succes rate
-            p Any
+            p SVisits, 30 days
           .admin__item 
-            p Coupons count
-            p Coupons count
+            p Any time range
         .adm_check
           .checkbox
-            input(type="checkbox" name="affiliate")#affiliate
-            label(for="affiliate") 1+ affiliate link  
-            input(type="checkbox" name="affiliate")#Noaffiliate
-            label(for="Noaffiliate") No affiliate link 
+            label.checklink
+              input(type="checkbox" name="r" value="1").option-input
+              span 1+ affiliate link  
+            label.checklink
+              input(type="checkbox" name="r" value="1").option-input
+              span No affiliate link 
           button.ClearFilter Clear filters
       .sort__block
-        p 12,480 coupons found
-        p Sort by: #[span Expiration date]
+        p Name
+        p Recieved
+          img(src="../media/icon/adm_arrow.svg", alt="")
+        p Coupons
+        p Category
+        p Network  
+        //- p(style="opacity: 0")
       .shop__content
         include ../modules/admin/coupon_shop
         include ../modules/admin/coupon_shop               
+        include ../modules/admin/coupon_shop
+        include ../modules/admin/coupon_shop
+        include ../modules/admin/coupon_shop               
+        include ../modules/admin/coupon_shop
         include ../modules/admin/coupon_shop
         .number-coupon
           .num-item.active 1
@@ -55,4 +60,5 @@ block content
           .num-item 3
           .num-dots
           .num-item 8
-  include ../modules/admin/change_shop_modal              
+  include ../modules/admin/change_shop_modal 
+          

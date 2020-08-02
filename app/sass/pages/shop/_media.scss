@@ -131,7 +131,7 @@
 
           img {
             width: 18px;
-            height: 18px;
+            height: 18px; 
           }
         }
       }
@@ -143,6 +143,11 @@
     justify-content: space-evenly;
     margin-bottom: 25px;
     border-bottom: 1px solid #f7f7f7;
+    background-color: #fff;
+    width: 100%;
+    z-index: 222;
+    left: 0;
+   top: 63px;
     a {
       font-style: normal;
       font-weight: bold;
@@ -159,6 +164,9 @@
     }
   }
 
+  .mobile__nav.shadows {
+    box-shadow: 0 6px 16px rgba(0,0,0,.12);
+  }
   .mobile__title {
     display: block;
   }

@@ -7,3 +7,7 @@ $('.anhors').on('click', function (event) {
   $('body, html').animate({scrollTop: top}, 800);
   
 });
+
+
+
+

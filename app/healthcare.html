@@ -12,9 +12,9 @@
   <body>
     <div class="fake-header"></div>
     <header class="header">
-      <div class="burger"><img src="../media/icon/burger.svg" alt="icon"></div><a class="header__logo" href="/">Couponation</a>
+      <div class="burger"><img class="burder-btn" src="../media/icon/burger.svg" alt="icon"><img class="close-menu" src="../media/icon/close-menu.svg" alt="icon"></div><a class="header__logo" href="/">Couponation</a>
       <div class="header__nav">
-        <button class="header__link header__drop--btn" href="#">Coupons
+        <button class="header__link header__drop--btn" onclick="location.href='/coupons.html';">Coupons
           <div class="header__modal--wrap"><a class="header__modal--item" href="/couponoftheday.html">
               <h3>Coupons of the day</h3>
               <p>These discounds were added within 24h</p></a><a class="header__modal--item" href="#">
@@ -22,10 +22,15 @@
               <p>Just added to the site, hurry up!</p></a><a class="header__modal--item" href="#">
               <h3>Trusted coupons</h3>
               <p>Coupons marked as "100% working"    </p></a></div>
-        </button><a class="header__link" href="/categories.html">Categories</a><a class="header__link" href="./store.html">Stores </a>
+        </button><a class="header__link" href="/categories.html">Categories</a><a class="header__link" href="/store.html">Stores </a>
         <div class="header__button" onclick="location.href='/submitCoupon.html';">Submit a coupon</div>
       </div>
     </header>
+    <div class="mobile-menu">
+      <div class="menu-inside"><a href="/coupons.html">Coupons</a><a href="/categories.html">Categories</a><a href="/store.html">Store</a>
+        <button onclick="location.href='/submitCoupon.html';">Submit a coupon</button>
+      </div>
+    </div>
     <div class="beauty-page">
       <div class="container">
         <div class="row">
