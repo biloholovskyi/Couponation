@@ -12,6 +12,10 @@ const catalogue = new Catalogue();
 $(document).ready((e) => {
   document.querySelectorAll('.api-sources__table .api-table__body tr td.name--width').forEach(item => {
     item.addEventListener('click', (e) => catalogue.show(e));
+  });
+
+  document.querySelectorAll('textarea').forEach(area => {
+    area.value = '';
   })
  
   $('.mobile__nav .shopLinks').on('click', (e) => switchLink(e));
@@ -20,6 +24,7 @@ $(document).ready((e) => {
     $(this).hide();
     $(this).parents('.categories-items').children('.hidden-category ').css('display', 'flex');
   });
+
 
   $('#coupon-slider').owlCarousel({ 
     loop: false,
