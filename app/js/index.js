@@ -12,6 +12,11 @@ const catalogue = new Catalogue();
 $(document).ready((e) => {
   document.querySelectorAll('.api-sources__table .api-table__body tr td.name--width').forEach(item => {
     item.addEventListener('click', (e) => catalogue.show(e));
+  });
+
+  // fix text area value
+  document.querySelectorAll('textarea').forEach(area => {
+    area.value = '';
   })
  
   $('.mobile__nav .shopLinks').on('click', (e) => switchLink(e));
