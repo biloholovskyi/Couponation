@@ -8,15 +8,6 @@ block content
   .admin__panel.dashboard
     include ../modules/admin/admin_bar
     .admin__content
-      .admin__caption 
-        h1 Dashboard
-      .stats__coupons
-        .stats__item
-          p.new_coupon 1289
-          p New coupons
-        .stats__item
-          p.new_shop 289
-          p New shops
       .moderator__blocks
         .moderator_item.moder_of_week
           img(src="../media/icon/smile.svg", alt="icon")
@@ -46,12 +37,12 @@ block content
               .tab#tab-week2 WEEK
               .tab#tab-month2 MONTH
           .grf-tab__body.graphic.show#body-today2
-              canvas#myChart
+            canvas#myChart
           .grf-tab__body.graphic#body-week2
-            p 123
+            canvas#myChartWeek
           .grf-tab__body.graphic#body-month2
-            p 456 
-         
+            canvas#myChartMonth
+
         .general__clicks
           h3 TOP10 affilated clicks
           .adm-tab__head
