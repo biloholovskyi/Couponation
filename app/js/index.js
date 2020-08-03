@@ -14,6 +14,27 @@ const adminDrop = new AdminDrop();
 
 
 $(document).ready((e) => {
+  // invite new users
+  $('.new_user').on('click', function(){
+    $('.invite__user--overlay').css('display', 'flex');
+    $('body').css({
+      'overflow': 'hidden',
+      'position': 'relative',  
+      'height': '100vh'
+    });
+  });
+
+  $('.invite__user--close').on('click', function(){
+    $('.invite__user--overlay').css('display', 'none');
+    $('.small-form__form input').val('');
+    $('.small-form__form').removeClass('input');
+    $('body').css({
+      'overflow': 'visible',
+      'position': 'relative',
+      'height': '100%'
+    });
+  });
+  // end modal new user
   // emoji selected modal
   $('.smile__block .smile').on('click', function(){
     $(this).children('.smile__selected').toggleClass('active');
@@ -211,6 +232,7 @@ $('.burder-btn').on('click', function(){
   $('.mobile-menu').toggleClass('active');
   $('.header').css('border-bottom', 'none');
   $('.stikyAbc').css('z-index', '18');
+  $('.mobile__nav').css('z-index', '18');
 
   if( $('.mobile-menu').hasClass('active')) {
     $('.header').css('box-shadow', 'none');
@@ -226,6 +248,7 @@ $('.close-menu').on('click', function(){
   $('.header').css('box-shadow', '0 6px 16px rgba(0,0,0,.12)');
   $('.header').css('border-bottom', '1px solid #ebebeb');
   $('.stikyAbc').css('z-index', '20');
+  $('.mobile__nav').css('z-index', '20');
 });
 
 
@@ -269,8 +292,8 @@ $(function () {
 
 
 $(document).on('click', function(e){
-  let modal = $('.admin__modal, .shop__modal, .getCode__modal, .change__emoji--modal');
-  let Btn = $('.addNewCoupon, .change_shop, .getCode, #change-emoji');
+  let modal = $('.admin__modal, .shop__modal, .getCode__modal, .change__emoji--modal, .invite__user--modal');
+  let Btn = $('.addNewCoupon, .change_shop, .getCode, #change-emoji,.new_user'); 
 
 
   if(!Btn.is(e.target) && Btn.has(e.target).length === 0) {
@@ -279,6 +302,7 @@ $(document).on('click', function(e){
       $('.shop__modal--overlay').css({'display': 'none'});
       $('.getCode__modal--overlay').css({'display': 'none'});
       $('.change__emoji--overlay').removeClass('active');
+      $('.invite__user--overlay').css({'display': 'none'});
       $('body').css({
         'overflow': 'visible',
         'position': 'relative',
@@ -286,10 +310,13 @@ $(document).on('click', function(e){
       });
     }
   }
+}); 
+
+
+const btn = document.querySelector('.publish');
+btn.addEventListener('click', function(){
+  btn.innerHTML = (btn.innerHTML === 'unpublish') ? btn.innerHTML = 'publish' : btn.innerHTML = 'unpublish';  
 });
-
-
-
 
 
 $(window).resize(() => {

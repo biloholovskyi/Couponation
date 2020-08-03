@@ -1,0 +1,20 @@
+.invite__user--overlay
+  .invite__user--modal
+    .invite__user--close
+    h2 Invite new user
+    p  Invitation rules and warning#[br]Sociis natoque penatibus et magnis dis parturient montes, nascetur#[br]ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus#[br]mollis orci, sed rhoncus pronin sapien nunc accuan eget.
+    form.small-form__form
+      .placeholder User Email
+      input(type='email')
+    h3 Select moderation type
+    .radio__block
+      label.radio
+        input(type="radio" name="r" value="1" checked)
+        span New coupons
+      label.radio
+        input(type="radio" name="r" value="2")
+        span New shops
+      label.radio
+        input(type="radio" name="r" value="2")
+        span New coupons & shops  
+    button.invite_user Invite   

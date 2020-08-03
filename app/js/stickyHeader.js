@@ -33,6 +33,7 @@ $(document).ready(function(){
           top: 63,
        
         });
+        $('.header').removeClass('active');
       }
     
       if (scrollTop < topOffset){
@@ -40,9 +41,11 @@ $(document).ready(function(){
         obj.css({
           marginTop: 0,
           position: 'relative',
+          top: 0,
         
           
         });
+       $('.mobile__nav').find('.firstAnhors').addClass('active').siblings().removeClass('active');
       }
     });
   });

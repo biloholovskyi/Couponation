@@ -1,0 +1,15 @@
+
+mixin user_item(name, email, Invited, activity, coupons, shops)
+  tr
+    td.coupon
+      .name= name
+      p.users_email= email
+    td.invated= Invited
+    td.activity= activity
+    td.user_coupones= coupons
+    td.user_shop= shops
+    td.buttons.buttons--padding
+      button Details
+      button(style="color: #FF3042; min-width: 69px") block
+
+

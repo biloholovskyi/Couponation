@@ -62,13 +62,25 @@
 
       .category-btn--block {
         width: 300px;
-        display: flex;
+        display: none;
         flex-wrap: wrap;
         .category-btn {
           margin-bottom: 8px;
         }
         .categories-btn{
           display: none;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 22px;
+          color: #AAAAAA;
+          border: 1px solid #EBEBEB;
+          justify-content: center;
+          padding: 10px;
+          min-width: 36px;
+          height: 36px;
+          border-radius: 1000px;
+          align-items: center;
         }
       }
     }

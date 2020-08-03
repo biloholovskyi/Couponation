@@ -185,3 +185,13 @@
     }
   }
 }
+
+.aside-category-btn {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2px;
+  max-width: 230px;
+  .category-btn {
+    margin-bottom: 8px;
+  }
+}
