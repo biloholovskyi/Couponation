@@ -35,25 +35,21 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <div class="breadcrumb"><a href="/">Main page</a><a href="#">/ Submit a coupon</a>
+            <div class="breadcrumb"><a href="/">Main page</a><a href="/submitCoupon.html">/ Submit a coupon</a>
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-12">
-            <h1 class="contact_title">Submit a coupon</h1>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-6">
+          <div class="col-12 col-lg-6 col-md-12">
             <div class="contact-info">
+              <h1 class="contact_title">Submit a coupon</h1>
               <div class="contact-desc">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.  </p>
                 <p>Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
               </div>
             </div>
           </div>
-          <div class="col-6">
+          <div class="col-12 col-lg-6 col-md-12">
             <form class="small-form__form submit-form">
               <div class="double">
                 <div class="input-item">
@@ -132,14 +128,14 @@
               <h3>Copy the coupon code</h3>
               <div class="field">
                 <div class="field_inp">Save15</div>
-                <div class="field_btn">Cope code</div>
+                <div class="field_btn">Copy code</div>
               </div>
               <p>Paste this code at checkout at <a href="#">websisitename.com</a> <br>Bose Coupon Code -50% off out of ear headphones. 1 time use  </p>
             </div>
             <div class="line"></div>
             <div class="bottom">
-              <h4>Never miss another coupon from<br>Office Depot Office Max</h4>
-              <button class="subscribe">Subscribe<img src="../media/icon/subscribe.svg" alt="icon"></button>
+              <div class="icons">👍</div>
+              <div class="icons">👎</div>
             </div>
           </div>
         </div>
@@ -155,53 +151,5 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="buildjs/owl.carousel.js"></script>
     <script src="buildjs/index.js"></script>
-    <script>
-       $(document).ready(function () {
-
-    
-  // let windowWidth = $(window).width();
-  // let containerWidth = $('.m-container').width();
-  // let wrapper = $('.contact-page__wrapper').width();
-  // let mapWidth = windowWidth - ((windowWidth - containerWidth) / 2 + wrapper);
-
-
-});
-ymaps.ready(init);
-function init(){
-var myMap = new ymaps.Map("map", {
-center: [34.035934, -117.856225],
-zoom: 15
-});
-
-myMap.behaviors.disable(['drag', 'scrollZoom', 'dblClickZoom','zoomControl']);
-
-myMap.controls
-.remove('trafficControl')
-.remove('fullscreenControl')
-.remove('rulerControl')
-.remove('typeSelector')
-.remove('searchControl')
-// .remove('zoomControl')
-.remove('geolocationControl'); 
-
-var myPin = new ymaps.Placemark([34.035934, -117.856225],  
-{
-  balloonContentHeader: '',
-  balloonContentBody: '',
-  balloonContentFooter: '',
-  hintContent: ''
-},
-{
-  iconLayout: 'default#image',
-  
-  iconImageHref: './media/icon/pin2.png',
-  iconImageSize: [28, 40],
-  iconImageOffset: [0, 0]
-});
-
-myMap.geoObjects.add(myPin);
-
-}
-    </script>
   </body>
 </html>

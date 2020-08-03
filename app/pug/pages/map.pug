@@ -14,21 +14,12 @@ block content
         .col-12
           .breadcrumb
             +breadcrumb('Main page','/')
-            +breadcrumb('/ Contacts','#')
-      .row
-        .col-12
-          h1.contact_title Contacts
+            +breadcrumb('/ Contacts','/map.html')
       .row
         .col-12.col-lg-6.col-md-12
           .contact-info
             .map-block
-              .icon
-                img(src="../media/icon/map-icon.svg", alt="image")
-                img(src="../media/icon/pin.svg", alt="image")
-              .address
-                h3 We're located at United States
-                p 340 s lemon ave #1262
-                p Walnut, CA 91789
+              h1.contact_title Contacts
             .contact-desc
               p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.  
         .col-12.col-lg-6.col-md-12
@@ -40,9 +31,4 @@ block content
             label(for="sms") Your message
             textarea(name="sms" placeholder="Enter your message here")#sms
             input(type="submit" value="Submit")
-  section.maps    
-    .contacts-map
-      .close-map
-      script(src="https://api-maps.yandex.ru/2.1/?apikey=<ваш API-ключ>&lang=ru_RU" type="text/javascript")
-      .contact-page__map#map
 

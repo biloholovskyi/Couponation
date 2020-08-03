@@ -1,0 +1,42 @@
+@media screen and (max-width: 767px) {
+  .category-page {
+    h1 {
+      font-size: 45px;
+      line-height: 50px;
+      margin: 0 0 40px;
+    }
+    .category__block {
+      .category__item {
+        max-width: calc(100% / 4);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .category-page {
+    .breadcrumb {
+      margin: 32px 0 16px;
+    }
+    h1 {
+      font-size: 32px;
+      line-height: 40px;
+      margin-bottom: 16px;
+    }
+    .category__block {
+      .category__item {
+        max-width: calc(100% / 3);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .category-page {
+    .category__block {
+      .category__item {
+        max-width: calc(100% / 2);
+      }
+    }
+  }
+}

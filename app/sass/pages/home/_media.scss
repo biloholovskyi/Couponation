@@ -292,6 +292,9 @@
         .name {
           margin-right: 0;
         }
+        .button {
+          max-width: calc(100% / 1 - 16px);
+        }
       }
     }
    }

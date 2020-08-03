@@ -38,8 +38,20 @@
     }
 
     .bottom {
-      padding-left: 40px;
-      padding-right: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 200px;
+      margin: 0 auto;
+      .icons {
+        width: 40px;
+        height: 40px;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
     }
 
     h3 {
@@ -124,30 +136,6 @@
       margin-bottom: 24px;
     }
 
-    .subscribe {
-      display: flex;
-      flex-direction: row-reverse;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto;
-      border: 1px solid #222222;
-      border-radius: 8px;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 14px;
-      line-height: 22px;
-      color: #222222;
-      background-color: #fff;
-      padding: 9px 16px 9px 12px;
-
-      img {
-        width: 18px;
-        height: 18px;
-        object-position: center;
-        object-fit: cover;
-        margin-right: 8px;
-      }
-    }
   }
 }
 

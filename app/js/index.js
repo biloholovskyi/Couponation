@@ -14,6 +14,31 @@ const adminDrop = new AdminDrop();
 
 
 $(document).ready((e) => {
+  // emoji selected modal
+  $('.smile__block .smile').on('click', function(){
+    $(this).children('.smile__selected').toggleClass('active');
+    $(this).toggleClass('active'); 
+  });
+
+  $('#change-emoji').on('click', function(){
+    $('.change__emoji--overlay').addClass('active');
+    $('body').css({
+      'overflow': 'hidden',
+      'position': 'relative', 
+      'height': '100vh'
+    });
+  });
+
+  $('.change__emoji--close').on('click', function(){
+    $('.change__emoji--overlay').removeClass('active');
+    $('body').css({
+      'overflow': 'visible',
+      'position': 'relative',
+      'height': '100%'
+    });
+  });
+
+  // end emoji modal
   document.querySelectorAll('.api-sources__table .api-table__body tr td.name--width').forEach(item => {
     item.addEventListener('click', (e) => catalogue.show(e));
   });
@@ -96,13 +121,6 @@ $(document).ready((e) => {
   $('.small-form__form input,.small-form__form textarea').on('input', (e) => smallFormInput(e));
   
 
-// map modal
-$('.contact-page .contact-info .map-block .icon').on('click', function(){
-  $('.maps').toggleClass('active');
-});
-$('.close-map').on('click', function(){ 
-  $('.maps').toggleClass('active');
-});
 
 // admin modal
 $('.addNewCoupon').on('click', function(){
@@ -251,8 +269,8 @@ $(function () {
 
 
 $(document).on('click', function(e){
-  let modal = $('.admin__modal, .shop__modal, .getCode__modal');
-  let Btn = $('.addNewCoupon, .change_shop, .getCode');
+  let modal = $('.admin__modal, .shop__modal, .getCode__modal, .change__emoji--modal');
+  let Btn = $('.addNewCoupon, .change_shop, .getCode, #change-emoji');
 
 
   if(!Btn.is(e.target) && Btn.has(e.target).length === 0) {
@@ -260,6 +278,7 @@ $(document).on('click', function(e){
       $('.admin__modal--overlay').css({'display': 'none'});
       $('.shop__modal--overlay').css({'display': 'none'});
       $('.getCode__modal--overlay').css({'display': 'none'});
+      $('.change__emoji--overlay').removeClass('active');
       $('body').css({
         'overflow': 'visible',
         'position': 'relative',
