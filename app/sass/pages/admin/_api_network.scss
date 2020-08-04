@@ -1,0 +1,129 @@
+.network__page {
+  .admin__content {
+    padding-bottom: 0;
+    .admin__caption {
+      margin-bottom: 56px;
+      button {
+        color: #fff;
+        background: #FF3042;
+      }
+    }
+    .shop__form {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .newtwork__droplist {
+      border-top: 1px solid #EBEBEB;
+      padding-top: 36px;
+      position: relative; 
+      transition: .4s;
+      .network_arrow {
+        position: absolute;
+        right: 0;
+        top: 3px;
+        cursor: pointer;
+        width: 18px;
+        height: 28.86px;
+        object-fit: contain;
+        object-position: center;
+        transition: .4s;
+        &.active {
+          transform: rotate(180deg);
+        }
+      }
+      .network__open {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 36px;
+        color: #222222;
+        margin-bottom: 32px;
+      }
+      &.show {
+        padding-top: 0px; 
+      }
+    }
+    
+    
+    .drop-info {
+      transition: .4s;
+      form {
+        .double {
+          justify-content: center;
+          height: max-content;
+          .input-item {
+            height: 112px;
+          }
+          button {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 24px;
+            color: #FFFFFF;
+            background: #FF703E;
+            border-radius: 8px;
+            border: none;
+            padding: 14px 0;  
+          }
+        }
+      }
+      
+    }
+    .network-hidden {
+      opacity: 0!important;  
+      display: none!important;
+      visibility: hidden!important;
+    }
+
+    .network-visible {
+      opacity: 1;
+      display: block;
+      visibility: visible;
+    }
+   
+  }
+}
+
+
+.notes__section {
+  display: flex;
+  flex-direction: column;
+  .notes__item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+    .date {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 16px;
+      color: #717171;
+      margin-bottom: 8px;
+    }
+    .notes__info {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+        color: #222222;
+        max-width: 960px;
+      }
+      .notes_dlt {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 24px;
+        color: #FF3042;
+        border: 1px solid #EBEBEB;
+        border-radius: 8px;
+        padding: 5px 16px;
+        cursor: pointer;
+      }
+    }
+  }
+}

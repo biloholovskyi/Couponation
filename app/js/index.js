@@ -8,12 +8,38 @@ import {switchLink} from './activeLink';
 import Catalogue from "./catalogue";
 import './countInput';
 import AdminDrop from "./admin/dropDown";
+import './admin/addshopModal';
 
 const catalogue = new Catalogue();
 const adminDrop = new AdminDrop();
 
 
 $(document).ready((e) => {
+
+  
+  // modal save succsefully
+  $('#saveChange').on('click', function(){
+    $('.shop_succefully').css('display', 'flex'); 
+    setTimeout (() => {
+      $('.shop_succefully').css('display', 'none'); 
+    }, 3000);
+  }); 
+
+  $('#savePass').on('click', function(){
+    $('.pass__succes').css('display', 'flex'); 
+    setTimeout (() => {
+      $('.pass__succes').css('display', 'none'); 
+    }, 3000);
+  });
+
+  $('#createCoupon').on('click', function(){
+    $(this).parents('.admin__modal--overlay').hide();
+    $('.shop_succefully').css('display', 'flex'); 
+    setTimeout (() => {
+      $('.shop_succefully').css('display', 'none'); 
+    }, 3000);
+  }); 
+
   // invite new users
   $('.new_user').on('click', function(){
     $('.invite__user--overlay').css('display', 'flex');
@@ -294,6 +320,10 @@ $(function () {
     setTimeout(() => { $('.subscribe__modal').css('display', 'none'); }, 3000);
   });
 
+  $('.publish').on('click', function(){
+    $(this).toggleClass('active');
+  });
+
 });
 
 
@@ -308,8 +338,8 @@ $(function () {
 
 
 $(document).on('click', function(e){
-  let modal = $('.admin__modal, .shop__modal, .getCode__modal, .change__emoji--modal, .invite__user--modal');
-  let Btn = $('.addNewCoupon, .change_shop, .getCode, #change-emoji,.new_user'); 
+  let modal = $('.admin__modal, .shop__modal, .getCode__modal, .change__emoji--modal, .invite__user--modal, .shops__modal');
+  let Btn = $('.addNewCoupon, .change_shop, .getCode, #change-emoji,.new_user, #addSHopBtn'); 
 
 
   if(!Btn.is(e.target) && Btn.has(e.target).length === 0) {
@@ -319,6 +349,7 @@ $(document).on('click', function(e){
       $('.getCode__modal--overlay').css({'display': 'none'});
       $('.change__emoji--overlay').removeClass('active');
       $('.invite__user--overlay').css({'display': 'none'});
+      $('.addShops__modal--overlay').removeClass('active');
       $('body').css({
         'overflow': 'visible',
         'position': 'relative',
@@ -333,6 +364,9 @@ const btn = document.querySelector('.publish');
 btn.addEventListener('click', function(){
   btn.innerHTML = (btn.innerHTML === 'unpublish') ? btn.innerHTML = 'publish' : btn.innerHTML = 'unpublish';  
 });
+
+
+
 
 
 $(window).resize(() => {

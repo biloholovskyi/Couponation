@@ -1,0 +1,14 @@
+
+mixin single_coupon_item(name,desc, Invited, activity, coupons)
+  tr
+    td.coupon
+      p= name
+      .name= desc  
+    td.invated= Invited
+    td.activity= activity
+    td.user_coupones= coupons
+    td.buttons.buttons--padding
+      button Details
+      button(style="color: #FF3042") Unpublish
+
+

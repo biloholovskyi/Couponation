@@ -1,0 +1,51 @@
+extends ../layout/admin
+
+block variables
+  - const pageTitle = 'Network'
+
+  include ../mixins/category_btn
+
+block content
+
+  .admin__panel.coupon-details.network__page
+    include ../modules/admin/admin_bar
+    .admin__content
+      a.back_btn(href="/admin_shop.html") All sources
+      .admin__caption 
+        h1 Network name goes here 
+        button Block source
+      form.small-form__form.shop__form
+        .double
+          .input-item
+            .placeholder Happy Coupons Network
+            input(type='text')
+        .double
+          .input-item
+            .placeholder Happy Coupons Network
+            input(type='text')
+      .newtwork__droplist
+        img.network_arrow(src="../media/icon/network_drop.svg", alt="icon")
+        h3.network__open Notes
+      .drop-info.network-visible
+        form.small-form__form.shop__form
+          .double.full-inp.textarea
+            .input-item
+              .placeholder Note text
+              textarea
+            button Send note
+      .notes__section
+        .notes__item
+          .date May 10, 2020 – 14:08
+          .notes__info
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor.
+            .notes_dlt Delete
+        .notes__item
+          .date May 10, 2020 – 14:08
+          .notes__info
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor.
+            .notes_dlt Delete  
+        .notes__item
+          .date May 10, 2020 – 14:08
+          .notes__info
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor.
+            .notes_dlt Delete                              

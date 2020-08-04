@@ -288,6 +288,7 @@
             font-weight: bold;
             color: #FFFFFF;
             margin-top: 8px;
+            border: none;
           }
 
           .count {
@@ -424,4 +425,8 @@
       }
     }
   }
+}
+
+.publish.active {
+  color: #3DB358!important;
 }

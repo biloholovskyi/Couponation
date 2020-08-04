@@ -34,10 +34,11 @@
           <h1>Best Buy</h1>
         </div>
         <div class="adm-tab__head">
-          <!--.tabs-->
-          <!--  .tab.active#tab-main MAIN INFO-->
-          <!--  //.tab#tab-active Coupons-->
-          <!--  //.tab#tab-stat Statistics-->
+          <div class="tabs">
+            <div class="tab active" id="tab-main">MAIN INFO</div>
+            <div class="tab" id="tab-active">Coupons</div>
+            <div class="tab" id="tab-stat">Statistics</div>
+          </div>
         </div>
         <div class="adm-tab__body show" id="body-main">
           <div class="shop__info--content">
@@ -96,11 +97,194 @@
                 <input type="radio" name="r" value="2"><span>Custom</span>
               </label>
             </div>
-            <button class="saveChange">Save Changes            </button>
+            <button class="saveChange" id="saveChange">Save Changes            </button>
           </div>
         </div>
-        <div class="adm-tab__body" id="body-active"></div>
-        <div class="adm-tab__body" id="body-stat"></div>
+        <div class="adm-tab__body" id="body-active">
+          <div class="api-sources__table">
+            <table class="api-table">
+              <h3 class="tabs_name">The most popular coupon</h3>
+              <thead class="api-table__head">
+                <tr>
+                  <th class="sort">Name</th>
+                  <th>Description</th>
+                  <th>Recieved</th>
+                  <th>Shops</th>
+                  <th>Expire date</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody class="api-table__body">
+                <tr>
+                  <td class="coupon">
+                    <p>SAVE6DOLLARS</p>
+                    <div class="name">Enjoy $6,40 off $25,99 purchase with promocode</div>
+                  </td>
+                  <td class="invated">Yesterday, 11:54 GMT</td>
+                  <td class="activity">Best Buy</td>
+                  <td class="user_coupones">May 20, 2020 – 23:59 EST</td>
+                  <td class="buttons buttons--padding">
+                    <button>Details</button>
+                    <button style="color: #FF3042">Unpublish</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="coupon">
+                    <p>SAVE6DOLLARS</p>
+                    <div class="name">Enjoy $6,40 off $25,99 purchase with promocode</div>
+                  </td>
+                  <td class="invated">Yesterday, 11:54 GMT</td>
+                  <td class="activity">Best Buy</td>
+                  <td class="user_coupones">May 20, 2020 – 23:59 EST</td>
+                  <td class="buttons buttons--padding">
+                    <button>Details</button>
+                    <button style="color: #FF3042">Unpublish</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="coupon">
+                    <p>SAVE6DOLLARS</p>
+                    <div class="name">Enjoy $6,40 off $25,99 purchase with promocode</div>
+                  </td>
+                  <td class="invated">Yesterday, 11:54 GMT</td>
+                  <td class="activity">Best Buy</td>
+                  <td class="user_coupones">May 20, 2020 – 23:59 EST</td>
+                  <td class="buttons buttons--padding">
+                    <button>Details</button>
+                    <button style="color: #FF3042">Unpublish</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="adm-tab__body" id="body-stat">
+          <div class="stats__tabs"> 
+            <div class="statistic__block">
+              <div class="stat-tab__head">
+                <h3 style="margin-bottom: 20px">General stats</h3>
+                <div class="tabs">
+                  <div class="tab active" id="tab-today">Today</div>
+                  <div class="tab" id="tab-week">this week</div>
+                  <div class="tab" id="tab-months">This month</div>
+                </div>
+              </div>
+              <div class="stat-tab__body show" id="body-today">
+                <div class="general__stats"> 
+                  <div class="user__item">
+                    <h4>Last update</h4>
+                    <p>500</p>
+                  </div>
+                  <div class="user__item">
+                    <h4>Avg update period</h4>
+                    <p>500</p>
+                  </div>
+                  <div class="user__item">
+                    <h4>Clicks</h4>
+                    <p>600</p>
+                  </div>
+                </div>
+              </div>
+              <div class="stat-tab__body" id="body-week">
+                <div class="general__stats"> 
+                  <div class="user__item">
+                    <h4>Approved</h4>
+                    <p>50</p>
+                  </div>
+                  <div class="user__item">
+                    <h4>Declined</h4>
+                    <p>50</p>
+                  </div>
+                  <div class="user__item">
+                    <h4>Clicks</h4>
+                    <p>50 </p>
+                  </div>
+                </div>
+              </div>
+              <div class="stat-tab__body" id="body-months">
+                <div class="general__stats"> 
+                  <div class="user__item">
+                    <h4>Approved</h4>
+                    <p>5000</p>
+                  </div>
+                  <div class="user__item">
+                    <h4>Declined</h4>
+                    <p>5000</p>
+                  </div>
+                  <div class="user__item">
+                    <h4>Clicks</h4>
+                    <p>50 00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="moderated__block">
+              <div class="moder-tab__head">
+                <h3 style="margin-bottom: 20px">TOP10 coupons clicked</h3>
+                <div class="tabs">
+                  <div class="tab active" id="tab-mtoday">Today </div>
+                  <div class="tab" id="tab-mweek">this week</div>
+                  <div class="tab" id="tab-mmonths">This month</div>
+                </div>
+              </div>
+              <div class="moder-tab__body show" id="body-mtoday">
+                <div class="general__stats"> 
+                  <div class="user__item">
+                    <h4>SAVE6DOLLARS</h4>
+                    <p>500</p>
+                  </div>
+                  <div class="user__item">
+                    <h4>SAVE6DOLLARS</h4>
+                    <p>500</p>
+                  </div>
+                  <div class="user__item">
+                    <h4>SAVE6DOLLARS</h4>
+                    <p>600</p>
+                  </div>
+                </div>
+              </div>
+              <div class="moder-tab__body" id="body-mweek">
+                <div class="general__stats"> 
+                  <div class="user__item">
+                    <h4>ASAVE6DOLLARS</h4>
+                    <p>50</p>
+                  </div>
+                  <div class="user__item">
+                    <h4>SAVE6DOLLARS</h4>
+                    <p>50</p>
+                  </div>
+                  <div class="user__item">
+                    <h4>Sent to archive</h4>
+                    <p>50 </p>
+                  </div>
+                </div>
+              </div>
+              <div class="moder-tab__body" id="body-mmonths">
+                <div class="general__stats"> 
+                  <div class="user__item">
+                    <h4>Approved</h4>
+                    <p>5000</p>
+                  </div>
+                  <div class="user__item">
+                    <h4>Declined</h4>
+                    <p>5000</p>
+                  </div>
+                  <div class="user__item">
+                    <h4>Sent to archive</h4>
+                    <p>50 00                     </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="subscribe__modal shop_succefully">
+      <div class="sub__icon"></div>
+      <div class="sub__info">
+        <h3>Shop was succefully changed</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
