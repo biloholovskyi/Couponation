@@ -16,8 +16,8 @@ block content
       .adm-tab__head
         //.tabs
         //  .tab.active#tab-main MAIN INFO
-        //  //.tab#tab-active Coupons
-        //  //.tab#tab-stat Statistics
+        //  .tab#tab-active Coupons
+        //  .tab#tab-stat Statistics
       .adm-tab__body.show#body-main
         .shop__info--content
           .shop__name
@@ -65,9 +65,11 @@ block content
             label.radio
               input(type="radio" name="r" value="2")
               span Custom
-          button.saveChange Save Changes            
+          button#saveChange.saveChange Save Changes            
 
 
 
       .adm-tab__body#body-active
       .adm-tab__body#body-stat
+
+  include ../modules/admin/shop_succefully       

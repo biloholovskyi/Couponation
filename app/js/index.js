@@ -14,6 +14,29 @@ const adminDrop = new AdminDrop();
 
 
 $(document).ready((e) => {
+  // modal save succsefully
+  $('#saveChange').on('click', function(){
+    $('.shop_succefully').css('display', 'flex'); 
+    setTimeout (() => {
+      $('.shop_succefully').css('display', 'none'); 
+    }, 3000);
+  }); 
+
+  $('#savePass').on('click', function(){
+    $('.pass__succes').css('display', 'flex'); 
+    setTimeout (() => {
+      $('.pass__succes').css('display', 'none'); 
+    }, 3000);
+  });
+
+  $('#createCoupon').on('click', function(){
+    $(this).parents('.admin__modal--overlay').hide();
+    $('.shop_succefully').css('display', 'flex'); 
+    setTimeout (() => {
+      $('.shop_succefully').css('display', 'none'); 
+    }, 3000);
+  }); 
+
   // invite new users
   $('.new_user').on('click', function(){
     $('.invite__user--overlay').css('display', 'flex');

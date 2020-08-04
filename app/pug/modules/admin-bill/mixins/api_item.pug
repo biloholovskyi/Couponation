@@ -22,7 +22,7 @@ mixin api_item(name, status, total, approved, update)
     td.approved= approved
     td.updateMay= update
     td.buttons
-      button Details
+      button(onclick="location.href='/api-network.html';") Details
       if status
         button.block Block
       else
