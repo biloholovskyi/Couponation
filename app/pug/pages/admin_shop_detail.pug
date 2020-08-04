@@ -4,6 +4,7 @@ block variables
   - const pageTitle = 'Admin panel'
 
   include ../mixins/category_btn
+  include ../modules/admin/single_shop_coupons
 
 block content
 
@@ -14,14 +15,14 @@ block content
       .admin__caption 
         h1 Best Buy
       .adm-tab__head
-        //.tabs
-        //  .tab.active#tab-main MAIN INFO
-        //  .tab#tab-active Coupons
-        //  .tab#tab-stat Statistics
+        .tabs
+          .tab.active#tab-main MAIN INFO
+          .tab#tab-active Coupons
+          .tab#tab-stat Statistics
       .adm-tab__body.show#body-main
         .shop__info--content
           .shop__name
-            img(src="./media/icon/logos/1.png", alt="icon")
+            img(src="./media/icon/logos/1.png", alt="icon") 
             button Upload new
             button Delete
           form.small-form__form.shop__form
@@ -70,6 +71,102 @@ block content
 
 
       .adm-tab__body#body-active
+        .api-sources__table
+          table.api-table
+            h3.tabs_name The most popular coupon
+            thead.api-table__head
+              tr
+                th.sort Name
+                th Description
+                th Recieved
+                th Shops
+                th Expire date
+                th
+            tbody.api-table__body
+              +single_coupon_item('SAVE6DOLLARS','Enjoy $6,40 off $25,99 purchase with promocode', 'Yesterday, 11:54 GMT', 'Best Buy', 'May 20, 2020 – 23:59 EST') 
+              +single_coupon_item('SAVE6DOLLARS','Enjoy $6,40 off $25,99 purchase with promocode', 'Yesterday, 11:54 GMT', 'Best Buy', 'May 20, 2020 – 23:59 EST') 
+              +single_coupon_item('SAVE6DOLLARS', 'Enjoy $6,40 off $25,99 purchase with promocode','Yesterday, 11:54 GMT', 'Best Buy', 'May 20, 2020 – 23:59 EST') 
       .adm-tab__body#body-stat
+         .stats__tabs 
+            .statistic__block
+              .stat-tab__head
+                h3(style="margin-bottom: 20px") General stats
+                .tabs
+                  .tab.active#tab-today Today
+                  .tab#tab-week this week
+                  .tab#tab-months This month
+              .stat-tab__body.show#body-today
+                .general__stats 
+                  .user__item
+                    h4 Last update
+                    p 500
+                  .user__item
+                    h4 Avg update period
+                    p 500
+                  .user__item
+                    h4 Clicks
+                    p 600
+              .stat-tab__body#body-week
+                .general__stats 
+                  .user__item
+                    h4 Approved
+                    p 50
+                  .user__item
+                    h4 Declined
+                    p 50
+                  .user__item
+                    h4 Clicks
+                    p 50 
+              .stat-tab__body#body-months
+                .general__stats 
+                  .user__item
+                    h4 Approved
+                    p 5000
+                  .user__item
+                    h4 Declined
+                    p 5000
+                  .user__item
+                    h4 Clicks
+                    p 50 00
+            .moderated__block
+              .moder-tab__head
+                h3(style="margin-bottom: 20px") TOP10 coupons clicked
+                .tabs
+                  .tab.active#tab-mtoday Today 
+                  .tab#tab-mweek this week
+                  .tab#tab-mmonths This month
+              .moder-tab__body.show#body-mtoday
+                .general__stats 
+                  .user__item
+                    h4 SAVE6DOLLARS
+                    p 500
+                  .user__item
+                    h4 SAVE6DOLLARS
+                    p 500
+                  .user__item
+                    h4 SAVE6DOLLARS
+                    p 600
+              .moder-tab__body#body-mweek
+                .general__stats 
+                  .user__item
+                    h4 ASAVE6DOLLARS
+                    p 50
+                  .user__item
+                    h4 SAVE6DOLLARS
+                    p 50
+                  .user__item
+                    h4 Sent to archive
+                    p 50 
+              .moder-tab__body#body-mmonths
+                .general__stats 
+                  .user__item
+                    h4 Approved
+                    p 5000
+                  .user__item
+                    h4 Declined
+                    p 5000
+                  .user__item
+                    h4 Sent to archive
+                    p 50 00                     
 
   include ../modules/admin/shop_succefully       

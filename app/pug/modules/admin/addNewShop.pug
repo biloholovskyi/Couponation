@@ -1,0 +1,50 @@
+.addShops__modal--overlay
+  .shops__modal
+    .shops__modal--close
+    h3 Add new shop
+    form.small-form__form.admin-form
+      .double
+        .input-item(style="width: 100%")
+          .placeholder Coupon
+          input(type='text')
+      .double
+        .input-item
+          .placeholder Instagram
+          input(type='text')
+        .input-item
+          .placeholder Website
+          input(type='text')  
+      .double.full-inp.textarea
+        .input-item
+          .placeholder Coupon’s full description
+          textarea(maxlength="255")#text-count
+      .count
+        .count-item#count 0
+        div /
+        .count-item 255
+    .admin__search
+      input(type="text" placeholder="Search or add new category")
+      img(src="../media/icon/search.svg", alt="icon")
+    .category__section
+      a(href='#').categoryItem
+        .icon ⌚
+        .name accessories
+      a(href='#').categoryItem
+        .icon ⌚
+        .name accessories  
+      a(href='#').categoryItem
+        .icon ⌚
+        .name accessories
+    h4 Select default partnership network for this shop       
+    .radio__block
+      label.radio
+        input(type="radio" name="r" value="1" checked)
+        span Affiliate
+      label.radio
+        input(type="radio" name="r" value="2")
+        span Custom          
+    button Create a shop
+
+
+
+  

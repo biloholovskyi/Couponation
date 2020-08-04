@@ -15,7 +15,7 @@ block content
           .admin__search
             input(type="text" placeholder="Search by shop name")
             img(src="../media/icon/search.svg", alt="icon")
-          button Add new shop
+          button#addSHopBtn Add new shop
       .admin__select--block
         .adm-select-wrapp_bill
           .left
@@ -57,5 +57,6 @@ block content
           .num-item 3
           .num-dots
           .num-item 8
-  include ../modules/admin/change_shop_modal 
+  include ../modules/admin/change_shop_modal
+  include ../modules/admin/addNewShop 
           

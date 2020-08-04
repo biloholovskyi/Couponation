@@ -36,7 +36,7 @@
             <div class="admin__search">
               <input type="text" placeholder="Search by shop name"><img src="../media/icon/search.svg" alt="icon">
             </div>
-            <button>Add new shop</button>
+            <button id="addSHopBtn">Add new shop</button>
           </div>
         </div>
         <div class="admin__select--block">
@@ -339,6 +339,61 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="addShops__modal--overlay">
+      <div class="shops__modal">
+        <div class="shops__modal--close"></div>
+        <h3>Add new shop</h3>
+        <form class="small-form__form admin-form">
+          <div class="double">
+            <div class="input-item" style="width: 100%">
+              <div class="placeholder">Coupon</div>
+              <input type="text">
+            </div>
+          </div>
+          <div class="double">
+            <div class="input-item">
+              <div class="placeholder">Instagram</div>
+              <input type="text">
+            </div>
+            <div class="input-item">
+              <div class="placeholder">Website</div>
+              <input type="text">
+            </div>
+          </div>
+          <div class="double full-inp textarea">
+            <div class="input-item">
+              <div class="placeholder">Coupon’s full description</div>
+              <textarea maxlength="255" id="text-count"></textarea>
+            </div>
+          </div>
+          <div class="count">
+            <div class="count-item" id="count">0</div>
+            <div>/</div>
+            <div class="count-item">255</div>
+          </div>
+        </form>
+        <div class="admin__search">
+          <input type="text" placeholder="Search or add new category"><img src="../media/icon/search.svg" alt="icon">
+        </div>
+        <div class="category__section"><a class="categoryItem" href="#">
+            <div class="icon">⌚</div>
+            <div class="name">accessories</div></a><a class="categoryItem" href="#">
+            <div class="icon">⌚</div>
+            <div class="name">accessories  </div></a><a class="categoryItem" href="#">
+            <div class="icon">⌚</div>
+            <div class="name">accessories</div></a></div>
+        <h4>Select default partnership network for this shop       </h4>
+        <div class="radio__block">
+          <label class="radio">
+            <input type="radio" name="r" value="1" checked><span>Affiliate</span>
+          </label>
+          <label class="radio">
+            <input type="radio" name="r" value="2"><span>Custom          </span>
+          </label>
+        </div>
+        <button>Create a shop</button>
       </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>

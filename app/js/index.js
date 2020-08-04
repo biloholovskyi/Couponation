@@ -8,6 +8,7 @@ import {switchLink} from './activeLink';
 import Catalogue from "./catalogue";
 import './countInput';
 import AdminDrop from "./admin/dropDown";
+import './admin/addshopModal';
 
 const catalogue = new Catalogue();
 const adminDrop = new AdminDrop();
@@ -329,8 +330,8 @@ $(function () {
 
 
 $(document).on('click', function(e){
-  let modal = $('.admin__modal, .shop__modal, .getCode__modal, .change__emoji--modal, .invite__user--modal');
-  let Btn = $('.addNewCoupon, .change_shop, .getCode, #change-emoji,.new_user'); 
+  let modal = $('.admin__modal, .shop__modal, .getCode__modal, .change__emoji--modal, .invite__user--modal, .shops__modal');
+  let Btn = $('.addNewCoupon, .change_shop, .getCode, #change-emoji,.new_user, #addSHopBtn'); 
 
 
   if(!Btn.is(e.target) && Btn.has(e.target).length === 0) {
@@ -340,6 +341,7 @@ $(document).on('click', function(e){
       $('.getCode__modal--overlay').css({'display': 'none'});
       $('.change__emoji--overlay').removeClass('active');
       $('.invite__user--overlay').css({'display': 'none'});
+      $('.addShops__modal--overlay').removeClass('active');
       $('body').css({
         'overflow': 'visible',
         'position': 'relative',
