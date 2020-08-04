@@ -233,6 +233,8 @@
               color: #717171;
               cursor: pointer;
               padding: 0 30px;
+              position: relative;
+              z-index: 20;
 
               &.active {
                 color: #FF703E;
