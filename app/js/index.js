@@ -15,6 +15,8 @@ const adminDrop = new AdminDrop();
 
 
 $(document).ready((e) => {
+
+  
   // modal save succsefully
   $('#saveChange').on('click', function(){
     $('.shop_succefully').css('display', 'flex'); 
@@ -316,6 +318,10 @@ $(function () {
     setTimeout(() => { $('.subscribe__modal').css('display', 'none'); }, 3000);
   });
 
+  $('.publish').on('click', function(){
+    $(this).toggleClass('active');
+  });
+
 });
 
 
@@ -356,6 +362,9 @@ const btn = document.querySelector('.publish');
 btn.addEventListener('click', function(){
   btn.innerHTML = (btn.innerHTML === 'unpublish') ? btn.innerHTML = 'publish' : btn.innerHTML = 'unpublish';  
 });
+
+
+
 
 
 $(window).resize(() => {
