@@ -1,0 +1,47 @@
+html {
+  body {
+    div {
+      .input-item {
+        position: relative;
+
+        .error-text {
+          opacity: 0;
+          visibility: hidden;
+          display: none;
+          transition: all .3s;
+        }
+      }
+    }
+
+  }
+}
+
+
+html {
+  body {
+    div {
+      .input-error {
+        position: relative;
+        border: 1px solid #FF3042 !important;
+
+        .placeholder {
+          color: #FF3042 !important;
+        }
+
+        .error-text {
+          opacity: 1;
+          position: absolute;
+          visibility: visible;
+          display: block;
+          bottom: -18px;
+          left: 18px;
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 16px;
+          color: #FF3042;
+        }
+      }
+    }
+
+  }
+}
