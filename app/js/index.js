@@ -37,6 +37,8 @@ $(document).ready((e) => {
   // end modal new user
   // emoji selected modal
   $('.smile__block .smile').on('click', function(){
+    $('.smile__block .smile').removeClass('active');
+    $('.smile__block .smile .smile__selected').removeClass('active');
     $(this).children('.smile__selected').toggleClass('active');
     $(this).toggleClass('active'); 
   });
@@ -203,15 +205,15 @@ $('.adm__modal--close').on('click', function(){
 });
 
 // block user on instagram page
-$('.block').on('click', function(){
-  $(this).hide();
-  $(this).parent('.coupon__btn--section').find('.unblock').show(); 
-});
-
-$('.unblock').on('click', function(){ 
-  $(this).hide();
-  $(this).parent('.coupon__btn--section').find('.block').show();
-});
+// $('.block').on('click', function(){
+//   $(this).hide();
+//   $(this).parent('.coupon__btn--section').find('.unblock').show();
+// });
+//
+// $('.unblock').on('click', function(){
+//   $(this).hide();
+//   $(this).parent('.coupon__btn--section').find('.block').show();
+// });
 
 
 $('.adm-tab__head .tabs .tab').on('click', (e) => {
