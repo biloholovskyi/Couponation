@@ -1,0 +1,112 @@
+extends ../layout/admin
+include ../modules/admin-bill/mixins/adm_select
+
+block variables
+  - const pageTitle = 'Admin panel'
+
+block content 
+  .admin__panel
+    include ../modules/moderator/moder_bar
+    .moderator__content
+      .admin__caption 
+        h1 Dashboard
+      .moder__new--items
+        .moder__items
+          h3 New coupons
+          .items__section
+            h2 114
+            button Moderate
+        .moder__items
+          h3 New shops
+          .items__section
+            h2 14
+            button Moderate 
+        .moder__items
+          h3 New shops
+          .items__section
+            h2 #14
+            .newItem +4
+              img(src="../media/icon/rank.svg", alt="icon")  
+      .moder__statistic
+        .moderated__block
+          .moder-tab__head
+            h3 Coupons moderated
+            .tabs
+              .tab.active#tab-mtoday Today 
+              .tab#tab-mweek Week
+              .tab#tab-mmonths Month 
+          .moder-tab__body.show#body-mtoday
+            .general__stats 
+              .user__item
+                h4 Approved
+                p 500
+              .user__item
+                h4 Declined
+                p 500
+              .user__item
+                h4 Sent to archive
+                p 600
+          .moder-tab__body#body-mweek
+            .general__stats 
+              .user__item
+                h4 Approved
+                p 50
+              .user__item
+                h4 Declined
+                p 50
+              .user__item
+                h4 Sent to archive
+                p 50 
+          .moder-tab__body#body-mmonths
+            .general__stats 
+              .user__item
+                h4 Approved
+                p 5000
+              .user__item
+                h4 Declined
+                p 5000
+              .user__item
+                h4 Sent to archive
+                p 50 00
+        .moderated__block
+          .stat-tab__head
+            h3 Shops moderated
+            .tabs
+              .tab.active#tab-today Today 
+              .tab#tab-week Week
+              .tab#tab-months Month 
+          .stat-tab__body.show#body-today
+            .general__stats 
+              .user__item
+                h4 Created
+                p 500
+              .user__item
+                h4 New shop requests
+                p 500
+              .user__item
+                h4 Sent to archive
+                p 600
+          .stat-tab__body#body-week
+            .general__stats 
+              .user__item
+                h4 Created
+                p 50
+              .user__item
+                h4 New shop requests
+                p 50
+              .user__item
+                h4 Sent to archive
+                p 50 
+          .stat-tab__body#body-months
+            .general__stats 
+              .user__item
+                h4 Created
+                p 5000
+              .user__item
+                h4 New shop requests
+                p 5000
+              .user__item
+                h4 Sent to archive
+                p 50 00
+                                   
+                                  

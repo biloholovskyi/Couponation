@@ -1,0 +1,62 @@
+extends ../layout/admin
+include ../modules/admin-bill/mixins/adm_select
+
+block variables
+  - const pageTitle = 'Admin panel'
+
+block content 
+  .admin__panel.coupon-details.moder-coupons
+    include ../modules/moderator/moder_bar
+    .admin__content.moderator__content
+      .admin__caption 
+        h1 New coupons
+      .progress__bar--block
+        .progress_lines
+          .active__line
+        .progress__info
+          p 14 of 100
+          p 86 new coupons
+      .adm__links
+        .adm__link
+          h3 Original post link
+          a(href="#") http://instagram.com/user/39696259/post_56y72sdf0923.html
+        .adm__link(style="padding-bottom: 36px; border-bottom: 1px solid #ebebeb")
+          h3 Original post text
+          p Do you love face oils? My skin is very picky when it comes to face oil. Most of the time either the oil just floats on my skin and sticks wherever except my face or I end up with an irritated skin. But #juicychemistry 100% Organic Camellia Seed Oil is surely the magic in a bottle. You can use my code - SHELL15 for additional discount on Juicychemistry Website.  
+        .coupon__form.single__coupon-form
+          .coupon__modal
+            h3 Fill the coupons data
+            form.small-form__form.admin-form 
+              .double
+                .input-item
+                  .placeholder Coupon
+                  input(type='email')
+                .input-item
+                  .placeholder Expiration date 
+                  input(type='email')
+              .double
+                .input-item
+                  .placeholder Instagram account
+                  input(type='email')
+                .input-item
+                  .placeholder Website URL
+                  input(type='email')
+              .double.full-inp
+                .input-item
+                  .placeholder Coupon’s short description
+                  input(maxlength="55" type='email')#text-counter
+              .count
+                .count-item#counter 0
+                div /
+                .count-item 55    
+              .double.full-inp.textarea 
+                .input-item
+                  .placeholder Coupon’s full description
+                  textarea#text-count(maxlength="255")
+              .count
+                .count-item#count 0
+                div /
+                .count-item 255
+              .moder__btn        
+                input(type="button" value="Approve").mod-approve 
+                input(type="button" value="Decline").mod-decline     

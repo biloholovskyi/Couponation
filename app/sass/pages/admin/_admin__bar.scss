@@ -48,6 +48,7 @@
         padding: 8px;
         margin-bottom: 4px;
         transition: .4s;
+        position: relative;
         svg {
           width: 24px;
           height: 24px;
@@ -56,6 +57,12 @@
           margin-right: 16px;
           transition: .4s;
 
+        }
+        span {
+          position: absolute;
+          right: 10px;
+          top: 50%;
+          transform: translateY(-50%);
         }
       }
 

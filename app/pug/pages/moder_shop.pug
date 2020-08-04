@@ -1,0 +1,84 @@
+extends ../layout/admin
+include ../modules/admin-bill/mixins/adm_select
+
+block variables
+  - const pageTitle = 'Admin panel'
+
+  include ../mixins/category_btn
+
+block content 
+  .admin__panel.coupon-details.moder-coupons.shop_detail
+    include ../modules/moderator/moder_bar
+    .admin__content.moderator__content
+      .admin__caption 
+        h1 New shops
+      .progress__bar--block
+        .progress_lines
+          .active__line
+        .progress__info
+          p 14 of 100
+          p 86 new coupons
+      .shop__info--content
+        h3.logo Logo
+        .shop__name
+          img(src="./media/icon/logos/1.png", alt="icon") 
+          button Upload new
+          button Delete
+        form.small-form__form.shop__form
+          .double
+            .input-item
+              .placeholder Name
+              input(type='text')
+            .input-item
+              .placeholder Website 
+              input(type='text') 
+            .input-item
+              .placeholder Instagram
+              input(type='text')    
+          .double.full-inp.textarea
+            .input-item
+              .placeholder Description
+              textarea(maxlength="55")#text-count 
+            .count
+              .count-item#count 0 
+              div /
+              .count-item 55
+        .lines
+        .admin__search
+          input(type="text" placeholder="Search or add new category") 
+          img(src="../media/icon/search.svg", alt="icon")
+        .category
+          +CategoryBtn('../media/icon/category/flowers.svg','beauty')
+          +CategoryBtn('../media/icon/category/hair.svg','hair')
+          +CategoryBtn('../media/icon/category/heart.svg','health')
+          +CategoryBtn('../media/icon/category/skin.svg','skin care')
+          +CategoryBtn('../media/icon/category/cosmetic.svg','cosmetics')
+          +CategoryBtn('../media/icon/category/flowers.svg','beauty')
+          +CategoryBtn('../media/icon/category/hair.svg','hair')
+          +CategoryBtn('../media/icon/category/heart.svg','health')
+        .lines
+        h3 Partnership network
+        .radio__block
+          label.radio
+            input(type="radio" name="r" value="1" checked)
+            span Happy Coupons Network
+              .rank 35% reward
+          label.radio
+            input(type="radio" name="r" value="2")
+            span Best Partners
+              .rank 5% reward
+          label.radio
+            input(type="radio" name="r" value="3" )
+            span Money4Coupons
+              .rank 22% reward
+          label.radio
+            input(type="radio" name="r" value="3" )
+            span Money4Coupons
+              .rank 22% reward    
+          label.radio
+            input(type="radio" name="r" value="4")
+            span Other (Custom link) 
+        .moder__btn(style="max-width: 510px; margin-top: 36px")        
+          input(type="button" value="Save").mod-approve 
+          input(type="button" value="Decline").mod-decline             
+

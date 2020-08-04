@@ -1,0 +1,97 @@
+.moder-coupons {
+  .admin__content {
+    .adm__links{
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+    .radio__block {
+      max-width: 338px;
+      .radio {
+        margin-bottom: 24px;
+        span {
+          .rank {
+            position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 16px;
+    color: #FFFFFF;
+    background: #3DB358;
+    border-radius: 100px;
+    padding: 5px 8px;
+    min-width: 73px;  
+          }
+        }
+      }
+    }
+  }
+}
+
+.moder-coupons .admin__content .coupon__form .coupon__modal .admin-form .double .input-item.input {
+  padding: 20px 18px 9px 16px!important;
+    border: 1px solid #ff703e!important;
+    .placeholder {
+      color: #ff703e!important;
+    }
+}
+
+.progress__bar--block {
+  width: 100%;
+  margin-bottom: 36px;
+  .progress_lines {
+    background: #EBEBEB;
+    border-radius: 100px;
+    width: 100%;
+    height: 8px;
+    margin-bottom: 12px;
+    position: relative;
+    .active__line {
+      position: absolute;
+      left: 0;
+      background: #FF703E;
+      width: 20%; 
+      height: 100%;
+    }
+  }
+  .progress__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 20px;
+      color: #717171; 
+    }
+  }
+}
+
+.moder__btn  {
+  display: flex;
+  width: 100%;
+  input {
+    flex: 50%;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #FFFFFF;
+    padding: 14px 0;
+    background: #FF703E;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+  }
+  .mod-decline  {
+    color: #FF3042;
+    background-color: transparent;
+  }
+}
