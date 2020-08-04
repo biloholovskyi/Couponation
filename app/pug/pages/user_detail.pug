@@ -1,0 +1,164 @@
+extends ../layout/admin
+include ../modules/admin-bill/mixins/adm_select
+include ../modules/admin/user_item
+
+block variables
+  - const pageTitle = 'USERS'
+
+block content
+  .api-sources
+    .admin__panel.adm__shop--page
+      include ../modules/admin/admin_bar
+      .admin__content.admin__content--bill(style="padding-bottom: 80px")
+        .admin__caption
+          h1 Josh Barnett
+          button  Block user
+        .user-tab__head
+          .tabs
+            .tab.active#tab-main Main info 
+            .tab#tab-stat Statistic
+        .user-tab__body.show#body-main
+          .user__info
+            .user__item
+              h4 Last visit
+              p Today, 20 min ago
+            .user__item
+              h4 Invited by
+              p Admin
+            .user__item
+              h4 Invitation date
+              p May 10, 2020 – 14:08
+          .lines    
+          h2 Personal data
+          form.small-form__form.shop__form
+            .double
+              .input-item
+                .placeholder First name
+                input(type='text')
+              .input-item
+                .placeholder Last name 
+                input(type='text') 
+              .input-item(style="margin-bottom: 16px")
+                .placeholder Email
+                input(type='email') 
+                .new_pass Send new password
+          .lines      
+          h3 Select moderation type
+          .radio__block
+            label.radio
+              input(type="radio" name="r" value="1" checked)
+              span New coupons
+            label.radio
+              input(type="radio" name="r" value="2")
+              span New shops
+            label.radio
+              input(type="radio" name="r" value="2")
+              span New coupons & shops  
+          button.invite_user Invite             
+        .user-tab__body#body-stat(style="max-width: none")
+          .stats__tabs 
+            .statistic__block
+              .stat-tab__head
+                h3 General stats
+                .tabs
+                  .tab.active#tab-today Today
+                  .tab#tab-week this week
+                  .tab#tab-months This month
+                  .tab#tab-halfYear 6 months
+              .stat-tab__body.show#body-today
+                .general__stats 
+                  .user__item
+                    h4 Approved
+                    p 500
+                  .user__item
+                    h4 Declined
+                    p 500
+                  .user__item
+                    h4 Sent to archive
+                    p 600
+              .stat-tab__body#body-week
+                .general__stats 
+                  .user__item
+                    h4 Approved
+                    p 50
+                  .user__item
+                    h4 Declined
+                    p 50
+                  .user__item
+                    h4 Sent to archive
+                    p 50 
+              .stat-tab__body#body-months
+                .general__stats 
+                  .user__item
+                    h4 Approved
+                    p 5000
+                  .user__item
+                    h4 Declined
+                    p 5000
+                  .user__item
+                    h4 Sent to archive
+                    p 50 00
+              .stat-tab__body#body-halfYear
+                .general__stats 
+                  .user__item
+                    h4 Approved
+                    p 50
+                  .user__item
+                    h4 Declined
+                    p 50
+                  .user__item
+                    h4 Sent to archive
+                    p 50 
+            .moderated__block
+              .moder-tab__head
+                h3 Shops moderated
+                .tabs
+                  .tab.active#tab-mtoday Today 
+                  .tab#tab-mweek this week
+                  .tab#tab-mmonths This month
+                  .tab#tab-mhalfYear 6 months
+              .moder-tab__body.show#body-mtoday
+                .general__stats 
+                  .user__item
+                    h4 Approved
+                    p 500
+                  .user__item
+                    h4 Declined
+                    p 500
+                  .user__item
+                    h4 Sent to archive
+                    p 600
+              .moder-tab__body#body-mweek
+                .general__stats 
+                  .user__item
+                    h4 Approved
+                    p 50
+                  .user__item
+                    h4 Declined
+                    p 50
+                  .user__item
+                    h4 Sent to archive
+                    p 50 
+              .moder-tab__body#body-mmonths
+                .general__stats 
+                  .user__item
+                    h4 Approved
+                    p 5000
+                  .user__item
+                    h4 Declined
+                    p 5000
+                  .user__item
+                    h4 Sent to archive
+                    p 50 00
+              .moder-tab__body#body-mhalfYear
+                .general__stats 
+                  .user__item
+                    h4 Approved
+                    p 50
+                  .user__item
+                    h4 Declined
+                    p 50
+                  .user__item
+                    h4 Sent to archive
+                    p 50                       
+

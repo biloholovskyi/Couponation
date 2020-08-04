@@ -9,7 +9,7 @@ mixin user_item(name, email, Invited, activity, coupons, shops)
     td.user_coupones= coupons
     td.user_shop= shops
     td.buttons.buttons--padding
-      button Details
+      button(onclick="location.href='/user_detail.html';") Details
       button(style="color: #FF3042; min-width: 69px") block
 
 

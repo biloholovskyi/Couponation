@@ -1,7 +1,7 @@
 import 'normalize.css';
 import { smallFormInput} from "./smallForm";
 import './accordion';
-import { switchTab, switchTabGrf } from "./tabs";
+import { switchTab, switchTabGrf, switchTabUser,switchTabStat, switchTabModer } from "./tabs";
 import './stickyHeader';
 import './anhors';
 import {switchLink} from './activeLink';
@@ -221,6 +221,20 @@ $('.adm-tab__head .tabs .tab').on('click', (e) => {
 $('.grf-tab__head .tabs .tab').on('click', (e) => {
   switchTabGrf(e) 
 });
+
+$('.user-tab__head .tabs .tab').on('click', (e) => {
+  switchTabUser(e) 
+});
+
+$('.stat-tab__head .tabs .tab').on('click', (e) => {
+  switchTabStat(e) 
+});
+
+$('.moder-tab__head .tabs .tab').on('click', (e) => {
+  switchTabModer(e)  
+});
+
+
 
 
 // open responsive menu in header

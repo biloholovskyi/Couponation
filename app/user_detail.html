@@ -30,99 +30,220 @@
 </svg></a></div>
           <div class="admin__link--bar2"><a href="/Insta_sources.html">Instagram sources</a><a href="/api.html">API sources</a><a href="/catalogue.html">Catalogue</a><a href="/users.html">Users</a><a href="/setting.html">Settings</a><a href="#">Sign out</a></div>
         </div>
-        <div class="admin__content admin__content--bill">
+        <div class="admin__content admin__content--bill" style="padding-bottom: 80px">
           <div class="admin__caption">
-            <h1>Users</h1>
-            <div class="adm_nav">
-              <div class="admin__search admin__search--api">
-                <input type="text" placeholder="Search by user name"><img src="../media/icon/search.svg" alt="icon">
-              </div>
-              <button class="new_user"> Invite new user </button>
+            <h1>Josh Barnett</h1>
+            <button> Block user</button>
+          </div>
+          <div class="user-tab__head">
+            <div class="tabs">
+              <div class="tab active" id="tab-main">Main info </div>
+              <div class="tab" id="tab-stat">Statistic</div>
             </div>
           </div>
-          <div class="adm-select-wrapp_bill">
-            <div class="left">
-              <div class="adm-select-item_bill type-list type-select-js">
-                <div class="name">All statuses</div>
-                <div class="hover-block">
-                  <div class="line">list 1</div>
-                  <div class="line">list 2</div>
-                  <div class="line">list 3</div>
+          <div class="user-tab__body show" id="body-main">
+            <div class="user__info">
+              <div class="user__item">
+                <h4>Last visit</h4>
+                <p>Today, 20 min ago</p>
+              </div>
+              <div class="user__item">
+                <h4>Invited by</h4>
+                <p>Admin</p>
+              </div>
+              <div class="user__item">
+                <h4>Invitation date</h4>
+                <p>May 10, 2020 – 14:08</p>
+              </div>
+            </div>
+            <div class="lines">   </div>
+            <h2>Personal data</h2>
+            <form class="small-form__form shop__form">
+              <div class="double">
+                <div class="input-item">
+                  <div class="placeholder">First name</div>
+                  <input type="text">
+                </div>
+                <div class="input-item">
+                  <div class="placeholder">Last name </div>
+                  <input type="text">
+                </div>
+                <div class="input-item" style="margin-bottom: 16px">
+                  <div class="placeholder">Email</div>
+                  <input type="email">
+                  <div class="new_pass">Send new password</div>
                 </div>
               </div>
-              <div class="adm-select-item_bill type-list type-select-js">
-                <div class="name">All types</div>
-                <div class="hover-block">
-                  <div class="line">list 1</div>
-                  <div class="line">list 2</div>
-                  <div class="line">list 3</div>
+            </form>
+            <div class="lines">     </div>
+            <h3>Select moderation type</h3>
+            <div class="radio__block">
+              <label class="radio">
+                <input type="radio" name="r" value="1" checked><span>New coupons</span>
+              </label>
+              <label class="radio">
+                <input type="radio" name="r" value="2"><span>New shops</span>
+              </label>
+              <label class="radio">
+                <input type="radio" name="r" value="2"><span>New coupons & shops  </span>
+              </label>
+            </div>
+            <button class="invite_user">Invite             </button>
+          </div>
+          <div class="user-tab__body" id="body-stat" style="max-width: none">
+            <div class="stats__tabs"> 
+              <div class="statistic__block">
+                <div class="stat-tab__head">
+                  <h3>General stats</h3>
+                  <div class="tabs">
+                    <div class="tab active" id="tab-today">Today</div>
+                    <div class="tab" id="tab-week">this week</div>
+                    <div class="tab" id="tab-months">This month</div>
+                    <div class="tab" id="tab-halfYear">6 months</div>
+                  </div>
+                </div>
+                <div class="stat-tab__body show" id="body-today">
+                  <div class="general__stats"> 
+                    <div class="user__item">
+                      <h4>Approved</h4>
+                      <p>500</p>
+                    </div>
+                    <div class="user__item">
+                      <h4>Declined</h4>
+                      <p>500</p>
+                    </div>
+                    <div class="user__item">
+                      <h4>Sent to archive</h4>
+                      <p>600</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="stat-tab__body" id="body-week">
+                  <div class="general__stats"> 
+                    <div class="user__item">
+                      <h4>Approved</h4>
+                      <p>50</p>
+                    </div>
+                    <div class="user__item">
+                      <h4>Declined</h4>
+                      <p>50</p>
+                    </div>
+                    <div class="user__item">
+                      <h4>Sent to archive</h4>
+                      <p>50 </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="stat-tab__body" id="body-months">
+                  <div class="general__stats"> 
+                    <div class="user__item">
+                      <h4>Approved</h4>
+                      <p>5000</p>
+                    </div>
+                    <div class="user__item">
+                      <h4>Declined</h4>
+                      <p>5000</p>
+                    </div>
+                    <div class="user__item">
+                      <h4>Sent to archive</h4>
+                      <p>50 00</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="stat-tab__body" id="body-halfYear">
+                  <div class="general__stats"> 
+                    <div class="user__item">
+                      <h4>Approved</h4>
+                      <p>50</p>
+                    </div>
+                    <div class="user__item">
+                      <h4>Declined</h4>
+                      <p>50</p>
+                    </div>
+                    <div class="user__item">
+                      <h4>Sent to archive</h4>
+                      <p>50 </p>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="adm-select-item_bill type-list type-select-js">
-                <div class="name">All prodcutivity</div>
-                <div class="hover-block">
-                  <div class="line">list 1</div>
-                  <div class="line">list 2</div>
-                  <div class="line">list 3</div>
+              <div class="moderated__block">
+                <div class="moder-tab__head">
+                  <h3>Shops moderated</h3>
+                  <div class="tabs">
+                    <div class="tab active" id="tab-mtoday">Today </div>
+                    <div class="tab" id="tab-mweek">this week</div>
+                    <div class="tab" id="tab-mmonths">This month</div>
+                    <div class="tab" id="tab-mhalfYear">6 months</div>
+                  </div>
+                </div>
+                <div class="moder-tab__body show" id="body-mtoday">
+                  <div class="general__stats"> 
+                    <div class="user__item">
+                      <h4>Approved</h4>
+                      <p>500</p>
+                    </div>
+                    <div class="user__item">
+                      <h4>Declined</h4>
+                      <p>500</p>
+                    </div>
+                    <div class="user__item">
+                      <h4>Sent to archive</h4>
+                      <p>600</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="moder-tab__body" id="body-mweek">
+                  <div class="general__stats"> 
+                    <div class="user__item">
+                      <h4>Approved</h4>
+                      <p>50</p>
+                    </div>
+                    <div class="user__item">
+                      <h4>Declined</h4>
+                      <p>50</p>
+                    </div>
+                    <div class="user__item">
+                      <h4>Sent to archive</h4>
+                      <p>50 </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="moder-tab__body" id="body-mmonths">
+                  <div class="general__stats"> 
+                    <div class="user__item">
+                      <h4>Approved</h4>
+                      <p>5000</p>
+                    </div>
+                    <div class="user__item">
+                      <h4>Declined</h4>
+                      <p>5000</p>
+                    </div>
+                    <div class="user__item">
+                      <h4>Sent to archive</h4>
+                      <p>50 00</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="moder-tab__body" id="body-mhalfYear">
+                  <div class="general__stats"> 
+                    <div class="user__item">
+                      <h4>Approved</h4>
+                      <p>50</p>
+                    </div>
+                    <div class="user__item">
+                      <h4>Declined</h4>
+                      <p>50</p>
+                    </div>
+                    <div class="user__item">
+                      <h4>Sent to archive</h4>
+                      <p>50                       </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="right">Clear filters</div>
           </div>
-          <div class="api-sources__table">
-            <table class="api-table">
-              <thead class="api-table__head">
-                <tr>
-                  <th class="sort">Name</th>
-                  <th>Invited</th>
-                  <th>Last activity</th>
-                  <th>Coupons added</th>
-                  <th>Shops added</th>
-                  <th></th>
-                </tr>
-              </thead>
-              <tbody class="api-table__body users_table">
-                <tr>
-                  <td class="coupon">
-                    <div class="name">Josh Barnett</div>
-                    <p class="users_email">call.me.josh@mailservice.com</p>
-                  </td>
-                  <td class="invated">Yesterday, 11:54 GMT</td>
-                  <td class="activity">Today, 10 min ago</td>
-                  <td class="user_coupones">35 total</td>
-                  <td class="user_shop">12 total</td>
-                  <td class="buttons buttons--padding">
-                    <button onclick="location.href='/user_detail.html';">Details</button>
-                    <button style="color: #FF3042; min-width: 69px">block</button>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-      <div class="invite__user--overlay">
-        <div class="invite__user--modal">
-          <div class="invite__user--close"></div>
-          <h2>Invite new user</h2>
-          <p> Invitation rules and warning<br>Sociis natoque penatibus et magnis dis parturient montes, nascetur<br>ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus<br>mollis orci, sed rhoncus pronin sapien nunc accuan eget.</p>
-          <form class="small-form__form">
-            <div class="placeholder">User Email</div>
-            <input type="email">
-          </form>
-          <h3>Select moderation type</h3>
-          <div class="radio__block">
-            <label class="radio">
-              <input type="radio" name="r" value="1" checked><span>New coupons</span>
-            </label>
-            <label class="radio">
-              <input type="radio" name="r" value="2"><span>New shops</span>
-            </label>
-            <label class="radio">
-              <input type="radio" name="r" value="2"><span>New coupons & shops  </span>
-            </label>
-          </div>
-          <button class="invite_user">Invite   </button>
         </div>
       </div>
     </div>
