@@ -173,6 +173,22 @@
             &:hover {
               background: #F7F7F7;
             }
+            &:last-child:hover {
+              border-bottom-left-radius: 12px;
+              border-bottom-right-radius: 12px;
+            }
+          }
+          &:before {
+            content: "";
+            width: 10px;
+            height: 10px;
+            background: #FFFFFF;
+            border: none;
+            transform: rotate(45deg) translateX(-50%);
+            position: absolute;
+            left: 50%;
+            z-index: -1;
+            top: -1px;
           }
         }
 

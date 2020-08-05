@@ -464,7 +464,7 @@
           input {
             width: 117px;
             background: #FFFFFF;
-            border: 1px solid #EBEBEB;
+            border: 1px solid #EBEBEB; 
             box-sizing: border-box;
             border-radius: 8px;
             font-size: 14px;
@@ -505,6 +505,23 @@
         &:hover {
           background: #F7F7F7;
         }
+
+        &:last-child:hover {
+          border-bottom-left-radius: 12px;
+          border-bottom-right-radius: 12px;
+        }
+      }
+      &:before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        background: #FFFFFF;
+        border: none;
+        transform: rotate(45deg) translateX(-50%);
+        position: absolute;
+        left: 50%;
+        z-index: -1;
+        top: -1px;
       }
     }
 
@@ -512,15 +529,15 @@
       margin-right: 0;
     }
 
-    &::after {
-      content: '';
-      display: block;
-      @include base-box(18px);
-      @include base-background(contain);
-      background-image: url(../media/icon/select-arrow.svg);
-      margin-left: 8px;
-      transition: all .3s;
-    }
+    // &::after {
+    //   content: '';
+    //   display: block;
+    //   @include base-box(18px);
+    //   @include base-background(contain);
+    //   background-image: url(../media/icon/select-arrow.svg);
+    //   margin-left: 8px;
+    //   transition: all .3s;
+    // }
 
     .name {
       font-weight: normal;
@@ -528,16 +545,43 @@
       line-height: 22px;
       font-feature-settings: 'pnum' on, 'lnum' on;
       color: #717171;
+      position: relative;
+      display: flex;
+      align-items: center;
+      img {
+        display: block;
+        margin-left: 4px;
+        min-width: 24px;
+        width: 24px;
+        height: 24px;
+        -o-object-position: center;
+        object-position: center;
+        -o-object-fit: contain;
+        object-fit: contain;
+        -webkit-transition: .3s;
+        transition: .3s;
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+
+        &.show {
+          transform: rotate(0deg);
+        }
+      }
     }
 
     &.show {
       background: #F7F7F7;
+
+    .name img {
+        transform: rotate(0deg);
+      }
 
       .hover-block {
         opacity: 1;
         visibility: visible;
       }
     }
+   
   }
 }
 

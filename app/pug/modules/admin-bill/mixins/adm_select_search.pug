@@ -1,0 +1,12 @@
+mixin adm-select-select(name)
+  .adm-select-item_bill.type-list.type-select-js.select__big.select__search
+    .name= name
+      img(src="./media/icon/small-arrow.svg", alt="")
+    .hover-block
+      .input__section
+        input(type="text" placeholder="Search tags")
+        img(src="../media/icon/search.svg", alt="icon")
+      .line #cats
+      .line #Dog
+      .line #car
+      button.select-confirm Confirm

@@ -3,7 +3,11 @@ extends ../layout/admin
 block variables
   - const pageTitle = 'Admin panel'
 
+
+include ../modules/admin-bill/mixins/adm_select
 block content
+
+
 
   .admin__panel.dashboard
     include ../modules/admin/admin_bar

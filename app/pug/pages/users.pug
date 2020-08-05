@@ -1,6 +1,7 @@
 extends ../layout/admin
 include ../modules/admin-bill/mixins/adm_select
 include ../modules/admin/user_item
+include ../modules/admin-bill/mixins/adm_select_big
 
 block variables
   - const pageTitle = 'USERS'
@@ -21,7 +22,7 @@ block content
           .left
             +adm-select-item_bill('All statuses')
             +adm-select-item_bill('All types')
-            +adm-select-item_bill('All prodcutivity')
+            +adm-select-big('All prodcutivity')
           .right Clear filters
         .api-sources__table
           table.api-table

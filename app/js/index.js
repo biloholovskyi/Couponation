@@ -96,6 +96,10 @@ $(document).ready((e) => {
     document.querySelector('.dashboard .admin__content .general__block .general__statistic p').addEventListener('click', adminDrop.toggle);
   }
 
+  if(document.querySelector('.adm-select-wrapp_bill .adm-select-item_bill')) {
+    document.querySelector('.adm-select-wrapp_bill .adm-select-item_bill').addEventListener('click', adminDrop.toggle);
+  }
+
   document.querySelectorAll('.type-select-js').forEach(select => {
     select.addEventListener('click', (e) => adminDrop.filterToggle(e))
   })
@@ -324,21 +328,25 @@ $(function () {
     $(this).toggleClass('active');
   });
 
+  $('.select__big .hover-block .input__section input').on('click', function(){
+    $(this).toggleClass('input').siblings().removeClass('input');
+  });
+
 });
 
 
 // $(document).mouseup(function(e){
-//   let div = $('.header__drop--btn, .header__modal--wrap');
+//   let div = $('.select__big .hover-block .input__section input');
 //   if(!div.is(e.target)
 //   && div.has(e.target).length === 0) {
-//     div.removeClass('active'); 
-//     $('.header__modal--wrap').removeClass('active');
+//     div.removeClass('input');  
+//     $('.select__big .hover-block .input__section input').removeClass('input');
 //   }
 // });
 
 
 $(document).on('click', function(e){
-  let modal = $('.admin__modal, .shop__modal, .getCode__modal, .change__emoji--modal, .invite__user--modal, .shops__modal');
+  let modal = $('.admin__modal, .shop__modal, .getCode__modal, .change__emoji--modal, .invite__user--modal, .shops__modal, .input__section input');
   let Btn = $('.addNewCoupon, .change_shop, .getCode, #change-emoji,.new_user, #addSHopBtn'); 
 
 
@@ -350,6 +358,7 @@ $(document).on('click', function(e){
       $('.change__emoji--overlay').removeClass('active');
       $('.invite__user--overlay').css({'display': 'none'});
       $('.addShops__modal--overlay').removeClass('active');
+      $('.input__section input').removeClass('input');
       $('body').css({
         'overflow': 'visible',
         'position': 'relative',

@@ -1,5 +1,6 @@
 extends ../layout/admin
 include ../modules/admin-bill/mixins/adm_select
+include ../modules/admin-bill/mixins/adm_select_big
 
 block variables
   - const pageTitle = 'Admin panel'
@@ -22,8 +23,8 @@ block content
             +adm-select-item_bill('All statuses')
             +adm-select-item_bill('All categories')
             +adm-select-item_bill('All moderators')
-            +adm-select-item_bill('Any coupon count')
-            +adm-select-item_bill('Visits, 30 days')
+            +adm-select-big('Any coupon count')
+            +adm-select-big('Visits, 30 days')
             +adm-select-item_bill('Any time range', true)
           .right Clear filters
         .adm_check

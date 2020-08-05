@@ -100,6 +100,9 @@
   .line {
     display: none;
   }
+  .shop-acc ul .dropdown [data-toggle=dropdown] {
+    text-align: left;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -192,6 +195,27 @@
     .aside-category
      {
       width: 100%;
+    }
+    .aside-category-btn { 
+      display: flex;
+      max-width: none;
+      .categories-btn {
+        display: flex;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        color: #aaa;
+        border: 1px solid #ebebeb;
+        -webkit-box-pack: center;
+        justify-content: center;
+        padding: 10px;
+        min-width: 36px;
+        height: 36px;
+        border-radius: 1000px;
+        -webkit-box-align: center;
+        align-items: center;
+    }
     }
 
   }
@@ -306,5 +330,14 @@
   }
   .line {
     display: block;
+  }
+  .shop-page {
+    .shop-caption {
+      .shop-title {
+        .category-btn--block {
+          display: none!important;
+        }
+      }
+    }
   }
 }

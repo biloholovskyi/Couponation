@@ -1,6 +1,8 @@
 extends ../layout/admin
 include ../modules/admin-bill/mixins/adm_select
 include ../modules/admin-bill/mixins/api_item
+include ../modules/admin-bill/mixins/adm_select_big
+include ../modules/admin-bill/mixins/adm_select_search
 
 block variables
   - const pageTitle = 'API'
@@ -20,11 +22,11 @@ block content
         .adm-select-wrapp_bill
           .left
             +adm-select-item_bill('All statuses')
-            +adm-select-item_bill('Total posts')
-            +adm-select-item_bill('Posts approved')
-            +adm-select-item_bill('Tags found at')
+            +adm-select-big('Total posts')
+            +adm-select-big('Posts approved')
+            +adm-select-select('Tags found at')
             +adm-select-item_bill('Crawl list')
-            +adm-select-item_bill('Last update', true)
+            +adm-select-big('Last update')
           .right Clear filters
         .api-sources__table
           table.api-table
