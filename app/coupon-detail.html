@@ -35,6 +35,47 @@
           <button class="publish">unpublish</button>
         </div>
         <div class="info">
+          <div class="coupon__form single__coupon-form">
+            <div class="coupon__modal">
+              <h3>Edit coupon data</h3>
+              <form class="small-form__form admin-form"> 
+                <div class="double">
+                  <div class="input-item input">
+                    <div class="placeholder">Coupon</div>
+                    <input type="email" value="SAVE6DOLLARS">
+                  </div>
+                  <div class="input-item input">
+                    <div class="placeholder">Expiration date </div>
+                    <input type="email" value="07.08.2022">
+                  </div>
+                </div>
+                <div class="double full-inp">
+                  <div class="input-item input">
+                    <div class="placeholder">Coupon’s short description</div>
+                    <input maxlength="55" type="email" value="$6,40 off" id="text-counter">
+                  </div>
+                </div>
+                <div class="count">
+                  <div class="count-item" id="counter">0</div>
+                  <div>/</div>
+                  <div class="count-item">55    </div>
+                </div>
+                <div class="double full-inp textarea"> 
+                  <div class="input-item input">
+                    <div class="placeholder">Coupon’s full description</div>
+                    <input id="text-counters" maxlength="255" type="text" value="Enjoy $6,40 off $25,99 purchase with promocode">
+                  </div>
+                </div>
+                <div class="count">
+                  <div class="count-item" id="counters">0</div>
+                  <div>/</div>
+                  <div class="count-item">255      </div>
+                </div>
+                <input class="admin_submit" type="button" value="Save changes" id="saveChange">
+              </form>
+            </div>
+          </div>
+          <div class="lines" style="margin-top: 36px">     </div>
           <div class="stats__blocks">
             <div class="stats__block">
               <div class="stats__title">General stats</div>
@@ -83,70 +124,10 @@
                     <div class="titles">
                       <h2 class="coupon--title">Kohl’s</h2><a href="#">http://merchantshop.com/deals?deal=24</a>
                     </div>
+                    <button class="change_shop" type="button">Change shop  </button>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="coupon__form single__coupon-form">
-            <div class="coupon__modal">
-              <h3>Edit coupon data</h3>
-              <form class="small-form__form admin-form"> 
-                <div class="double">
-                  <div class="input-item">
-                    <div class="placeholder">Coupon</div>
-                    <input type="email">
-                  </div>
-                  <div class="input-item">
-                    <div class="placeholder">Expiration date </div>
-                    <input type="email">
-                  </div>
-                </div>
-                <div class="coupon_admin shop_adm shop__form">
-                  <div class="coupon__content">
-                    <div class="shop__title"><img src="./media/icon/logos/1.png" alt="">
-                      <div class="title__item">
-                        <h3>Shop</h3>
-                        <h4>Kohl’s</h4>
-                      </div>
-                    </div>
-                    <button class="change_shop" type="button">Change shop     </button>
-                  </div>
-                </div>
-                <div class="double">
-                  <div class="input-item">
-                    <div class="placeholder">Instagram account</div>
-                    <input type="email">
-                  </div>
-                  <div class="input-item">
-                    <div class="placeholder">Website URL</div>
-                    <input type="email">
-                  </div>
-                </div>
-                <div class="double full-inp">
-                  <div class="input-item">
-                    <div class="placeholder">Coupon’s short description</div>
-                    <input maxlength="55" type="email" id="text-counter">
-                  </div>
-                </div>
-                <div class="count">
-                  <div class="count-item" id="counter">0</div>
-                  <div>/</div>
-                  <div class="count-item">55    </div>
-                </div>
-                <div class="double full-inp textarea"> 
-                  <div class="input-item">
-                    <div class="placeholder">Coupon’s full description</div>
-                    <textarea id="text-count" maxlength="255"></textarea>
-                  </div>
-                </div>
-                <div class="count">
-                  <div class="count-item" id="count">0</div>
-                  <div>/</div>
-                  <div class="count-item">255      </div>
-                </div>
-                <input class="admin_submit" type="button" value="Save changes" id="saveChange">
-              </form>
             </div>
           </div>
         </div>

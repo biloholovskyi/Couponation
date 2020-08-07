@@ -143,8 +143,8 @@
     .adm__links {
       display: flex;
       flex-direction: column;
-      margin-bottom: 36px;
-      border-bottom: 1px solid #EBEBEB;
+      // margin-bottom: 36px;
+      // border-bottom: 1px solid #EBEBEB;
 
       .adm__link {
         margin-bottom: 36px;
@@ -289,6 +289,7 @@
             color: #FFFFFF;
             margin-top: 8px;
             border: none;
+            cursor: pointer;
           }
 
           .count {
@@ -364,6 +365,7 @@
       border-radius: 8px;
       position: relative;
       z-index: 10;
+      cursor: pointer;  
     }
   }
 }
@@ -395,7 +397,7 @@
   .coupon__content {
     .coupon__information {
       display: flex;
-
+      align-items: center;
       img {
         width: 64px;
         height: 64px;
@@ -422,6 +424,22 @@
           line-height: 22px;
           color: #24B4FF;
         }
+      }
+      button {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 24px;
+        color: #222;
+        background-color: transparent;
+        border: 1px solid #ebebeb;
+        padding: 6px 12px;
+        border-radius: 8px;
+        position: relative;
+        z-index: 10;
+        max-height: 38px;
+        margin-left: 40px;
+        cursor: pointer;
       }
     }
   }

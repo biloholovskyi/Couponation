@@ -13,6 +13,35 @@ block content
           h1 SAVE6DOLLARS
           button.publish unpublish
       .info
+        .coupon__form.single__coupon-form
+          .coupon__modal
+            h3 Edit coupon data
+            form.small-form__form.admin-form 
+              .double
+                .input-item.input
+                  .placeholder Coupon
+                  input(type='email' value="SAVE6DOLLARS")
+                .input-item.input
+                  .placeholder Expiration date 
+                  input(type='email' value="07.08.2022") 
+              .double.full-inp
+                .input-item.input
+                  .placeholder Coupon’s short description
+                  input(maxlength="55" type='email' value="$6,40 off")#text-counter
+              .count
+                .count-item#counter 0
+                div /
+                .count-item 55    
+              .double.full-inp.textarea 
+                .input-item.input
+                  .placeholder Coupon’s full description
+                  input#text-counters(maxlength="255" type="text" value="Enjoy $6,40 off $25,99 purchase with promocode") 
+              .count
+                .count-item#counters 0
+                div /
+                .count-item 255      
+              input(type="button" value="Save changes").admin_submit#saveChange  
+        .lines(style="margin-top: 36px")      
         .stats__blocks
           .stats__block
             .stats__title General stats
@@ -46,50 +75,7 @@ block content
           .adm__link
             h3 Shop
             include ../modules/admin/coupon-shop-single   
-        .coupon__form.single__coupon-form
-          .coupon__modal
-            h3 Edit coupon data
-            form.small-form__form.admin-form 
-              .double
-                .input-item
-                  .placeholder Coupon
-                  input(type='email')
-                .input-item
-                  .placeholder Expiration date 
-                  input(type='email')
-              .coupon_admin.shop_adm.shop__form
-                .coupon__content
-                  .shop__title
-                    img(src="./media/icon/logos/1.png", alt="") 
-                    .title__item
-                      h3 Shop
-                      h4 Kohl’s
-                  button(type="button").change_shop Change shop     
-                       
-              .double
-                .input-item
-                  .placeholder Instagram account
-                  input(type='email')
-                .input-item
-                  .placeholder Website URL
-                  input(type='email')
-              .double.full-inp
-                .input-item
-                  .placeholder Coupon’s short description
-                  input(maxlength="55" type='email')#text-counter
-              .count
-                .count-item#counter 0
-                div /
-                .count-item 55    
-              .double.full-inp.textarea 
-                .input-item
-                  .placeholder Coupon’s full description
-                  textarea#text-count(maxlength="255")
-              .count
-                .count-item#count 0
-                div /
-                .count-item 255      
-              input(type="button" value="Save changes").admin_submit#saveChange  
+        
       
         
 

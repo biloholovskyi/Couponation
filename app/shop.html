@@ -53,11 +53,21 @@
               <div class="shop-caption"> 
                 <div class="shop-title"> 
                   <div class="category-btn--block">
-                    <button class="category-btn">beauty<img src="../media/icon/category/flowers.svg" alt="image"/></button>
-                    <button class="category-btn">hair<img src="../media/icon/category/hair.svg" alt="image"/></button>
-                    <button class="category-btn">health<img src="../media/icon/category/heart.svg" alt="image"/></button>
-                    <button class="category-btn">skin care<img src="../media/icon/category/skin.svg" alt="image"/></button>
-                    <button class="category-btn">cosmetics<img src="../media/icon/category/cosmetic.svg" alt="image"/></button>
+                    <button class="category-btn">beauty<img src="../media/icon/category/flowers.svg" alt="image"/>
+                      <div class="hover__btn"></div>
+                    </button>
+                    <button class="category-btn">hair<img src="../media/icon/category/hair.svg" alt="image"/>
+                      <div class="hover__btn"></div>
+                    </button>
+                    <button class="category-btn">health<img src="../media/icon/category/heart.svg" alt="image"/>
+                      <div class="hover__btn"></div>
+                    </button>
+                    <button class="category-btn">skin care<img src="../media/icon/category/skin.svg" alt="image"/>
+                      <div class="hover__btn"></div>
+                    </button>
+                    <button class="category-btn">cosmetics<img src="../media/icon/category/cosmetic.svg" alt="image"/>
+                      <div class="hover__btn"></div>
+                    </button>
                     <div class="categories-btn">+3   </div>
                   </div>
                 </div>
@@ -237,11 +247,21 @@
                 <p>Harry & David is known for their delicious, extra sweet Royal Riviera pears. The company creates fruit and gift baskets featuring these handpicked fresh pears or other fruits, such as peaches, depending on the season. Inside the gift baskets, you’ll also enjoy gourmet products such as chocolates, cheeses, crackers, wine, and nuts.</p>
               </div>
               <div class="aside-category-btn">
-                <button class="category-btn">beauty<img src="../media/icon/category/flowers.svg" alt="image"/></button>
-                <button class="category-btn">hair<img src="../media/icon/category/hair.svg" alt="image"/></button>
-                <button class="category-btn">health<img src="../media/icon/category/heart.svg" alt="image"/></button>
-                <button class="category-btn">skin care<img src="../media/icon/category/skin.svg" alt="image"/></button>
-                <button class="category-btn">cosmetics<img src="../media/icon/category/cosmetic.svg" alt="image"/></button>
+                <button class="category-btn">beauty<img src="../media/icon/category/flowers.svg" alt="image"/>
+                  <div class="hover__btn"></div>
+                </button>
+                <button class="category-btn">hair<img src="../media/icon/category/hair.svg" alt="image"/>
+                  <div class="hover__btn"></div>
+                </button>
+                <button class="category-btn">health<img src="../media/icon/category/heart.svg" alt="image"/>
+                  <div class="hover__btn"></div>
+                </button>
+                <button class="category-btn">skin care<img src="../media/icon/category/skin.svg" alt="image"/>
+                  <div class="hover__btn"></div>
+                </button>
+                <button class="category-btn">cosmetics<img src="../media/icon/category/cosmetic.svg" alt="image"/>
+                  <div class="hover__btn"></div>
+                </button>
                 <div class="categories-btn">+3</div>
               </div>
               <div class="aside">
@@ -330,11 +350,21 @@
               <p>Harry & David is known for their delicious, extra sweet Royal Riviera pears. The company creates fruit and gift baskets featuring these handpicked fresh pears or other fruits, such as peaches, depending on the season. Inside the gift baskets, you’ll also enjoy gourmet products such as chocolates, cheeses, crackers, wine, and nuts.</p>
             </div>
             <div class="aside-category-btn">
-              <button class="category-btn">beauty<img src="../media/icon/category/flowers.svg" alt="image"/></button>
-              <button class="category-btn">hair<img src="../media/icon/category/hair.svg" alt="image"/></button>
-              <button class="category-btn">health<img src="../media/icon/category/heart.svg" alt="image"/></button>
-              <button class="category-btn">skin care<img src="../media/icon/category/skin.svg" alt="image"/></button>
-              <button class="category-btn">cosmetics<img src="../media/icon/category/cosmetic.svg" alt="image"/></button>
+              <button class="category-btn">beauty<img src="../media/icon/category/flowers.svg" alt="image"/>
+                <div class="hover__btn"></div>
+              </button>
+              <button class="category-btn">hair<img src="../media/icon/category/hair.svg" alt="image"/>
+                <div class="hover__btn"></div>
+              </button>
+              <button class="category-btn">health<img src="../media/icon/category/heart.svg" alt="image"/>
+                <div class="hover__btn"></div>
+              </button>
+              <button class="category-btn">skin care<img src="../media/icon/category/skin.svg" alt="image"/>
+                <div class="hover__btn"></div>
+              </button>
+              <button class="category-btn">cosmetics<img src="../media/icon/category/cosmetic.svg" alt="image"/>
+                <div class="hover__btn"></div>
+              </button>
             </div>
             <div class="aside desktop-aside">
               <h3>Best Buy in numbers</h3>
@@ -777,6 +807,42 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="buildjs/owl.carousel.js"></script>
-    <script src="buildjs/index.js">     </script>
+    <script src="buildjs/index.js"></script>
+    <script>
+       $(document).ready(function(){
+  let obj = $('#sticky');
+  let offset = obj.offset();
+  let topOffset = offset.top;
+  let marginTop = obj.css("marginTop");
+
+  $(window).scroll(function() {
+  let scrollTop = $(window).scrollTop();
+  
+    if (scrollTop >= topOffset){
+      obj.addClass('shadows');
+      obj.css({
+        marginTop: 0,
+        position: 'fixed', 
+        top: 63,
+     
+      });
+      $('.header').removeClass('active');
+    }
+  
+    if (scrollTop < topOffset){
+      obj.removeClass('shadows');
+      obj.css({
+        marginTop: 0,
+        position: 'relative',
+        top: 0,
+      
+        
+      });
+     $('.mobile__nav').find('.firstAnhors').addClass('active').siblings().removeClass('active');
+    }
+  });
+});
+
+    </script>
   </body>
 </html>

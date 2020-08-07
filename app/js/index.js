@@ -1,5 +1,5 @@
 import 'normalize.css';
-import { smallFormInput} from "./smallForm";
+import { smallFormInput, searchInput} from "./smallForm";
 import './accordion';
 import { switchTab, switchTabGrf, switchTabUser,switchTabStat, switchTabModer } from "./tabs";
 import './stickyHeader';
@@ -172,6 +172,7 @@ $(document).ready((e) => {
  
 
   $('.small-form__form input,.small-form__form textarea').on('input', (e) => smallFormInput(e));
+  $('.shop_detail .admin__content .shop__info--content .admin__search input').on('input', (e) => searchInput(e));
   
 
 
@@ -332,6 +333,10 @@ $(function () {
     $(this).toggleClass('input').siblings().removeClass('input');
   });
 
+  $('.category .category-btn .hover__btn').on('click', function(){
+      $(this).parents('.category-btn').hide();
+  });
+
 });
 
 
@@ -370,9 +375,13 @@ $(document).on('click', function(e){
 
 
 const btn = document.querySelector('.publish');
-btn.addEventListener('click', function(){
-  btn.innerHTML = (btn.innerHTML === 'unpublish') ? btn.innerHTML = 'publish' : btn.innerHTML = 'unpublish';  
-});
+
+if (btn !== null) {
+  btn.addEventListener('click', function(){
+    btn.innerHTML = (btn.innerHTML === 'unpublish') ? btn.innerHTML = 'publish' : btn.innerHTML = 'unpublish';  
+  });
+}
+
 
 
 

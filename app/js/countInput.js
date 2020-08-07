@@ -13,4 +13,12 @@ $(function() {
 });
 
 
+$(function() {
+  $("input[id='text-counters']").keyup(function count(){
+    let number = $("input[id='text-counters']").val().length;
+    $("#counters").html(+number); 
+    }); 
+});
+ 
+
 

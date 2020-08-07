@@ -48,6 +48,22 @@ block content
           .admin__search
             input(type="text" placeholder="Search by shop or coupon") 
             img(src="../media/icon/search.svg", alt="icon")
+            .search__modal
+              .search__cat--item
+                .image__cat 🎮
+                .name__cat Gaming
+              .search__cat--item
+                .image__cat ⚙️
+                .name__cat Gear
+              .search__cat--item
+                .image__cat 🎲
+                .name__cat Games
+              .search__cat--item
+                .image__cat 🎲
+                .name__cat Games 
+              .search__cat--item
+                .image__cat 🎲
+                .name__cat Games         
           .category
             +CategoryBtn('../media/icon/category/flowers.svg','beauty')
             +CategoryBtn('../media/icon/category/hair.svg','hair')
@@ -167,6 +183,6 @@ block content
                     p 5000
                   .user__item
                     h4 Sent to archive
-                    p 50 00                     
+                    p 50 00                               
 
   include ../modules/admin/shop_succefully       
