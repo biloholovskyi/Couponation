@@ -868,41 +868,6 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="buildjs/owl.carousel.js"></script>
     <script src="buildjs/index.js"></script>
-    <script>
-       $(document).ready(function(){
-  let obj = $('#sticky');
-  let offset = obj.offset();
-  let topOffset = offset.top;
-  let marginTop = obj.css("marginTop");
-
-  $(window).scroll(function() {
-  let scrollTop = $(window).scrollTop();
-  
-    if (scrollTop >= topOffset){
-      obj.addClass('shadows');
-      obj.css({
-        marginTop: 0,
-        position: 'fixed', 
-        top: 63,
-     
-      });
-      $('.header').removeClass('active');
-    }
-  
-    if (scrollTop < topOffset){
-      obj.removeClass('shadows');
-      obj.css({
-        marginTop: 0,
-        position: 'relative',
-        top: 0,
-      
-        
-      });
-     $('.mobile__nav').find('.firstAnhors').addClass('active').siblings().removeClass('active');
-    }
-  });
-});
-
-    </script>
+    <script> </script>
   </body>
 </html>
