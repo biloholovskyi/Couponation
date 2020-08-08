@@ -40,7 +40,7 @@ block content
                   .categories-btn +3   
       .row
         .col-12
-          .mobile__nav#sticky
+          .mobile__nav
             a(href="#Coupones").firstAnhors.shopLinks.anhors.active Coupons
             a(href="#About").shopLinks.anhors About
             a(href="#FAQ").shopLinks.anhors FAQ                 
@@ -62,34 +62,49 @@ block content
             .aside
               h3 About Best Buy
               p Harry & David is known for their delicious, extra sweet Royal Riviera pears. The company creates fruit and gift baskets featuring these handpicked fresh pears or other fruits, such as peaches, depending on the season. Inside the gift baskets, you’ll also enjoy gourmet products such as chocolates, cheeses, crackers, wine, and nuts.
-            .aside-category-btn
-              +CategoryBtn('../media/icon/category/flowers.svg','beauty')
-              +CategoryBtn('../media/icon/category/hair.svg','hair')
-              +CategoryBtn('../media/icon/category/heart.svg','health')
-              +CategoryBtn('../media/icon/category/skin.svg','skin care')
-              +CategoryBtn('../media/icon/category/cosmetic.svg','cosmetics') 
-              .categories-btn +3
-            .aside
-              h3 Best Buy in numbers
-              .aside-block
-                .aside-item
-                  p Coupons available
-                  .number 47
-                .aside-item
-                  p New deals
-                  .number 4
-                .aside-item
-                  p Coupons available
-                  .number 30% of
-                .aside-item
-                  p Coupons available
-                  .number $10,99
-                .aside-item
-                  p Last updated
-                  .number May 14, 2020
-                .aside-item
-                  p Update period
-                  .number 7 days
+              .aside-category-btn
+                +CategoryBtn('../media/icon/category/flowers.svg','beauty')
+                +CategoryBtn('../media/icon/category/hair.svg','hair')
+                +CategoryBtn('../media/icon/category/heart.svg','health')
+                +CategoryBtn('../media/icon/category/skin.svg','skin care')
+                +CategoryBtn('../media/icon/category/cosmetic.svg','cosmetics') 
+                .categories-btn +3
+            table.aside
+              thead
+                tr
+                  td
+                    h3 Best Buy in numbers
+              tbody.aside-block
+                tr.aside-item
+                  td 
+                    p Coupons available
+                  td 
+                    .number 47
+                tr.aside-item
+                  td 
+                    p New deals
+                  td 
+                    .number 4
+                tr.aside-item
+                  td 
+                    p Coupons available
+                  td 
+                    .number $10,99
+                tr.aside-item
+                  td 
+                    p Last updated
+                  td 
+                    .number May 14, 2020
+                tr.aside-item
+                  td 
+                    p Update period
+                  td 
+                    .number 7 days
+                tr.aside-item
+                  td 
+                    p Update period
+                  td 
+                    .number 7 days      
   
           h2#FAQ FAQ
           include ../modules/shop/shop-acc
