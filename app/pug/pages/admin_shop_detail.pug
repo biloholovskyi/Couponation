@@ -78,10 +78,32 @@ block content
           .radio__block
             label.radio
               input(type="radio" name="r" value="1" checked)
-              span Affiliate
+              span.aff_sec Affiliate
             label.radio
               input(type="radio" name="r" value="2")
-              span Custom
+              span.custopm_sec Custom
+          .programs__section
+            .program__item.program__item--one
+              .program__caption
+                h4 Program name
+                p Affiliate#1
+              .program__link
+                h4 Affiliate link
+                a(href="mailto:#")  linkTest@mail 
+            .program__item.program__item--two
+              .program__caption.program__list
+                h4 Program
+                p Private
+                img(src="./media/icon/small-arrow.svg", alt="icon")
+                .private__modal
+                  .private__item private 1
+                  .private__item private 2
+                  .private__item private 3
+                  .private__item private 4
+                  .private__item private 5
+              .program__link
+                h4 Private link
+                a(href="mailto:#")  Testmail@mail    
           button#saveChange.saveChange Save Changes            
 
 
