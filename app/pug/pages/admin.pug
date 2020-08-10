@@ -1,6 +1,7 @@
 extends ../layout/admin
 include ../modules/admin-bill/mixins/adm_select
 include ../modules/admin-bill/mixins/adm_select_big
+  include ../modules/admin-bill/mixins/api_item
 
 block variables
   - const pageTitle = 'Admin panel'
@@ -25,31 +26,42 @@ block content
             +adm-select-big('Clicks, 30 days')
             +adm-select-big('Success rate')
             +adm-select-big('Date added', true)
+            +adm-select-big('Expire date', true)
           .right Clear filters
-        
-      .sort__block
-        p Name
-        p Shop
-        p Recieved
-        p Expire date
-          img(src="../media/icon/adm_arrow.svg", alt="")
-        p(style="opacity: 0")
-      .coupon_section
-        include ../modules/admin/coupon_admin
-        include ../modules/admin/coupon_admin    
-        include ../modules/admin/coupon_admin    
-        include ../modules/admin/coupon_admin    
-        include ../modules/admin/coupon_admin
-        include ../modules/admin/coupon_admin    
-        include ../modules/admin/coupon_admin    
-        include ../modules/admin/coupon_admin    
-        include ../modules/admin/coupon_admin
+
+
+      .api-sources__table.api-sources__table--padding
+        table.api-table
+          thead.api-table__head
+            tr
+              th.sort Name
+              th Short desc
+              th Success rate
+              th Clicks
+              th Moderator
+              th Source
+              th Shop
+              th Esquire
+              th Recieved
+              th Expire date
+              th
+          tbody.api-table__body
+            +api_item_coupons('SAVE6DOLLARS', 'Short desc', '11', '232', 'John Dou', 'source path', 'Shop name', 'esquire', 'Jul 1, Aug 2', 'Jul 1, Aug 2', true)
+            +api_item_coupons('SAVE6DOLLARS', 'Short desc', '11', '232', 'John Dou', 'source path', 'Shop name','esquire', 'Jul 1, Aug 2', 'Jul 1, Aug 2', true)
+            +api_item_coupons('SAVE6DOLLARS', 'Short desc', '11', '232', 'John Dou', 'source path', 'Shop name','esquire', 'Jul 1, Aug 2', 'Jul 1, Aug 2', true)
+            +api_item_coupons('SAVE6DOLLARS', 'Short desc', '11', '232', 'John Dou', 'source path', 'Shop name','esquire', 'Jul 1, Aug 2', 'Jul 1, Aug 2', true)
+            +api_item_coupons('SAVE6DOLLARS', 'Short desc', '11', '232', 'John Dou', 'source path', 'Shop name','esquire', 'Jul 1, Aug 2', 'Jul 1, Aug 2', true)
+            +api_item_coupons('SAVE6DOLLARS', 'Short desc', '11', '232', 'John Dou', 'source path', 'Shop name','esquire', 'Jul 1, Aug 2', 'Jul 1, Aug 2', true)
+            +api_item_coupons('SAVE6DOLLARS', 'Short desc', '11', '232', 'John Dou', 'source path', 'Shop name', 'esquire', 'Jul 1, Aug 2', 'Jul 1, Aug 2', true)
+            +api_item_coupons('SAVE6DOLLARS', 'Short desc', '11', '232', 'John Dou', 'source path', 'Shop name', 'esquire', 'Jul 1, Aug 2', 'Jul 1, Aug 2', true)
+            +api_item_coupons('SAVE6DOLLARS', 'Short desc', '11', '232', 'John Dou', 'source path', 'Shop name', 'esquire', 'Jul 1, Aug 2', 'Jul 1, Aug 2', true)
+            +api_item_coupons('SAVE6DOLLARS', 'Short desc', '11', '232', 'John Dou', 'source path', 'Shop name', 'esquire', 'Jul 1, Aug 2', 'Jul 1, Aug 2', true)
+
         .number-coupon
           .num-item.active 1
           .num-item 2
           .num-item 3
           .num-dots
           .num-item 8
-
   include ../modules/admin/admin_modal
   include ../modules/admin/shop_succefully

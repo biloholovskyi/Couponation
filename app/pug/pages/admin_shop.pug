@@ -1,6 +1,7 @@
 extends ../layout/admin
 include ../modules/admin-bill/mixins/adm_select
 include ../modules/admin-bill/mixins/adm_select_big
+include ../modules/admin-bill/mixins/api_item
 
 block variables
   - const pageTitle = 'Admin panel'
@@ -34,24 +35,37 @@ block content
               span 1+ affiliate link  
             label.checklink
               input(type="checkbox" name="r" value="1").option-input
-              span No affiliate link 
+              span No affiliate link
 
-      .sort__block
-        p Name
-        p Recieved
-          img(src="../media/icon/adm_arrow.svg", alt="")
-        p Coupons
-        p Category
-        p Network  
-        //- p(style="opacity: 0")
-      .shop__content
-        include ../modules/admin/coupon_shop
-        include ../modules/admin/coupon_shop               
-        include ../modules/admin/coupon_shop
-        include ../modules/admin/coupon_shop
-        include ../modules/admin/coupon_shop               
-        include ../modules/admin/coupon_shop
-        include ../modules/admin/coupon_shop
+
+      .api-sources__table.api-sources__table--padding
+        table.api-table
+          thead.api-table__head
+            tr
+              th.sort Name
+              th Visits
+              th Clicks
+              th Moderator
+              th Source
+              th Recieved
+              th Coupons
+              th Category
+              th Affiliate
+              th
+          tbody.api-table__body
+            +api_item_shop('Kohl’s', '12', '223', 'John Dou', 'Source', 'Jul 1, Aug 2', '32', 'Healthcare - Beauty', 'Happy Coupons Network')
+            +api_item_shop('Kohl’s', '12', '223', 'John Dou', 'Source', 'Jul 1, Aug 2', '32', 'Healthcare - Beauty', 'Happy Coupons Network')
+            +api_item_shop('Kohl’s', '12', '223', 'John Dou', 'Source', 'Jul 1, Aug 2', '32', 'Healthcare - Beauty', 'Happy Coupons Network')
+            +api_item_shop('Kohl’s', '12', '223', 'John Dou', 'Source', 'Jul 1, Aug 2', '32', 'Healthcare - Beauty', 'Happy Coupons Network')
+            +api_item_shop('Kohl’s', '12', '223', 'John Dou', 'Source', 'Jul 1, Aug 2', '32', 'Healthcare - Beauty', 'Happy Coupons Network')
+            +api_item_shop('Kohl’s', '12', '223', 'John Dou', 'Source', 'Jul 1, Aug 2', '32', 'Healthcare - Beauty', 'Happy Coupons Network')
+            +api_item_shop('Kohl’s', '12', '223', 'John Dou', 'Source', 'Jul 1, Aug 2', '32', 'Healthcare - Beauty', 'Happy Coupons Network')
+            +api_item_shop('Kohl’s', '12', '223', 'John Dou', 'Source', 'Jul 1, Aug 2', '32', 'Healthcare - Beauty', 'Happy Coupons Network')
+            +api_item_shop('Kohl’s', '12', '223', 'John Dou', 'Source', 'Jul 1, Aug 2', '32', 'Healthcare - Beauty', 'Happy Coupons Network')
+            +api_item_shop('Kohl’s', '12', '223', 'John Dou', 'Source', 'Jul 1, Aug 2', '32', 'Healthcare - Beauty', 'Happy Coupons Network')
+            +api_item_shop('Kohl’s', '12', '223', 'John Dou', 'Source', 'Jul 1, Aug 2', '32', 'Healthcare - Beauty', 'Happy Coupons Network')
+
+
         .number-coupon
           .num-item.active 1
           .num-item 2

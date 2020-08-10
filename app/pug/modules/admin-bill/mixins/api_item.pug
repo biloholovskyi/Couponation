@@ -1,32 +1,18 @@
-mixin api_item(name, status, total, approved, update)
+mixin api_item(name, description, total, pm, pc, clicks)
   tr
-    td.name= name
-    if status
-      td.status.status--active
-        .tooltip Active
-    else
-      td.status.status--blocked
-        .tooltip Blocked
-          .tooltip-hover
-            .tooltip-row
-              .left Blocked by
-              .right
-                a(href='#' target='_blank') Username
-            .tooltip-row
-              .left Block date
-              .right 12, 2020 – 12:00 EST
-            .tooltip-row
-              .left Reason
-              .right Way too much bad coupons
+    td.name
+      .name-wrapper-nav
+        .nav
+          .top
+          .bottom
+        span= name
+    td.desc= description
     td.total= total
-    td.approved= approved
-    td.updateMay= update
+    td.approved= pm
+    td.updateMay= pc
+    td.updateMay= clicks
     td.buttons
       button(onclick="location.href='/api-network.html';") Details
-      if status
-        button.block Block
-      else
-        button.unblocked Unblock
 
 mixin api_item_inst(name, status, total, approved, tags, crawl, update)
   tr
@@ -84,3 +70,36 @@ mixin api_item_post(post, recived, declined, moderator)
     td.moderator= moderator
     td.buttons
       button Details
+
+mixin api_item_coupons(name, desc, rate, clicks, moderator, source, shop, esquire, recived, date, status)
+  tr
+    td.name= name
+    td.shop= desc
+    td.shop= rate
+    td.shop= clicks
+    td.shop= moderator
+    td.shop= source
+    td.shop= shop
+    td.shop= esquire
+    td.recived= recived
+    td.date= date
+    td.buttons
+      button(onclick="location.href='/coupon-detail.html';") Details
+      if status
+        button.unblocked publish
+      else
+        button.block unpublish
+
+mixin api_item_shop(name, rate, clicks, moderator, source, recived, count, category, network)
+  tr
+    td.name= name
+    td.recived= rate
+    td.recived= clicks
+    td.recived= moderator
+    td.recived= source
+    td.recived= recived
+    td.count= count
+    td.category= category
+    td.network= network
+    td.buttons
+      button(onclick="location.href='/admin_shop_detail.html';") Details

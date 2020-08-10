@@ -24,6 +24,10 @@
   margin-right: -40px;
   min-width: calc(100% + 80px);
 
+  &--padding {
+    padding: 0 40px;
+  }
+
   .api-table {
     width: 100%;
     border-collapse: collapse;
@@ -36,11 +40,15 @@
       th {
         font-weight: normal;
         font-size: 14px;
-        line-height: 48px;
+        line-height: 22px;
+        min-height: 48px;
+        height: 48px;
         font-feature-settings: 'pnum' on, 'lnum' on;
         color: #717171;
         cursor: pointer;
         text-align: left;
+        padding-right: 15px;
+        white-space: nowrap;
 
         &:first-child {
           padding-left: 40px;
@@ -78,6 +86,12 @@
           line-height: 22px;
           color: #222222;
           vertical-align: baseline;
+          padding-right: 15px;
+          word-break: break-all;
+
+          button, a {
+            word-break: normal;
+          }
 
           &:first-child {
             padding-left: 40px;
@@ -85,6 +99,8 @@
 
           &:last-child {
             padding-right: 40px;
+            display: flex;
+            justify-content: flex-end;
           }
 
           &.name {
@@ -96,7 +112,6 @@
             color: #222222;
 
             &--width {
-              min-width: 500px;
               cursor: pointer;
 
               p {
@@ -648,6 +663,28 @@
       border-radius: 8px;
       width: 121px;
       cursor: pointer;
+    }
+  }
+}
+
+.name-wrapper-nav {
+  display: flex;
+  align-items: center;
+
+  .nav {
+    .top,
+    .bottom {
+      cursor: pointer;
+      display: block;
+      @include base-box(20px);
+      @include base-background(contain);
+      background-image: url(../media/icon/arrow-top.svg);
+      margin-right: 20px;
+    }
+
+    .bottom {
+      margin-top: 15px;
+      transform: rotate(180deg);
     }
   }
 }
