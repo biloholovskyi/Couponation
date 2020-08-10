@@ -1,0 +1,110 @@
+@media screen and (max-width: 1400px) {
+  .admin__panel {
+    .admin__content,
+    .admin__content--bill {
+      .admin__caption{
+
+      }
+      .admin__select--block {
+        // padding-left: 50px;
+        // padding-right: 10px;
+        .adm-select-wrapp_bill {
+          align-items: flex-start;
+          .left {
+            flex-wrap: wrap;
+            .adm-select-item_bill {
+              margin-bottom: 10px;
+              .hover-block {
+                left: 70%;
+              }
+            }
+          }
+          .right {
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+  }
+ .api-sources {
+  .admin__panel {
+    .admin__content,
+    .admin__content--bill {
+        .adm-select-wrapp_bill {
+          align-items: flex-start;
+          .left {
+            flex-wrap: wrap;
+            .adm-select-item_bill {
+              margin-bottom: 10px;
+              .hover-block {
+                left: 70%;
+              }
+            }
+          }
+          .right {
+            white-space: nowrap;
+          }
+        }
+    }
+  }
+ }
+  .api-sources {
+    .admin__panel {
+      .admin__content {
+        .admin__caption {
+          h1 {
+           
+            font-size: 40px;
+            line-height: 55px;
+            margin-right: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .admin__panel {
+    .admin__content {
+      .admin__caption{
+        h1 {
+          font-size: 40px;
+          line-height: 55px; 
+        }
+        .admin__search {
+          margin-left: 24px;
+        }
+        button {
+          padding: 16px 10px;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  .api-sources {
+    .admin__panel {
+      .admin__content {
+        .admin__caption {
+          h1 {
+            line-height: 40px;
+            font-size: 35px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .admin__panel {
+    .admin__content {
+      .admin__caption{
+        h1 {
+          font-size: 35px;
+          line-height: 50px; 
+        }
+      }
+    }
+  }
+}
