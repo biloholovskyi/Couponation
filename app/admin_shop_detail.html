@@ -47,28 +47,28 @@
             </div>
             <form class="small-form__form shop__form">
               <div class="double">
-                <div class="input-item">
+                <div class="input-item input">
                   <div class="placeholder">Name</div>
-                  <input type="text">
+                  <input type="text" value="Best Buy">
                 </div>
-                <div class="input-item">
+                <div class="input-item input">
                   <div class="placeholder">Website </div>
-                  <input type="text">
+                  <input type="text" value="juicychemistry.com">
                 </div>
-                <div class="input-item">
+                <div class="input-item input">
                   <div class="placeholder">Instagram</div>
-                  <input type="text">
+                  <input type="text" value="instagram.com/user/39696259/">
                 </div>
               </div>
               <div class="double full-inp textarea">
-                <div class="input-item">
+                <div class="input-item input" style="min-height: 232px">
                   <div class="placeholder">Description</div>
-                  <textarea maxlength="55" id="text-count"> </textarea>
+                  <input style="width: 100%" maxlength="55" value="Enjoy $6,40 off $25,99 purchase with promocode" id="text-counters">
                 </div>
                 <div class="count">
-                  <div class="count-item" id="count">0 </div>
+                  <div class="count-item" id="counters">0 </div>
                   <div>/</div>
-                  <div class="count-item">55</div>
+                  <div class="count-item">55    </div>
                 </div>
               </div>
             </form>
@@ -136,17 +136,24 @@
             </div>
             <div class="programs__section">
               <div class="program__item program__item--one">
-                <div class="program__caption">
-                  <h4>Program name</h4>
-                  <p>Affiliate#1</p>
+                <div class="program__caption program__list">
+                  <h4>Programm</h4>
+                  <p>Private</p><img src="./media/icon/small-arrow.svg" alt="icon">
                 </div>
                 <div class="program__link">
-                  <h4>Affiliate link</h4><a href="mailto:#"> linkTest@mail </a>
+                  <form class="small-form__form shop__form">
+                    <div class="double">
+                      <div class="input-item input">
+                        <div class="placeholder">Link</div>
+                        <input disabled type="text" value="https://bag.example.edu/?books=book&amp;aftermath=act">
+                      </div>
+                    </div>
+                  </form>
                 </div>
               </div>
               <div class="program__item program__item--two">
                 <div class="program__caption program__list">
-                  <h4>Program</h4>
+                  <h4>Programm</h4>
                   <p>Private</p><img src="./media/icon/small-arrow.svg" alt="icon">
                   <div class="private__modal">
                     <div class="private__item">private 1</div>
@@ -157,7 +164,14 @@
                   </div>
                 </div>
                 <div class="program__link">
-                  <h4>Private link</h4><a href="mailto:#"> Testmail@mail    </a>
+                  <form class="small-form__form shop__form">
+                    <div class="double">
+                      <div class="input-item input">
+                        <div class="placeholder">Link</div>
+                        <input type="text" value="https://bag.example.edu/?books=book&amp;aftermath=act">
+                      </div>
+                    </div>
+                  </form>
                 </div>
               </div>
             </div>

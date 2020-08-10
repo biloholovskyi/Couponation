@@ -1,9 +1,11 @@
 $(function() {
     $("textarea[id='text-count']").keyup(function count(){
-    let number = $("textarea[id='text-count']").val().length;
+    let number = $("textarea[id='text-count']").val().length; 
     $("#count").html(+number);
     });
 });
+
+
 
 $(function() {
   $("input[id='text-counter']").keyup(function count(){

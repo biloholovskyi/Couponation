@@ -27,23 +27,23 @@ block content
             button Delete
           form.small-form__form.shop__form
             .double
-              .input-item
+              .input-item.input
                 .placeholder Name
-                input(type='text')
-              .input-item
+                input(type='text' value="Best Buy")
+              .input-item.input
                 .placeholder Website 
-                input(type='text') 
-              .input-item
+                input(type='text' value="juicychemistry.com") 
+              .input-item.input
                 .placeholder Instagram
-                input(type='text')    
+                input(type='text' value="instagram.com/user/39696259/")    
             .double.full-inp.textarea
-              .input-item
+              .input-item.input(style="min-height: 232px")
                 .placeholder Description
-                textarea(maxlength="55")#text-count 
+                input(style="width: 100%" maxlength="55" value="Enjoy $6,40 off $25,99 purchase with promocode")#text-counters
               .count
-                .count-item#count 0 
+                .count-item#counters 0 
                 div /
-                .count-item 55
+                .count-item 55    
           .lines
           .admin__search
             input(type="text" placeholder="Search by shop or coupon") 
@@ -84,15 +84,19 @@ block content
               span.custopm_sec Custom
           .programs__section
             .program__item.program__item--one
-              .program__caption
-                h4 Program name
-                p Affiliate#1
+              .program__caption.program__list
+                h4 Programm
+                p Private
+                img(src="./media/icon/small-arrow.svg", alt="icon")
               .program__link
-                h4 Affiliate link
-                a(href="mailto:#")  linkTest@mail 
+                form.small-form__form.shop__form
+                  .double
+                    .input-item.input
+                      .placeholder Link
+                      input(disabled type='text' value="https://bag.example.edu/?books=book&aftermath=act")   
             .program__item.program__item--two
               .program__caption.program__list
-                h4 Program
+                h4 Programm
                 p Private
                 img(src="./media/icon/small-arrow.svg", alt="icon")
                 .private__modal
@@ -102,8 +106,11 @@ block content
                   .private__item private 4
                   .private__item private 5
               .program__link
-                h4 Private link
-                a(href="mailto:#")  Testmail@mail    
+                form.small-form__form.shop__form
+                  .double
+                    .input-item.input
+                      .placeholder Link
+                      input(type='text' value="https://bag.example.edu/?books=book&aftermath=act")   
           button#saveChange.saveChange Save Changes            
 
 
@@ -125,86 +132,86 @@ block content
               +single_coupon_item('SAVE6DOLLARS','Enjoy $6,40 off $25,99 purchase with promocode', 'Yesterday, 11:54 GMT', 'Best Buy', 'May 20, 2020 – 23:59 EST') 
               +single_coupon_item('SAVE6DOLLARS', 'Enjoy $6,40 off $25,99 purchase with promocode','Yesterday, 11:54 GMT', 'Best Buy', 'May 20, 2020 – 23:59 EST') 
       .adm-tab__body#body-stat
-         .stats__tabs 
-            .statistic__block
-              .stat-tab__head
-                h3(style="margin-bottom: 20px") General stats
-                .tabs
-                  .tab.active#tab-today Today
-                  .tab#tab-week this week
-                  .tab#tab-months This month
-              .stat-tab__body.show#body-today
-                .general__stats 
-                  .user__item
-                    h4 Last update
-                    p 500
-                  .user__item
-                    h4 Avg update period
-                    p 500
-                  .user__item
-                    h4 Clicks
-                    p 600
-              .stat-tab__body#body-week
-                .general__stats 
-                  .user__item
-                    h4 Approved
-                    p 50
-                  .user__item
-                    h4 Declined
-                    p 50
-                  .user__item
-                    h4 Clicks
-                    p 50 
-              .stat-tab__body#body-months
-                .general__stats 
-                  .user__item
-                    h4 Approved
-                    p 5000
-                  .user__item
-                    h4 Declined
-                    p 5000
-                  .user__item
-                    h4 Clicks
-                    p 50 00
-            .moderated__block
-              .moder-tab__head
-                h3(style="margin-bottom: 20px") TOP10 coupons clicked
-                .tabs
-                  .tab.active#tab-mtoday Today 
-                  .tab#tab-mweek this week
-                  .tab#tab-mmonths This month
-              .moder-tab__body.show#body-mtoday
-                .general__stats 
-                  .user__item
-                    h4 SAVE6DOLLARS
-                    p 500
-                  .user__item
-                    h4 SAVE6DOLLARS
-                    p 500
-                  .user__item
-                    h4 SAVE6DOLLARS
-                    p 600
-              .moder-tab__body#body-mweek
-                .general__stats 
-                  .user__item
-                    h4 ASAVE6DOLLARS
-                    p 50
-                  .user__item
-                    h4 SAVE6DOLLARS
-                    p 50
-                  .user__item
-                    h4 Sent to archive
-                    p 50 
-              .moder-tab__body#body-mmonths
-                .general__stats 
-                  .user__item
-                    h4 Approved
-                    p 5000
-                  .user__item
-                    h4 Declined
-                    p 5000
-                  .user__item
-                    h4 Sent to archive
-                    p 50 00                               
+        .stats__tabs 
+          .statistic__block
+            .stat-tab__head
+              h3(style="margin-bottom: 20px") General stats
+              .tabs
+                .tab.active#tab-today Today
+                .tab#tab-week this week
+                .tab#tab-months This month
+            .stat-tab__body.show#body-today
+              .general__stats 
+                .user__item
+                  h4 Last update
+                  p 500
+                .user__item
+                  h4 Avg update period
+                  p 500
+                .user__item
+                  h4 Clicks
+                  p 600
+            .stat-tab__body#body-week
+              .general__stats 
+                .user__item
+                  h4 Approved
+                  p 50
+                .user__item
+                  h4 Declined
+                  p 50
+                .user__item
+                  h4 Clicks
+                  p 50 
+            .stat-tab__body#body-months
+              .general__stats 
+                .user__item
+                  h4 Approved
+                  p 5000
+                .user__item
+                  h4 Declined
+                  p 5000
+                .user__item
+                  h4 Clicks
+                  p 50 00
+          .moderated__block
+            .moder-tab__head
+              h3(style="margin-bottom: 20px") TOP10 coupons clicked
+              .tabs
+                .tab.active#tab-mtoday Today 
+                .tab#tab-mweek this week
+                .tab#tab-mmonths This month
+            .moder-tab__body.show#body-mtoday
+              .general__stats 
+                .user__item
+                  h4 SAVE6DOLLARS
+                  p 500
+                .user__item
+                  h4 SAVE6DOLLARS
+                  p 500
+                .user__item
+                  h4 SAVE6DOLLARS
+                  p 600
+            .moder-tab__body#body-mweek
+              .general__stats 
+                .user__item
+                  h4 ASAVE6DOLLARS
+                  p 50
+                .user__item
+                  h4 SAVE6DOLLARS
+                  p 50
+                .user__item
+                  h4 Sent to archive
+                  p 50 
+            .moder-tab__body#body-mmonths
+              .general__stats 
+                .user__item
+                  h4 Approved
+                  p 5000
+                .user__item
+                  h4 Declined
+                  p 5000
+                .user__item
+                  h4 Sent to archive
+                  p 50 00                               
 
   include ../modules/admin/shop_succefully       

@@ -443,45 +443,92 @@
 // programs section
 .programs__section { 
   display: flex;
-  margin: 20px 0 0;   
+  margin: 20px 0 0;  
+  min-width: 528px; 
   .program__item {
     display: flex;
     .program__caption,
     .program__link {
       display: flex;
       flex-direction: column;
-      margin-right: 50px;
+      // margin-right: 50px;
       min-width: 150px;
       h4 {
         font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 22px;
-        color: #565b62;
-        margin-bottom: 5px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+        color: #717171;
+      
       }
       p,a {
         font-style: normal;
-        font-weight: bold;
+        font-weight: normal;
         font-size: 16px;
         line-height: 22px;
         letter-spacing: .04em;
         color: #222; 
       }
+      a {
+        font-weight: 500;
+      }
     }
     .program__link {
       margin-right: 0;
+      margin-top: 32px;
+      .shop__form {
+        .double {
+          margin-right: 0;
+          width: 100%;
+          margin-bottom: 0;
+        }
+      }
     }
   }
   .program__item--one {
     display: flex;
-  }
-  .program__item--two {
-    display: none;
+    flex-direction: column; 
+    min-width: 528px;
+    opacity: 0.48;
     .program__list {
       position: relative;
       padding-bottom: 5px;
-      border-bottom: 1px solid #ebebeb;
+      border: 1px solid #ebebeb;
+      border-radius: 8px;
+      padding: 9px 12px;
+      p {
+        position: relative;
+      }
+      img {
+        display: block;
+        margin-left: 4px;
+        min-width: 24px;
+        width: 24px;
+        height: 24px;
+        -o-object-position: center;
+        object-position: center;
+        -o-object-fit: contain;
+        object-fit: contain;
+      
+        // transition: .3s;
+        transform: rotate(180deg);
+        position: absolute;
+        right: 24px;
+        top: 17px;
+
+      }
+    }
+  }
+  .program__item--two {
+    display: none;
+    flex-direction: column;
+    min-width: 528px;
+    .program__list {
+      position: relative;
+      padding-bottom: 5px;
+      border: 1px solid #ebebeb;
+      border-radius: 8px;
+      padding: 9px 12px;
       cursor: pointer;
       p {
         position: relative;
@@ -496,15 +543,16 @@
         object-position: center;
         -o-object-fit: contain;
         object-fit: contain;
-        -webkit-transition: .3s;
-        transition: .3s;
-        transform: rotate(180deg);
+      
+        // transition: .3s;
+        transform: rotate(180deg) translateY(50%);
         position: absolute;
-        right: 0;
-        top: 25px;
+        right: 24px;
+        top: 50%;
 
         &.active {
           transform: rotate(0deg);
+          top: 20px;
         }
       }
     }
