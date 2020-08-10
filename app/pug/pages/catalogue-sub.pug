@@ -1,0 +1,55 @@
+extends ../layout/admin
+
+block variables
+  - const pageTitle = 'Admin panel'
+
+block content
+
+  .admin__panel.coupon-details
+    include ../modules/admin/admin_bar
+    .admin__content(style="padding-bottom: 173px")
+      a.back_btn(href="/catalogue.html") All categories
+      .admin__caption
+        h1.h1-emoji
+          span.emoji 😆
+          span Subcategory 2
+        button Delete subcategory
+      .fix-line-bill
+      .info.info-small
+        .stats__blocks(style="max-width: 528px")
+          .stats__block.small-bill(style="margin-right: 0") 
+            .stats__item
+              p Coupons
+              p 12,738
+            .stats__item
+              p Shops
+              p 569
+            .stats__item
+              p Creation
+              p May 20, 2020 – 14:08 by Josh Barnett
+            .stats__item
+              p Last modify
+              p May 30, 2020 – 21:01 by Josh Barnett
+
+        .coupon__form.single__coupon-form
+          .coupon__modal
+            h3 Edit subcategory data
+            form.small-form__form.admin-form#sub-cat-form
+              .double.full-inp
+                .input-item.input
+                  .placeholder Name
+                  input(type='text' value='Subcategory 2')
+              .emoji-form
+                .icon 😆
+                div#change-emoji Change emoji
+              input(type="submit" value="Save changes").admin_submit
+
+
+
+  include ../modules/admin/change_shop_modal
+  include ../modules/admin/shop_succefully
+  include ../modules/admin/change_emoji
+
+
+
+

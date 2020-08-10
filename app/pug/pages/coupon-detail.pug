@@ -12,6 +12,7 @@ block content
       .admin__caption 
           h1 SAVE6DOLLARS
           button.publish unpublish
+      .lines(style="margin-top: 28px")    
       .info
         .coupon__form.single__coupon-form
           .coupon__modal
@@ -41,8 +42,19 @@ block content
                 div /
                 .count-item 255      
               input(type="button" value="Save changes").admin_submit#saveChange  
-        .lines(style="margin-top: 36px")      
-        .stats__blocks
+        .lines(style="margin-top: 32px")      
+        .adm__links
+          .adm__link
+            h3 Original post link
+            a(href="#") http://instagram.com/user/39696259/post_56y72sdf0923.html
+          .adm__link
+            h3 Original post text
+            p Do you love face oils? My skin is very picky when it comes to face oil. Most of the time either the oil just floats on my skin and sticks wherever except my face or I end up with an irritated skin. But #juicychemistry 100% Organic Camellia Seed Oil is surely the magic in a bottle. You can use my code - SHELL15 for additional discount on Juicychemistry Website.  
+          .adm__link
+            h3 Shop
+            include ../modules/admin/coupon-shop-single
+        .lines
+        .stats__blocks(style="border: none; margin-bottom: 0; padding-bottom: 0")
           .stats__block
             .stats__title General stats
             .stats__item
@@ -64,17 +76,7 @@ block content
               p 319 votes – 20%
             .stats__item
               p Clicks without votes
-              p 739
-        .adm__links
-          .adm__link
-            h3 Original post link
-            a(href="#") http://instagram.com/user/39696259/post_56y72sdf0923.html
-          .adm__link
-            h3 Original post text
-            p Do you love face oils? My skin is very picky when it comes to face oil. Most of the time either the oil just floats on my skin and sticks wherever except my face or I end up with an irritated skin. But #juicychemistry 100% Organic Camellia Seed Oil is surely the magic in a bottle. You can use my code - SHELL15 for additional discount on Juicychemistry Website.  
-          .adm__link
-            h3 Shop
-            include ../modules/admin/coupon-shop-single   
+              p 739     
         
       
         

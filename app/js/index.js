@@ -9,6 +9,7 @@ import Catalogue from "./catalogue";
 import './countInput';
 import AdminDrop from "./admin/dropDown";
 import './admin/addshopModal';
+import './cheked_shop_page';
 
 const catalogue = new Catalogue();
 const adminDrop = new AdminDrop();

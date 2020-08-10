@@ -23,23 +23,23 @@ block content
               .placeholder Email
               input(type='email')
             p Be careful and provide us your actual email #[br]We use it for password recovery  
-            button(type="button")#saveChange.saveChange Save Changes 
+            
           .lines
         h2 Security settings
         form.small-form__form.shop__form
           .double
             .input-item
-              .placeholder First name
+              .placeholder Current password
               input(type='text')
             .input-item
-              .placeholder Last name 
+              .placeholder New password
               input(type='text') 
             .input-item
-              .placeholder Email
+              .placeholder New password again
               input(type='email') 
-            button(type="button")#savePass.savePass Change password     
+            button(type="button")#saveChange.saveChange Save Changes      
 
-    include ../modules/admin/shop_succefully
-    include ../modules/admin/pass_succefully                  
+    //- include ../modules/admin/shop_succefully
+    //- include ../modules/admin/pass_succefully                  
 
 

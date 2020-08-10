@@ -41,6 +41,9 @@
         background-color: transparent!important;
       }
     }
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
   .stikyAbc {
     margin-top: 0px;
