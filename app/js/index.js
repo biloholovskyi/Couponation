@@ -174,7 +174,11 @@ $(document).ready((e) => {
 
   $('.small-form__form input,.small-form__form textarea').on('input', (e) => smallFormInput(e));
   $('.shop_detail .admin__content .shop__info--content .admin__search input').on('input', (e) => searchInput(e));
+  $('.admin__modal .admin-form .double .admin__search input').on('input', (e) => searchInput(e)); 
   
+  
+
+ 
 
 
 // admin modal
@@ -353,7 +357,7 @@ $(function () {
 
 $(document).on('click', function(e){
   let modal = $('.admin__modal, .shop__modal, .getCode__modal, .change__emoji--modal, .invite__user--modal, .shops__modal, .input__section input');
-  let Btn = $('.addNewCoupon, .change_shop, .getCode, #change-emoji,.new_user, #addSHopBtn'); 
+  let Btn = $('.addNewCoupon, .change_shop, .getCode, #change-emoji,.new_user, #addSHopBtn,.admin__search input'); 
 
 
   if(!Btn.is(e.target) && Btn.has(e.target).length === 0) {
@@ -365,6 +369,8 @@ $(document).on('click', function(e){
       $('.invite__user--overlay').css({'display': 'none'});
       $('.addShops__modal--overlay').removeClass('active');
       $('.input__section input').removeClass('input');
+      // $('.admin__search').removeClass('active__search');
+      // $('.search__modal').css('display', 'none');
       $('body').css({
         'overflow': 'visible',
         'position': 'relative',

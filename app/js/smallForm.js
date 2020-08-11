@@ -11,7 +11,7 @@ const smallFormInput = (e) => {
 }
  
 const searchInput = (e) => {  
-  const input = $(e.currentTarget);
+  const input = $(e.currentTarget); 
   if(input.val() === '') {
     input.parent('.admin__search').removeClass('active__search');
     input.parent('.admin__search').children('.search__modal').css('display', 'none');
@@ -19,10 +19,24 @@ const searchInput = (e) => {
     input.parent('.admin__search').addClass('active__search'); 
     input.parent('.admin__search').children('.search__modal').css('display', 'flex');
   }
+
 }
 
 
 
 
 
+
 export { smallFormInput, searchInput}
+
+
+
+$(".admin__search input").focus( function() {
+  $(this).parent('.admin__search').addClass('active__search');
+  $(this).parent('.admin__search').children('.search__modal').css('display', 'flex');
+});
+
+$(".admin__search input").blur( function() {
+  $(this).parent('.admin__search').removeClass('active__search');
+  $(this).parent('.admin__search').children('.search__modal').css('display', 'none');
+});

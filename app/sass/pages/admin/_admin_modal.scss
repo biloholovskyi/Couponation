@@ -97,6 +97,12 @@
             width: 24px;
             height: 24px;
           }
+          &.active__search {
+            box-shadow: 0 6px 16px rgba(0,0,0,.12); 
+            background-color: #fff;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+          }
         }
       }
       .full-inp {
