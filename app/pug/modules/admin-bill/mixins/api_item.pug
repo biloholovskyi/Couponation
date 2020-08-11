@@ -71,7 +71,7 @@ mixin api_item_post(post, recived, declined, moderator)
     td.buttons
       button Details
 
-mixin api_item_coupons(name, desc, rate, clicks, moderator, source, shop, esquire, recived, date, status)
+mixin api_item_coupons(name, desc, rate, clicks, moderator, source, shop, recived, date, status)
   tr
     td.name= name
     td.shop= desc
@@ -80,7 +80,6 @@ mixin api_item_coupons(name, desc, rate, clicks, moderator, source, shop, esquir
     td.shop= moderator
     td.shop= source
     td.shop= shop
-    td.shop= esquire
     td.recived= recived
     td.date= date
     td.buttons
