@@ -14,31 +14,20 @@ mixin api_item(name, description, total, pm, pc, clicks)
     td.buttons
       button(onclick="location.href='/api-network.html';") Details
 
-mixin api_item_inst(name, status, total, approved, tags, crawl, update)
+mixin api_item_inst(name, crawl, lastCrawl, nextCrawl, tag, followers, parsed, moderation, modDate, approved, appDate, declined)
   tr
     td.name= name
-    if status
-      td.status.status--active
-        .tooltip Active
-    else
-      td.status.status--blocked
-        .tooltip Blocked
-          .tooltip-hover
-            .tooltip-row
-              .left Blocked by
-              .right
-                a(href='#' target='_blank') Username
-            .tooltip-row
-              .left Block date
-              .right 12, 2020 – 12:00 EST
-            .tooltip-row
-              .left Reason
-              .right Way too much bad coupons
-    td.total= total
-    td.approved= approved
-    td.tags= tags
-    td.crawl= crawl
-    td.updateMay= update
+    td.total= crawl
+    td.approved= lastCrawl
+    td.tags= nextCrawl
+    td.crawl= tag
+    td.updateMay= followers
+    td.updateMay= parsed
+    td.updateMay= moderation
+    td.updateMay= modDate
+    td.updateMay= approved
+    td.updateMay= appDate
+    td.updateMay= declined
     td.buttons
       a(href='/insta_detail.html') Details
       if status

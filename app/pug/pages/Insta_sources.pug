@@ -33,26 +33,25 @@ block content
             thead.api-table__head
               tr
                 th.sort Name
-                th Status
-                th Total coupons
+                th Crawl
+                th Last Crawl
+                th Next Crawl
+                th Tag
+                th Followers
+                th Posts Parsed
+                th Posts Moderation
+                th Last post to moderation
                 th Approved
-                th Tags found at
-                th Crawl list
-                th Last update
+                th Last Approved
+                th Declined
                 th
             tbody.api-table__body
-              +api_item_inst('@shelleynyak', true, '273', '136', '#nails', 'Primary', 'Jul 1, Aug 2')
-              +api_item_inst('@shelleynyak', true, '273', '136', '#nails', 'Primary', 'Jul 1, Aug 2')
-              +api_item_inst('@shelleynyak', false, '273', '136', '#nails', 'Primary', 'Jul 1, Aug 2')
-              +api_item_inst('@shelleynyak', true, '273', '136', '#nails', 'Primary', 'Jul 1, Aug 2')
-              +api_item_inst('@shelleynyak', true, '273', '136', '#nails', 'Primary', 'Jul 1, Aug 2')
-              +api_item_inst('@shelleynyak', true, '273', '136', '#nails', 'Primary', 'Jul 1, Aug 2')
-              +api_item_inst('@shelleynyak', true, '273', '136', '#nails', 'Primary', 'Jul 1, Aug 2')
-              +api_item_inst('@shelleynyak', true, '273', '136', '#nails', 'Primary', 'Jul 1, Aug 2')
-              +api_item_inst('@shelleynyak', false, '273', '136', '#nails', 'Primary', 'Jul 1, Aug 2')
-              +api_item_inst('@shelleynyak', true, '273', '136', '#nails', 'Primary', 'Jul 1, Aug 2')
-              +api_item_inst('@shelleynyak', true, '273', '136', '#nails', 'Primary', 'Jul 1, Aug 2')
-              +api_item_inst('@shelleynyak', true, '273', '136', '#nails', 'Primary', 'Jul 1, Aug 2')
+              +api_item_inst('@shelleynyak', 'primary', '27.07.20', '27.07.20', '#nails', '2500', '200', '20', '20.07.2020', '7', '20.07.2020', '13')
+              +api_item_inst('@shelleynyak', 'primary', '27.07.20', '27.07.20', '#nails', '2500', '200', '20', '20.07.2020', '7', '20.07.2020', '13')
+              +api_item_inst('@shelleynyak', 'primary', '27.07.20', '27.07.20', '#nails', '2500', '200', '20', '20.07.2020', '7', '20.07.2020', '13')
+              +api_item_inst('@shelleynyak', 'primary', '27.07.20', '27.07.20', '#nails', '2500', '200', '20', '20.07.2020', '7', '20.07.2020', '13')
+              +api_item_inst('@shelleynyak', 'primary', '27.07.20', '27.07.20', '#nails', '2500', '200', '20', '20.07.2020', '7', '20.07.2020', '13')
+
         .number-coupon
           .num-item.active 1
           .num-item 2

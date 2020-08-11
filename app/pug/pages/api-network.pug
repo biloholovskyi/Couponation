@@ -10,7 +10,7 @@ block content
   .admin__panel.coupon-details.network__page
     include ../modules/admin/admin_bar
     .admin__content
-      a.back_btn(href="/admin_shop.html") All sources
+      a.back_btn(href="/admin_shop.html") Api sources
       .admin__caption 
         h1 Network name goes here 
         button Block source
@@ -21,8 +21,8 @@ block content
             input(type='text')
         .double
           .input-item
-            .placeholder Happy Coupons Network
-            input(type='text')
+            .placeholder https://some-site.com/link?alskdfja?jskldfjlkasdf
+            input(type='text' readonly='true')
       .newtwork__droplist
         img.network_arrow(src="../media/icon/network_drop.svg", alt="icon")
         h3.network__open Notes

@@ -88,7 +88,6 @@
           color: #222222;
           vertical-align: baseline;
           padding-right: 15px;
-          word-break: break-all;
 
           button, a {
             word-break: normal;
@@ -401,6 +400,16 @@
           visibility: hidden;
           opacity: 0;
           display: none;
+        }
+      }
+    }
+  }
+
+  &--midle {
+    .api-table__body {
+      tr {
+        td {
+          vertical-align: middle;
         }
       }
     }
