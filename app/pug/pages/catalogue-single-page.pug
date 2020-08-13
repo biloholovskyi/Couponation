@@ -7,29 +7,25 @@ block content
 
   .admin__panel.coupon-details
     include ../modules/admin/admin_bar
-    .admin__content
+    .admin__content(style="padding-bottom: 173px")
       a.back_btn(href="/catalogue.html") All categories
       .admin__caption
         h1.h1-emoji
-          span.emoji 😆
-          span Subcategory 2
-        button Delete subcategory
+
+          span Category
+
       .fix-line-bill
       .info
         .stats__blocks
           .coupon__form.single__coupon-form(style='min-width: 50%; padding-right: 15px;')
             .coupon__modal
-              h3 Edit subcategory data
+              h3 Edit category data
               form.small-form__form.admin-form#sub-cat-form
                 .double.full-inp
                   .input-item.input
                     .placeholder Name
-                    input(type='text' value='Subcategory 2')
+                    input(type='text' value='Category 2')
 
-                .double.full-inp
-                  .input-item.input
-                    .placeholder Parent category
-                    input(type='text' value='Category 2' readonly=true)#read-cat
                 .emoji-form
                   .icon 😆
                   div#change-emoji Change emoji
@@ -39,17 +35,14 @@ block content
 
           .stats__block.small-bill
             .stats__item
-              p Shops
-              p 569
-            .stats__item
-              p Parent category
-              p Category 2
-            .stats__item
               p Creation
               p May 20, 2020 – 14:08 by Josh Barnett
             .stats__item
               p Last modify
               p May 30, 2020 – 21:01 by Josh Barnett
+
+
+
 
 
   include ../modules/admin/change_shop_modal

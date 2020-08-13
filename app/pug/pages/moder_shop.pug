@@ -45,8 +45,24 @@ block content
               .count-item 55
         .lines
         .admin__search
-          input(type="text" placeholder="Search or add new category") 
+          input(type="text" placeholder="Search by category")
           img(src="../media/icon/search.svg", alt="icon")
+          .search__modal
+            .search__cat--item
+              .image__cat 🎮
+              .name__cat Gaming
+            .search__cat--item
+              .image__cat ⚙️
+              .name__cat Gear
+            .search__cat--item
+              .image__cat 🎲
+              .name__cat Games
+            .search__cat--item
+              .image__cat 🎲
+              .name__cat Games
+            .search__cat--item
+              .image__cat 🎲
+              .name__cat Games
         .category
           +CategoryBtn('../media/icon/category/flowers.svg','beauty')
           +CategoryBtn('../media/icon/category/hair.svg','hair')
@@ -56,29 +72,3 @@ block content
           +CategoryBtn('../media/icon/category/flowers.svg','beauty')
           +CategoryBtn('../media/icon/category/hair.svg','hair')
           +CategoryBtn('../media/icon/category/heart.svg','health')
-        .lines
-        h3 Partnership network
-        .radio__block
-          label.radio
-            input(type="radio" name="r" value="1" checked)
-            span Happy Coupons Network
-              .rank 35% reward
-          label.radio
-            input(type="radio" name="r" value="2")
-            span Best Partners
-              .rank 5% reward
-          label.radio
-            input(type="radio" name="r" value="3" )
-            span Money4Coupons
-              .rank 22% reward
-          label.radio
-            input(type="radio" name="r" value="3" )
-            span Money4Coupons
-              .rank 22% reward    
-          label.radio
-            input(type="radio" name="r" value="4")
-            span Other (Custom link) 
-        .moder__btn(style="max-width: 510px; margin-top: 36px")        
-          input(type="button" value="Save").mod-approve 
-          input(type="button" value="Decline").mod-decline             
-

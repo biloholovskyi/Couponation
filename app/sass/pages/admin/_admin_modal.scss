@@ -157,3 +157,22 @@
     }
   }
 }
+
+
+@media (max-height: 650px) {
+  .admin__modal--overlay {
+    .admin__modal {
+      max-height: calc(100% - 10px);
+      overflow: auto;
+    }
+  }
+}
+
+@media (max-height: 800px) {
+  .addShops__modal--overlay {
+    .shops__modal {
+      max-height: calc(100% - 10px);
+      overflow: auto;
+    }
+  }
+}

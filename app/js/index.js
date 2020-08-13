@@ -39,7 +39,7 @@ $(document).ready((e) => {
     setTimeout (() => {
       $('.shop_succefully').css('display', 'none'); 
     }, 3000);
-  }); 
+  });
 
   // invite new users
   $('.new_user').on('click', function(){
@@ -190,6 +190,15 @@ $('.addNewCoupon').on('click', function(){
     'height': '100vh'
   });
 });
+
+  $('#addNewCat').on('click', function(){
+    $('.admin__modal--overlay').css({'display': 'flex'});
+    $('body').css({
+      'overflow': 'hidden',
+      'position': 'relative',
+      'height': '100vh'
+    });
+  });
 
 
 // GET code modal
@@ -357,7 +366,7 @@ $(function () {
 
 $(document).on('click', function(e){
   let modal = $('.admin__modal, .shop__modal, .getCode__modal, .change__emoji--modal, .invite__user--modal, .shops__modal, .input__section input');
-  let Btn = $('.addNewCoupon, .change_shop, .getCode, #change-emoji,.new_user, #addSHopBtn,.admin__search input'); 
+  let Btn = $('.addNewCoupon, .change_shop, .getCode, #change-emoji,.new_user, #addSHopBtn,.admin__search input, #addNewCat');
 
 
   if(!Btn.is(e.target) && Btn.has(e.target).length === 0) {

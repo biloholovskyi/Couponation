@@ -34,13 +34,33 @@
           <button>Delete subcategory</button>
         </div>
         <div class="fix-line-bill"></div>
-        <div class="info info-small">
+        <div class="info">
           <div class="stats__blocks">
-            <div class="stats__block small-bill">
-              <div class="stats__item">
-                <p>Coupons</p>
-                <p>12,738</p>
+            <div class="coupon__form single__coupon-form" style="min-width: 50%; padding-right: 15px;">
+              <div class="coupon__modal">
+                <h3>Edit subcategory data</h3>
+                <form class="small-form__form admin-form" id="sub-cat-form">
+                  <div class="double full-inp">
+                    <div class="input-item input">
+                      <div class="placeholder">Name</div>
+                      <input type="text" value="Subcategory 2">
+                    </div>
+                  </div>
+                  <div class="double full-inp">
+                    <div class="input-item input">
+                      <div class="placeholder">Parent category</div>
+                      <input type="text" value="Category 2" readonly id="read-cat">
+                    </div>
+                  </div>
+                  <div class="emoji-form">
+                    <div class="icon">😆</div>
+                    <div id="change-emoji">Change emoji</div>
+                  </div>
+                  <input class="admin_submit" type="submit" value="Save changes">
+                </form>
               </div>
+            </div>
+            <div class="stats__block small-bill">
               <div class="stats__item">
                 <p>Shops</p>
                 <p>569</p>
@@ -57,30 +77,6 @@
                 <p>Last modify</p>
                 <p>May 30, 2020 – 21:01 by Josh Barnett</p>
               </div>
-            </div>
-          </div>
-          <div class="coupon__form single__coupon-form">
-            <div class="coupon__modal">
-              <h3>Edit subcategory data</h3>
-              <form class="small-form__form admin-form" id="sub-cat-form">
-                <div class="double full-inp">
-                  <div class="input-item input">
-                    <div class="placeholder">Name</div>
-                    <input type="text" value="Subcategory 2">
-                  </div>
-                </div>
-                <div class="double full-inp">
-                  <div class="input-item input">
-                    <div class="placeholder">Parent category</div>
-                    <input type="text" value="Category 2" readonly id="read-cat">
-                  </div>
-                </div>
-                <div class="emoji-form">
-                  <div class="icon">😆</div>
-                  <div id="change-emoji">Change emoji</div>
-                </div>
-                <input class="admin_submit" type="submit" value="Save changes">
-              </form>
             </div>
           </div>
         </div>

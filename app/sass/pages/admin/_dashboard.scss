@@ -48,9 +48,15 @@
         border: 1px solid #EBEBEB;
         padding: 16px;
         border-radius: 12px;
-        flex: 50%;
+        margin-right: 15px;
+        width: 100%;
+
+        &:last-child {
+          margin-right: 0;
+        }
 
         img {
+          display: none;
           width: 40px;
           height: 40px;
           padding: 8px;
@@ -82,8 +88,6 @@
           }
 
           .moder_stats {
-            display: flex;
-
             .coupons,
             .stores {
               font-style: normal;
@@ -94,6 +98,10 @@
               margin: 0;
             }
 
+            .coupons {
+              margin-bottom: 10px;
+            }
+
             div {
               margin: 0 5px;
               color: #717171;
@@ -101,10 +109,6 @@
             }
           }
         }
-      }
-
-      & .moderator_item:first-child {
-        margin-right: 24px;
       }
 
       .lowest_moderator {

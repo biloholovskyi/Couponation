@@ -46,7 +46,7 @@ block content
                 .count-item 55    
           .lines
           .admin__search
-            input(type="text" placeholder="Search by shop or coupon") 
+            input(type="text" placeholder="Search by category")
             img(src="../media/icon/search.svg", alt="icon")
             .search__modal
               .search__cat--item
@@ -123,14 +123,13 @@ block content
               tr
                 th.sort Name
                 th Description
-                th Recieved
                 th Shops
+                th Recieved
                 th Expire date
                 th
             tbody.api-table__body
-              +single_coupon_item('SAVE6DOLLARS','Enjoy $6,40 off $25,99 purchase with promocode', 'Yesterday, 11:54 GMT', 'Best Buy', 'Jul 1, Aug 2')
-              +single_coupon_item('SAVE6DOLLARS','Enjoy $6,40 off $25,99 purchase with promocode', 'Yesterday, 11:54 GMT', 'Best Buy', 'Jul 1, Aug 2')
-              +single_coupon_item('SAVE6DOLLARS', 'Enjoy $6,40 off $25,99 purchase with promocode','Yesterday, 11:54 GMT', 'Best Buy', 'Jul 1, Aug 2')
+              +single_coupon_item('SAVE6DOLLARS','Enjoy $6,40 off $25,99 purchase with promocode', 'Desc text', 'Jun 1', 'Aug 2', 'Shop')
+
       .adm-tab__body#body-stat
         .stats__tabs 
           .statistic__block

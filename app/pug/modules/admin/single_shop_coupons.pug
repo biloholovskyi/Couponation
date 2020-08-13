@@ -1,10 +1,11 @@
 
-mixin single_coupon_item(name,desc, Invited, activity, coupons)
+mixin single_coupon_item(name,desc, Invited, activity, coupons, shop)
   tr
     td.coupon
       p= name
       .name= desc  
     td.invated= Invited
+    td.user_coupones= shop
     td.activity= activity
     td.user_coupones= coupons
     td.buttons.buttons--padding
