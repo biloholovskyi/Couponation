@@ -3,26 +3,36 @@
     border: 1px solid #F7F7F7;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.18);
     border-radius: 8px;
-    min-height: 255px;
     margin-bottom: 8px;
     position: relative;
-    padding: 20px;
+    padding: 20px 20px 65px 20px;
     display: flex;
     flex-direction: column;
+    min-height: auto;
+
     .left-side {
       padding: 0;
       border: none;
       height: fit-content;
       align-items: flex-start;
       margin-bottom: 6px;
+
       h3 {
         font-size: 16px;
         line-height: 20px;
+        font-weight: 800;
+        margin-bottom: 15px;
+      }
+
+      .storeName {
+        margin-bottom: 15px;
+        color: #aaa;
       }
     }
 
     .right-side {
       padding: 0;
+
       .top {
         .button {
           width: 100%;
@@ -34,6 +44,7 @@
           left: 50%;
           transform: translateX(-50%);
         }
+
         .name {
           margin-top: 0;
         }
@@ -43,7 +54,7 @@
         display: flex;
         flex-direction: column;
 
-        .uses{
+        .uses {
           width: 100%;
         }
 
@@ -85,6 +96,7 @@
 
     .small-coupon {
       margin-bottom: 32px;
+
       h2 {
         font-size: 24px;
         line-height: 30px;
@@ -108,17 +120,19 @@
     }
   }
   .coupon-shop {
-    padding: 16px;
-    min-height: 285px;
+    padding: 16px 16px 65px 16px;
+
     .right-side {
       .top {
         .name {
-          margin-right: 0;  
+          margin-right: 0;
         }
+
         .button {
           max-width: calc(100% / 1 - 16px);
         }
       }
+
       .bottom {
         .uses {
           margin-bottom: 5px;
@@ -130,29 +144,32 @@
     width: 100%;
   }
 
-  .second-section, 
+  .second-section,
   .form-section {
     display: none;
   }
 
 
-
   #coupon-slider {
     .owl-stage-outer {
-      padding-bottom: 24px!important;
+      padding-bottom: 24px !important;
     }
+
     .owl-nav {
       width: 100%;
       bottom: 0;
       right: unset;
       top: unset;
+
       .owl-prev {
-        margin-left: 16px!important;
+        margin-left: 16px !important;
       }
+
       .owl-next {
-        margin-right: 16px!important;
+        margin-right: 16px !important;
       }
     }
+
     .owl-dots {
       margin: 20px auto 0;
       display: -webkit-box;
@@ -163,12 +180,13 @@
       width: 100%;
       background: rgba(113, 113, 113, 0.2);
       border-radius: 100px;
+
       .owl-dot {
         width: 100%;
         height: 2px;
         position: relative;
         z-index: 1;
-  
+
         span {
           display: none;
         }

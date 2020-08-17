@@ -78,13 +78,11 @@ mixin api_item_coupons(name, desc, rate, clicks, moderator, source, shop, recive
       else
         button.block unpublish
 
-mixin api_item_shop(name, rate, clicks, moderator, source, recived, count, category, network)
+mixin api_item_shop(name, rate, moderator, recived, count, category, network)
   tr
     td.name= name
     td.recived= rate
-    td.recived= clicks
     td.recived= moderator
-    td.recived= source
     td.recived= recived
     td.count= count
     td.category= category
