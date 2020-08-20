@@ -2,6 +2,7 @@ extends ../layout/admin
 include ../modules/admin-bill/mixins/adm_select
 include ../modules/admin-bill/mixins/api_item
 include ../modules/admin-bill/mixins/adm_select_big
+include ../modules/admin-bill/mixins/adm_calendar
 include ../modules/admin-bill/mixins/adm_select_search
 
 block variables
@@ -22,14 +23,14 @@ block content
         .adm-select-wrapp_bill
           .left
             +adm-select-item_bill('Crawl list')
-            +adm-select-item_bill('Last crawl')
-            +adm-select-item_bill('Next crawl')
+            +adm-select-item_calendar('Last crawl')
+            +adm-select-item_calendar('Next crawl')
             +adm-select-big('Followers')
             +adm-select-big('Posts parsed')
             +adm-select-big('Post to moderation')
-            +adm-select-item_bill('Last post moderation')
+            +adm-select-item_calendar('Last post moderation')
             +adm-select-big('Post approved')
-            +adm-select-item_bill('Last posts approved')
+            +adm-select-item_calendar('Last posts approved')
             +adm-select-big('Declined posts')
             +adm-select-item_bill('All statuses')
           .right Clear filters

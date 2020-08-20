@@ -48,6 +48,7 @@ button {
 @import "modules/subscribe_modal";
 @import 'modules/card-category';
 @import 'modules/change_emoji_modal';
+@import 'modules/calendar-box';
 
 /*over use blocks*/
 @import "header";
@@ -96,3 +97,7 @@ button {
 
 
 @import 'components/valid-form';
+
+.input-bill {
+  border: 1px solid #ff703e !important;
+}

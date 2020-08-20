@@ -1,5 +1,6 @@
 extends ../layout/admin
 include ../modules/admin-bill/mixins/adm_select
+include ../modules/admin-bill/mixins/adm_calendar
 include ../modules/admin-bill/mixins/adm_select_big
   include ../modules/admin-bill/mixins/api_item
 
@@ -10,13 +11,13 @@ block content
   .admin__panel
     include ../modules/admin/admin_bar
     .admin__content
-      .admin__caption 
+      .admin__caption
         h1 Coupons
         .admin__search
-          input(type="text" placeholder="Search by shop or coupon") 
+          input(type="text" placeholder="Search by shop or coupon")
           img(src="../media/icon/search.svg", alt="icon")
         button.addNewCoupon Add new coupon
-        
+
       .admin__select--block
         .adm-select-wrapp_bill
           .left
@@ -25,8 +26,8 @@ block content
             +adm-select-item_bill('All moderators')
             +adm-select-big('Clicks, 30 days')
             +adm-select-big('Success rate')
-            +adm-select-big('Date added', true)
-            +adm-select-big('Expire date', true)
+            +adm-select-item_calendar('Date added')
+            +adm-select-item_calendar('Expire date')
           .right Clear filters
 
 

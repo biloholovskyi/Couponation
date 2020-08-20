@@ -1,0 +1,84 @@
+mixin adm-select-item_calendar(name)
+  .adm-select-item_bill.type-list.type-select-js.select__big.calendar-js
+    .name= name
+      img(src="./media/icon/small-arrow.svg", alt="")
+    .hover-block
+      .input__section
+        input(type="text" placeholder="from" readonly='true' class='input')
+        input(type="text" placeholder="to" readonly='true')
+      .calendar-box
+        .calendar__head
+          select.calendar-month
+            option(value='1') jan
+            option(value='2') feb
+            option(value='3') march
+            option(value='4') april
+            option(value='5') may
+            option(value='6' selected) june
+            option(value='7') july
+            option(value='8') aug
+            option(value='9') sept
+            option(value='10') oct
+            option(value='11') nov
+            option(value='12') dec
+
+          select.calendar-year
+            option(value='2019') 2019
+            option(value='2020') 2020
+            option(value='2021') 2021
+            option(value='2022') 2022
+            option(value='2023') 2023
+            option(value='2024' selected) 2024
+            option(value='2025') 2025
+
+        .calendar__body
+          .column
+            .day.zero
+            .day.zero
+            .day.zero
+            .day.zero
+            .day.zero
+            .day.zero
+          .column
+            .day.zero
+            .day.zero
+            .day.zero
+            .day.zero
+            .day.zero
+            .day.zero
+          .column
+            .day.zero
+            .day.zero
+            .day.zero
+            .day.zero
+            .day.zero
+            .day.zero
+          .column
+            .day.zero
+            .day.zero
+            .day.zero
+            .day.zero
+            .day.zero
+            .day.zero
+          .column
+            .day.zero
+            .day.zero
+            .day.zero
+            .day.zero
+            .day.zero
+            .day.zero
+          .column
+            .day.zero
+            .day.zero
+            .day.zero
+            .day.zero
+            .day.zero
+            .day.zero
+          .column
+            .day.zero
+            .day.zero
+            .day.zero
+            .day.zero
+            .day.zero
+            .day.zero
+      button.select-confirm Confirm

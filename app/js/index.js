@@ -16,7 +16,20 @@ const adminDrop = new AdminDrop();
 
 
 $(document).ready((e) => {
+  // calendar
+  adminDrop.calRender();
+  document.querySelectorAll('.calendar-js').forEach(cal => {
+    cal.addEventListener('click', (e) => adminDrop.calShow(e));
+  })
+  document.querySelectorAll('.calendar-js input').forEach(input => input.addEventListener('click', (e) => adminDrop.calSwitch(e)))
 
+  document.querySelectorAll('.calendar-js .calendar-month, .calendar-js .calendar-year').forEach(select => {
+    select.addEventListener('change', (e) => adminDrop.calcSwitchMonth(e))
+  })
+
+  document.querySelectorAll('.calendar-js .column .day').forEach(day => {
+    day.addEventListener('click', (e) => adminDrop.calcSetDate(e))
+  })
   
   // modal save succsefully
   $('#saveChange').on('click', function(){
