@@ -160,7 +160,7 @@
     justify-content: center;
     margin-right: 20px;
     border-right: 1px solid #F7F7F7;
-    padding: 20px 20px 25px 20px;
+    padding: 20px 10px 25px 10px;
     flex-direction: column;
     h3 {
       font-style: normal;
@@ -173,6 +173,7 @@
       letter-spacing: 0.03em;
       text-transform: uppercase;
       color: #222222;
+      width: 100%;
     }
     
   }
@@ -244,7 +245,6 @@
         font-size: 18px;
         line-height: 24px;
         letter-spacing: -0.01em;
-        font-feature-settings: 'pnum'on, 'lnum'on;
         color: #222222;
       }
 
