@@ -160,12 +160,12 @@
     justify-content: center;
     margin-right: 20px;
     border-right: 1px solid #F7F7F7;
-    padding: 20px 10px 25px 10px;
+    padding: 20px 15px 25px 15px;
     flex-direction: column;
     h3 {
       font-style: normal;
       font-weight: bold;
-      font-size: 20px;
+      font-size: 18px;
       line-height: 26px;
       display: flex;
       align-items: center;
@@ -173,7 +173,7 @@
       letter-spacing: 0.03em;
       text-transform: uppercase;
       color: #222222;
-      width: 100%;
+      max-width: 110px;
     }
     
   }
